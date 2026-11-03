@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-03",
+  "timezone": "Asia/Shanghai",
+  "scope": "standalone Python scripts, Markdown links and skill structure",
+  "skill_count": 9,
+  "tests": [
+    {
+      "skill": "pynq-overlay-audit",
+      "command": "python -m unittest discover -s skill/pynq-overlay-audit/scripts -p \"test_*.py\" -v",
+      "result": "passed",
+      "output": "test_pairs_addresses_and_corruption (test_check_bundle.Tests.test_pairs_addresses_and_corruption) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.050s\n\nOK\n"
+    },
+    {
+      "skill": "register-to-analog-debug",
+      "command": "python -m unittest discover -s skill/register-to-analog-debug/scripts -p \"test_*.py\" -v",
+      "result": "passed",
+      "output": "test_portable_lookup_and_rejection (test_locate_epcb.PlacementTest.test_portable_lookup_and_rejection) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.044s\n\nOK\n"
+    }
+  ],
+  "links": "passed",
+  "measurement_case_cutoff": "2026-11-02T17:36:00+08:00"
+}
