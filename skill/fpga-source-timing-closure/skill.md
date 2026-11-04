@@ -1,6 +1,6 @@
 ---
 name: fpga-source-timing-closure
-description: 迁移旧工程、变更采样时钟、检查外部 IO 时序。
+description: 从 RTL、约束和 PS 配置重建 FPGA 工程，定位建立时间、保持时间及 IO 时序问题。
 ---
 
 # FPGA 源码重建与时序核对
