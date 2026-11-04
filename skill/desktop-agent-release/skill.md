@@ -1,6 +1,6 @@
 ---
 name: desktop-agent-release
-description: Windows GUI、板端 Python 代理、位流和校准数据的打包与部署。
+description: 核对上位机、板端代理、位流和校准数据的版本关系，提供打包与部署流程。
 ---
 
 # 上位机与板端代理一致发行
