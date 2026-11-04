@@ -1,0 +1,921 @@
+{
+  "finding": "TX1 initialization writes zero DATA while powered down, then a second DATA write is made before enable. On this board this reproduces the zero-output failure despite correct later DATA and enable readback.",
+  "scope": "Empirically isolated board behavior; no claim about undocumented internal silicon mechanism or all DAC60501 devices",
+  "controlled_setup": {
+    "connection": "TX1 SMA to Rigol CH3, fixed throughout isolation",
+    "same_old_ps_initialization": true,
+    "firmware": "OCM C harness includes original dac60501.c unchanged",
+    "old_pl_sha256": "a68b42284fa07126717dfd9d770af492c83abd759bcf7bce9b8961b12912306c",
+    "new_pl_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af"
+  },
+  "evidence": {
+    "tx1_isolation_old_pl_20261030.json": [
+      {
+        "command": "B",
+        "mean_v": 1.007555,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "P",
+        "mean_v": 0.00185284394,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "S",
+        "mean_v": 0.0027692258,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "Z",
+        "mean_v": 0.00123406986,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 0
+        }
+      },
+      {
+        "command": "C",
+        "mean_v": 0.0018294064,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 32000
+        }
+      },
+      {
+        "command": "B",
+        "mean_v": 0.00179263314,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      }
+    ],
+    "tx1_isolation_trigger_20261030.json": [
+      {
+        "command": "T",
+        "mean_v": 1.2525586,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 32768
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 1.0069668,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "0",
+        "mean_v": 0.0023478088,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 0
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 1.007495,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "T",
+        "mean_v": 1.2551202,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 32768
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 1.00794,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "B",
+        "mean_v": 1.0068594,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "P",
+        "mean_v": 0.00197662342,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 0.0023846436000000003,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "L",
+        "mean_v": 0.003478240999999999,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "F",
+        "mean_v": 0.00175250258,
+        "registers": {
+          "1": 8597,
+          "2": 0,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 0.0026287537400000002,
+        "registers": {
+          "1": 8597,
+          "2": 0,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      }
+    ],
+    "tx1_isolation_zero_powerdown_20261030.json": [
+      {
+        "command": "Y",
+        "mean_v": 1.0054013999999998,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "X",
+        "mean_v": -0.00033776862,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 0.000568573,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "Y",
+        "mean_v": 1.0070166,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "K",
+        "mean_v": 1.0064718,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "W",
+        "mean_v": 0.0028929748000000003,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "V",
+        "mean_v": 1.003873,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "X",
+        "mean_v": 8.361822e-05,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 0.00120068362,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "Y",
+        "mean_v": 1.006515,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      }
+    ],
+    "tx1_isolation_first_code_20261030.json": [
+      {
+        "command": "H",
+        "mean_v": 0.62648826,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 0.62713704,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "A",
+        "mean_v": 0.62644144,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "J",
+        "mean_v": 1.0024582,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "0",
+        "mean_v": 0.001133789,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 0
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 1.0074748,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "P",
+        "mean_v": 0.00209027118,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "A",
+        "mean_v": 0.00153176884,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "E",
+        "mean_v": 0.00157525644,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 0.0017658996319999999,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "Y",
+        "mean_v": 1.0070734,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      }
+    ],
+    "tx1_isolation_staged_20261030.json": [
+      {
+        "command": "T",
+        "mean_v": 1.2541436000000001,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 32768
+        }
+      },
+      {
+        "command": "O",
+        "mean_v": 0.0004983518400000001,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 0
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 1.0070736,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "Q",
+        "mean_v": 0.002658844,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 513,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "N",
+        "mean_v": 1.0067355999999998,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "0",
+        "mean_v": 0.0013244628399999999,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 0
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 1.0085484,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "Q",
+        "mean_v": 0.0018862915000000002,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 513,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "N",
+        "mean_v": 1.0070636,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "Q",
+        "mean_v": 0.002638794,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 513,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 1.0069198,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "Q",
+        "mean_v": 0.00111370854,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 513,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "T",
+        "mean_v": 1.2542076,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 32768
+        }
+      },
+      {
+        "command": "2",
+        "mean_v": 0.49781272000000004,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 13104
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 1.0058462,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "Q",
+        "mean_v": 0.00099667355,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 513,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "T",
+        "mean_v": 1.2541,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 32768
+        }
+      },
+      {
+        "command": "O",
+        "mean_v": 0.000668914764,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 0
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 1.0061372,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      }
+    ],
+    "tx1_isolation_new_pl_20261030.json": [
+      {
+        "command": "T",
+        "mean_v": 1.2556822,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 32768
+        }
+      },
+      {
+        "command": "B",
+        "mean_v": 1.0073646,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "P",
+        "mean_v": 0.0026789245199999997,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "T",
+        "mean_v": 1.2562241999999997,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 32768
+        }
+      },
+      {
+        "command": "N",
+        "mean_v": 1.0097224,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "0",
+        "mean_v": 0.0027056582,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 0
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 1.0078964,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "Q",
+        "mean_v": 0.0064347836000000005,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 513,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      },
+      {
+        "command": "O",
+        "mean_v": 0.00199328608,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 0
+        }
+      },
+      {
+        "command": "D",
+        "mean_v": 1.0092244,
+        "registers": {
+          "1": 8597,
+          "2": 256,
+          "3": 512,
+          "4": 257,
+          "7": 0,
+          "8": 26208
+        }
+      }
+    ]
+  },
+  "commands": {
+    "B": "Original initialize midpoint then set 1 V",
+    "P": "Current migrated initialization: power down, gain, async, zero DATA, target DATA, enable",
+    "S": "P with 100 us phase delay",
+    "T": "DAC soft reset, set reference divide by two",
+    "D": "Direct 1 V write without reinitialization",
+    "H": "Reset, power down, DATA 0x4000 then 0x6660, enable",
+    "X": "Reset, power down, DATA zero then 0x6660, enable",
+    "Y": "Reset, power down, only DATA 0x6660 then enable",
+    "K": "Reset, write zero while enabled, power down, write target once then enable",
+    "W": "Reset, power down, DATA code 1 then 1638, enable",
+    "N": "No reset; muted configuration without zero DATA; commit 1 V once and enable",
+    "O": "N with zero target",
+    "2": "N with code 819 / about 0.5 V",
+    "0": "Direct zero write while enabled",
+    "Q": "DAC power down",
+    "A": "Power-down/enable toggle then direct 1 V",
+    "E": "Enable then direct 1 V",
+    "L": "LDAC",
+    "F": "Clear SYNC then direct 1 V",
+    "J": "Reset, power-down/enable, then zero and 1 V writes while enabled",
+    "V": "Reset, zero while enabled, power-down/enable, 1 V while enabled",
+    "C": "P with code 2000"
+  },
+  "reason_old_reference_works": "The reference initializes with one DATA commit before enabling, then writes subsequent voltages while enabled. The migrated initialization adds a zero DATA write before the later target DATA commit during the same muted interval.",
+  "software_fix": {
+    "files": [
+      "src/python/zynq_bjt/tx1.py",
+      "src/python/zynq_bjt/runtime.py",
+      "src/python/zynq_bjt/desktop.py"
+    ],
+    "behavior": "Cache desired codes while powered down, including initial zero and repeated Apply. Commit exactly once immediately before enable. Live enabled writes remain immediate. Status distinguishes pending_until_enabled from device_register_readback. Partial enable failure invalidates the instance to prevent a second uncertain commit."
+  },
+  "validation": {
+    "unit_command": "python -m unittest sim.test_tx1 sim.test_runtime sim.test_desktop -q",
+    "unit_passed": 24,
+    "packaged_report": "report/desktop_tx1_fix_packaged_20261030.json",
+    "packaged_offline_passed": true,
+    "packaged_source_identity": {
+      "tx1.py": true,
+      "runtime.py": true
+    },
+    "actual_corrected_python_driver_on_pynq_validated": true,
+    "baremetal_equivalent_sequence_validated": true,
+    "pynq_scope_acceptance": "report/tx1_pynq_scope_acceptance_20261030.json",
+    "startup_agent_verification": "report/tx1_fix_startup_verification_20261030.json",
+    "pynq_scope_coldboot_acceptance": "report/tx1_pynq_scope_coldboot_20261030.json",
+    "corrected_startup_coldboot_report": "report/tx1_fix_coldboot_verification_20261030.json"
+  },
+  "package": "D:/FPGA/AMD_2026/build/dist/desktop/ZynqBjtDesktop",
+  "deployment": {
+    "default_desktop_replaced": true,
+    "desktop_promotion_report": "report/desktop_tx1_fix_promoted_20261030.json",
+    "board_startup_agent_updated": true,
+    "board_agent": "/home/xilinx/.zynq_bjt_desktop/4591e228270b7977c0d5/agent.pyz",
+    "agent_sha256": "a3c98b0769da6b704b365bd4851263426af49bd0f062ac78a1f1e259b1802790",
+    "board_deploy_report": "report/desktop_tx1_agent_deploy_20261030.json",
+    "startup_update_report": "report/tx1_startup_agent_update_20261030.json",
+    "qspi_or_emmc_program_images_modified": false,
+    "emmc_agent_and_startup_python_files_updated": true,
+    "corrected_release_cold_boot_verified": true,
+    "remaining": null
+  },
+  "current_state": {
+    "original_reference_restored": false,
+    "runtime": "PYNQ, independently booted from QSPI/eMMC",
+    "boot_mode": 1,
+    "startup_agent": "4591e228270b7977c0d5",
+    "scope_acceptance_passed": true,
+    "coldboot_scope_acceptance_passed": true,
+    "all_outputs_closed_confirmed": true,
+    "tx1_measured_after_close_v": 0.0013478087999999999,
+    "linux_running": true,
+    "awaiting_physical_cold_boot": false,
+    "desktop_open": true,
+    "ethernet_connection": "PC to scope; user can reconnect PC to FPGA for desktop SSH"
+  },
+  "reflection": "Earlier register readback checks proved digital communication, not analog adoption of the code. The direct old-firmware comparison and a fixed-wiring single-variable test should have been done sooner. Do not attribute this reproduced failure to soldering or a dead DAC.",
+  "recovery": "A DAC soft reset restores operation after the reproduced latched condition; repeated DATA, powerdown/enable, SYNC clear and LDAC did not. A reset can transiently restore the M-device midpoint, so no automatic reset was added to normal muted initialization. Plan recovery with outputs disconnected/controlled or a known clean power-up before deployment.",
+  "updated_at": "2026-10-30T23:14:19.260489+08:00"
+}

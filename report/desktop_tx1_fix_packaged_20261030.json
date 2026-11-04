@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-10-30T22:51:34",
+  "checks": [
+    {
+      "measurement": "input",
+      "rows": 3,
+      "directory": "D:\\FPGA\\AMD_2026\\report\\desktop_simulation_runs\\20261030_225134_c11893d3",
+      "simulated": true
+    },
+    {
+      "measurement": "output",
+      "rows": 111,
+      "directory": "D:\\FPGA\\AMD_2026\\report\\desktop_simulation_runs\\20261030_225134_4ce252d2",
+      "simulated": true
+    },
+    {
+      "measurement": "beta",
+      "rows": 26,
+      "directory": "D:\\FPGA\\AMD_2026\\report\\desktop_simulation_runs\\20261030_225134_6c77a187",
+      "simulated": true
+    },
+    {
+      "measurement": "ac",
+      "rows": 38,
+      "directory": "D:\\FPGA\\AMD_2026\\report\\desktop_simulation_runs\\20261030_225135_cf4c6e50",
+      "simulated": true
+    }
+  ],
+  "passed": true,
+  "simulation_cleanup": {
+    "closed": true,
+    "cleanup_confirmed": true
+  }
+}

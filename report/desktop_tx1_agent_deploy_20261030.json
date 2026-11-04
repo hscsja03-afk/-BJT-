@@ -1,0 +1,14 @@
+{
+  "remote": "/home/xilinx/.zynq_bjt_desktop/4591e228270b7977c0d5",
+  "digest": "4591e228270b7977c0d5",
+  "files": {
+    "agent.pyz": "a3c98b0769da6b704b365bd4851263426af49bd0f062ac78a1f1e259b1802790",
+    "data/dac_calibration.json": "d0c755811c6317452f2e955ce57bc23970bf98df3baaee3f4ab332736ccf1df5",
+    "data/frontend.json": "1f084abe1d8e7ec3961152f5ce793f4eaedf56262e9babc989240e0135e95bf7",
+    "data/hardware_revision.json": "09bae77c3a8cfebda04addc27dd7942ca608b9ba3ef1b928e7b6eca6ae888f2e",
+    "data/rx1_dc_calibration.json": "d473df15c7dee527c6f8ad9b762218cd6057f50162eb49ae00b6ddbf59ef7bb2",
+    "data/rx2_calibration.json": "81adfc617968dfebbc51cebb62374d5f00371b1acc83fc79cae1919e4c97ae01"
+  },
+  "verified": true,
+  "received": "UART_DEPLOY_READY\nUART_DEPLOY_OK 4591e228270b7977c0d5\n\r\nUART_DEPLOY_DONE\r\n"
+}

@@ -1,0 +1,14 @@
+{
+  "recorded_utc": "2026-10-28T14:20:41.315471+00:00",
+  "path": "build/dist/zynq_bjt_baremetal_bringup_20261028_2220.zip",
+  "bytes": 2405390,
+  "sha256": "47dee18ef289c2241a89c3989fa34e7bf8b5428b7860b95db91ed44a69c799dc",
+  "files": 260,
+  "integrity": "passed",
+  "firmware_and_raw_evidence_links": "passed",
+  "status": "work_in_progress_local_snapshot",
+  "goal_complete": false,
+  "digital_board_tested": true,
+  "analog_hardware_qualified": false,
+  "limits": "Immutable snapshot before this validation record; input resistor modifications pending user detail. No grounded control, valid analog calibration or autonomous boot."
+}

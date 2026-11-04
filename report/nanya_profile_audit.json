@@ -1,0 +1,99 @@
+{
+  "status": "offline_generated_parameters_checked",
+  "board_tested": false,
+  "frequency_mhz": 533.333374,
+  "changes": {
+    "CONFIG.PCW_UIPARAM_DDR_CL": {
+      "before": "7",
+      "after": "8"
+    },
+    "CONFIG.PCW_UIPARAM_DDR_PARTNO": {
+      "before": "MT41K256M16 RE-125",
+      "after": "Custom"
+    },
+    "CONFIG.PCW_UIPARAM_DDR_SPEED_BIN": {
+      "before": "DDR3_1066F",
+      "after": "DDR3_1066G"
+    },
+    "CONFIG.PCW_UIPARAM_DDR_T_FAW": {
+      "before": "40.0",
+      "after": "50.0"
+    },
+    "CONFIG.PCW_UIPARAM_DDR_T_RC": {
+      "before": "48.75",
+      "after": "51.0"
+    },
+    "CONFIG.PCW_UIPARAM_DDR_T_RCD": {
+      "before": "7",
+      "after": "8"
+    },
+    "CONFIG.PCW_UIPARAM_DDR_T_RP": {
+      "before": "7",
+      "after": "8"
+    }
+  },
+  "timings": {
+    "tRC": {
+      "cycles": 28,
+      "ns": 52.4999959968753,
+      "minimum_ns": 47.91,
+      "previous_cycles": 27,
+      "previous_ns": 50.624996139844036
+    },
+    "tRFC": {
+      "cycles": 161,
+      "ns": 301.874976982033,
+      "minimum_ns": 260,
+      "previous_cycles": 161,
+      "previous_ns": 301.874976982033
+    },
+    "tFAW": {
+      "cycles": 27,
+      "ns": 50.624996139844036,
+      "minimum_ns": 50,
+      "previous_cycles": 22,
+      "previous_ns": 41.24999685468774
+    },
+    "tRAS": {
+      "cycles": 19,
+      "ns": 35.624997283593956,
+      "minimum_ns": 34,
+      "previous_cycles": 19,
+      "previous_ns": 35.624997283593956
+    },
+    "tRCD": {
+      "cycles": 8,
+      "ns": 14.999998856250086,
+      "minimum_ns": 13.91,
+      "previous_cycles": 7,
+      "previous_ns": 13.124998999218825
+    },
+    "tRRD": {
+      "cycles": 6,
+      "ns": 11.249999142187564,
+      "minimum_ns": 10,
+      "previous_cycles": 6,
+      "previous_ns": 11.249999142187564
+    },
+    "tRP": {
+      "cycles": 8,
+      "ns": 14.999998856250086,
+      "minimum_ns": 13.91,
+      "previous_cycles": 7,
+      "previous_ns": 13.124998999218825
+    },
+    "tAA": {
+      "cycles": 8,
+      "ns": 14.999998856250086,
+      "minimum_ns": 13.91,
+      "previous_cycles": 7,
+      "previous_ns": 13.124998999218825
+    }
+  },
+  "non_ddr_init_unchanged": true,
+  "same_ocm_probe_hashes_verified": true,
+  "ps_init_sha256": "d8046cd896dce96fa2e7b31f596f07962c4dd702ab4e3f29ef482eb6ece84035",
+  "xsa_sha256": "64cff2b74045e901caf8dcb2c0db3460e295cea8e8a3e924bf5989f47e7005b1",
+  "baseline_ps_init_sha256": "91ad69c18bba491e39595e993028e40032cbdfaea98d5e77a989a804627dae39",
+  "limits": "Checks selected generated timings only, not board timing/voltage/training or DDR stability."
+}

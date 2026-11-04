@@ -1,0 +1,1256 @@
+{
+  "recorded_date": "2026-10-28",
+  "boot_probe_runs": [
+    {
+      "baseboard": "custom",
+      "ddr_mhz": 533.333,
+      "write_level_training": "enabled",
+      "ddr_errors": 34035,
+      "region_errors": [
+        8534,
+        8478,
+        8522,
+        8501
+      ],
+      "emmc_sectors": 15269888,
+      "sector_bytes": 512,
+      "cid_words_hex": [
+        "6FFE213A",
+        "3452062D",
+        "38475446",
+        "00150100"
+      ],
+      "sector0_crc32": "F9C5E944",
+      "reset_function": 0,
+      "blocked_switches": 0,
+      "evidence": {
+        "path": "report/evidence/boot_probe_533_emmc_pass_ddr_fail.txt",
+        "sha256": "df418698026933a00bdfa2209b41076bb74fb5688e50b15c993ae5b69b3fa5f0"
+      }
+    },
+    {
+      "baseboard": "custom",
+      "ddr_mhz": 333.333,
+      "write_level_training": "enabled",
+      "ddr_errors": 32724,
+      "region_errors": [
+        8175,
+        8168,
+        8183,
+        8198
+      ],
+      "emmc_sectors": 15269888,
+      "sector_bytes": 512,
+      "cid_words_hex": [
+        "6FFE213A",
+        "3452062D",
+        "38475446",
+        "00150100"
+      ],
+      "sector0_crc32": "F9C5E944",
+      "reset_function": 0,
+      "blocked_switches": 0,
+      "evidence": {
+        "path": "report/evidence/boot_probe_333_emmc_pass_ddr_fail.txt",
+        "sha256": "3b3a333031e122460f6e6f6a8af4561be556327ef3910018e6da43ace705feed"
+      }
+    },
+    {
+      "baseboard": "official",
+      "ddr_mhz": 533.333,
+      "write_level_training": "enabled",
+      "ddr_errors": 34940,
+      "region_errors": [
+        8772,
+        8667,
+        8785,
+        8716
+      ],
+      "emmc_sectors": 15269888,
+      "sector_bytes": 512,
+      "cid_words_hex": [
+        "6FFE213A",
+        "3452062D",
+        "38475446",
+        "00150100"
+      ],
+      "sector0_crc32": "F9C5E944",
+      "reset_function": 0,
+      "blocked_switches": 0,
+      "evidence": {
+        "path": "report/evidence/probe_official_linux_platform_20261028_171410_jtag.log",
+        "sha256": "afb4846d1680e6abd4219775ed567604bdf0fe3e30c95770ef65e98e91b671a2"
+      }
+    },
+    {
+      "baseboard": "official",
+      "ddr_mhz": 333.333,
+      "write_level_training": "disabled",
+      "ddr_errors": 32699,
+      "region_errors": [
+        8142,
+        8154,
+        8199,
+        8204
+      ],
+      "emmc_sectors": 15269888,
+      "sector_bytes": 512,
+      "cid_words_hex": [
+        "6FFE213A",
+        "3452062D",
+        "38475446",
+        "00150100"
+      ],
+      "sector0_crc32": "F9C5E944",
+      "reset_function": 0,
+      "blocked_switches": 0,
+      "evidence": {
+        "path": "report/evidence/probe_official_linux_platform333_nowl_20261028_171727_jtag.log",
+        "sha256": "98f14226edac9ebf019f8455cea31f5c1660a0f4e6ae9596f7d7584f1d11c87d"
+      }
+    }
+  ],
+  "lane_probe": {
+    "baseboard": "official",
+    "ddr_mhz": 533.333,
+    "read_comparisons": 65536,
+    "pattern_errors": [
+      92,
+      546,
+      116,
+      96,
+      130,
+      120,
+      120,
+      286
+    ],
+    "byte_errors_low_to_high": [
+      1506,
+      0,
+      0,
+      0
+    ],
+    "xor_mask_hex": "000000FF",
+    "even_word_errors": 672,
+    "odd_word_errors": 834,
+    "first_bad_address_hex": "01020288",
+    "first_expected_hex": "00000000",
+    "first_actual_hex": "000000FD",
+    "sample_expected": [
+      1359758873,
+      2719517746,
+      4150514666,
+      1143052388,
+      3688185566,
+      4006062069,
+      4190030125,
+      2287186153,
+      123835392,
+      3082485180,
+      3972002509,
+      3717156842,
+      2393802123,
+      4084011643,
+      1848036394,
+      280486354
+    ],
+    "sample_first": [
+      1359758873,
+      2719517746,
+      4150514666,
+      1143052388,
+      3688185566,
+      4006062069,
+      4190030125,
+      2287186153,
+      123835392,
+      3082485118,
+      3972002509,
+      3717156842,
+      2393802123,
+      4084011643,
+      1848036394,
+      280486354
+    ],
+    "sample_second": [
+      1359758873,
+      2719517746,
+      4150514666,
+      1143052388,
+      3688185566,
+      4006062069,
+      4190030125,
+      2287186153,
+      123835392,
+      3082485118,
+      3972002509,
+      3717156842,
+      2393802123,
+      4084011643,
+      1848036394,
+      280486354
+    ],
+    "evidence": {
+      "path": "report/evidence/ddr_lane_official_533_20261028_173332.log",
+      "sha256": "a8a8e4901d9c60e5c1bebb49abe9aad4aeb02d7c69ecfcb4064255c08fa170ad"
+    },
+    "build_manifest": {
+      "source_sha256": "dda11df6178b289c5351259e8925f8f412d08cd4dc6bc9a25964d4b884c191f7",
+      "storage_access": false,
+      "symbols_sha256": "8fa944b6ea82b215116c9a9a8f0218ef16dfb21a319c67573583cfa7ef88d39c",
+      "elf_sha256": "0cd49bc8bc8077d94eac9309452affb321f3c542aa3a7229257a792c54ffde86"
+    }
+  },
+  "lane_probe_2020_2": {
+    "tool_version": "2020.2",
+    "baseboard": "official",
+    "ddr_mhz": 533.333,
+    "read_comparisons": 65536,
+    "mismatches": 1186,
+    "pattern_errors": [
+      60,
+      380,
+      96,
+      64,
+      82,
+      68,
+      124,
+      312
+    ],
+    "byte_errors_low_to_high": [
+      1186,
+      0,
+      0,
+      0
+    ],
+    "xor_mask_hex": "000000FF",
+    "even_word_errors": 558,
+    "odd_word_errors": 628,
+    "first_bad_address_hex": "010203F4",
+    "first_expected_hex": "00000000",
+    "first_actual_hex": "00000033",
+    "sample_expected": [
+      1359758873,
+      2719517746,
+      4150514666,
+      1143052388,
+      3688185566,
+      4006062069,
+      4190030125,
+      2287186153,
+      123835392,
+      3082485180,
+      3972002509,
+      3717156842,
+      2393802123,
+      4084011643,
+      1848036394,
+      280486354
+    ],
+    "sample_first": [
+      1359758873,
+      2719517746,
+      4150514666,
+      1143052388,
+      3688185566,
+      4006062069,
+      4190030125,
+      2287186153,
+      123835392,
+      3082485118,
+      3972002509,
+      3717156842,
+      2393802123,
+      4084011643,
+      1848036394,
+      280486354
+    ],
+    "sample_second": [
+      1359758873,
+      2719517746,
+      4150514666,
+      1143052388,
+      3688185566,
+      4006062069,
+      4190030125,
+      2287186153,
+      123835392,
+      3082485118,
+      3972002509,
+      3717156842,
+      2393802123,
+      4084011643,
+      1848036394,
+      280486354
+    ],
+    "evidence": {
+      "path": "report/evidence/ddr_lane_official_2020.2_20261028_181625.log",
+      "sha256": "6d69c728e8f4d8245590c61a857519d2103c6864bb0365f0145946c2eba41656"
+    },
+    "runtime_inputs_evidence": {
+      "path": "report/evidence/ddr_lane_official_2020.2_20261028_181625_inputs.json",
+      "sha256": "4b86513daf81a284caf08ae25fe94c29c4b9b74d9ade629e19c8a3693e86c621"
+    },
+    "runtime_inputs": {
+      "pl_download": false,
+      "ps_init_sha256": "91ad69c18bba491e39595e993028e40032cbdfaea98d5e77a989a804627dae39",
+      "build_manifest": {
+        "storage_access": false,
+        "symbols_sha256": "30bf371f6c9eb20ab9c899b4bd658da643a632ddae85a5b5eef443c87213d01b",
+        "toolchain": "Vitis 2020.2 / GCC 9.2.0 / standalone 7.3",
+        "source_sha256": "dda11df6178b289c5351259e8925f8f412d08cd4dc6bc9a25964d4b884c191f7",
+        "elf_sha256": "ab02ed28ed3265d1a5dc2d71c2807ac3944e043635b5beb4f0337b6fce06ce2a",
+        "bsp_lib_sha256": "cdb95e3f6ec210856350975925572b3539cd512c2b05136008bc894eb32f7994"
+      },
+      "storage_access": false,
+      "tool_version": "2020.2"
+    }
+  },
+  "lane_probe_nanya533": {
+    "tool_version": "2026.1",
+    "ps_profile": "linux_platform_nanya533",
+    "baseboard": "official",
+    "boot_mode": 0,
+    "complete": true,
+    "ddr_passed": false,
+    "read_comparisons": 65536,
+    "mismatches": 1536,
+    "pattern_errors": [
+      108,
+      386,
+      120,
+      110,
+      124,
+      124,
+      220,
+      344
+    ],
+    "byte_errors_low_to_high": [
+      1536,
+      0,
+      0,
+      0
+    ],
+    "xor_mask_hex": "000000FF",
+    "even_word_errors": 618,
+    "odd_word_errors": 918,
+    "first_bad_address_hex": "01020174",
+    "first_expected_hex": "00000000",
+    "first_actual_hex": "000000FF",
+    "sample_expected": [
+      1359758873,
+      2719517746,
+      4150514666,
+      1143052388,
+      3688185566,
+      4006062069,
+      4190030125,
+      2287186153,
+      123835392,
+      3082485180,
+      3972002509,
+      3717156842,
+      2393802123,
+      4084011643,
+      1848036394,
+      280486354
+    ],
+    "sample_first": [
+      1359758873,
+      2719517746,
+      4150514666,
+      1143052388,
+      3688185566,
+      4006062069,
+      4190030125,
+      2287186153,
+      123835392,
+      3082485118,
+      3972002509,
+      3717156842,
+      2393802123,
+      4084011643,
+      1848036394,
+      280486354
+    ],
+    "sample_second": [
+      1359758873,
+      2719517746,
+      4150514666,
+      1143052388,
+      3688185566,
+      4006062069,
+      4190030125,
+      2287186153,
+      123835392,
+      3082485118,
+      3972002509,
+      3717156842,
+      2393802123,
+      4084011643,
+      1848036394,
+      280486354
+    ],
+    "runtime_inputs": {
+      "ps_profile": "linux_platform_nanya533",
+      "storage_access": false,
+      "pl_download": false,
+      "build_manifest": {
+        "source_sha256": "dda11df6178b289c5351259e8925f8f412d08cd4dc6bc9a25964d4b884c191f7",
+        "storage_access": false,
+        "symbols_sha256": "8fa944b6ea82b215116c9a9a8f0218ef16dfb21a319c67573583cfa7ef88d39c",
+        "elf_sha256": "0cd49bc8bc8077d94eac9309452affb321f3c542aa3a7229257a792c54ffde86"
+      },
+      "tool_version": "2026.1",
+      "ps_init_sha256": "d8046cd896dce96fa2e7b31f596f07962c4dd702ab4e3f29ef482eb6ece84035"
+    },
+    "evidence": {
+      "path": "report/evidence/ddr_lane_official_2026.1_nanya533_20261028_194837.log",
+      "sha256": "e53e17342557041ec0f433e27d749ccab0d6af861c45ce3ee57ac45d530332f5"
+    },
+    "runtime_inputs_evidence": {
+      "path": "report/evidence/ddr_lane_official_2026.1_nanya533_20261028_194837_inputs.json",
+      "sha256": "1abe98f4f0342f652e5db55804f77ac5a4c56faece97fd3b1d88f1fded01c4f7"
+    },
+    "summary_evidence": {
+      "path": "report/evidence/ddr_lane_official_2026.1_nanya533_20261028_194837_result.json",
+      "sha256": "3a4121ec4a06eedc6ea10fc5774c77bfb4e5369c24ffb0d98fff593a0ac53c4b"
+    },
+    "offline_audit_evidence": "report/nanya_profile_audit.json",
+    "training_raw_words": [
+      1676800,
+      199680,
+      0,
+      397312,
+      262144,
+      64197797,
+      65251498,
+      67320975,
+      67318925,
+      0,
+      19450907,
+      19714075
+    ],
+    "training_ratios": [
+      {
+        "lane": 0,
+        "address_hex": "F80061B8",
+        "raw_hex": "03D394A5",
+        "read_eye_ratio": 61,
+        "write_data_ratio": 229,
+        "write_dqs_ratio": 165
+      },
+      {
+        "lane": 1,
+        "address_hex": "F80061BC",
+        "raw_hex": "03E3A8AA",
+        "read_eye_ratio": 62,
+        "write_data_ratio": 234,
+        "write_dqs_ratio": 170
+      },
+      {
+        "lane": 2,
+        "address_hex": "F80061C0",
+        "raw_hex": "04033C8F",
+        "read_eye_ratio": 64,
+        "write_data_ratio": 207,
+        "write_dqs_ratio": 143
+      },
+      {
+        "lane": 3,
+        "address_hex": "F80061C4",
+        "raw_hex": "0403348D",
+        "read_eye_ratio": 64,
+        "write_data_ratio": 205,
+        "write_dqs_ratio": 141
+      }
+    ],
+    "training_decode_source": "https://docs.amd.com/r/en-US/ug585-zynq-7000-SoC-TRM/Register-reg6e_710-to-reg6e_713-Details",
+    "operating_mode": 1,
+    "readonly_inspection_evidence": {
+      "path": "report/evidence/ddr_nanya533_readonly_20261028.log",
+      "sha256": "4c17a18d3e9c84f0a383707899fb5ca553dc1ad7cba3e3ed31be9faaaf02b238"
+    },
+    "earlier_connection_failure": {
+      "evidence": {
+        "path": "report/evidence/ddr_lane_official_2026.1_nanya533_20261028_194127.log",
+        "sha256": "4ebc0221ed7a34862926dd714a96cbd2f07d1b650c9dcaccd84b4f0be9f51604"
+      },
+      "ps_reset_or_init_executed": false,
+      "ddr_test_executed": false,
+      "connection_evidence": [
+        {
+          "path": "report/evidence/jtag_connection_20261028_query.log",
+          "sha256": "5e0be6e61bb4ccfaffc500c3047497d05d56efb71e169a3273b4d1ef7d4be186"
+        },
+        {
+          "path": "report/evidence/jtag_connection_20261028_1mhz.log",
+          "sha256": "88d855a324959012bd5af9f5f9d7676e8afe4dff316e3492d843284d94b2da60"
+        },
+        {
+          "path": "report/evidence/jtag_connection_20261028_after_reseat.log",
+          "sha256": "3d0eb19f5318c1b019f0c70f664d3797eec85537efa8fe8b1105f3e2f94896be"
+        }
+      ],
+      "recovery": "User confirmed power-off cable reseating and power-on; APU and xc7z020 then enumerated at 10MHz."
+    },
+    "board_state_after_run": "JTAG boot; OCM test complete and in WFI loop. User subsequently asked to power off to inspect board markings.",
+    "limits": [
+      "Timing correction did not eliminate low-byte errors; component damage remains unproven.",
+      "Training ratios and normal operating mode are not proof of a valid eye or reliable memory.",
+      "Uninitialized DDR samples in the read-only log have no expected pattern and are not additional failures.",
+      "Only counters and 16 paired sample words are retained; not all 65536 raw comparisons.",
+      "Not a whole-memory or long-duration stability test."
+    ]
+  },
+  "training_start_probe": {
+    "complete": true,
+    "baseboard": "official",
+    "tool_version": "2026.1",
+    "ps_profile": "linux_platform_nanya533",
+    "baseline_restored": true,
+    "all_nine_cases_failed": true,
+    "rows": [
+      {
+        "id": "0",
+        "mismatches": 1514,
+        "comparisons": 65536,
+        "ddr_passed": false,
+        "pattern_errors": [
+          96,
+          560,
+          120,
+          92,
+          134,
+          114,
+          132,
+          266
+        ],
+        "byte_errors_low_to_high": [
+          1514,
+          0,
+          0,
+          0
+        ],
+        "xor_mask": "000000FF",
+        "gate_start": 164,
+        "write_start": 0,
+        "training_raw_ratios": [
+          64198822,
+          66301099,
+          66272399,
+          67318925
+        ],
+        "reg2c_hex": "1CFFFFFF",
+        "operating_mode": 1,
+        "first_bad_address_hex": "010200D8",
+        "first_expected_hex": "00000000",
+        "first_actual_hex": "000000FB"
+      },
+      {
+        "id": "1",
+        "mismatches": 1488,
+        "comparisons": 65536,
+        "ddr_passed": false,
+        "pattern_errors": [
+          106,
+          528,
+          128,
+          108,
+          118,
+          108,
+          116,
+          276
+        ],
+        "byte_errors_low_to_high": [
+          1488,
+          0,
+          0,
+          0
+        ],
+        "xor_mask": "000000FF",
+        "gate_start": 164,
+        "write_start": 64,
+        "training_raw_ratios": [
+          65247398,
+          65252523,
+          67320975,
+          67317900
+        ],
+        "reg2c_hex": "1CFFFFFF",
+        "operating_mode": 1,
+        "first_bad_address_hex": "010204BC",
+        "first_expected_hex": "00000000",
+        "first_actual_hex": "0000009B"
+      },
+      {
+        "id": "2",
+        "mismatches": 1322,
+        "comparisons": 65536,
+        "ddr_passed": false,
+        "pattern_errors": [
+          102,
+          362,
+          132,
+          90,
+          116,
+          114,
+          116,
+          290
+        ],
+        "byte_errors_low_to_high": [
+          1322,
+          0,
+          0,
+          0
+        ],
+        "xor_mask": "000000FF",
+        "gate_start": 164,
+        "write_start": 128,
+        "training_raw_ratios": [
+          65247398,
+          65252523,
+          67320975,
+          67318925
+        ],
+        "reg2c_hex": "1CFFFFFF",
+        "operating_mode": 1,
+        "first_bad_address_hex": "0102014C",
+        "first_expected_hex": "00000000",
+        "first_actual_hex": "00000066"
+      },
+      {
+        "id": "3",
+        "mismatches": 1654,
+        "comparisons": 65536,
+        "ddr_passed": false,
+        "pattern_errors": [
+          96,
+          706,
+          134,
+          98,
+          122,
+          118,
+          122,
+          258
+        ],
+        "byte_errors_low_to_high": [
+          1654,
+          0,
+          0,
+          0
+        ],
+        "xor_mask": "000000FF",
+        "gate_start": 100,
+        "write_start": 0,
+        "training_raw_ratios": [
+          64198822,
+          65253548,
+          67320975,
+          67317900
+        ],
+        "reg2c_hex": "1CFFFFFF",
+        "operating_mode": 1,
+        "first_bad_address_hex": "01020408",
+        "first_expected_hex": "00000000",
+        "first_actual_hex": "00000079"
+      },
+      {
+        "id": "4",
+        "mismatches": 1414,
+        "comparisons": 65536,
+        "ddr_passed": false,
+        "pattern_errors": [
+          86,
+          492,
+          128,
+          98,
+          132,
+          108,
+          90,
+          280
+        ],
+        "byte_errors_low_to_high": [
+          1414,
+          0,
+          0,
+          0
+        ],
+        "xor_mask": "000000FF",
+        "gate_start": 100,
+        "write_start": 64,
+        "training_raw_ratios": [
+          64198822,
+          66303149,
+          67320975,
+          67317900
+        ],
+        "reg2c_hex": "1CFFFFFF",
+        "operating_mode": 1,
+        "first_bad_address_hex": "010203D0",
+        "first_expected_hex": "00000000",
+        "first_actual_hex": "000000A6"
+      },
+      {
+        "id": "5",
+        "mismatches": 1280,
+        "comparisons": 65536,
+        "ddr_passed": false,
+        "pattern_errors": [
+          92,
+          430,
+          122,
+          92,
+          128,
+          106,
+          98,
+          212
+        ],
+        "byte_errors_low_to_high": [
+          1280,
+          0,
+          0,
+          0
+        ],
+        "xor_mask": "000000FF",
+        "gate_start": 100,
+        "write_start": 128,
+        "training_raw_ratios": [
+          64198822,
+          65254573,
+          67319950,
+          67317900
+        ],
+        "reg2c_hex": "1CFFFFFF",
+        "operating_mode": 1,
+        "first_bad_address_hex": "010205C4",
+        "first_expected_hex": "00000000",
+        "first_actual_hex": "000000E2"
+      },
+      {
+        "id": "6",
+        "mismatches": 1400,
+        "comparisons": 65536,
+        "ddr_passed": false,
+        "pattern_errors": [
+          96,
+          434,
+          124,
+          98,
+          118,
+          116,
+          124,
+          290
+        ],
+        "byte_errors_low_to_high": [
+          1400,
+          0,
+          0,
+          0
+        ],
+        "xor_mask": "000000FF",
+        "gate_start": 228,
+        "write_start": 0,
+        "training_raw_ratios": [
+          64198822,
+          65254573,
+          67320975,
+          67318925
+        ],
+        "reg2c_hex": "1CFFFFFF",
+        "operating_mode": 1,
+        "first_bad_address_hex": "010206B4",
+        "first_expected_hex": "00000000",
+        "first_actual_hex": "00000022"
+      },
+      {
+        "id": "7",
+        "mismatches": 1594,
+        "comparisons": 65536,
+        "ddr_passed": false,
+        "pattern_errors": [
+          86,
+          666,
+          140,
+          94,
+          124,
+          108,
+          84,
+          292
+        ],
+        "byte_errors_low_to_high": [
+          1594,
+          0,
+          0,
+          0
+        ],
+        "xor_mask": "000000FF",
+        "gate_start": 228,
+        "write_start": 64,
+        "training_raw_ratios": [
+          64198822,
+          66303149,
+          67320975,
+          68366476
+        ],
+        "reg2c_hex": "1CFFFFFF",
+        "operating_mode": 1,
+        "first_bad_address_hex": "01020430",
+        "first_expected_hex": "00000000",
+        "first_actual_hex": "000000F6"
+      },
+      {
+        "id": "8",
+        "mismatches": 1640,
+        "comparisons": 65536,
+        "ddr_passed": false,
+        "pattern_errors": [
+          88,
+          688,
+          126,
+          92,
+          132,
+          116,
+          106,
+          292
+        ],
+        "byte_errors_low_to_high": [
+          1640,
+          0,
+          0,
+          0
+        ],
+        "xor_mask": "000000FF",
+        "gate_start": 228,
+        "write_start": 128,
+        "training_raw_ratios": [
+          65247398,
+          66302124,
+          67319950,
+          67318925
+        ],
+        "reg2c_hex": "1CFFFFFF",
+        "operating_mode": 1,
+        "first_bad_address_hex": "01020554",
+        "first_expected_hex": "00000000",
+        "first_actual_hex": "000000BA"
+      },
+      {
+        "id": "RESTORE",
+        "mismatches": 1304,
+        "comparisons": 65536,
+        "ddr_passed": false,
+        "pattern_errors": [
+          88,
+          364,
+          128,
+          98,
+          124,
+          112,
+          112,
+          278
+        ],
+        "byte_errors_low_to_high": [
+          1304,
+          0,
+          0,
+          0
+        ],
+        "xor_mask": "000000FF",
+        "gate_start": 164,
+        "write_start": 0,
+        "training_raw_ratios": [
+          64198822,
+          66303149,
+          66272399,
+          68368526
+        ],
+        "reg2c_hex": "1CFFFFFF",
+        "operating_mode": 1,
+        "first_bad_address_hex": "010204C4",
+        "first_expected_hex": "00000000",
+        "first_actual_hex": "00000017"
+      }
+    ],
+    "runtime_inputs": {
+      "wrapper_sha256": "2ff8e3cb6d6aff1025fdea7b4a9498a4bfc200a517e4c42c4def93d0571d0964",
+      "pl_download": false,
+      "tcl_sha256": "0f4e2868b4d30dddef58f401d181c8c82733909b8f4b8a92f269b1f4e3ca4673",
+      "baseboard": "official",
+      "ps_init_sha256": "d8046cd896dce96fa2e7b31f596f07962c4dd702ab4e3f29ef482eb6ece84035",
+      "restore_baseline": [
+        164,
+        0
+      ],
+      "hardware_requested": true,
+      "cases": [
+        [
+          164,
+          0
+        ],
+        [
+          164,
+          64
+        ],
+        [
+          164,
+          128
+        ],
+        [
+          100,
+          0
+        ],
+        [
+          100,
+          64
+        ],
+        [
+          100,
+          128
+        ],
+        [
+          228,
+          0
+        ],
+        [
+          228,
+          64
+        ],
+        [
+          228,
+          128
+        ]
+      ],
+      "altered_register": "0xF800612C",
+      "storage_access": false,
+      "probe_manifest": {
+        "source_sha256": "dda11df6178b289c5351259e8925f8f412d08cd4dc6bc9a25964d4b884c191f7",
+        "storage_access": false,
+        "symbols_sha256": "8fa944b6ea82b215116c9a9a8f0218ef16dfb21a319c67573583cfa7ef88d39c",
+        "elf_sha256": "0cd49bc8bc8077d94eac9309452affb321f3c542aa3a7229257a792c54ffde86"
+      },
+      "tool_version": "2026.1"
+    },
+    "evidence": {
+      "path": "report/evidence/ddr_training_20261028_203330.log",
+      "sha256": "178861f97c2ce09e13cfcb8ce5c095471174b147c2dc52fb4f14a59e0e298b78"
+    },
+    "runtime_inputs_evidence": {
+      "path": "report/evidence/ddr_training_20261028_203330_inputs.json",
+      "sha256": "51298352293a50b3e87d5a76296e7af0775e30f3d2b95b4b2e32b5a556306265"
+    },
+    "summary_evidence": {
+      "path": "report/evidence/ddr_training_20261028_203330_result.json",
+      "sha256": "d8fe63b2c4b14258e11069a344aee8d62cfb8746f56b2980a656cbace4a81a73"
+    },
+    "offline_validation_evidence": [
+      {
+        "path": "report/evidence/ddr_training_20261028_203305.log",
+        "sha256": "f38264d9922bbecf7cc1e15a0f3c76a3ba562018b29031697ac518720b732392"
+      },
+      {
+        "path": "report/evidence/ddr_training_20261028_203305_inputs.json",
+        "sha256": "048eab670d5314b1a222e6422c6dbbbb0f817827ea82a75b9fca4d4bad4f9976"
+      }
+    ],
+    "connection_evidence": {
+      "path": "report/evidence/jtag_after_dc_check_20261028.log",
+      "sha256": "3d0eb19f5318c1b019f0c70f664d3797eec85537efa8fe8b1105f3e2f94896be"
+    },
+    "board_state_after_run": "Baseline Nanya533 initialization restored; ARM0 OCM test finished in WFI loop.",
+    "limits": [
+      "Exploratory starting points, not PCB delay/PVT bounds or a full margin scan.",
+      "Counters and 16 paired samples retained per run; not all raw comparisons.",
+      "Error count variation does not establish improved or worse stability.",
+      "Does not identify a damaged component or rule out every configuration issue."
+    ]
+  },
+  "debug_port_probe": {
+    "baseboard": "official",
+    "access": "APU debug memory port; ARM0 halted",
+    "cpu_test_program_used": false,
+    "reset_or_ps_reinitialization": false,
+    "inherited_ps_configuration": "2020.2 lane-probe initialization, DDR 533.333 MHz",
+    "scratch_start_hex": "01030000",
+    "scratch_bytes": 1024,
+    "read_comparisons": 4096,
+    "mismatches": 364,
+    "pattern_errors": [
+      2,
+      262,
+      0,
+      0,
+      70,
+      0,
+      4,
+      26
+    ],
+    "byte_errors_low_to_high": [
+      364,
+      0,
+      0,
+      0
+    ],
+    "xor_mask_hex": "000000FF",
+    "changed_words_between_two_reads": 0,
+    "failed_examples": [
+      {
+        "pattern": "0",
+        "pass": "0",
+        "address": "0x010300A0",
+        "expected": "0x00000000",
+        "actual": "0x00000009"
+      },
+      {
+        "pattern": "0",
+        "pass": "1",
+        "address": "0x010300A0",
+        "expected": "0x00000000",
+        "actual": "0x00000009"
+      },
+      {
+        "pattern": "1",
+        "pass": "0",
+        "address": "0x01030000",
+        "expected": "0xFFFFFFFF",
+        "actual": "0xFFFFFF00"
+      },
+      {
+        "pattern": "1",
+        "pass": "0",
+        "address": "0x01030008",
+        "expected": "0xFFFFFFFF",
+        "actual": "0xFFFFFF00"
+      },
+      {
+        "pattern": "1",
+        "pass": "0",
+        "address": "0x0103000C",
+        "expected": "0xFFFFFFFF",
+        "actual": "0xFFFFFF00"
+      },
+      {
+        "pattern": "1",
+        "pass": "0",
+        "address": "0x01030010",
+        "expected": "0xFFFFFFFF",
+        "actual": "0xFFFFFF00"
+      },
+      {
+        "pattern": "1",
+        "pass": "0",
+        "address": "0x01030014",
+        "expected": "0xFFFFFFFF",
+        "actual": "0xFFFFFF00"
+      },
+      {
+        "pattern": "1",
+        "pass": "0",
+        "address": "0x01030018",
+        "expected": "0xFFFFFFFF",
+        "actual": "0xFFFFFF00"
+      }
+    ],
+    "evidence": {
+      "path": "report/evidence/ddr_dap_official_20261028_181909.log",
+      "sha256": "10ee177cdb7d80587210917179be71e14b12ca7e1a514a0ea69befd955d6225c"
+    },
+    "raw_frames": {
+      "path": "report/evidence/ddr_dap_official_20261028_181909_frames.csv",
+      "sha256": "97b2e5312a4be7beecee990e8c565cdddce4d9152211ffefe882dd5b430ab7a6"
+    },
+    "raw_frames_recount": "4096 unique samples; expectations and all reported totals cross-checked",
+    "limit": "Does not independently validate the inherited DDR controller settings or all memory addresses"
+  },
+  "factory_sd_boot": {
+    "boot_mode": 5,
+    "image_boot_bin_sha256": "3dc7df238957d18b1c56345cf74a0c38e73da258e58ef7b784512e6636a00b08",
+    "image_evidence": "report/factory_sd_evidence.json",
+    "user_confirmed_baseboard": "official",
+    "user_confirmed_uart_selection": "PS after initial PL selection",
+    "ocm_code_matches_factory_image": [
+      {
+        "address_hex": "00000000",
+        "word_count": 64,
+        "match": true
+      },
+      {
+        "address_hex": "0000E31C",
+        "word_count": 12,
+        "match": true
+      },
+      {
+        "address_hex": "0000E468",
+        "word_count": 8,
+        "match": true
+      },
+      {
+        "address_hex": "000018AC",
+        "word_count": 1,
+        "match": true
+      }
+    ],
+    "halt_pc_hex": "000018AC",
+    "halt_lr_hex": "0000E488",
+    "ddr_sanity_check": {
+      "addresses_hex": [
+        "00100000",
+        "00200000"
+      ],
+      "expected_hex": "AA55AA55",
+      "actual_hex": [
+        "AA55AA55",
+        "AA55AAFF"
+      ],
+      "xor_difference_hex": [
+        "00000000",
+        "000000AA"
+      ]
+    },
+    "control_flow": "DDR compare at 0xE334 or 0xE348 branches to 0xE468; 0xE484 calls 0x18AC self-loop, matching LR=0xE488.",
+    "conclusion": "Unmodified factory FSBL entered its DDR sanity-check failure loop before U-Boot.",
+    "uboot_prefix_at_04000000": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "uart": {
+      "capture_evidence": [
+        {
+          "path": "report/evidence/uart_factory_sd_20261028_182931.bin",
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+          "path": "report/evidence/uart_factory_sd_20261028_182931.log",
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+          "path": "report/evidence/uart_factory_sd_20261028_182931.json",
+          "sha256": "9ebfe2643b19e02b9f21584fb63bb55bd84d3d07e72cb9bfc8520f1e7ad10bfd"
+        }
+      ],
+      "raw_hex": "00000000",
+      "limits": "One ten-minute receive-only capture spans the initial PL UART selection and subsequent PS selection; no readable boot output."
+    },
+    "evidence": {
+      "path": "report/evidence/factory_sd_failure_evidence_20261028_184414.log",
+      "sha256": "40f4928f85949065dab98f6303b2e144034d2f9a946cec6bf7b1359587e70aa7"
+    },
+    "halt_registers": {
+      "path": "report/evidence/factory_sd_stop_20261028_184157.log",
+      "sha256": "3055e98a88a12287bc3e5f2f2d60d5e4ac0412be76d7dca8fcc91d6e50366fcb"
+    },
+    "disassembly": [
+      {
+        "path": "report/evidence/factory_fsbl_main_disassembly.txt",
+        "sha256": "5b4dcef8f5bc76a9a7b40b2f04fdac891df5cebdff706d58de75676981357287"
+      },
+      {
+        "path": "report/evidence/factory_fsbl_ddrcheck_fallback_disassembly.txt",
+        "sha256": "637a55b1a9f30723bfd1e37f14648866463031ab2134f4d883be87af52d79a1d"
+      }
+    ],
+    "board_state_after_observation": "ARM0 halted in the factory failure loop; SD boot mode; no debugger reset/init/download during factory boot.",
+    "limits": [
+      "The failure does not identify a particular damaged DDR device or rule out incompatible hardware configuration.",
+      "Only the listed OCM blocks were compared, not the whole running FSBL image."
+    ]
+  },
+  "readback_evidence": {
+    "path": "report/evidence/official_ddr_readback_333_nowl.log",
+    "sha256": "4e8cebb2f6bf5f3ed3ef95548a76a06e6593d26d4febc05314c81eeb7d1159b9"
+  },
+  "vendor_ddr_audit": {
+    "silicon_revision": 3,
+    "mask_write_count": 80,
+    "generated_init_sha256": "91ad69c18bba491e39595e993028e40032cbdfaea98d5e77a989a804627dae39",
+    "pynq_example_init_sha256": "82d5159f1ce76b268538cb334dff767d3340b4ad6a39a23495ccca18b409bba1",
+    "example_ddr_writes_match": true,
+    "boot_images": [
+      {
+        "path": "reference/vendor_factory/boot/boot.bin",
+        "sha256": "3dc7df238957d18b1c56345cf74a0c38e73da258e58ef7b784512e6636a00b08",
+        "matching_ddr_array_fsbl_offsets_hex": [
+          "10CF8"
+        ]
+      },
+      {
+        "path": "reference/vendor_pynq/boot/boot.bin",
+        "sha256": "699cb1cd63956f79be39370cdabf64fc17f9afaefadd690abf86f8051f783fd1",
+        "matching_ddr_array_fsbl_offsets_hex": [
+          "10BB8"
+        ]
+      }
+    ]
+  },
+  "provenance_limit": "Older boot-probe logs did not bind runtime ELF/init hashes; do not assign current ELF hashes retrospectively.",
+  "storage_content_writes": false,
+  "pl_downloaded": false,
+  "linux_booted": false,
+  "limits": [
+    "four 64KiB regions are not a full 1GiB qualification",
+    "lane probe uses different patterns/region/access cadence; error counts are not a performance comparison",
+    "Windows host Python checks do not validate ARM/PYNQ hardware behavior"
+  ]
+}

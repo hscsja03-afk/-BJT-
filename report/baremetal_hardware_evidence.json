@@ -1,0 +1,567 @@
+{
+  "recorded_utc": "2026-10-28T14:18:40.695982+00:00",
+  "test_date_local": "2026-10-28",
+  "timezone": "Asia/Shanghai",
+  "route": "baremetal_ocm_pc_uart",
+  "goal_complete": false,
+  "user_resumed_hardware": {
+    "quote": "ok，接上自制底板上去了",
+    "carrier": "custom ADDA",
+    "core_revision": "V2.5",
+    "boot_mode_read": 0,
+    "serial": "CH340 COM7 115200 8N1"
+  },
+  "firmware_manifest": {
+    "ddr_initialized": false,
+    "storage_written": false,
+    "link_memory_bytes": 196608,
+    "ps_init_sha256": "36671b7984e8bd443e052ac5325b07ca14da9d75cc5dc591e1af11df24575624",
+    "images": {
+      "probe": {
+        "sha256": "6e1c9f15869a96b82a243788a947cdd0a7f157d9474f3652e9ab8551d1b27d83",
+        "entry": 0,
+        "end": 113248,
+        "remaining_low_ocm_bytes": 83360,
+        "mailbox": 44628,
+        "load_segments": [
+          {
+            "address": 0,
+            "file_bytes": 52972,
+            "memory_bytes": 52972
+          },
+          {
+            "address": 65536,
+            "file_bytes": 16404,
+            "memory_bytes": 47712
+          }
+        ],
+        "symbols_sha256": "a3642ce3a02e4e6bf545b41f1f3ef3e86cab36ba609fcb0ae27a01d31647ec08",
+        "heap_bytes": 0,
+        "main_stack_bytes": 12288,
+        "ddr_mmu_fault_sections": 1023
+      },
+      "adda": {
+        "sha256": "1924ac61c5623342397e8525a8fbd73609e1d5b3401a3142e628715f4e610c1a",
+        "entry": 0,
+        "end": 121568,
+        "remaining_low_ocm_bytes": 75040,
+        "mailbox": 54428,
+        "load_segments": [
+          {
+            "address": 0,
+            "file_bytes": 81940,
+            "memory_bytes": 121568
+          }
+        ],
+        "symbols_sha256": "b60f88877e606aa3d17f941300cf1f8cf8b567888996143a6ac9f39513298200",
+        "heap_bytes": 0,
+        "main_stack_bytes": 12288,
+        "ddr_mmu_fault_sections": 1023
+      }
+    },
+    "inputs": {
+      "src/baremetal/main.c": "e2667adb8a65a151ff762146b5339c830e10066a42bf1274501418bc27b1caf4",
+      "src/baremetal/adda.c": "188e135879529dfcab7133aff185d9a9561d0e82484d9d50db5eb822d3d262a4",
+      "src/baremetal/adda.h": "b79321ae1b0a33b835d8380544008831659aa9907b16155b1a41442c5dea7732",
+      "src/baremetal/timebase.h": "020d95f9f5f5e4a8c54638f5e8a6b1a1099555cf1e6262394f4e307908253b44",
+      "board/ocm.ld": "444dc96ba8eccb130e0c29693b8332c771647bbc38902166d1b997d43ef7a67e",
+      "board/baremetal/build.ps1": "53f2f175f04f53b8e3490125186284d34669aceff3ebaf74f171ae4781589700"
+    },
+    "bsp_xparameters_sha256": "4a3bfce89f530646eb164ba21c3b4c87ac43cbfb1058fc408a2a5533bacd5cfb",
+    "xsa_sha256": "5f8aeab7fd9ecc1ae00ddef5798b121bb5e2e7a2f7dd6615ca5ee24d4480247d",
+    "build_id": 2213194660
+  },
+  "ocm_jtag": {
+    "board": "custom",
+    "ocm_startup_passed": true,
+    "ddr_initialized": false,
+    "analog_initialized": false,
+    "uart_verified": false,
+    "responses": [
+      {
+        "sequence": 1,
+        "op": 1,
+        "status": 0,
+        "values": [
+          1,
+          1,
+          0,
+          121568,
+          50000000,
+          0,
+          2213194660
+        ]
+      },
+      {
+        "sequence": 2,
+        "op": 9,
+        "status": 0,
+        "values": [
+          4096,
+          0,
+          82604
+        ]
+      }
+    ],
+    "runtime_inputs_sha256": "9ba34001d835d1bf4dc1f4b87ec15542f041c21e126dca617f166dafd301ca81",
+    "log_sha256": "202aa91614644d4074b80ee073d9a896c840ca69e0b5a7177b2569505862b4bf",
+    "limits": "4 KiB scratch test and mailbox protocol only; no ADC/DAC or whole-OCM qualification."
+  },
+  "uart_identity": {
+    "bit_sha256": "db510ee69f203c95e56cb6580ead2020aea2bfed3c2ad4cd7c417c1256be6fa6",
+    "hwh_sha256": "9dc487f697b54a7e6899cbcaa8454e90e2dfa61b62db15daa9dfbb130f7cc380",
+    "hash_basis": "local files selected for JTAG download; not read back from FPGA",
+    "firmware_sha256": "1924ac61c5623342397e8525a8fbd73609e1d5b3401a3142e628715f4e610c1a",
+    "firmware_build_id": 2213194660,
+    "transport": "baremetal_uart",
+    "ddr_used": false
+  },
+  "clock_hz_rx1_rx2_dac": [
+    50007579,
+    50006219,
+    50008679
+  ],
+  "digital_pattern_test": {
+    "result": "passed",
+    "patterns": [
+      "midscale",
+      "positive_fullscale",
+      "negative_fullscale",
+      "checkerboard"
+    ],
+    "channels": 2,
+    "basis": "Successful INIT in hash-matched audited firmware; not separate exported per-pattern counters"
+  },
+  "uart_trace_verification": {
+    "trace_verified": true,
+    "capture_completed": true,
+    "commands": 13,
+    "responses": 13,
+    "statuses": [
+      {
+        "sequence": 2,
+        "op": 1,
+        "status": 0
+      },
+      {
+        "sequence": 3,
+        "op": 2,
+        "status": 0
+      },
+      {
+        "sequence": 4,
+        "op": 6,
+        "status": 0
+      },
+      {
+        "sequence": 5,
+        "op": 6,
+        "status": 0
+      },
+      {
+        "sequence": 6,
+        "op": 6,
+        "status": 0
+      },
+      {
+        "sequence": 7,
+        "op": 7,
+        "status": 0
+      },
+      {
+        "sequence": 8,
+        "op": 3,
+        "status": 0
+      },
+      {
+        "sequence": 9,
+        "op": 3,
+        "status": 0
+      },
+      {
+        "sequence": 10,
+        "op": 3,
+        "status": 0
+      },
+      {
+        "sequence": 11,
+        "op": 6,
+        "status": 0
+      },
+      {
+        "sequence": 12,
+        "op": 6,
+        "status": 0
+      },
+      {
+        "sequence": 13,
+        "op": 6,
+        "status": 0
+      },
+      {
+        "sequence": 14,
+        "op": 8,
+        "status": 0
+      }
+    ],
+    "frames": [
+      {
+        "sequence": 8,
+        "channels": [
+          {
+            "channel": "RX1_ADC_B",
+            "samples": 1024,
+            "minimum_code": 0,
+            "maximum_code": 0,
+            "mean_code": 0.0,
+            "overrange_samples": 1024
+          },
+          {
+            "channel": "RX2_ADC_A",
+            "samples": 1024,
+            "minimum_code": 65535,
+            "maximum_code": 65535,
+            "mean_code": 65535.0,
+            "overrange_samples": 1024
+          }
+        ]
+      },
+      {
+        "sequence": 9,
+        "channels": [
+          {
+            "channel": "RX1_ADC_B",
+            "samples": 1024,
+            "minimum_code": 0,
+            "maximum_code": 0,
+            "mean_code": 0.0,
+            "overrange_samples": 1024
+          },
+          {
+            "channel": "RX2_ADC_A",
+            "samples": 1024,
+            "minimum_code": 65535,
+            "maximum_code": 65535,
+            "mean_code": 65535.0,
+            "overrange_samples": 1024
+          }
+        ]
+      },
+      {
+        "sequence": 10,
+        "channels": [
+          {
+            "channel": "RX1_ADC_B",
+            "samples": 1024,
+            "minimum_code": 0,
+            "maximum_code": 0,
+            "mean_code": 0.0,
+            "overrange_samples": 1024
+          },
+          {
+            "channel": "RX2_ADC_A",
+            "samples": 1024,
+            "minimum_code": 65535,
+            "maximum_code": 65535,
+            "mean_code": 65535.0,
+            "overrange_samples": 1024
+          }
+        ]
+      }
+    ],
+    "outputs_enable_command_in_trace": false,
+    "analog_calibration_qualified": false,
+    "limits": "Trace begins after open/identity PING. CRC and byte checks verify the recorded transport; internal-pattern success is inferred from successful audited firmware INIT, not exported per-pattern data. Output readback is digital, not an analog voltage measurement."
+  },
+  "outputs_before": [
+    {
+      "code": 0,
+      "enabled": false,
+      "code_basis": "device_register_readback"
+    },
+    {
+      "code": 32768,
+      "enabled": false,
+      "code_basis": "table_commit_ack_not_analog_readback"
+    },
+    {
+      "code": 32768,
+      "enabled": false,
+      "code_basis": "table_commit_ack_not_analog_readback"
+    }
+  ],
+  "outputs_after": [
+    {
+      "code": 0,
+      "enabled": false,
+      "code_basis": "device_register_readback"
+    },
+    {
+      "code": 32768,
+      "enabled": false,
+      "code_basis": "table_commit_ack_not_analog_readback"
+    },
+    {
+      "code": 32768,
+      "enabled": false,
+      "code_basis": "table_commit_ack_not_analog_readback"
+    }
+  ],
+  "cleanup_error": null,
+  "gpio_before": {
+    "output": 0,
+    "sense": 0,
+    "sequence": 0
+  },
+  "analog_result": "all_normal_samples_overrange_not_qualified",
+  "input_condition": {
+    "user_quote": "两个输入都悬空，没接线",
+    "grounded_control_test_done": false,
+    "reason": "User has no suitable adapter/shorting cap; board kept unchanged",
+    "hardware_modification_quote": "我们把RX1和RX2前面对地的输入电阻全部去掉了了。",
+    "removed_designators": null,
+    "removed_positions_left_open_or_bridged": null,
+    "interpretation": "Input ground path and attenuation cannot be assumed from original schematic. Floating analog nodes are a possible cause, not established diagnosis.",
+    "pending": "Confirm exact removed parts and whether pads are open or bridged; earlier four-rail measurement request deferred."
+  },
+  "fixes": [
+    {
+      "issue": "ADC clock checked before translators/converter enabled",
+      "change": "Enable CTRL_OE, configure ADC, enable DATA_OE before clock measurement; retain 49-51MHz acceptance",
+      "failed_uart": "baremetal_uart_20261028_214932.json"
+    },
+    {
+      "issue": "Unparenthesized BSP COUNTS_PER_SECOND macro divided computed time by four",
+      "change": "Shared tick-to-microsecond helper accepts expanded frequency expression as function argument; quotient/remainder conversion avoids long-duration multiply overflow",
+      "failed_uart": "baremetal_uart_20261028_215415.json",
+      "failed_rate_hz": 200017499
+    },
+    {
+      "issue": "Linker defsym after -T gave actual 8192-byte heap and stack despite earlier 0/12288 claim",
+      "change": "Pass definitions before linker script and audit boundary-symbol differences",
+      "current_heap_bytes": 0,
+      "current_main_stack_bytes": 12288,
+      "original_ocm_placement_still_valid": true
+    }
+  ],
+  "regression": "Eight actual-C-driver fault cases and timebase precedence/24h cases passed; retained new test log. Previous 37 Python tests are unchanged offline evidence.",
+  "persistent_storage_written": false,
+  "ddr_initialized": false,
+  "ddr_fault_fixed": false,
+  "analog_calibration_qualified": false,
+  "evidence": [
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_custom_20261028_214740.log",
+      "bytes": 1113,
+      "sha256": "cbd2944d0950d3c2caec8b6951415f2d85fafe5863cd7d567e9110b23bf1d33d"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_custom_20261028_214740_inputs.json",
+      "bytes": 2479,
+      "sha256": "ea8d47186dfc4c9e82a60d71ab37df7913290b7731c6a0b5a8ec46b2801bbf18"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_custom_20261028_214740_result.json",
+      "bytes": 799,
+      "sha256": "61e4a457dbc690f59f70acfb54d2be7635e30c13085cd9d10f6644e655a39d3d"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_custom_20261028_215402.log",
+      "bytes": 1113,
+      "sha256": "609f8533bcefb5a4c0ed1093d64fa1b756c2e68227e050f4c330fbc6b4295b50"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_custom_20261028_215402_inputs.json",
+      "bytes": 2603,
+      "sha256": "9a3750cfbb7dc80009e1eee9f617dd9c58b0aecccfc3ea39023bad00af63c433"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_custom_20261028_215402_result.json",
+      "bytes": 799,
+      "sha256": "1df457d52c3548b5594021d98a7dc77bd8291f208f523783a481c710f92ad1c0"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_custom_20261028_215752.log",
+      "bytes": 1112,
+      "sha256": "202aa91614644d4074b80ee073d9a896c840ca69e0b5a7177b2569505862b4bf"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_custom_20261028_215752_inputs.json",
+      "bytes": 2706,
+      "sha256": "9ba34001d835d1bf4dc1f4b87ec15542f041c21e126dca617f166dafd301ca81"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_custom_20261028_215752_result.json",
+      "bytes": 799,
+      "sha256": "dbd734a2064fc326fb4acc26872baf5133bf9b00fa03c5432915c293ba21dae2"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_uart_20261028_214932.json",
+      "bytes": 1444,
+      "sha256": "1d1c2e3d0f8d2193abe9d2e3ae538386d3ba9a85ecc1a7ae7e9f1a32532a4b69"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_uart_20261028_214932.rx.bin",
+      "bytes": 155,
+      "sha256": "13b6a1ad01684da22430518f5b03881498cb83dc0e897186a356cf7950b02bc2"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_uart_20261028_214932.tx.bin",
+      "bytes": 100,
+      "sha256": "7edcf2cba61548445c0bfb3e6df2ac4c6e5b8cf842ee8071f0804f4f6ebde7f3"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_uart_20261028_214932_verified.json",
+      "bytes": 790,
+      "sha256": "d73391567a442cba6bba9f045b8dac882fbf8c4078c9873ac6247a6071800937"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_uart_20261028_215415.json",
+      "bytes": 1444,
+      "sha256": "3d66485fc99475abdcfccf225d9ddad375f715bded8412c19253bef26952c08d"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_uart_20261028_215415.rx.bin",
+      "bytes": 155,
+      "sha256": "a00c6c044986321a4a9445801cb9858124901e3a5ec7fa00be3652ade626581d"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_uart_20261028_215415.tx.bin",
+      "bytes": 100,
+      "sha256": "7edcf2cba61548445c0bfb3e6df2ac4c6e5b8cf842ee8071f0804f4f6ebde7f3"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_uart_20261028_215415_verified.json",
+      "bytes": 790,
+      "sha256": "d73391567a442cba6bba9f045b8dac882fbf8c4078c9873ac6247a6071800937"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_uart_20261028_215805.json",
+      "bytes": 117386,
+      "sha256": "74b33fea61486987115c1cc34fa86c358fa156e1ea8e59babea1e81f1cf01260"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_uart_20261028_215805.rx.bin",
+      "bytes": 58292,
+      "sha256": "0dd8f42b031a188d3c1f5453052852544603ca725ef1016291362ac96d28c04c"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_uart_20261028_215805.tx.bin",
+      "bytes": 327,
+      "sha256": "ffba74b8b6e09a12c41ec4f77763ae9ad3469bbd47ec8a2fa22ed9c10143da36"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_uart_20261028_215805_verified.json",
+      "bytes": 2954,
+      "sha256": "a9fb29f076c5134a0a6615a93b6787c8a61f0462d208afad0840ae3c3bb4f2f4"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_clock_inspection_20261028.log",
+      "bytes": 1808,
+      "sha256": "7eaf600b09ff026c337c419cedab647aa1a5a75d474867492a053edde385e508"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_clock_inspection_20261028_mapped.log",
+      "bytes": 1301,
+      "sha256": "ccc1fd27511f1ea312c3fb7a693a85cda8e611221b01b1b2d83f74c480a5c1c8"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_rates_after_sequence_fix.log",
+      "bytes": 774,
+      "sha256": "bf5910947e071edee6265c444dea75a5c0513bd60af7f869d3552f1cc8e72599"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/baremetal_c_hardware_fixes_20261028.log",
+      "bytes": 519,
+      "sha256": "d93b92166e38bce8d23a2894aa395a9a8395cd4326d08ac1400e96f90da53c19"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/firmware_manifest.json",
+      "bytes": 2239,
+      "sha256": "9493c0020dcc21084746a845ce4f1b1bf968493f8b146f7042f8a60864507d5c"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/firmware_adda_symbols.txt",
+      "bytes": 13474,
+      "sha256": "b60f88877e606aa3d17f941300cf1f8cf8b567888996143a6ac9f39513298200"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/firmware_probe_symbols.txt",
+      "bytes": 11955,
+      "sha256": "a3642ce3a02e4e6bf545b41f1f3ef3e86cab36ba609fcb0ae27a01d31647ec08"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/firmware_build_id.txt",
+      "bytes": 10,
+      "sha256": "9b6a1be234e5d7ef20964327a3dcfaa98ffe4f21d460a57cf69976461ea233b0"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/intermediate_firmware_b4bedca5/adda.elf",
+      "bytes": 275088,
+      "sha256": "70d51c690fc636d839ce5168759f64d0448c9ccf555d99ec29e5da35c4dea2da"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/intermediate_firmware_b4bedca5/adda_symbols.txt",
+      "bytes": 13474,
+      "sha256": "7dafd5c7c48cb35e46eff297a7176eab9488f501434028162b4831112e89878b"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/intermediate_firmware_b4bedca5/build_id.txt",
+      "bytes": 10,
+      "sha256": "acd4b91707fc85ffa9f4ae0b8af340b82687f99d467c1eb04ec4b8db3484d142"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/intermediate_firmware_b4bedca5/manifest.json",
+      "bytes": 2138,
+      "sha256": "5fade6ddc1ceea771befde1a9c91a9f4ae8ef7766096a19f8abfea1fe189d43f"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/intermediate_firmware_b4bedca5/probe.elf",
+      "bytes": 216460,
+      "sha256": "f52b83d36cb5429c7d6e9fc4138f42bd768cac7fa3d23729fab7b765a1cdb9ab"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/intermediate_firmware_b4bedca5/probe_symbols.txt",
+      "bytes": 11955,
+      "sha256": "e9c5cad878e4547519b042eeafe269b2079b92322d82c0c576cf5f257ead385a"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/intermediate_firmware_b4bedca5/board/ocm.ld",
+      "bytes": 6184,
+      "sha256": "444dc96ba8eccb130e0c29693b8332c771647bbc38902166d1b997d43ef7a67e"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/intermediate_firmware_b4bedca5/src/baremetal/adda.c",
+      "bytes": 12470,
+      "sha256": "188e135879529dfcab7133aff185d9a9561d0e82484d9d50db5eb822d3d262a4"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/intermediate_firmware_b4bedca5/src/baremetal/adda.h",
+      "bytes": 751,
+      "sha256": "b79321ae1b0a33b835d8380544008831659aa9907b16155b1a41442c5dea7732"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/intermediate_firmware_b4bedca5/src/baremetal/main.c",
+      "bytes": 7664,
+      "sha256": "edd2e035e006bc447c6547b3d7d411940f92fdeea8391efadcbbf812b41a74e3"
+    },
+    {
+      "path": "report/evidence/baremetal_20261028/intermediate_firmware_b4bedca5/board/baremetal/build.ps1",
+      "bytes": 2179,
+      "sha256": "15cb522e22e6d0b09d26cf9358f6acb4da7be32f3bda5393ae2da903ef43a2a0"
+    }
+  ],
+  "previous_offline_report": "report/baremetal_validation.json",
+  "initial_immutable_snapshot": {
+    "path": "build/dist/zynq_bjt_baremetal_code_20261028.zip",
+    "sha256": "f3029cd430957acd68ba28651b074fd83bfeb4dedd99019aa0ba8a3c19bb9e93"
+  },
+  "limits": [
+    "4KiB scratch test, not all OCM or long-duration stability qualification.",
+    "50MHz baseline only; target125/250 timing failure remains.",
+    "Digital pattern test does not exercise analog input transfer, front-end supply/reference or accuracy.",
+    "No output enable commanded; register readbacks do not measure terminal voltage.",
+    "No grounded-input control or real NPN scan yet; previous calibration is not qualified for modified hardware.",
+    "JTAG volatile download only; power cycling requires reload."
+  ]
+}

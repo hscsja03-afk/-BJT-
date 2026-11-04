@@ -1,0 +1,24 @@
+{
+  "python": "3.8.2 (default, Mar 13 2020, 10:14:16) \n[GCC 9.3.0]",
+  "pynq": "2.7.0",
+  "kernel": "5.4.0-xilinx-v2020.2",
+  "files": {
+    "bjt.bit": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+    "bjt.hwh": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600"
+  },
+  "overlay_loaded": true,
+  "mio_preflight": "passed",
+  "registers": {
+    "0x0": "0x41444441",
+    "0x20": "0x400",
+    "0x30": "0x2faf080",
+    "0x44": "0x54583101",
+    "0x48": "0x47504901",
+    "0x80": "0x41574701"
+  },
+  "control": 6,
+  "dac_mode": 0,
+  "analog_output_enable_commands": 0,
+  "gpio_lines_exported": 0,
+  "limit": "No converter initialization, ADC acquisition, analog measurement or TFT visual verification"
+}

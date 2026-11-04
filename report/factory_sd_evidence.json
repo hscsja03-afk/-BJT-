@@ -1,0 +1,34 @@
+{
+  "image": {
+    "path": "reference/vendor_factory/Navigator_3_8_2_user.img",
+    "bytes": 838860800,
+    "sha1": "1130B84C44384BCAF836A8CDB44FE849F2AC2770",
+    "sha256": "3e6f27ca7dc4a2d797b6979a8b5b6cf93703089b45a3589916a14d417290133c",
+    "md5": "BD5BBE18A03A7726EC38AF0738AEE1D2"
+  },
+  "target": {
+    "drive_letter_at_write": "E",
+    "bytes": 31270109184,
+    "disk_number_at_write": 1,
+    "serial": "121220160204"
+  },
+  "limitations": [
+    "This proves the factory image was written and verified; it does not prove the board boots.",
+    "Windows still exposed cached old partition geometry immediately after imaging; no reformat or second write was performed."
+  ],
+  "operator": "user",
+  "tool": "imageUSB 1.3.1006",
+  "verification": {
+    "screenshot": "report/evidence/factory_sd_imageusb_20261028.png",
+    "completed_local": "2026-10-28 18:27:30",
+    "post_image_verification": true,
+    "basis": "Observed imageUSB completion and matched MD5/SHA1, also confirmed in user-supplied screenshot",
+    "md5_drive_equals_image": true,
+    "screenshot_sha256": "0031522fa59c6682f655dcd87eee6a09e7f3b24e57ff0fa228b98be2621c3ffa",
+    "write_completed": true,
+    "sha1_drive_equals_image": true
+  },
+  "recorded_date": "2026-10-28",
+  "board_boot_observed": true,
+  "board_boot_result": "FSBL loaded from verified factory image, failed DDR sanity check before U-Boot/Linux; see report/hardware_evidence.json"
+}

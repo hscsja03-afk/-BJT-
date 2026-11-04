@@ -1,0 +1,102 @@
+{
+  "recorded_date": "2026-10-28",
+  "route": "baremetal_ocm_with_pc_uart",
+  "hardware_tested": false,
+  "user_latest_constraint": "暂时不方便接线，先完成代码",
+  "ddr_fault_fixed": false,
+  "platform_exported": true,
+  "standalone_bsp_generated": true,
+  "firmware_compiled": true,
+  "elf_and_mmu_audit": "passed",
+  "firmware_manifest": {
+    "ddr_initialized": false,
+    "storage_written": false,
+    "link_memory_bytes": 196608,
+    "ps_init_sha256": "36671b7984e8bd443e052ac5325b07ca14da9d75cc5dc591e1af11df24575624",
+    "images": {
+      "probe": {
+        "sha256": "962216c5ebdb805eff8a629eef67e6b7938652abba9937be50163beed3d503a7",
+        "entry": 0,
+        "end": 117344,
+        "remaining_low_ocm_bytes": 79264,
+        "mailbox": 44596,
+        "load_segments": [
+          {
+            "address": 0,
+            "file_bytes": 52940,
+            "memory_bytes": 52940
+          },
+          {
+            "address": 65536,
+            "file_bytes": 16404,
+            "memory_bytes": 51808
+          }
+        ],
+        "symbols_sha256": "cf02085fa376877daf29abdb3061ebe5e4aec66baa515220fde744b3dcda9ef6",
+        "ddr_mmu_fault_sections": 1023
+      },
+      "adda": {
+        "sha256": "aed04b1d536ae2a5054ab2778749702d20e5582e5bd75948a29b5ae5adefa143",
+        "entry": 0,
+        "end": 125664,
+        "remaining_low_ocm_bytes": 70944,
+        "mailbox": 54388,
+        "load_segments": [
+          {
+            "address": 0,
+            "file_bytes": 81940,
+            "memory_bytes": 125664
+          }
+        ],
+        "symbols_sha256": "c452db0c08e301a2fe1d53d9e1a6ca2dbfe42edd55b04ac9c85326bb41e79bb6",
+        "ddr_mmu_fault_sections": 1023
+      }
+    },
+    "inputs": {
+      "src/baremetal/main.c": "edd2e035e006bc447c6547b3d7d411940f92fdeea8391efadcbbf812b41a74e3",
+      "src/baremetal/adda.c": "3dd095e0dbcc22e97b230acc521f045e4cbf782d5bc356b7b0c60cf651029590",
+      "src/baremetal/adda.h": "b79321ae1b0a33b835d8380544008831659aa9907b16155b1a41442c5dea7732",
+      "board/ocm.ld": "444dc96ba8eccb130e0c29693b8332c771647bbc38902166d1b997d43ef7a67e",
+      "board/baremetal/build.ps1": "5568d3a925c28234de95fc6e6dc6df90ea92a79cdd4e5d07b9f5c0fd45691fb3"
+    },
+    "bsp_xparameters_sha256": "4a3bfce89f530646eb164ba21c3b4c87ac43cbfb1058fc408a2a5533bacd5cfb",
+    "xsa_sha256": "5f8aeab7fd9ecc1ae00ddef5798b121bb5e2e7a2f7dd6615ca5ee24d4480247d",
+    "build_id": 3375385890
+  },
+  "python_tests": {
+    "python313": 37,
+    "python3810": 37,
+    "result": "passed"
+  },
+  "c_fault_cases": 8,
+  "c_fault_result": "passed_native_host_pin_level_SPI_model",
+  "script_checks": "Python compiled; PowerShell parsed; Tcl command/brace completeness only; no live Tcl execution",
+  "evidence": [
+    {
+      "path": "report/evidence/baremetal_export.log",
+      "sha256": "eaadf24d043109c5f9ad69b46aa8f5254759d3858743ee1f8960b67c67b59076"
+    },
+    {
+      "path": "report/evidence/baremetal_bsp.log",
+      "sha256": "f4c5d40c546cb3f08339fc0402b32129694c17c8c83366add9cef9ab4e09c406"
+    },
+    {
+      "path": "report/evidence/baremetal_python_validation.log",
+      "sha256": "382395db96f16e0915cb78d7dcec9635918046b26691679a82d8f7301c0ebd84"
+    },
+    {
+      "path": "report/evidence/baremetal_python38_validation.log",
+      "sha256": "7f3362fdbcbad88104bf3ccc62164839662812284266590e6efaf9886d383af7"
+    },
+    {
+      "path": "report/evidence/baremetal_c_faults.log",
+      "sha256": "02c3789242aa67a9a20265313a6281d04992b81001882e66e5cee7f99ad7a50b"
+    }
+  ],
+  "limits": [
+    "No hardware connection or download this turn. UART and all ADC/DAC hardware behavior unverified.",
+    "Only baseline50 command service and DC setpoints; no arbitrary waveform upload command yet.",
+    "No BOOT.BIN or power-on autonomous boot image; JTAG is the current download route.",
+    "Host checks and MMU/ELF inspection are not whole-OCM or analog qualification."
+  ]
+}

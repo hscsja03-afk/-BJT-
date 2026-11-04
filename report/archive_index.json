@@ -1,0 +1,376 @@
+[
+  {
+    "id": "datasheets",
+    "files": 12,
+    "archive_parts": [
+      "data/datasheets/datasheets.zip"
+    ],
+    "restored_paths": [
+      "data"
+    ]
+  },
+  {
+    "id": "evidence_adc_rate_raise_20261102",
+    "files": 102,
+    "archive_parts": [
+      "data/evidence/evidence_adc_rate_raise_20261102.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_bjt_all_profiles_20261030",
+    "files": 1,
+    "archive_parts": [
+      "data/evidence/evidence_bjt_all_profiles_20261030.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_desktop_fast_fixed_axes_20261031",
+    "files": 61,
+    "archive_parts": [
+      "data/evidence/evidence_desktop_fast_fixed_axes_20261031.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_desktop_progressive_20261102",
+    "files": 2,
+    "archive_parts": [
+      "data/evidence/evidence_desktop_progressive_20261102.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_desktop_responsiveness_20261031",
+    "files": 1,
+    "archive_parts": [
+      "data/evidence/evidence_desktop_responsiveness_20261031.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_evidence",
+    "files": 63,
+    "archive_parts": [
+      "data/evidence/evidence_evidence.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_input_settling_20261101",
+    "files": 59,
+    "archive_parts": [
+      "data/evidence/evidence_input_settling_20261101.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_lcd_ddr_20261103",
+    "files": 5,
+    "archive_parts": [
+      "data/evidence/evidence_lcd_ddr_20261103.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_linked_sweep_parameters_20261031",
+    "files": 1,
+    "archive_parts": [
+      "data/evidence/evidence_linked_sweep_parameters_20261031.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_npn_pulse_fix_20261103",
+    "files": 14,
+    "archive_parts": [
+      "data/evidence/evidence_npn_pulse_fix_20261103.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_pnp_pulse_fix_20261103",
+    "files": 6,
+    "archive_parts": [
+      "data/evidence/evidence_pnp_pulse_fix_20261103.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_pnp_pulse_window_20261103",
+    "files": 104,
+    "archive_parts": [
+      "data/evidence/evidence_pnp_pulse_window_20261103.zip.001",
+      "data/evidence/evidence_pnp_pulse_window_20261103.zip.002",
+      "data/evidence/evidence_pnp_pulse_window_20261103.zip.003",
+      "data/evidence/evidence_pnp_pulse_window_20261103.zip.004"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_pulse_fix_20261102",
+    "files": 19,
+    "archive_parts": [
+      "data/evidence/evidence_pulse_fix_20261102.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_rx1_generator_nominal_20261030",
+    "files": 159,
+    "archive_parts": [
+      "data/evidence/evidence_rx1_generator_nominal_20261030.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_rx2_ac_generator_20261031",
+    "files": 38,
+    "archive_parts": [
+      "data/evidence/evidence_rx2_ac_generator_20261031.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_rx2_generator_nominal_20261031",
+    "files": 289,
+    "archive_parts": [
+      "data/evidence/evidence_rx2_generator_nominal_20261031.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_tx23_calibration_20261030",
+    "files": 405,
+    "archive_parts": [
+      "data/evidence/evidence_tx23_calibration_20261030.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_tx23_recalibration_20261103",
+    "files": 373,
+    "archive_parts": [
+      "data/evidence/evidence_tx23_recalibration_20261103.zip.001",
+      "data/evidence/evidence_tx23_recalibration_20261103.zip.002"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_tx3_lcd_compat_20261103",
+    "files": 1,
+    "archive_parts": [
+      "data/evidence/evidence_tx3_lcd_compat_20261103.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_tx3_multi_final_20261101",
+    "files": 75,
+    "archive_parts": [
+      "data/evidence/evidence_tx3_multi_final_20261101.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_tx3_multi_localzero_20261101",
+    "files": 18,
+    "archive_parts": [
+      "data/evidence/evidence_tx3_multi_localzero_20261101.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_tx3_multi_refined_20261101",
+    "files": 23,
+    "archive_parts": [
+      "data/evidence/evidence_tx3_multi_refined_20261101.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_tx3_multi_release_20261102",
+    "files": 16,
+    "archive_parts": [
+      "data/evidence/evidence_tx3_multi_release_20261102.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_tx3_multi_resume_20261101",
+    "files": 57,
+    "archive_parts": [
+      "data/evidence/evidence_tx3_multi_resume_20261101.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_tx3_sine5m_20261102",
+    "files": 646,
+    "archive_parts": [
+      "data/evidence/evidence_tx3_sine5m_20261102.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_tx3_warm125_20261101",
+    "files": 44,
+    "archive_parts": [
+      "data/evidence/evidence_tx3_warm125_20261101.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_tx3_warm125_trim_20261101",
+    "files": 12,
+    "archive_parts": [
+      "data/evidence/evidence_tx3_warm125_trim_20261101.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_tx3_warm_label_20261101",
+    "files": 1,
+    "archive_parts": [
+      "data/evidence/evidence_tx3_warm_label_20261101.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_tx_wave_calibration_20261103",
+    "files": 140,
+    "archive_parts": [
+      "data/evidence/evidence_tx_wave_calibration_20261103.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_ui_layout_20261101",
+    "files": 1,
+    "archive_parts": [
+      "data/evidence/evidence_ui_layout_20261101.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_ve_scope_meter_20261101",
+    "files": 147,
+    "archive_parts": [
+      "data/evidence/evidence_ve_scope_meter_20261101.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "evidence_workbench_20261101",
+    "files": 292,
+    "archive_parts": [
+      "data/evidence/evidence_workbench_20261101.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "measurement_results",
+    "files": 178,
+    "archive_parts": [
+      "board/results/measurement_results.zip.001",
+      "board/results/measurement_results.zip.002",
+      "board/results/measurement_results.zip.003"
+    ],
+    "restored_paths": [
+      "board"
+    ]
+  },
+  {
+    "id": "source_records",
+    "files": 2,
+    "archive_parts": [
+      "data/evidence/source_records.zip"
+    ],
+    "restored_paths": [
+      "report"
+    ]
+  },
+  {
+    "id": "windows_runtime",
+    "files": 1991,
+    "archive_parts": [
+      "board/desktop/windows_runtime.zip.001",
+      "board/desktop/windows_runtime.zip.002",
+      "board/desktop/windows_runtime.zip.003",
+      "board/desktop/windows_runtime.zip.004",
+      "board/desktop/windows_runtime.zip.005",
+      "board/desktop/windows_runtime.zip.006",
+      "board/desktop/windows_runtime.zip.007",
+      "board/desktop/windows_runtime.zip.008",
+      "board/desktop/windows_runtime.zip.009"
+    ],
+    "restored_paths": [
+      "build"
+    ]
+  }
+]

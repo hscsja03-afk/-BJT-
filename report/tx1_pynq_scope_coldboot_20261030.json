@@ -1,0 +1,1171 @@
+{
+  "started": "2026-10-30T23:11:58.641506+08:00",
+  "connection": "TX1 SMA to CH3, DC, x1, transistor fixture disconnected",
+  "events": [
+    {
+      "event": "session_closed",
+      "value": {
+        "cleanup_errors": []
+      }
+    }
+  ],
+  "points": [
+    {
+      "label": "initialized_muted",
+      "expected_nominal_v": 0,
+      "state": {
+        "protocol": 1,
+        "simulated": false,
+        "initialized": true,
+        "hostname": "pynq",
+        "python": "3.8.2",
+        "analog_calibration_qualified": false,
+        "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+        "identity": {
+          "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+          "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+          "adc_divider": 20,
+          "dac_divider": 20,
+          "measured_clock_hz": [
+            49958176.285304114,
+            49955923.706268065,
+            49955395.44658262
+          ],
+          "digital_self_test": "passed",
+          "analog_calibration_qualified": false
+        },
+        "gpio": {
+          "output": 0,
+          "sense": 0,
+          "sequence": 0
+        },
+        "outputs": [
+          {
+            "code": 0,
+            "enabled": false,
+            "code_basis": "pending_until_enabled"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          }
+        ],
+        "sample_rates_hz": [
+          49955923.706268065,
+          49958176.285304114
+        ],
+        "output_settings": {}
+      },
+      "reading": {
+        "mean_v": 0.00116720586,
+        "std_v": 0.0005539362472842795,
+        "readings_v": [
+          0.0005853272,
+          0.001270905,
+          0.0007189941,
+          0.002157135,
+          0.001103668
+        ],
+        "min_v": -0.02,
+        "max_v": 0.02,
+        "scale_v": 0.5,
+        "offset_v": 0.0
+      }
+    },
+    {
+      "label": "voltage_0.5",
+      "expected_nominal_v": 0.5,
+      "state": {
+        "protocol": 1,
+        "simulated": false,
+        "initialized": true,
+        "hostname": "pynq",
+        "python": "3.8.2",
+        "analog_calibration_qualified": false,
+        "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+        "identity": {
+          "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+          "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+          "adc_divider": 20,
+          "dac_divider": 20,
+          "measured_clock_hz": [
+            49958176.285304114,
+            49955923.706268065,
+            49955395.44658262
+          ],
+          "digital_self_test": "passed",
+          "analog_calibration_qualified": false
+        },
+        "gpio": {
+          "output": 0,
+          "sense": 0,
+          "sequence": 0
+        },
+        "outputs": [
+          {
+            "code": 819,
+            "enabled": true,
+            "code_basis": "device_register_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          }
+        ],
+        "sample_rates_hz": [
+          49955923.706268065,
+          49958176.285304114
+        ],
+        "output_settings": {
+          "0": {
+            "channel": 0,
+            "action": "start",
+            "mode": "dc_voltage",
+            "offset": 0.5,
+            "wiring_confirmed": true
+          }
+        }
+      },
+      "reading": {
+        "mean_v": 0.49745142,
+        "std_v": 0.0014853055017739502,
+        "readings_v": [
+          0.4981604,
+          0.4974246,
+          0.4948828,
+          0.4973578,
+          0.4994315
+        ],
+        "min_v": 0.48,
+        "max_v": 0.52,
+        "scale_v": 0.5,
+        "offset_v": 0.0
+      }
+    },
+    {
+      "label": "voltage_1.0",
+      "expected_nominal_v": 1.0,
+      "state": {
+        "protocol": 1,
+        "simulated": false,
+        "initialized": true,
+        "hostname": "pynq",
+        "python": "3.8.2",
+        "analog_calibration_qualified": false,
+        "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+        "identity": {
+          "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+          "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+          "adc_divider": 20,
+          "dac_divider": 20,
+          "measured_clock_hz": [
+            49958176.285304114,
+            49955923.706268065,
+            49955395.44658262
+          ],
+          "digital_self_test": "passed",
+          "analog_calibration_qualified": false
+        },
+        "gpio": {
+          "output": 0,
+          "sense": 0,
+          "sequence": 0
+        },
+        "outputs": [
+          {
+            "code": 1638,
+            "enabled": true,
+            "code_basis": "device_register_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          }
+        ],
+        "sample_rates_hz": [
+          49955923.706268065,
+          49958176.285304114
+        ],
+        "output_settings": {
+          "0": {
+            "channel": 0,
+            "action": "start",
+            "mode": "dc_voltage",
+            "offset": 1.0,
+            "wiring_confirmed": true
+          }
+        }
+      },
+      "reading": {
+        "mean_v": 1.004595,
+        "std_v": 0.0010053272104145737,
+        "readings_v": [
+          1.003595,
+          1.005217,
+          1.0051,
+          1.005836,
+          1.003227
+        ],
+        "min_v": 0.98,
+        "max_v": 1.04,
+        "scale_v": 0.5,
+        "offset_v": 0.0
+      }
+    },
+    {
+      "label": "voltage_1.25",
+      "expected_nominal_v": 1.25,
+      "state": {
+        "protocol": 1,
+        "simulated": false,
+        "initialized": true,
+        "hostname": "pynq",
+        "python": "3.8.2",
+        "analog_calibration_qualified": false,
+        "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+        "identity": {
+          "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+          "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+          "adc_divider": 20,
+          "dac_divider": 20,
+          "measured_clock_hz": [
+            49958176.285304114,
+            49955923.706268065,
+            49955395.44658262
+          ],
+          "digital_self_test": "passed",
+          "analog_calibration_qualified": false
+        },
+        "gpio": {
+          "output": 0,
+          "sense": 0,
+          "sequence": 0
+        },
+        "outputs": [
+          {
+            "code": 2048,
+            "enabled": true,
+            "code_basis": "device_register_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          }
+        ],
+        "sample_rates_hz": [
+          49955923.706268065,
+          49958176.285304114
+        ],
+        "output_settings": {
+          "0": {
+            "channel": 0,
+            "action": "start",
+            "mode": "dc_voltage",
+            "offset": 1.25,
+            "wiring_confirmed": true
+          }
+        }
+      },
+      "reading": {
+        "mean_v": 1.2515384,
+        "std_v": 0.0016377217834540538,
+        "readings_v": [
+          1.251271,
+          1.250736,
+          1.251003,
+          1.254699,
+          1.249983
+        ],
+        "min_v": 1.24,
+        "max_v": 1.28,
+        "scale_v": 0.5,
+        "offset_v": 0.0
+      }
+    },
+    {
+      "label": "raw_code_2000",
+      "expected_nominal_v": 1.220703125,
+      "state": {
+        "protocol": 1,
+        "simulated": false,
+        "initialized": true,
+        "hostname": "pynq",
+        "python": "3.8.2",
+        "analog_calibration_qualified": false,
+        "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+        "identity": {
+          "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+          "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+          "adc_divider": 20,
+          "dac_divider": 20,
+          "measured_clock_hz": [
+            49958176.285304114,
+            49955923.706268065,
+            49955395.44658262
+          ],
+          "digital_self_test": "passed",
+          "analog_calibration_qualified": false
+        },
+        "gpio": {
+          "output": 0,
+          "sense": 0,
+          "sequence": 0
+        },
+        "outputs": [
+          {
+            "code": 2000,
+            "enabled": true,
+            "code_basis": "device_register_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          }
+        ],
+        "sample_rates_hz": [
+          49955923.706268065,
+          49958176.285304114
+        ],
+        "output_settings": {
+          "0": {
+            "channel": 0,
+            "action": "apply",
+            "mode": "dc_code",
+            "offset": 2000,
+            "wiring_confirmed": true
+          }
+        }
+      },
+      "reading": {
+        "mean_v": 1.2281808,
+        "std_v": 0.0007298644805715728,
+        "readings_v": [
+          1.228712,
+          1.229047,
+          1.227609,
+          1.227074,
+          1.228462
+        ],
+        "min_v": 1.2,
+        "max_v": 1.26,
+        "scale_v": 0.5,
+        "offset_v": 0.0
+      }
+    },
+    {
+      "label": "live_zero",
+      "expected_nominal_v": 0,
+      "state": {
+        "protocol": 1,
+        "simulated": false,
+        "initialized": true,
+        "hostname": "pynq",
+        "python": "3.8.2",
+        "analog_calibration_qualified": false,
+        "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+        "identity": {
+          "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+          "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+          "adc_divider": 20,
+          "dac_divider": 20,
+          "measured_clock_hz": [
+            49958176.285304114,
+            49955923.706268065,
+            49955395.44658262
+          ],
+          "digital_self_test": "passed",
+          "analog_calibration_qualified": false
+        },
+        "gpio": {
+          "output": 0,
+          "sense": 0,
+          "sequence": 0
+        },
+        "outputs": [
+          {
+            "code": 0,
+            "enabled": true,
+            "code_basis": "device_register_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          }
+        ],
+        "sample_rates_hz": [
+          49955923.706268065,
+          49958176.285304114
+        ],
+        "output_settings": {
+          "0": {
+            "channel": 0,
+            "action": "apply",
+            "mode": "dc_voltage",
+            "offset": 0,
+            "wiring_confirmed": true
+          }
+        }
+      },
+      "reading": {
+        "mean_v": -0.0002608337619999999,
+        "std_v": 0.000938809288750135,
+        "readings_v": [
+          -0.001956482,
+          -0.000317688,
+          0.0009030151,
+          1.678467e-05,
+          5.020142e-05
+        ],
+        "min_v": -0.02,
+        "max_v": 0.02,
+        "scale_v": 0.5,
+        "offset_v": 0.0
+      }
+    },
+    {
+      "label": "live_back_to_1V",
+      "expected_nominal_v": 1,
+      "state": {
+        "protocol": 1,
+        "simulated": false,
+        "initialized": true,
+        "hostname": "pynq",
+        "python": "3.8.2",
+        "analog_calibration_qualified": false,
+        "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+        "identity": {
+          "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+          "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+          "adc_divider": 20,
+          "dac_divider": 20,
+          "measured_clock_hz": [
+            49958176.285304114,
+            49955923.706268065,
+            49955395.44658262
+          ],
+          "digital_self_test": "passed",
+          "analog_calibration_qualified": false
+        },
+        "gpio": {
+          "output": 0,
+          "sense": 0,
+          "sequence": 0
+        },
+        "outputs": [
+          {
+            "code": 1638,
+            "enabled": true,
+            "code_basis": "device_register_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          }
+        ],
+        "sample_rates_hz": [
+          49955923.706268065,
+          49958176.285304114
+        ],
+        "output_settings": {
+          "0": {
+            "channel": 0,
+            "action": "apply",
+            "mode": "dc_voltage",
+            "offset": 1,
+            "wiring_confirmed": true
+          }
+        }
+      },
+      "reading": {
+        "mean_v": 1.0066824,
+        "std_v": 0.0010037265763145088,
+        "readings_v": [
+          1.007241,
+          1.004783,
+          1.006555,
+          1.007525,
+          1.007308
+        ],
+        "min_v": 0.98,
+        "max_v": 1.04,
+        "scale_v": 0.5,
+        "offset_v": 0.0
+      }
+    },
+    {
+      "label": "stopped",
+      "expected_nominal_v": 0,
+      "state": {
+        "protocol": 1,
+        "simulated": false,
+        "initialized": true,
+        "hostname": "pynq",
+        "python": "3.8.2",
+        "analog_calibration_qualified": false,
+        "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+        "identity": {
+          "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+          "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+          "adc_divider": 20,
+          "dac_divider": 20,
+          "measured_clock_hz": [
+            49958176.285304114,
+            49955923.706268065,
+            49955395.44658262
+          ],
+          "digital_self_test": "passed",
+          "analog_calibration_qualified": false
+        },
+        "gpio": {
+          "output": 0,
+          "sense": 0,
+          "sequence": 0
+        },
+        "outputs": [
+          {
+            "code": 1638,
+            "enabled": false,
+            "code_basis": "device_register_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          }
+        ],
+        "sample_rates_hz": [
+          49955923.706268065,
+          49958176.285304114
+        ],
+        "output_settings": {
+          "0": {
+            "channel": 0,
+            "action": "apply",
+            "mode": "dc_voltage",
+            "offset": 1,
+            "wiring_confirmed": true
+          }
+        }
+      },
+      "reading": {
+        "mean_v": 0.0039765930000000005,
+        "std_v": 0.0006965075404031172,
+        "readings_v": [
+          0.004431457,
+          0.004180603,
+          0.002993317,
+          0.003377991,
+          0.004899597
+        ],
+        "min_v": -0.02,
+        "max_v": 0.02,
+        "scale_v": 0.5,
+        "offset_v": 0.0
+      }
+    },
+    {
+      "label": "repeated_apply_stays_muted",
+      "expected_nominal_v": 0,
+      "state": {
+        "protocol": 1,
+        "simulated": false,
+        "initialized": true,
+        "hostname": "pynq",
+        "python": "3.8.2",
+        "analog_calibration_qualified": false,
+        "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+        "identity": {
+          "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+          "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+          "adc_divider": 20,
+          "dac_divider": 20,
+          "measured_clock_hz": [
+            49958176.285304114,
+            49955923.706268065,
+            49955395.44658262
+          ],
+          "digital_self_test": "passed",
+          "analog_calibration_qualified": false
+        },
+        "gpio": {
+          "output": 0,
+          "sense": 0,
+          "sequence": 0
+        },
+        "outputs": [
+          {
+            "code": 1638,
+            "enabled": false,
+            "code_basis": "pending_until_enabled"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          }
+        ],
+        "sample_rates_hz": [
+          49955923.706268065,
+          49958176.285304114
+        ],
+        "output_settings": {
+          "0": {
+            "channel": 0,
+            "action": "apply",
+            "mode": "dc_voltage",
+            "offset": 1,
+            "wiring_confirmed": true
+          }
+        }
+      },
+      "reading": {
+        "mean_v": 0.0036722106000000006,
+        "std_v": 0.001257766407491725,
+        "readings_v": [
+          0.002056885,
+          0.003428039,
+          0.005317688,
+          0.004899597,
+          0.002658844
+        ],
+        "min_v": -0.02,
+        "max_v": 0.02,
+        "scale_v": 0.5,
+        "offset_v": 0.0
+      }
+    },
+    {
+      "label": "restart_after_repeated_apply",
+      "expected_nominal_v": 1,
+      "state": {
+        "protocol": 1,
+        "simulated": false,
+        "initialized": true,
+        "hostname": "pynq",
+        "python": "3.8.2",
+        "analog_calibration_qualified": false,
+        "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+        "identity": {
+          "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+          "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+          "adc_divider": 20,
+          "dac_divider": 20,
+          "measured_clock_hz": [
+            49958176.285304114,
+            49955923.706268065,
+            49955395.44658262
+          ],
+          "digital_self_test": "passed",
+          "analog_calibration_qualified": false
+        },
+        "gpio": {
+          "output": 0,
+          "sense": 0,
+          "sequence": 0
+        },
+        "outputs": [
+          {
+            "code": 1638,
+            "enabled": true,
+            "code_basis": "device_register_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          }
+        ],
+        "sample_rates_hz": [
+          49955923.706268065,
+          49958176.285304114
+        ],
+        "output_settings": {
+          "0": {
+            "channel": 0,
+            "action": "start",
+            "mode": "dc_voltage",
+            "offset": 1,
+            "wiring_confirmed": true
+          }
+        }
+      },
+      "reading": {
+        "mean_v": 1.0047256,
+        "std_v": 0.0007181937343084695,
+        "readings_v": [
+          1.003963,
+          1.004231,
+          1.005869,
+          1.005251,
+          1.004314
+        ],
+        "min_v": 0.98,
+        "max_v": 1.04,
+        "scale_v": 0.5,
+        "offset_v": 0.0
+      }
+    },
+    {
+      "label": "stopped_again",
+      "expected_nominal_v": 0,
+      "state": {
+        "protocol": 1,
+        "simulated": false,
+        "initialized": true,
+        "hostname": "pynq",
+        "python": "3.8.2",
+        "analog_calibration_qualified": false,
+        "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+        "identity": {
+          "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+          "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+          "adc_divider": 20,
+          "dac_divider": 20,
+          "measured_clock_hz": [
+            49958176.285304114,
+            49955923.706268065,
+            49955395.44658262
+          ],
+          "digital_self_test": "passed",
+          "analog_calibration_qualified": false
+        },
+        "gpio": {
+          "output": 0,
+          "sense": 0,
+          "sequence": 0
+        },
+        "outputs": [
+          {
+            "code": 1638,
+            "enabled": false,
+            "code_basis": "device_register_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          }
+        ],
+        "sample_rates_hz": [
+          49955923.706268065,
+          49958176.285304114
+        ],
+        "output_settings": {
+          "0": {
+            "channel": 0,
+            "action": "start",
+            "mode": "dc_voltage",
+            "offset": 1,
+            "wiring_confirmed": true
+          }
+        }
+      },
+      "reading": {
+        "mean_v": 0.00018728631999999994,
+        "std_v": 0.0015264075829240359,
+        "readings_v": [
+          0.001404724,
+          -0.002107086,
+          0.0001504517,
+          -0.0007189941,
+          0.002207336
+        ],
+        "min_v": -0.02,
+        "max_v": 0.02,
+        "scale_v": 0.5,
+        "offset_v": 0.0
+      }
+    },
+    {
+      "label": "start_at_zero",
+      "expected_nominal_v": 0,
+      "state": {
+        "protocol": 1,
+        "simulated": false,
+        "initialized": true,
+        "hostname": "pynq",
+        "python": "3.8.2",
+        "analog_calibration_qualified": false,
+        "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+        "identity": {
+          "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+          "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+          "adc_divider": 20,
+          "dac_divider": 20,
+          "measured_clock_hz": [
+            49958176.285304114,
+            49955923.706268065,
+            49955395.44658262
+          ],
+          "digital_self_test": "passed",
+          "analog_calibration_qualified": false
+        },
+        "gpio": {
+          "output": 0,
+          "sense": 0,
+          "sequence": 0
+        },
+        "outputs": [
+          {
+            "code": 0,
+            "enabled": true,
+            "code_basis": "device_register_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          }
+        ],
+        "sample_rates_hz": [
+          49955923.706268065,
+          49958176.285304114
+        ],
+        "output_settings": {
+          "0": {
+            "channel": 0,
+            "action": "start",
+            "mode": "dc_voltage",
+            "offset": 0,
+            "wiring_confirmed": true
+          }
+        }
+      },
+      "reading": {
+        "mean_v": 0.00171908568,
+        "std_v": 0.0011324093429827121,
+        "readings_v": [
+          0.002642212,
+          0.0002674866,
+          0.0007357788,
+          0.001655579,
+          0.003294372
+        ],
+        "min_v": -0.02,
+        "max_v": 0.02,
+        "scale_v": 0.5,
+        "offset_v": 0.0
+      }
+    },
+    {
+      "label": "zero_start_then_1V",
+      "expected_nominal_v": 1,
+      "state": {
+        "protocol": 1,
+        "simulated": false,
+        "initialized": true,
+        "hostname": "pynq",
+        "python": "3.8.2",
+        "analog_calibration_qualified": false,
+        "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+        "identity": {
+          "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+          "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+          "adc_divider": 20,
+          "dac_divider": 20,
+          "measured_clock_hz": [
+            49958176.285304114,
+            49955923.706268065,
+            49955395.44658262
+          ],
+          "digital_self_test": "passed",
+          "analog_calibration_qualified": false
+        },
+        "gpio": {
+          "output": 0,
+          "sense": 0,
+          "sequence": 0
+        },
+        "outputs": [
+          {
+            "code": 1638,
+            "enabled": true,
+            "code_basis": "device_register_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          }
+        ],
+        "sample_rates_hz": [
+          49955923.706268065,
+          49958176.285304114
+        ],
+        "output_settings": {
+          "0": {
+            "channel": 0,
+            "action": "apply",
+            "mode": "dc_voltage",
+            "offset": 1,
+            "wiring_confirmed": true
+          }
+        }
+      },
+      "reading": {
+        "mean_v": 1.0060334,
+        "std_v": 0.0005167028546466203,
+        "readings_v": [
+          1.005485,
+          1.005384,
+          1.006438,
+          1.006689,
+          1.006171
+        ],
+        "min_v": 0.98,
+        "max_v": 1.04,
+        "scale_v": 0.5,
+        "offset_v": 0.0
+      }
+    },
+    {
+      "label": "final_stop",
+      "expected_nominal_v": 0,
+      "state": {
+        "protocol": 1,
+        "simulated": false,
+        "initialized": true,
+        "hostname": "pynq",
+        "python": "3.8.2",
+        "analog_calibration_qualified": false,
+        "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+        "identity": {
+          "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+          "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+          "adc_divider": 20,
+          "dac_divider": 20,
+          "measured_clock_hz": [
+            49958176.285304114,
+            49955923.706268065,
+            49955395.44658262
+          ],
+          "digital_self_test": "passed",
+          "analog_calibration_qualified": false
+        },
+        "gpio": {
+          "output": 0,
+          "sense": 0,
+          "sequence": 0
+        },
+        "outputs": [
+          {
+            "code": 1638,
+            "enabled": false,
+            "code_basis": "device_register_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          },
+          {
+            "code": 32768,
+            "enabled": false,
+            "code_basis": "host_table_commit_ack_not_analog_readback"
+          }
+        ],
+        "sample_rates_hz": [
+          49955923.706268065,
+          49958176.285304114
+        ],
+        "output_settings": {
+          "0": {
+            "channel": 0,
+            "action": "apply",
+            "mode": "dc_voltage",
+            "offset": 1,
+            "wiring_confirmed": true
+          }
+        }
+      },
+      "reading": {
+        "mean_v": 0.00151840204,
+        "std_v": 0.0005468318736519355,
+        "readings_v": [
+          0.001120453,
+          0.002541809,
+          0.001438141,
+          0.0009866332,
+          0.001504974
+        ],
+        "min_v": -0.02,
+        "max_v": 0.02,
+        "scale_v": 0.5,
+        "offset_v": 0.0
+      }
+    }
+  ],
+  "passed": true,
+  "scope_relative": true,
+  "calibration_changed": false,
+  "scope_idn": "RIGOL TECHNOLOGIES,DS1104Z,DS1ZA173719283,00.04.03.SP1",
+  "connected": {
+    "agent_sha256": "a3c98b0769da6b704b365bd4851263426af49bd0f062ac78a1f1e259b1802790",
+    "remote": "/home/xilinx/.zynq_bjt_desktop/4591e228270b7977c0d5",
+    "overlay_reloaded": false,
+    "status": {
+      "protocol": 1,
+      "simulated": false,
+      "initialized": false,
+      "hostname": "pynq",
+      "python": "3.8.2",
+      "analog_calibration_qualified": false,
+      "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+      "overlay_loaded": true,
+      "registers": {
+        "0x0": 1094992961,
+        "0x20": 1024,
+        "0x44": 1415065857,
+        "0x48": 1196443905,
+        "0x80": 1096238849
+      },
+      "dac_rate_hz": 50000000,
+      "control": 3,
+      "dac_mode": 0,
+      "identity": {
+        "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+        "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600"
+      }
+    }
+  },
+  "initialized": {
+    "protocol": 1,
+    "simulated": false,
+    "initialized": true,
+    "hostname": "pynq",
+    "python": "3.8.2",
+    "analog_calibration_qualified": false,
+    "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+    "identity": {
+      "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+      "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+      "adc_divider": 20,
+      "dac_divider": 20,
+      "measured_clock_hz": [
+        49958176.285304114,
+        49955923.706268065,
+        49955395.44658262
+      ],
+      "digital_self_test": "passed",
+      "analog_calibration_qualified": false
+    },
+    "gpio": {
+      "output": 0,
+      "sense": 0,
+      "sequence": 0
+    },
+    "outputs": [
+      {
+        "code": 0,
+        "enabled": false,
+        "code_basis": "pending_until_enabled"
+      },
+      {
+        "code": 32768,
+        "enabled": false,
+        "code_basis": "host_table_commit_ack_not_analog_readback"
+      },
+      {
+        "code": 32768,
+        "enabled": false,
+        "code_basis": "host_table_commit_ack_not_analog_readback"
+      }
+    ],
+    "sample_rates_hz": [
+      49955923.706268065,
+      49958176.285304114
+    ],
+    "output_settings": {}
+  },
+  "close": {
+    "closed": true,
+    "cleanup_confirmed": true
+  },
+  "after_close": {
+    "mean_v": 0.0013478087999999999,
+    "std_v": 0.0018737252944682579,
+    "readings_v": [
+      0.001304321,
+      0.003795929,
+      -0.001973266,
+      0.00157196,
+      0.0020401
+    ],
+    "min_v": -0.02,
+    "max_v": 0.04,
+    "scale_v": 0.5,
+    "offset_v": 0.0
+  }
+}

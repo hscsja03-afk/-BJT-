@@ -1,0 +1,58 @@
+{
+  "recorded_local": "2026-10-30 00:35:00 Asia/Shanghai",
+  "board": {
+    "part": "xc7z020",
+    "carrier": "custom ADDA baseboard",
+    "boot_mode_latest_read": 0,
+    "boot_mode_name": "JTAG",
+    "ddr": {
+      "evidence": "report/ddr_new_board_20261029.json",
+      "comparisons": 65536,
+      "mismatches": 0,
+      "qualification_scope": "bounded region/pattern diagnostic; not full capacity or PVT qualification"
+    }
+  },
+  "emmc": {
+    "target_cid": "4dbea069 39381114 35384133 00d60103",
+    "capacity_bytes": 7818182656,
+    "image_path": "D:/FPGA/WSL/PYNQ-work/ZYNQ-7020-2.7.0-emmc-fit.img",
+    "image_bytes": 7653556224,
+    "image_sha256": "d762165b6a0fb2f7bcf2132ebb46c765bfa9f0069fed4c93ced69ac2e7722fdc",
+    "chunk_bytes": 33554432,
+    "chunks_total": 229,
+    "chunks_readback_crc_verified": 229,
+    "transfer_log": "build/logs/emmc_network_resume_20261029_215015.log",
+    "qspi_written": false
+  },
+  "overlay": {
+    "vivado": "2026.1",
+    "bit_path": "build/work/pynq_custom50/bjt.bit",
+    "hwh_path": "build/work/pynq_custom50/bjt.hwh",
+    "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+    "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+    "jtag_test": "passed",
+    "readbacks": {
+      "adda_id": "0x41444441",
+      "snapshot_words": 1024,
+      "tx1_id": "0x54583101",
+      "gpio_id": "0x47504901",
+      "awg_id": "0x41574701",
+      "dac_rate_hz": 50000000
+    },
+    "analog_output_enable_commands": 0,
+    "storage_written_by_jtag_test": false,
+    "test_evidence": "report/pynq_custom50_jtag_20261030_003445.json"
+  },
+  "software": {
+    "rootfs": "PYNQ 2.7 / Ubuntu 20.04 / Python 3.8",
+    "linux_booted": false,
+    "pynq_running": false,
+    "uart_port": "COM7 (CH340 present; no Linux boot log captured yet)",
+    "notebook_simulation_tests": "13 characteristic tests passed with optional dependencies installed",
+    "sim_suite": "37 tests passed",
+    "tft_visual_test": false,
+    "bjt_fixture_connected": false,
+    "analog_measurement": false
+  },
+  "next_required_action": "Power off, select SD1/eMMC boot on the core-board strap switches, power on, and inspect UART/Linux/PYNQ startup."
+}

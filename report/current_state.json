@@ -1,0 +1,346 @@
+{
+  "recorded_date": "2026-10-30",
+  "timezone": "Asia/Shanghai",
+  "goal_complete": false,
+  "stage": "pynq_image_written_jtag_overlay_passed_emmc_boot_strap_pending",
+  "baseline50": {
+    "vivado": "2026.1",
+    "synthesis_implementation": "passed",
+    "wns_ns": 1.813,
+    "whs_ns": 0.025,
+    "lut": 3158,
+    "ff": 2399,
+    "bit_hwh_integrity_and_mmio_address": "passed",
+    "board_tested": true,
+    "boot_ps_compatible": "DDR-disabled PS startup/OCM and ADDA digital initialization passed on custom carrier",
+    "board_test_scope": "digital_only_normal_analog_samples_overrange"
+  },
+  "target125_250": {
+    "synthesis_implementation": "completed",
+    "static_timing": "failed",
+    "wns_ns": -8.235,
+    "whs_ns": -2.072,
+    "bit_exported": false
+  },
+  "linux_platform": {
+    "xsa_generated": true,
+    "ps_settings_basis": "vendor Navigator_7020 Linux BD + core_2v5 schematic",
+    "ddr_candidate_bytes": 1073741824,
+    "emmc_candidate_bytes": 8589934592,
+    "actual_ddr_tested": true,
+    "actual_emmc_identified": true,
+    "linux_booted": false,
+    "pynq_running": false,
+    "actual_ddr_test_result": "latest_core_distributed_probe_passed; older_core_failures_are_historical",
+    "emmc_image_written": true,
+    "emmc_identified_bytes": 7818182656
+  },
+  "tests": {
+    "python": "29 passed on Windows Python 3.8.10 and 3.13; includes pre-download MIO rejection and construction cleanup",
+    "rtl_axi": "passed on 2026.1 XSim",
+    "skill_structure": "quick_validate passed",
+    "notebook": "13 characteristic/analysis tests passed with widgets/plotting; simulated input, output, beta plot and export pass; no board access",
+    "analog_hardware": "Three muted frames acquired; all6144 samples overrange; input resistor modifications require verification; not qualified",
+    "pynq27_hwh": "Pinned unmodified upstream parser passed on actual 2026.1 baseline HWH under host Python3.8.10 and3.13; architecture constants substituted; no board access",
+    "python_wheel": "Version0.2.0 installed to isolated host folder;12 source/archive/installed modules match; Python3.8.10 synthetic3-point/6-frame export passed; no PYNQ import or board access",
+    "baremetal_python": "37 passed on host Python3.13 and3.8.10, including8 new serial protocol tests",
+    "baremetal_c": "8 actual-C-driver fault paths and shared timebase macro/24h regression passed",
+    "baremetal_hardware": "OCM4096 comparisons zero mismatches, UART CRC, clocks and both ADC internal-pattern checks passed"
+  },
+  "hardware_observation": {
+    "jtag_part": "xc7z020",
+    "last_confirmed_baseboard": "custom ADDA baseboard",
+    "last_confirmed_boot_mode": 0,
+    "ddr": "latest core distributed diagnostic passed; following low-byte failures belong to previous core/older comparison runs",
+    "lane_probe": {
+      "read_comparisons": 65536,
+      "mismatches": 1506,
+      "xor_error_mask": "0x000000ff"
+    },
+    "emmc_sectors": 15269888,
+    "emmc_sector_bytes": 512,
+    "emmc_sector0_crc32": "F9C5E944",
+    "official_uart": "no valid diagnostic output received; results read via JTAG",
+    "actions_performed": [
+      "PS temporary system reset and initialization",
+      "OCM diagnostic ELF download",
+      "volatile DDR scratch writes",
+      "eMMC identity and sector0 read"
+    ],
+    "pl_downloaded": true,
+    "qspi_content_written": false,
+    "emmc_content_written": true,
+    "physical_status": "New core is on the custom carrier; PYNQ PL was downloaded over JTAG. eMMC image is written. Latest boot strap read remains JTAG (0); analog input and BJT fixture are not connected/tested.",
+    "latest_pynq_jtag_verification": {
+      "evidence": "report/pynq_custom50_jtag_20261030_003445.json",
+      "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+      "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+      "axi_ids_and_50mhz_divider": "passed",
+      "analog_output_enable_commands": 0,
+      "linux_booted": false,
+      "tft_visual_tested": false
+    },
+    "latest_core_ddr": {
+      "evidence": "report/ddr_new_board_20261029.json",
+      "comparisons": 65536,
+      "mismatches": 0,
+      "full_memory_qualification": false
+    },
+    "debug_port_probe": {
+      "independent_ps_init": false,
+      "mismatches": 364,
+      "cpu_program_used": false,
+      "xor_mask": "0x000000FF",
+      "read_comparisons": 4096
+    },
+    "factory_sd_boot": {
+      "evidence": "report/hardware_evidence.json#factory_sd_boot",
+      "actual": "0xAA55AAFF",
+      "original_fsbl_code_match": true,
+      "result": "failed_before_uboot_at_ddr_sanity_check",
+      "address": "0x00200000",
+      "lr": "0x0000E488",
+      "expected": "0xAA55AA55",
+      "pc": "0x000018AC"
+    },
+    "ddr_part_user_report": {
+      "markings": [
+        "NVNYV2141",
+        "NT5CC256M16ER-EK",
+        "130497WOEL 7  TW"
+      ],
+      "part": "NT5CC256M16ER-EK",
+      "both_chips_confirmed": true,
+      "core_revision_confirmed": true,
+      "source": "User transcription on 2026-10-28; no photo verification",
+      "alternate_core_available": false,
+      "confirmation_basis": "User replied both chips are NT5CC256M16ER-EK; no photo verification",
+      "pcb_version_user_report": "V3.9",
+      "pcb_version_location": "User confirmed V3.9 is the large original carrier board with Ethernet and SD slot",
+      "core_revision": "V2.5",
+      "core_revision_basis": "User transcription; no photograph verification"
+    },
+    "nanya_profile": {
+      "profile": "nanya533",
+      "offline_audit": "passed",
+      "evidence": "report/nanya_profile_audit.json",
+      "board_tested": true,
+      "finding": "Existing 40ns tFAW differs from Nanya v1.8 requirement of 50ns for x16 at DDR3(L)-1066",
+      "pending": "This profile is tied to the prior failing-core experiments; the replacement core's bounded DDR probe passed. No PVT/full-memory margin qualification has been run.",
+      "ddr_passed": false,
+      "read_comparisons": 65536,
+      "mismatches": 1536,
+      "byte_errors_low_to_high": [
+        1536,
+        0,
+        0,
+        0
+      ],
+      "xor_error_mask": "0x000000FF",
+      "runtime_evidence": "report/hardware_evidence.json#lane_probe_nanya533"
+    },
+    "jtag_connection_recovery": {
+      "initial": "All-zero scan chain at 10MHz and 1MHz; no processor reset or DDR test executed",
+      "action": "User powered off, reseated JTAG cable and powered on",
+      "result": "APU and xc7z020 enumerated at 10MHz; BOOT_MODE=0 read before reset"
+    },
+    "official_baseboard_revision_user_report": "V3.9",
+    "core_revision_user_report": "V2.5",
+    "ddr_supply_checks": {
+      "status": "user_reported_near_nominal",
+      "user_has_multimeter": true,
+      "user_familiar_with_dc_voltage": true,
+      "schematic": "reference/hardware/core_2v5.pdf page8",
+      "points": [
+        {
+          "component": "C147 (or C146)",
+          "net": "+1.35V",
+          "nominal_v": 1.35,
+          "measured_v": null,
+          "user_reported_result": "near_nominal; exact reading not supplied"
+        },
+        {
+          "component": "C145 (or C144)",
+          "net": "DDRVTT",
+          "nominal_v": 0.675,
+          "measured_v": null,
+          "user_reported_result": "near_nominal; exact reading not supplied"
+        },
+        {
+          "component": "C150 (or C149)",
+          "net": "VTTREF",
+          "nominal_v": 0.675,
+          "measured_v": null,
+          "user_reported_result": "near_nominal; exact reading not supplied"
+        }
+      ],
+      "probe_side": "Non-ground capacitor terminal; identify with all supplies disconnected before selecting DC voltage mode.",
+      "limits": "User reports all three DC measurements close to nominal with about2-3mV deviation. No per-point readings, instrument accuracy, ripple or loaded transient measurements provided.",
+      "user_statement": "都没问题，只有0.002到0.003的误差",
+      "interpreted_deviation_v": [
+        0.002,
+        0.003
+      ],
+      "exact_per_point_values_provided": false,
+      "transient_or_ripple_tested": false,
+      "load_during_measurement": "not specified"
+    },
+    "training_start_probe": {
+      "complete": true,
+      "cases": 9,
+      "read_comparisons_per_case": 65536,
+      "all_nine_cases_failed": true,
+      "mismatches_per_case": [
+        1514,
+        1488,
+        1322,
+        1654,
+        1414,
+        1280,
+        1400,
+        1594,
+        1640
+      ],
+      "xor_mask_all_cases": "0x000000FF",
+      "baseline_restored": true,
+      "restored_baseline_mismatches": 1304,
+      "evidence": "report/hardware_evidence.json#training_start_probe",
+      "limit": "Exploratory initial values only, not full eye/margin scan or board qualification."
+    },
+    "baremetal_evidence": "report/baremetal_hardware_evidence.json",
+    "adc_input_modification": {
+      "user_quote": "两个输入都悬空，没接线",
+      "grounded_control_test_done": false,
+      "reason": "User has no suitable adapter/shorting cap; board kept unchanged",
+      "hardware_modification_quote": "我们把RX1和RX2前面对地的输入电阻全部去掉了了。",
+      "removed_designators": null,
+      "removed_positions_left_open_or_bridged": null,
+      "interpretation": "Input ground path and attenuation cannot be assumed from original schematic. Floating analog nodes are a possible cause, not established diagnosis.",
+      "pending": "Confirm exact removed parts and whether pads are open or bridged; earlier four-rail measurement request deferred."
+    },
+    "baremetal_actions_performed": [
+      "DDR-disabled PS reset/init",
+      "baseline50 volatile PL download",
+      "OCM ADDA firmware download",
+      "OCM scratch/JTAG test",
+      "UART muted peripheral initialization and internal digital ADC patterns",
+      "three raw dual-ADC frames",
+      "output-register readback and STOP"
+    ]
+  },
+  "next_work": [
+    "Power off, select SD1/eMMC boot on the core-board strap switches, power on, and inspect UART/Linux/PYNQ startup.",
+    "Check Jupyter/network reachability, then test the matching 2026.1 Overlay without enabling analog outputs.",
+    "Confirm removed RX input resistors and open/bridged pads before applying original schematic or historical conversion factors.",
+    "Establish a known input/DC return path based on actual circuit; check front-end supplies/reference if overrange persists.",
+    "Qualify modified analog transfer for current firmware/bitstream, then run NPN scan from PC with raw evidence.",
+    "Complete waveform/interface scope and resolve125/250MHz timing without weakening requirements.",
+    "Complete real measurements, skill adaptation, source provenance and competition package."
+  ],
+  "software": {
+    "python_minimum": "3.8",
+    "scan": "NPN input engine, calibration qualification, raw frames, cancellation and cleanup implemented; simulated flow tested",
+    "notebook": "default simulation; real entry requires explicit board session and migrated calibration qualification",
+    "prototype_feature_parity": false,
+    "pynq_load": "Read-only MIO mux/voltage-selection/ownership preflight before PL download; checks repeat at GPIO claim",
+    "wheel": {
+      "path": "build/dist/zynq_bjt-0.2.0-py3-none-any.whl",
+      "sha256": "1c06778c3cbb19eb8f353b097f8a03d13b138d77bdfaa284943b66e51797d9b5",
+      "evidence": "report/baremetal_wheel_validation.json",
+      "board_installed": false,
+      "target": "PC"
+    },
+    "board_runtime": "C standalone in OCM; no Linux/PYNQ runtime; Python runs on PC",
+    "baremetal_scope": "ADC snapshots, DC codes/output enables, GPIO, digital self-test, serial CRC and JTAG mailbox; baseline50 only",
+    "previous_wheel": {
+      "path": "build/dist/zynq_bjt-0.1.0-py3-none-any.whl",
+      "sha256": "22d00e71e13eecfbd3d2ccf0cf9bef1a0302aa2403ba519de9849166fa1cd3fc",
+      "evidence": "report/python_wheel_validation.json",
+      "board_installed": false
+    }
+  },
+  "version_control": {
+    "vivado2020_2_ps_generated": true,
+    "ps_ddr_pll_clock_mio_functions_match_2026_1": true,
+    "vitis2020_2_bsp_generated": true,
+    "gcc2020": "9.2.0",
+    "standalone2020": "7.3",
+    "same_source_lane_probe_2020_built": true,
+    "board_comparison_2020_run": true,
+    "board_comparison_2020_result": {
+      "mismatches": 1186,
+      "xor_mask": "0x000000FF",
+      "read_comparisons": 65536
+    }
+  },
+  "vendor_images": {
+    "factory_linux_bytes": 838860800,
+    "factory_linux_sha256": "3e6f27ca7dc4a2d797b6979a8b5b6cf93703089b45a3589916a14d417290133c",
+    "pynq_image_bytes": 8129169408,
+    "pynq_raw_image_fits_emmc": false,
+    "sd_card": "Detected USB Disk1, E:, 31270109184 bytes, serial 121220160204; recheck identity after reconnect",
+    "sd_written": true,
+    "sd_write_preparation": "User wrote factory image; imageUSB completed at 18:27:30 with matching MD5/SHA1. User screenshot retained in report/evidence.",
+    "sd_verification_evidence": "report/factory_sd_evidence.json"
+  },
+  "pynq_custom50_emmc_deployment": {
+    "date": "2026-10-30",
+    "status": "written_and_chunk_readback_verified; boot_pending",
+    "rootfs": "PYNQ 2.7 / Ubuntu 20.04 / Python 3.8",
+    "image_bytes": 7653556224,
+    "image_sha256": "d762165b6a0fb2f7bcf2132ebb46c765bfa9f0069fed4c93ced69ac2e7722fdc",
+    "emmc_cid": "4dbea069 39381114 35384133 00d60103",
+    "chunks_total": 229,
+    "chunks_readback_crc_verified": 229,
+    "network_log": "build/logs/emmc_network_resume_20261029_215015.log",
+    "board_test": "PYNQ custom50 bit downloaded over JTAG; AXI IDs, 1024-word snapshot and 50 MHz divider passed read-only check",
+    "boot_mode": 0,
+    "linux_booted": false,
+    "evidence": "report/pynq_custom50_hardware_evidence_20261030.json"
+  },
+  "local_snapshot": {
+    "path": "build/dist/zynq_bjt_baremetal_bringup_20261028_2220.zip",
+    "evidence": "report/baremetal_hardware_snapshot_validation.json",
+    "completion_claim": false,
+    "public_license_verified": false,
+    "scope": "Digital hardware bring-up passed; analog inputs overrange and resistor modifications unresolved"
+  },
+  "active_route": "pynq_custom50_emmc_bootstrap_pending",
+  "route_change": {
+    "date": "2026-10-28",
+    "user_request": "那就先不要用pynq了，直接裸机",
+    "pynq_deferred": false,
+    "latest_user_constraint": "User resumed PYNQ/eMMC bring-up and authorized overwriting the eMMC image; physical SD1/eMMC boot-switch change is still required.",
+    "previous_user_constraint": "暂时不方便接线，先完成代码"
+  },
+  "baremetal": {
+    "platform_ddr_enabled": false,
+    "firmware_compiled": true,
+    "ocm_image_end": 121568,
+    "ocm_remaining_bytes": 75040,
+    "build_id": 2213194660,
+    "firmware_sha256": "1924ac61c5623342397e8525a8fbd73609e1d5b3401a3142e628715f4e610c1a",
+    "hardware_tested": true,
+    "analog_calibration_qualified": false,
+    "boot_image_generated": false,
+    "evidence": "report/baremetal_hardware_evidence.json",
+    "previous_offline_evidence": "report/baremetal_validation.json",
+    "heap_bytes": 0,
+    "main_stack_bytes": 12288,
+    "digital_test_passed": true,
+    "normal_analog_capture": "overrange_all_samples",
+    "input_modification_pending": true
+  },
+  "previous_local_snapshot": {
+    "path": "build\\dist\\zynq_bjt_working_20261028.zip",
+    "evidence": "report/snapshot_validation.json",
+    "completion_claim": false,
+    "public_license_verified": false
+  },
+  "previous_baremetal_code_snapshot": {
+    "path": "build/dist/zynq_bjt_baremetal_code_20261028.zip",
+    "evidence": "report/baremetal_snapshot_validation.json",
+    "completion_claim": false,
+    "public_license_verified": false
+  }
+}

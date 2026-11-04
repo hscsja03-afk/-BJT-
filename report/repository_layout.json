@@ -1,0 +1,15 @@
+{
+  "directories": [
+    "src",
+    "sim",
+    "build",
+    "board",
+    "data",
+    "skill",
+    "report"
+  ],
+  "direct_files": 577,
+  "archive_groups": 36,
+  "original_package_files": 5885,
+  "format": "lowercase ASCII paths; README.md and SKILL.md retain standard names"
+}

@@ -1,0 +1,12 @@
+Processing d:\fpga\amd_2026\output\zynq_bjt_final_20261103
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: zynq-bjt
+  Building wheel for zynq-bjt (pyproject.toml): started
+  Building wheel for zynq-bjt (pyproject.toml): finished with status 'done'
+  Created wheel for zynq-bjt: filename=zynq_bjt-0.2.0-py3-none-any.whl size=225469 sha256=3274d376144d74d3b552db0f325acef5db9216653c5462bd27f451a0ae429d7c
+  Stored in directory: C:\Users\lgw\AppData\Local\Temp\pip-ephem-wheel-cache-kmjckjar\wheels\ba\13\b5\b0bf4ef6addf719a1d3a82e6afa6f6e204e358efd1bf287f66
+Successfully built zynq-bjt
+
+[notice] A new release of pip is available: 25.1.1 -> 26.2.2
+[notice] To update, run: D:\FPGA\AMD_2026\build\tool_deps\desktop_env\Scripts\python.exe -m pip install --upgrade pip

@@ -1,0 +1,22 @@
+{
+  "result": "passed_installed_wheel_check",
+  "python": "3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSC v.1928 64 bit (AMD64)]",
+  "wheel": "D:\\FPGA\\AMD_2026\\build\\dist\\zynq_bjt-0.2.0-py3-none-any.whl",
+  "wheel_sha256": "1c06778c3cbb19eb8f353b097f8a03d13b138d77bdfaa284943b66e51797d9b5",
+  "source_modules": 12,
+  "installation": "D:\\FPGA\\AMD_2026\\build\\work\\wheel_install_baremetal",
+  "imported_modules": {
+    "zynq_bjt": "D:\\FPGA\\AMD_2026\\build\\work\\wheel_install_baremetal\\zynq_bjt\\__init__.py",
+    "zynq_bjt.runtime": "D:\\FPGA\\AMD_2026\\build\\work\\wheel_install_baremetal\\zynq_bjt\\runtime.py",
+    "zynq_bjt.simulation": "D:\\FPGA\\AMD_2026\\build\\work\\wheel_install_baremetal\\zynq_bjt\\simulation.py",
+    "zynq_bjt.scan": "D:\\FPGA\\AMD_2026\\build\\work\\wheel_install_baremetal\\zynq_bjt\\scan.py",
+    "zynq_bjt.baremetal": "D:\\FPGA\\AMD_2026\\build\\work\\wheel_install_baremetal\\zynq_bjt\\baremetal.py"
+  },
+  "run_directory": "D:\\FPGA\\AMD_2026\\build\\work\\wheel_scan\\20261028_212609_8a3a8241",
+  "points": 3,
+  "raw_frames": 6,
+  "simulated": true,
+  "pynq_imported": false,
+  "board_tested": false,
+  "limits": "Local pure-Python package installation and synthetic export only; notebook optional dependencies and ARM hardware not tested here."
+}

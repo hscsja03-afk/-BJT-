@@ -1,0 +1,8 @@
+test_data_write_requires_exact_bytes_ack_and_stop (test_tx1_bus_decode.Tests.test_data_write_requires_exact_bytes_ack_and_stop) ... ok
+test_idle_clock_is_not_a_frame (test_tx1_bus_decode.Tests.test_idle_clock_is_not_a_frame) ... ok
+test_repeated_start_and_final_read_nack (test_tx1_bus_decode.Tests.test_repeated_start_and_final_read_nack) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.004s
+
+OK

@@ -1,0 +1,20 @@
+{
+  "snapshot": "build\\dist\\zynq_bjt_working_20261028.zip",
+  "sha256": "cf9aa1eeddc75ee2ddcf19836c3b8f6dce79b5b9cb60d19b4033a8520c7b6a79",
+  "bytes": 1721482,
+  "files": 167,
+  "status": "work_in_progress_local_snapshot",
+  "integrity": "all archive entries matched manifest",
+  "extracted_to": "build/work/snapshot_validation_20261028/zynq_bjt",
+  "python_tests": {
+    "passed": 29,
+    "import_from_extracted_source_verified": true,
+    "log": "build/logs/snapshot_python_tests.log"
+  },
+  "real_bit_hwh_manifest_check": "passed",
+  "generated_nanya_profile_audit_from_extracted_inputs": "passed",
+  "private_reference_and_cache_exclusions_checked": true,
+  "board_tested": false,
+  "public_license_verified": false,
+  "limits": "Archive integrity and selected relocated checks only; not full clean-machine EDA rebuild, hardware deployment or final competition completion."
+}

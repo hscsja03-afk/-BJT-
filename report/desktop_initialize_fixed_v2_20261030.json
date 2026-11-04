@@ -1,0 +1,167 @@
+{
+  "timestamp": "2026-10-30T16:48:15",
+  "passed": true,
+  "analog_output_enable_commands": 0,
+  "events": [
+    {
+      "kind": "session_closed",
+      "value": {
+        "cleanup_errors": []
+      }
+    },
+    {
+      "kind": "connection_lost",
+      "value": "连接关闭；未收到退出确认时，不能确认输出已停止"
+    }
+  ],
+  "connected": {
+    "protocol": 1,
+    "simulated": false,
+    "initialized": false,
+    "hostname": "pynq",
+    "python": "3.8.2",
+    "analog_calibration_qualified": false,
+    "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+    "overlay_loaded": true,
+    "registers": {
+      "0x0": 1094992961,
+      "0x20": 1024,
+      "0x44": 1415065857,
+      "0x48": 1196443905,
+      "0x80": 1096238849
+    },
+    "dac_rate_hz": 50000000,
+    "control": 3,
+    "dac_mode": 0,
+    "identity": {
+      "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+      "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600"
+    },
+    "ssh_fingerprint": "SHA256:6O+RCEzdICMQSbQzLhOpCPfVWtqyK2Z2jPA4GF0NyaY",
+    "first_connection": false
+  },
+  "initialized": {
+    "protocol": 1,
+    "simulated": false,
+    "initialized": true,
+    "hostname": "pynq",
+    "python": "3.8.2",
+    "analog_calibration_qualified": false,
+    "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+    "identity": {
+      "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+      "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+      "adc_divider": 20,
+      "dac_divider": 20,
+      "measured_clock_hz": [
+        49958499.461509846,
+        49955440.44152559,
+        49954942.229801774
+      ],
+      "digital_self_test": "passed",
+      "analog_calibration_qualified": false
+    },
+    "gpio": {
+      "output": 0,
+      "sense": 0,
+      "sequence": 0
+    },
+    "outputs": [
+      {
+        "code": 0,
+        "enabled": false,
+        "code_basis": "device_register_readback"
+      },
+      {
+        "code": 32768,
+        "enabled": false,
+        "code_basis": "host_table_commit_ack_not_analog_readback"
+      },
+      {
+        "code": 32768,
+        "enabled": false,
+        "code_basis": "host_table_commit_ack_not_analog_readback"
+      }
+    ],
+    "sample_rates_hz": [
+      49955440.44152559,
+      49958499.461509846
+    ],
+    "output_settings": {}
+  },
+  "raw_capture": {
+    "sequence": 5,
+    "sample_rates_hz": [
+      49955440.44152559,
+      49958499.461509846
+    ],
+    "simulated": false,
+    "channels": [
+      {
+        "count": 1024,
+        "min_code": 32347,
+        "max_code": 32368,
+        "overrange": 0
+      },
+      {
+        "count": 1024,
+        "min_code": 33802,
+        "max_code": 33824,
+        "overrange": 0
+      }
+    ]
+  },
+  "status_after_capture": {
+    "protocol": 1,
+    "simulated": false,
+    "initialized": true,
+    "hostname": "pynq",
+    "python": "3.8.2",
+    "analog_calibration_qualified": false,
+    "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+    "identity": {
+      "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+      "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+      "adc_divider": 20,
+      "dac_divider": 20,
+      "measured_clock_hz": [
+        49958499.461509846,
+        49955440.44152559,
+        49954942.229801774
+      ],
+      "digital_self_test": "passed",
+      "analog_calibration_qualified": false
+    },
+    "gpio": {
+      "output": 0,
+      "sense": 0,
+      "sequence": 0
+    },
+    "outputs": [
+      {
+        "code": 0,
+        "enabled": false,
+        "code_basis": "device_register_readback"
+      },
+      {
+        "code": 32768,
+        "enabled": false,
+        "code_basis": "host_table_commit_ack_not_analog_readback"
+      },
+      {
+        "code": 32768,
+        "enabled": false,
+        "code_basis": "host_table_commit_ack_not_analog_readback"
+      }
+    ],
+    "sample_rates_hz": [
+      49955440.44152559,
+      49958499.461509846
+    ],
+    "output_settings": {}
+  },
+  "close": {
+    "closed": true,
+    "cleanup_confirmed": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "path": "build/dist/zynq_bjt_baremetal_code_20261028.zip",
+  "bytes": 2134275,
+  "sha256": "f3029cd430957acd68ba28651b074fd83bfeb4dedd99019aa0ba8a3c19bb9e93",
+  "files": 213,
+  "integrity": "passed",
+  "status": "work_in_progress_local_snapshot",
+  "goal_complete": false,
+  "hardware_tested": false,
+  "source": "build/package_snapshot.py creation and full member verification"
+}

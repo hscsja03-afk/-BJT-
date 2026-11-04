@@ -1,0 +1,14 @@
+test_bundled_pnp_values_keep_sign_and_distinct_limits (sim.test_acquisition_upgrade.AcquisitionUpgradeTests.test_bundled_pnp_values_keep_sign_and_distinct_limits) ... ok
+test_manual_decimation_and_record_length (sim.test_acquisition_upgrade.AcquisitionUpgradeTests.test_manual_decimation_and_record_length) ... ok
+test_new_pdf_extract_with_negative_limits_conditions_and_provenance (sim.test_acquisition_upgrade.AcquisitionUpgradeTests.test_new_pdf_extract_with_negative_limits_conditions_and_provenance) ... ok
+test_noncoherent_sine_amplitude_and_unresolved_short_frame (sim.test_acquisition_upgrade.AcquisitionUpgradeTests.test_noncoherent_sine_amplitude_and_unresolved_short_frame) ... ok
+test_noncoherent_square_harmonics_and_total_rms (sim.test_acquisition_upgrade.AcquisitionUpgradeTests.test_noncoherent_square_harmonics_and_total_rms) ... ok
+test_result_group_and_remote_path_boundary (sim.test_acquisition_upgrade.AcquisitionUpgradeTests.test_result_group_and_remote_path_boundary) ... ok
+test_latest_method_filters_nested_and_old_records (sim.test_result_methods.ResultMethodTests.test_latest_method_filters_nested_and_old_records) ... ok
+test_paths_separate_methods_and_accept_legacy (sim.test_result_methods.ResultMethodTests.test_paths_separate_methods_and_accept_legacy) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 6.158s
+
+OK
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.

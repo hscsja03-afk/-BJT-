@@ -1,0 +1,53 @@
+{
+  "recorded_local": "2026-10-29 17:09:25 Asia/Shanghai",
+  "board_description": "Current newly connected board; physical revision not independently identified",
+  "jtag": {
+    "boot_mode": 0,
+    "target": "xc7z020",
+    "apu_visible": true
+  },
+  "tests": {
+    "lane_probe_default": {
+      "tool_version": "2026.1",
+      "profile": "linux_platform",
+      "read_comparisons": 65536,
+      "mismatches": 0,
+      "pattern_errors": [0, 0, 0, 0, 0, 0, 0, 0],
+      "byte_errors_low_to_high": [0, 0, 0, 0],
+      "xor_error_mask": "00000000",
+      "log": "build/logs/ddr_lane_official_2026.1_20261029_170706.log",
+      "result": "build/logs/ddr_lane_official_2026.1_20261029_170706_result.json"
+    },
+    "lane_probe_nanya533": {
+      "tool_version": "2026.1",
+      "profile": "linux_platform_nanya533",
+      "read_comparisons": 65536,
+      "mismatches": 0,
+      "pattern_errors": [0, 0, 0, 0, 0, 0, 0, 0],
+      "byte_errors_low_to_high": [0, 0, 0, 0],
+      "xor_error_mask": "00000000",
+      "log": "build/logs/ddr_lane_official_2026.1_nanya533_20261029_170523.log",
+      "result": "build/logs/ddr_lane_official_2026.1_nanya533_20261029_170523_result.json"
+    },
+    "four_regions_and_emmc_read": {
+      "profile": "linux_platform",
+      "regions": ["0x01000000", "0x11000000", "0x21000000", "0x31000000"],
+      "region_size_bytes": 65536,
+      "ddr_errors": 0,
+      "emmc_read": true,
+      "emmc_sectors": 15269888,
+      "sector0_crc32": "DB5FEAE6",
+      "sector0_signature": "55AA",
+      "reset_function": 0,
+      "blocked_switches": 0,
+      "jtag_log": "build/logs/probe_official_linux_platform_20261029_170910_jtag.log",
+      "uart_log": "build/logs/probe_official_linux_platform_20261029_170910_uart.txt"
+    }
+  },
+  "conclusion": "DDR read/write diagnostics passed on the newly connected board; the previous low-byte error pattern was not reproduced.",
+  "limits": [
+    "This is a temporary volatile test, not a full 1 GiB exhaustive qualification.",
+    "No QSPI, eMMC content, SD card, or boot image was written.",
+    "Physical board revision and long-duration/PVT margin remain unverified."
+  ]
+}

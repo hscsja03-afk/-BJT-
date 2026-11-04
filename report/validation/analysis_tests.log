@@ -1,0 +1,21 @@
+test_ac_lowpass_fit_recovers_au_fbeta_and_ft (test_analysis.AnalysisTests.test_ac_lowpass_fit_recovers_au_fbeta_and_ft) ... ok
+test_beta_linearity_reports_exact_linear_fit (test_analysis.AnalysisTests.test_beta_linearity_reports_exact_linear_fit) ... ok
+test_beta_linearity_uses_project_two_point_moving_average (test_analysis.AnalysisTests.test_beta_linearity_uses_project_two_point_moving_average) ... ok
+test_beta_requires_two_points_after_project_source_drop (test_analysis.AnalysisTests.test_beta_requires_two_points_after_project_source_drop) ... ok
+test_beta_target_ignores_saturation_region_points (test_analysis.AnalysisTests.test_beta_target_ignores_saturation_region_points) ... ok
+test_beta_target_interpolates_between_measured_points (test_analysis.AnalysisTests.test_beta_target_interpolates_between_measured_points) ... ok
+test_early_tail_fit_recovers_negative_axis_intercept (test_analysis.AnalysisTests.test_early_tail_fit_recovers_negative_axis_intercept) ... ok
+test_output_current_uses_reference_100_ohm_resistor (test_analysis.AnalysisTests.test_output_current_uses_reference_100_ohm_resistor) ... ok
+test_ac_releases_outputs_and_gpio_before_fit_even_if_analysis_fails (test_characteristics.CharacteristicScanTests.test_ac_releases_outputs_and_gpio_before_fit_even_if_analysis_fails) ... ok
+test_ac_scan_uses_long_statistics_window_and_restores_outputs (test_characteristics.CharacteristicScanTests.test_ac_scan_uses_long_statistics_window_and_restores_outputs) ... ok
+test_beta_default_spans_49_currents_and_records_selection (test_characteristics.CharacteristicScanTests.test_beta_default_spans_49_currents_and_records_selection) ... ok
+test_beta_scan_uses_project_source_target_and_restores_hardware_state (test_characteristics.CharacteristicScanTests.test_beta_scan_uses_project_source_target_and_restores_hardware_state) ... ok
+test_output_defaults_use_explicit_provisional_unity_vcc_feedback (test_characteristics.CharacteristicScanTests.test_output_defaults_use_explicit_provisional_unity_vcc_feedback) ... ok
+test_output_scan_mutes_outputs_restores_gpio_and_records_early_analysis (test_characteristics.CharacteristicScanTests.test_output_scan_mutes_outputs_restores_gpio_and_records_early_analysis) ... ok
+test_real_scans_stay_locked_until_fixture_is_confirmed (test_characteristics.CharacteristicScanTests.test_real_scans_stay_locked_until_fixture_is_confirmed) ... skipped 'Notebook display dependencies are optional'
+test_workbench_exposes_all_four_measurement_tabs_and_runs_output_scan (test_characteristics.CharacteristicScanTests.test_workbench_exposes_all_four_measurement_tabs_and_runs_output_scan) ... skipped 'Notebook display dependencies are optional'
+
+----------------------------------------------------------------------
+Ran 16 tests in 2.011s
+
+OK (skipped=2)

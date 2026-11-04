@@ -1,0 +1,114 @@
+365 INFO: PyInstaller: 6.22.3, contrib hooks: 2026.9
+366 INFO: Python: 3.13.5
+434 INFO: Platform: Windows-11-10.0.26300-SP0
+435 INFO: Python environment: D:\FPGA\AMD_2026\build\tool_deps\desktop_env
+435 INFO: wrote D:\FPGA\AMD_2026\output\zynq_bjt_final_20261103\build\work\desktop_package\ZynqBjtDesktop.spec
+449 INFO: Module search paths (PYTHONPATH):
+['D:\\FPGA\\AMD_2026\\output\\zynq_bjt_final_20261103',
+ 'C:\\Users\\lgw\\AppData\\Local\\Programs\\Python\\Python313\\python313.zip',
+ 'C:\\Users\\lgw\\AppData\\Local\\Programs\\Python\\Python313\\DLLs',
+ 'C:\\Users\\lgw\\AppData\\Local\\Programs\\Python\\Python313\\Lib',
+ 'C:\\Users\\lgw\\AppData\\Local\\Programs\\Python\\Python313',
+ 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env',
+ 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages',
+ 'D:\\FPGA\\AMD_2026\\output\\zynq_bjt_final_20261103\\board',
+ 'D:\\FPGA\\AMD_2026\\output\\zynq_bjt_final_20261103\\src\\python']
+1222 INFO: Appending 'datas' from .spec
+1227 INFO: checking Analysis
+1227 INFO: Building Analysis because Analysis-00.toc is non existent
+1227 INFO: Looking for Python shared library...
+1227 INFO: Using Python shared library: C:\Users\lgw\AppData\Local\Programs\Python\Python313\python313.dll
+1227 INFO: Running Analysis Analysis-00.toc
+1227 INFO: Target bytecode optimization level: 0
+1227 INFO: Initializing module dependency graph...
+1230 INFO: Initializing module graph hook caches...
+1240 INFO: Analyzing modules for base_library.zip ...
+3602 INFO: Processing standard module hook 'hook-encodings.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+4349 INFO: Processing standard module hook 'hook-math.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+5846 INFO: Processing standard module hook 'hook-pickle.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+6876 INFO: Processing standard module hook 'hook-heapq.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+7433 INFO: Caching module dependency graph...
+7482 INFO: Analyzing D:\FPGA\AMD_2026\output\zynq_bjt_final_20261103\board\run_desktop.pyw
+7661 INFO: Processing standard module hook 'hook-PIL.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+7844 INFO: Processing standard module hook 'hook-PIL.Image.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+8496 INFO: Processing standard module hook 'hook-numpy.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+8813 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8818 INFO: SetuptoolsInfo: initializing cached setuptools info...
+10343 INFO: Processing standard module hook 'hook-platform.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+10367 INFO: Processing standard module hook 'hook-_ctypes.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+10534 INFO: Processing standard module hook 'hook-sysconfig.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+10840 INFO: Processing standard module hook 'hook-webbrowser.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+12319 INFO: Processing standard module hook 'hook-difflib.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+12545 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+12724 INFO: Processing standard module hook 'hook-xml.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+13855 INFO: Processing standard module hook 'hook-psutil.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+14488 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+14920 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+15235 INFO: Processing pre-find-module-path hook 'hook-tkinter.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+15238 INFO: TclTkInfo: initializing cached Tcl/Tk info...
+15859 INFO: Processing standard module hook 'hook-_tkinter.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+16291 INFO: Processing standard module hook 'hook-matplotlib.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+17138 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+17605 INFO: Processing standard module hook 'hook-matplotlib.backend_bases.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+18976 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+19098 INFO: Processing standard module hook 'hook-matplotlib.pyplot.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+19287 INFO: Processing standard module hook 'hook-matplotlib.figure.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+20248 INFO: Processing standard module hook 'hook-dateutil.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+20269 INFO: Processing standard module hook 'hook-zoneinfo.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+20363 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+22442 INFO: Processing pre-safe-import-module hook 'hook-gi.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+23159 INFO: Processing standard module hook 'hook-cryptography.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+26019 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+27181 INFO: Processing standard module hook 'hook-bcrypt.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+27549 INFO: Processing standard module hook 'hook-nacl.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+35497 INFO: Processing module hooks (post-graph stage)...
+35511 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+35514 INFO: Matplotlib backend selection method: automatic discovery of used backends
+36244 INFO: Trying determine the default backend as first importable candidate from the list: ['QtAgg', 'Qt5Agg', 'Gtk4Agg', 'Gtk3Agg', 'TkAgg', 'WxAgg']
+41285 INFO: Selected matplotlib backends: ['TkAgg']
+41285 INFO: Extra dists for selected matplotlib backends: []
+41570 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+41675 INFO: Processing standard module hook 'hook-_tkinter.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+41678 INFO: Processing standard module hook 'hook-tzdata.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+42363 INFO: Performing binary vs. data reclassification (1835 entries)
+42912 INFO: Looking for ctypes DLLs
+43007 INFO: Analyzing run-time hooks ...
+43014 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+43018 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+43021 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+43025 INFO: Including run-time hook 'pyi_rth_mplconfig.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+43026 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+43029 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks'
+43039 INFO: Including run-time hook 'pyi_rth__tkinter.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+43041 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from 'D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\rthooks'
+43107 INFO: Creating base_library.zip...
+43134 INFO: Looking for dynamic libraries
+45204 INFO: Extra DLL search directories (AddDllDirectory): ['D:\\FPGA\\AMD_2026\\build\\tool_deps\\desktop_env\\Lib\\site-packages\\numpy.libs']
+45204 INFO: Extra DLL search directories (PATH): []
+46296 INFO: Warnings written to D:\FPGA\AMD_2026\output\zynq_bjt_final_20261103\build\work\desktop_package\pyinstaller\ZynqBjtDesktop\warn-ZynqBjtDesktop.txt
+46446 INFO: Graph cross-reference written to D:\FPGA\AMD_2026\output\zynq_bjt_final_20261103\build\work\desktop_package\pyinstaller\ZynqBjtDesktop\xref-ZynqBjtDesktop.html
+46550 INFO: checking PYZ
+46551 INFO: Building PYZ because PYZ-00.toc is non existent
+46551 INFO: Building PYZ (ZlibArchive) D:\FPGA\AMD_2026\output\zynq_bjt_final_20261103\build\work\desktop_package\pyinstaller\ZynqBjtDesktop\PYZ-00.pyz
+48080 INFO: Building PYZ (ZlibArchive) D:\FPGA\AMD_2026\output\zynq_bjt_final_20261103\build\work\desktop_package\pyinstaller\ZynqBjtDesktop\PYZ-00.pyz completed successfully.
+48115 INFO: checking PKG
+48115 INFO: Building PKG because PKG-00.toc is non existent
+48116 INFO: Building PKG (CArchive) ZynqBjtDesktop.pkg
+48229 INFO: Building PKG (CArchive) ZynqBjtDesktop.pkg completed successfully.
+48230 INFO: Bootloader D:\FPGA\AMD_2026\build\tool_deps\desktop_env\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+48231 INFO: checking EXE
+48231 INFO: Building EXE because EXE-00.toc is non existent
+48231 INFO: Building EXE from EXE-00.toc
+48231 INFO: Copying bootloader EXE to D:\FPGA\AMD_2026\output\zynq_bjt_final_20261103\build\work\desktop_package\pyinstaller\ZynqBjtDesktop\ZynqBjtDesktop.exe
+48344 INFO: Copying icon to EXE
+48437 INFO: Copying 0 resources to EXE
+48437 INFO: Embedding manifest in EXE
+48523 INFO: Appending PKG archive to EXE
+48854 INFO: Fixing EXE headers
+49477 INFO: Building EXE from EXE-00.toc completed successfully.
+49494 INFO: checking COLLECT
+49494 INFO: Building COLLECT because COLLECT-00.toc is non existent
+49494 INFO: Building COLLECT COLLECT-00.toc
+52323 INFO: Building COLLECT COLLECT-00.toc completed successfully.
+52362 INFO: Build complete! The results are available in: D:\FPGA\AMD_2026\output\zynq_bjt_final_20261103\build\dist\desktop
+DESKTOP_EXE=D:\FPGA\AMD_2026\output\zynq_bjt_final_20261103\build\dist\desktop\ZynqBjtDesktop\ZynqBjtDesktop.exe

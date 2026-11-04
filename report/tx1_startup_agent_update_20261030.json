@@ -1,0 +1,5 @@
+{
+  "script": "build\\work\\update_tx1_startup_payload.py",
+  "complete": true,
+  "output": "MAINT_PASSWORD:\nMAINT_READY\nenabled\nSTARTUP_AGENT_UPDATED {\"backup\": \"/home/xilinx/persistence_backup_tx1_20261030_125048\", \"ready\": {\"ready\": true, \"outputs_enabled\": false, \"identity\": {\"bit_sha256\": \"7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af\", \"hwh_sha256\": \"ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600\", \"adc_divider\": 20, \"dac_divider\": 20, \"measured_clock_hz\": [49954874.60352816, 49955402.71809052, 49955253.251704946], \"digital_self_test\": \"passed\", \"analog_calibration_qualified\": false}, \"agent\": \"/home/xilinx/.zynq_bjt_desktop/4591e228270b7977c0d5/agent.pyz\", \"agent_sha256\": \"a3c98b0769da6b704b365bd4851263426af49bd0f062ac78a1f1e259b1802790\"}}\nMAINT_OK\n\r\nMAINT_END\r\n"
+}
