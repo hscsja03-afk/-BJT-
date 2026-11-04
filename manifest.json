@@ -8,16 +8,6 @@
       "sha256": "522ffa7a8c9a385c293eee51d0b2966edaaa30f3cd715a8c1876789da1a6bd26"
     },
     {
-      "path": "README.md",
-      "bytes": 3238,
-      "sha256": "6201e8401f82bb2b487a41128286adab237e41ce8f812843bc1e09b7e8f2c401"
-    },
-    {
-      "path": "board/README.md",
-      "bytes": 1699,
-      "sha256": "05cbe6c77b68d1ee3cbd96ebec5820495de8f1bdd4de60723b4ce62c9343f5de"
-    },
-    {
       "path": "board/analyze_rx2_ac_generator.py",
       "bytes": 4656,
       "sha256": "885d01f993032b8113d3a1afe4ab72f5f965a3554262b55886b079987786c4b3"
@@ -324,8 +314,8 @@
     },
     {
       "path": "board/desktop_workbench.md",
-      "bytes": 566,
-      "sha256": "2a3e133bd1c87330b297ca385c16fcd85ed739682cdb0768617dd29dfe136d62"
+      "bytes": 561,
+      "sha256": "6eaf044054ba27b0e5652ddb959183e31fc63511cadf1b68eaff5b5ca160ff4e"
     },
     {
       "path": "board/diagnose_npn_input_bias.py",
@@ -391,6 +381,111 @@
       "path": "board/flash_tool_help.tcl",
       "bytes": 21,
       "sha256": "e9db126abb020a4b0b987fc6d6f094083480e7d2c0a683e4e0470eddd5347f75"
+    },
+    {
+      "path": "board/hardware/adda/ad9516_config_01.png",
+      "bytes": 67345,
+      "sha256": "2187cc968e6433233d39b5dfa3e1029b8ef8d8980779c849727d70e96c8201f1"
+    },
+    {
+      "path": "board/hardware/adda/ad9516_config_02.png",
+      "bytes": 67742,
+      "sha256": "13c23b043f899e3f78b7f024ec2beeeacf71590f28e5c378f204ac3702ee7215"
+    },
+    {
+      "path": "board/hardware/adda/ad9747_firmware_guide.md",
+      "bytes": 9499,
+      "sha256": "8d16b46121087733ecdc0f374ba87203e12fa1fbf5732ec14c7d6763c8ef60b0"
+    },
+    {
+      "path": "board/hardware/adda/design_notes.xlsx",
+      "bytes": 63594,
+      "sha256": "59a35ce58ea8c58e9b33d9be177c6ecc24648cdbfbe021c37b3b078d110bb22f"
+    },
+    {
+      "path": "board/hardware/adda/hardware_project.epro",
+      "bytes": 1803275,
+      "sha256": "0ac8cdb0b1d26516813821ef38b270a0d1ffcd557a221fd397d5273eea49cdbf"
+    },
+    {
+      "path": "board/hardware/adda/netlist.tel",
+      "bytes": 23254,
+      "sha256": "646dbd44ae7cd0f12471f3c0049a60bac746ed0058a21cf07d16d98da0f6269e"
+    },
+    {
+      "path": "board/hardware/adda/pcb_3d.png",
+      "bytes": 1355058,
+      "sha256": "356da39caaa3eecd33058ec1eed8f8a71d405466af785f3f6abafd6249220327"
+    },
+    {
+      "path": "board/hardware/adda/schematic.pdf",
+      "bytes": 1996676,
+      "sha256": "b637c6b1a51f0b2a53e97fcfc32d749e6db4bbcb2d6a495f5c57278c6bfd331f"
+    },
+    {
+      "path": "board/hardware/bjt/hardware_project.epro2",
+      "bytes": 4588121,
+      "sha256": "1c376fc20981524351d9ad84c95a9b1710cd402addc8776fb4d2ce52c427b5ad"
+    },
+    {
+      "path": "board/hardware/bjt/netlist.tel",
+      "bytes": 8624,
+      "sha256": "841a96be205fa5f440c4aea83ab345a02b26f540c9dcf3b862069643e265826c"
+    },
+    {
+      "path": "board/hardware/bjt/pcb_3d.png",
+      "bytes": 213656,
+      "sha256": "3a3aa70b9e38d8609c7e57c0e6c62f2e760802d8bfa26d43e96fd794eb738de3"
+    },
+    {
+      "path": "board/hardware/bjt/pcb_layout.png",
+      "bytes": 582354,
+      "sha256": "a7dbc82aeab4ab1e01f8b4a28444cb54ef7a4741cc28f0882a4b3030e718b135"
+    },
+    {
+      "path": "board/hardware/bjt/schematic_ac.png",
+      "bytes": 121218,
+      "sha256": "183de7f9e23688757346b20540e5033333d3de17daf831bdd0bc3984d7c791f2"
+    },
+    {
+      "path": "board/hardware/bjt/schematic_base_current_source.png",
+      "bytes": 238895,
+      "sha256": "05c9dfbab7c46da3da3c29c11001af1dad750d6ce5723c2be77655063f0a51de"
+    },
+    {
+      "path": "board/hardware/bjt/schematic_dual_supply.png",
+      "bytes": 174073,
+      "sha256": "d034ecc3460c0d4b8b7829413221b26e3f03eb4fb048242235c7e018b036f117"
+    },
+    {
+      "path": "board/hardware/bjt/schematic_interface.png",
+      "bytes": 73545,
+      "sha256": "03db554bb92f2e8fdff671475663201c9e933fc21947c11d47022326d501176b"
+    },
+    {
+      "path": "board/hardware/bjt/schematic_measurement_switch.png",
+      "bytes": 112096,
+      "sha256": "c4f4f7684f1ae866eec6461ad7d9d7fac18a425e6b14fc7f6fa3af050080cfb9"
+    },
+    {
+      "path": "board/hardware/bjt/schematic_polarity_switch.png",
+      "bytes": 137860,
+      "sha256": "e51e178338432482ba87125c8500fa28c5a38eb2aa53e44fcc2f7604a2f56bf5"
+    },
+    {
+      "path": "board/hardware/bjt/schematic_power_amplifier.png",
+      "bytes": 315824,
+      "sha256": "e44d0619948488292bd47d993e58541ecac618282be915ed8dad8bc4997f6999"
+    },
+    {
+      "path": "board/hardware/manifest.json",
+      "bytes": 3181,
+      "sha256": "6c817a687aeea8dff2bf551bd4ea9292f37a324f3d18ad77ba5cd5defb16e4d7"
+    },
+    {
+      "path": "board/hardware/readme.md",
+      "bytes": 1894,
+      "sha256": "83ea980b07ba42522dc7c6c7959269b85bdd97c4e01b2ea541274fec38fdc711"
     },
     {
       "path": "board/hold_tx1_reference.py",
@@ -591,6 +686,11 @@
       "path": "board/read_scope.py",
       "bytes": 3215,
       "sha256": "171d716b11e6d3f6d5e8d3277c0f1ddffa3aadffee0d946fdc531ceec9350248"
+    },
+    {
+      "path": "board/readme.md",
+      "bytes": 1805,
+      "sha256": "ca390a4fe538e966904413256325bf6aa64fe8ad330cf601454ff303bf423569"
     },
     {
       "path": "board/recheck_tx_wave_stability.py",
@@ -970,7 +1070,7 @@
     {
       "path": "build/build_desktop.py",
       "bytes": 2698,
-      "sha256": "448908da3c4430e3c52f0039247e4c8618f84ab3eaf95425788bb120173dc9e3"
+      "sha256": "d37c681f1843de9285b408c2ea359ac649debdb86d3450772071f313368bffef"
     },
     {
       "path": "build/check_adc_fallback.tcl",
@@ -1019,8 +1119,8 @@
     },
     {
       "path": "build/verify_package.py",
-      "bytes": 1121,
-      "sha256": "fc07c2b310767e3bcc2fe7784d8bafe1d5dad2de30137eed42d3b695a74af0a1"
+      "bytes": 1300,
+      "sha256": "9260823d3899981f12ccdfad1e5ce301165b22fe4f52f1032d004b2af0f7c48f"
     },
     {
       "path": "build/work/adc625_mmcm_20261102/build_status.txt",
@@ -1493,9 +1593,14 @@
       "sha256": "fccdf5615a9e4b560aad239393066f14831fca638d55685e0cf5ee4bb3d184b2"
     },
     {
+      "path": "readme.md",
+      "bytes": 3717,
+      "sha256": "c18cedcbd30ebc088cce44d4a39d19c8fef96bad2c61a88a0da059feff1bd5a4"
+    },
+    {
       "path": "report/ai_collaboration.md",
       "bytes": 9707,
-      "sha256": "15eeca175d3e7bb3e047f1cb5e0f9fa976d889eedc48298103be7fa1a246abf2"
+      "sha256": "3f5ca14c3eb100fd021c3e62b41d9e33cf49517b1bef46506a2d0a63b87a7868"
     },
     {
       "path": "report/archive_index.json",
@@ -1544,8 +1649,8 @@
     },
     {
       "path": "report/design_report.md",
-      "bytes": 6053,
-      "sha256": "f1c87abfd10286e36c425a259b7a0e9cd50ecc047a0323bf4fa5bbfa7d1bc652"
+      "bytes": 6348,
+      "sha256": "2584a523d0e5cf247f620bb339869f4a694dbe96404f5364f56972b9affb4ce4"
     },
     {
       "path": "report/desktop_initialize_fixed_v2_20261030.json",
@@ -1624,8 +1729,8 @@
     },
     {
       "path": "report/repository_layout.json",
-      "bytes": 292,
-      "sha256": "894df272dd69cc5960221d2b4cdc6db3ef16a96a55de06353d428d6d028d4953"
+      "bytes": 257,
+      "sha256": "e5c4761f57a6be057b4e356686f03d32e8ec0a6f61b82619e8042e2431952acd"
     },
     {
       "path": "report/repository_validation.json",
@@ -1649,8 +1754,8 @@
     },
     {
       "path": "report/submission_checklist.md",
-      "bytes": 1123,
-      "sha256": "03572edf149ce3764c12e146931d2271352e7f3df6f2ef58390921b72ad7c7c1"
+      "bytes": 1234,
+      "sha256": "249c563625a7a23b743c3d9338e680f3ad360fd24f0b8edfc2345ff7f6a20267"
     },
     {
       "path": "report/tx1_fix_coldboot_verification_20261030.json",
@@ -2058,39 +2163,29 @@
       "sha256": "c322055fef943f68e58d958520a66a8818d912db88c2e7784d7db235f23213f7"
     },
     {
-      "path": "skill/README.md",
-      "bytes": 7368,
-      "sha256": "e1ef5f34138925db8e7f4d98cbd63f6aa93179cc898216747018bdc0166935ed"
-    },
-    {
-      "path": "skill/datasheet-parameters/SKILL.md",
+      "path": "skill/datasheet-parameters/skill.md",
       "bytes": 1351,
       "sha256": "ef22cb0a95eb58be0186c84b0255fb2f33abb0e84d924b3ac3c4dfaa5594266c"
     },
     {
-      "path": "skill/desktop-agent-release/SKILL.md",
+      "path": "skill/desktop-agent-release/skill.md",
       "bytes": 1536,
       "sha256": "346428de1b5f082be3fd498257347d32cc42c085059a4d44c29dbabe4b2eac3b"
     },
     {
-      "path": "skill/fpga-source-timing-closure/SKILL.md",
+      "path": "skill/fpga-source-timing-closure/skill.md",
       "bytes": 1386,
       "sha256": "b841c971c2bcf149d595ea9f6f7e3ceef1046840b32b9dd97b13242daa10023a"
     },
     {
-      "path": "skill/measurement-sweep-integrity/SKILL.md",
+      "path": "skill/measurement-sweep-integrity/skill.md",
       "bytes": 1444,
       "sha256": "6cf4656720bd4e6dd5bf474f1a735765f9636dc2e971564cce24caeee19dd1f7"
     },
     {
-      "path": "skill/mixed-signal-calibration/SKILL.md",
+      "path": "skill/mixed-signal-calibration/skill.md",
       "bytes": 1409,
       "sha256": "85ba9d009c55b6bcb84641618d3cdbc84c1f698ccade02f0f3127a29f4d70bba"
-    },
-    {
-      "path": "skill/pynq-overlay-audit/SKILL.md",
-      "bytes": 1821,
-      "sha256": "ce9a142b080c56b833b38f4e8f3d59dcf4323316ff364b138e41611f6d92d160"
     },
     {
       "path": "skill/pynq-overlay-audit/scripts/check_bundle.py",
@@ -2103,9 +2198,14 @@
       "sha256": "9814543136c239941de58e2e81fbce2509bf9e182c65c3f778eeece458dabbbf"
     },
     {
-      "path": "skill/register-to-analog-debug/SKILL.md",
-      "bytes": 2006,
-      "sha256": "e02c4f2908398d2880d02b501bfe961146bfdce0ace7f9d3877b014ddd0ee760"
+      "path": "skill/pynq-overlay-audit/skill.md",
+      "bytes": 1821,
+      "sha256": "ce9a142b080c56b833b38f4e8f3d59dcf4323316ff364b138e41611f6d92d160"
+    },
+    {
+      "path": "skill/readme.md",
+      "bytes": 7336,
+      "sha256": "12648dc3a350053bf9354454326b90a358d8142b59c2a217d90524af7c0543ca"
     },
     {
       "path": "skill/register-to-analog-debug/scripts/locate_epcb.py",
@@ -2118,7 +2218,12 @@
       "sha256": "e92f91cf4920893f586008ed76d73862da0d201acf463d9ed2870d2425620f00"
     },
     {
-      "path": "skill/technical-poster-evidence/SKILL.md",
+      "path": "skill/register-to-analog-debug/skill.md",
+      "bytes": 2006,
+      "sha256": "e02c4f2908398d2880d02b501bfe961146bfdce0ace7f9d3877b014ddd0ee760"
+    },
+    {
+      "path": "skill/technical-poster-evidence/skill.md",
       "bytes": 1648,
       "sha256": "e9d85407a24a6d1bd3826fdf0f08b34664af9c347c2ab016a1b4616df4d654c7"
     },
@@ -2138,7 +2243,7 @@
       "sha256": "f55e2f5e944bf49a5f369253633d0ac08785ee6c9b4ef4b2f9a68b0edeb45dc6"
     },
     {
-      "path": "skill/zynq-boot-ddr-diagnosis/SKILL.md",
+      "path": "skill/zynq-boot-ddr-diagnosis/skill.md",
       "bytes": 1424,
       "sha256": "f22d9b0125e79acaf937917d49ed861a9ed4375f8b487234113db3f02e24117f"
     },
