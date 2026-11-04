@@ -1,0 +1,622 @@
+{
+  "build_date": "2026-11-04",
+  "vivado": "2026.1",
+  "part": "xc7z020clg400-2",
+  "overlay": {
+    "peripheral": {
+      "instance": "adda_core_0",
+      "size": "0x10000",
+      "base": "0x43c00000"
+    },
+    "hwh": {
+      "path": "bjt.hwh",
+      "sha256": "69175133e4996b99b5eaf599b4ef90398c16715c0ef91575486088c199104ad8"
+    },
+    "bit": {
+      "path": "bjt.bit",
+      "sha256": "102d7445edd24724b080899e34809a780e64e5203b3365f14852e9f8ce32d888"
+    }
+  },
+  "sources": [
+    {
+      "path": "src/assets/font.mem",
+      "sha256": "e2bf94a8977fe6f08365e8a88cdadbcba666b5d060f7d6f0fdb2d6dbca70a70d"
+    },
+    {
+      "path": "src/assets/gpio_background.mem",
+      "sha256": "44b175112cf4db92d0bd9da23c4eb57097ccdcb697e4a0b07260d6b39b7e4dfe"
+    },
+    {
+      "path": "src/baremetal/adda.c",
+      "sha256": "188e135879529dfcab7133aff185d9a9561d0e82484d9d50db5eb822d3d262a4"
+    },
+    {
+      "path": "src/baremetal/adda.h",
+      "sha256": "b79321ae1b0a33b835d8380544008831659aa9907b16155b1a41442c5dea7732"
+    },
+    {
+      "path": "src/baremetal/main.c",
+      "sha256": "e2667adb8a65a151ff762146b5339c830e10066a42bf1274501418bc27b1caf4"
+    },
+    {
+      "path": "src/baremetal/timebase.h",
+      "sha256": "020d95f9f5f5e4a8c54638f5e8a6b1a1099555cf1e6262394f4e307908253b44"
+    },
+    {
+      "path": "src/constraints/gpio_pins.xdc",
+      "sha256": "0e57d62648f869573dd878d9d1f0142e5aeb53fcc5f6f4b054a4cb23dd2c8fe3"
+    },
+    {
+      "path": "src/constraints/lcd_pins.xdc",
+      "sha256": "e93bdde106440b4d9bda1ef2848e642756a1fa8230ebfbfcb034334abdf442d7"
+    },
+    {
+      "path": "src/constraints/lcd_timing.xdc",
+      "sha256": "6630a203cfc7c93b9867c40df905b040c8bf82d59b518ccedd2aa84ea44abfab"
+    },
+    {
+      "path": "src/constraints/pins.xdc",
+      "sha256": "66d5002e84c1bb6e6bec7a4394ad248ae5767548b525afab79bc891cd5211648"
+    },
+    {
+      "path": "src/constraints/timing.xdc",
+      "sha256": "878cc6a186c64941b9474f8be22197fe647fcbc1a3759123fa4686e86f2102fc"
+    },
+    {
+      "path": "src/constraints/tx1.xdc",
+      "sha256": "afd78fe70e5f739441c197b12f2745bd031acd601dca669760e05aed3adb724d"
+    },
+    {
+      "path": "src/python/tests/test_analysis.py",
+      "sha256": "f3fbf1cc513dbea796621f1d223bb4cb91785539a99a9bde3c5b5bf57a1c5cfc"
+    },
+    {
+      "path": "src/python/tests/test_characteristics.py",
+      "sha256": "d09d276feb27146277c7c7d8383f51a41b513098cb012b6925cebe5f9f8b34ef"
+    },
+    {
+      "path": "src/python/zynq_bjt/__init__.py",
+      "sha256": "9ccf04e60915405f43e9c44c48a779d0c5126b1e9e45f46a62107f89d7e8fef7"
+    },
+    {
+      "path": "src/python/zynq_bjt/ac.py",
+      "sha256": "0d851c23e2db1f29fa811d4c19972ea2a67b7396ceb2f2236f96f43ca170feb0"
+    },
+    {
+      "path": "src/python/zynq_bjt/ai_client.py",
+      "sha256": "c033cdc8453ab888c902e543602613a66a745458fc211ce0edf5b224fcfb7f9d"
+    },
+    {
+      "path": "src/python/zynq_bjt/analysis.py",
+      "sha256": "aa9edac58e0f7fccbbab0cea05f2dcc7fc24bdfff1f2ee16fcb7d9bff669cfdc"
+    },
+    {
+      "path": "src/python/zynq_bjt/baremetal.py",
+      "sha256": "78494c4329886c0b84c4de41d018691dd1151f7ad3d752d37166a01bbc696753"
+    },
+    {
+      "path": "src/python/zynq_bjt/characteristics.py",
+      "sha256": "92d5c14cd85e8923d058fa54401447a078ba8a07ed59c33f475465831ade86e1"
+    },
+    {
+      "path": "src/python/zynq_bjt/converters.py",
+      "sha256": "4a6cfd23db836b45b389cb9b1c6578280ffd25005c88b7140d01f591872c1be9"
+    },
+    {
+      "path": "src/python/zynq_bjt/curve_export.py",
+      "sha256": "5bcd4ebb34b26c3951a118fd86bc3cec9f2e5fc3ca1e36ca5a9c2ec08204095f"
+    },
+    {
+      "path": "src/python/zynq_bjt/datasheet_extract.py",
+      "sha256": "7868501eb833cf63cf9ba1723bae12c214402980c9a006d42391fb1fe7c02f08"
+    },
+    {
+      "path": "src/python/zynq_bjt/datasheet_grid.py",
+      "sha256": "13ff2bb1fbe3d2851ac649748dda8399865e8b69d1c3e698693f9f9d5446a0c1"
+    },
+    {
+      "path": "src/python/zynq_bjt/datasheets.py",
+      "sha256": "a861b8b5451ea2e7a46107f698350d21fcbb896d817c287a777ea7dbd189abcb"
+    },
+    {
+      "path": "src/python/zynq_bjt/demo.py",
+      "sha256": "9d1b9aba807eaa7b015131918067282bb475b6db50723f636ef03ed43dcabf90"
+    },
+    {
+      "path": "src/python/zynq_bjt/desktop.py",
+      "sha256": "438d8bb52346adff4139870c1596643f7e401c2b4bfc5b6db56e3d0a2114b60f"
+    },
+    {
+      "path": "src/python/zynq_bjt/desktop_agent.py",
+      "sha256": "e7725e3472f6d8b5eaba9da1ce78b5630f4da4c3022315f4d51f9c866960ad55"
+    },
+    {
+      "path": "src/python/zynq_bjt/desktop_lcd.py",
+      "sha256": "f73059e5bdf8d872d7b76ce12b07edcc2697dad54b59527d5b979571fb77a4c1"
+    },
+    {
+      "path": "src/python/zynq_bjt/desktop_output.py",
+      "sha256": "de90a40e512722ac4d3eeca42d578a24b31828d5636ad89d25302648808d50b5"
+    },
+    {
+      "path": "src/python/zynq_bjt/desktop_results.py",
+      "sha256": "e172c3a60f5f3be7655fcccfdcc5d65a4084483f53377db1d65b0f9a4e61dff6"
+    },
+    {
+      "path": "src/python/zynq_bjt/desktop_session.py",
+      "sha256": "e7499dc5847a4f42aaf2b5bfd69696fb060b095e41aea0769b64a13f43519856"
+    },
+    {
+      "path": "src/python/zynq_bjt/desktop_storage.py",
+      "sha256": "e07aeda7bee5aa5e6fc9dc9831e69985752b67112c0a224a23e224365b5e1eb7"
+    },
+    {
+      "path": "src/python/zynq_bjt/desktop_transport.py",
+      "sha256": "c58262053c9029020d10f17ce256bccd9a54965b0f11f1ce0154c9b7d87bf9b0"
+    },
+    {
+      "path": "src/python/zynq_bjt/desktop_verify.py",
+      "sha256": "c7e112c7c8929370649f1163eae497d8bc1c8c07c67b10d1396a4bccea62cf0f"
+    },
+    {
+      "path": "src/python/zynq_bjt/frontend.py",
+      "sha256": "b586df949fd931d2f4b38f4aeb7bdfba87c63625eea00863b71c85da0ea3ad36"
+    },
+    {
+      "path": "src/python/zynq_bjt/lcd.py",
+      "sha256": "db942afb1ad8f9843c2dd3b58776e74b62bdcd9f29f2d955231881890020e1b7"
+    },
+    {
+      "path": "src/python/zynq_bjt/lcd_framebuffer.py",
+      "sha256": "13375cd0800e2fcf59467795b3e6f12042c1719df05c0bb05b9dff32b1157879"
+    },
+    {
+      "path": "src/python/zynq_bjt/lcd_records.py",
+      "sha256": "7710656a41696d95d0dd3a8b535bf1a951ccd60e9b76a9fe2783f612097d1062"
+    },
+    {
+      "path": "src/python/zynq_bjt/lcd_stream.py",
+      "sha256": "b8a456be86c355b15c1f2a7c7adf89b3163001573201617b4800f2205ddd7372"
+    },
+    {
+      "path": "src/python/zynq_bjt/measurement_views.py",
+      "sha256": "bfc734e28a8886c84e83147e8498b16359c7d3be1c62c4ea743ad5f9cb4a447f"
+    },
+    {
+      "path": "src/python/zynq_bjt/meter.py",
+      "sha256": "483314cc7cad71ae007a0b1a4f641050ab25d12e19d37d5009b8207f9e5be270"
+    },
+    {
+      "path": "src/python/zynq_bjt/meter_view.py",
+      "sha256": "e06c173b1abefa976f7df4eabb2a208e41bf9a9b0d37ccdbe59f662abff7f1ae"
+    },
+    {
+      "path": "src/python/zynq_bjt/metric_strip.py",
+      "sha256": "7e5bed56d99da5f52f0ffaf0a2b0974337d8c47d1bd5483ada56bbf68421eeed"
+    },
+    {
+      "path": "src/python/zynq_bjt/mio.py",
+      "sha256": "b97ba4efca3895c5550ee1ae144903cc926e675e6bf1eed0fc2137789ac8a7b9"
+    },
+    {
+      "path": "src/python/zynq_bjt/mmio.py",
+      "sha256": "f2e58b769e5eee7392564755fe4a66e7178c606b806a009f1e3f9b37f47c39e9"
+    },
+    {
+      "path": "src/python/zynq_bjt/notebook.py",
+      "sha256": "97ffdd3170db741597b3f46c3f71ea56e284b4ec163e0f8418141470fa1208b3"
+    },
+    {
+      "path": "src/python/zynq_bjt/page_defaults.py",
+      "sha256": "e5fa00b650fa4f788c7532c52600757eac20a12f794605b561feaf521b65f360"
+    },
+    {
+      "path": "src/python/zynq_bjt/parameter_view.py",
+      "sha256": "9dd6b641f89d409fcd8e65d415d1eb45429da38d4604821dfabf552c12da8ac4"
+    },
+    {
+      "path": "src/python/zynq_bjt/pdf_view.py",
+      "sha256": "222daf541e1ce7e728d6e2a8c2ad117fb517d45a0b6395e2c00ba376ea81b676"
+    },
+    {
+      "path": "src/python/zynq_bjt/polarity.py",
+      "sha256": "7777095b43619afec585136dab242f809c897dc818ba6e241cf16b7818190be4"
+    },
+    {
+      "path": "src/python/zynq_bjt/profiles.py",
+      "sha256": "bd35eeb7d3ffc149b1cdf92c8b85db67a9faac32b925922e8ebbb55d16bd1c15"
+    },
+    {
+      "path": "src/python/zynq_bjt/pulse.py",
+      "sha256": "f980a65833dce5f9be9bdc6d1c867cb8666b4709aab2320a5b5bba23706a243f"
+    },
+    {
+      "path": "src/python/zynq_bjt/result_paths.py",
+      "sha256": "b508d6b5ba712051213206d35779675f786522c26d82e99c64faebf4fed73f2d"
+    },
+    {
+      "path": "src/python/zynq_bjt/runtime.py",
+      "sha256": "5a1d1bef3a4758c8112cf2dbbbe70a3d98331f8a5b98276b1bbab192ae6bc5e3"
+    },
+    {
+      "path": "src/python/zynq_bjt/scan.py",
+      "sha256": "44078bb8dc80b3585d558a79518a30b4c02ad4f2a581021330c7b5bca5d480ae"
+    },
+    {
+      "path": "src/python/zynq_bjt/scope_display.py",
+      "sha256": "68f94601005c8eb49cdefeca8ff4c0e68e44cce752b21b667fa586fa87266ab1"
+    },
+    {
+      "path": "src/python/zynq_bjt/scope_view.py",
+      "sha256": "e94df33269c19108bf6692798c4bb8c627e461624610c34ed42a5cfbb88176b5"
+    },
+    {
+      "path": "src/python/zynq_bjt/sidebar_art.py",
+      "sha256": "ca29ca4bf256198c8778d75de277e5911670fa964bfe63e64e56400531b31f12"
+    },
+    {
+      "path": "src/python/zynq_bjt/simulation.py",
+      "sha256": "d8e93b481ddf0ca66123b58e74d5c875c800400ae20a8144c41e8ce9d9550a14"
+    },
+    {
+      "path": "src/python/zynq_bjt/sweep.py",
+      "sha256": "e71c6fa977a2079231e2690b943d646cf32a4f8515a3fa8a4240e46320fab0c3"
+    },
+    {
+      "path": "src/python/zynq_bjt/tx1.py",
+      "sha256": "ca9711aef9747bb2dbbdcb70aa227bd6c849efa057760d6ceb42127d15a1ae73"
+    },
+    {
+      "path": "src/python/zynq_bjt/waveform_reference.py",
+      "sha256": "55b25a1efcda4f38b49da1ab3cd4ec67367fddf995a97405dfadb966134183ee"
+    },
+    {
+      "path": "src/python/zynq_bjt/workbench_tools.py",
+      "sha256": "fe7ef413a1c3570dc8533c9d6f6ea81cabc2c35bb4ff5e4e0aea7f7c68153079"
+    },
+    {
+      "path": "src/rtl/adc_capture.v",
+      "sha256": "1679d72eb1219ae4e6d4fdf82f3d8ed9575f78529d3ff12dbeefbf40e264fe89"
+    },
+    {
+      "path": "src/rtl/adc_clocking.v",
+      "sha256": "31d62aab932dd3c7684729c80b617671b1c12743a5277d96f8923c90b7569ad6"
+    },
+    {
+      "path": "src/rtl/adc_statistics.sv",
+      "sha256": "ccba81340f66b77a47c63851f54b8d0c3710b60852e14a2465bfff5d8c4b9eca"
+    },
+    {
+      "path": "src/rtl/adda_core.v",
+      "sha256": "a178ced4337b8fff92d51f94a8b7ccbfdc26dc8c6efb0607f30fb5f784bb37d2"
+    },
+    {
+      "path": "src/rtl/adda_dac_gui_top.v",
+      "sha256": "ae01fbf21aa3aca595881e4c18185e2295880ed6353cf356690c878a0f177432"
+    },
+    {
+      "path": "src/rtl/cdc_sync.v",
+      "sha256": "08d2482655d055fe554c2c08c4f57c48b77f19204512baa5fbe2fe78656fe3f5"
+    },
+    {
+      "path": "src/rtl/dac_awg.v",
+      "sha256": "3f34298baec4d94b1db39a92481d82d086c501c71169e675b354b7382f81b5f8"
+    },
+    {
+      "path": "src/rtl/dac_clocking.v",
+      "sha256": "29698249e7fa5af8945cb9b79b4d88b75d574d15f41f12a3add50af0fb6c26de"
+    },
+    {
+      "path": "src/rtl/dac_generator.v",
+      "sha256": "bb039d0e205c0ca062610a1d9c40a551d59e0c2bbe724318fe99b1c90f55d6af"
+    },
+    {
+      "path": "src/rtl/dac_text.sv",
+      "sha256": "2277ebff82550e59431a53371f70dff7616df0bec43587893cb9f8e2734a6158"
+    },
+    {
+      "path": "src/rtl/gpio_control.sv",
+      "sha256": "6cc9df7c6b60b663513e171d96db12a0a032f15996dab34b9a7b184beb5c4cee"
+    },
+    {
+      "path": "src/rtl/gpio_ui.sv",
+      "sha256": "3012fd056bb1b9c6f819aa07de877c7018e52b95c8aa999da2efef48e4fb43f1"
+    },
+    {
+      "path": "src/rtl/lcd_ddr_reader.sv",
+      "sha256": "4b5f456feda77ae8c16642035c5e22308a880090e983a77e459f92dca595d596"
+    },
+    {
+      "path": "src/rtl/lcd_gpio_top.sv",
+      "sha256": "7aafbbbea34899b2a3e518fdb296c510d87e42a953dbad2b12cb520ea222beea"
+    },
+    {
+      "path": "src/rtl/lcd_graphics.sv",
+      "sha256": "b88bf3a00ed2e7dadc780e740c3543ef52f1f12208f7d08847fae37581abd1e7"
+    },
+    {
+      "path": "src/rtl/lcd_output_stage.sv",
+      "sha256": "17b65484ca0e6d9420c065c55b879bf4ed8c8fdced3c85da6a28b539062a1ad3"
+    },
+    {
+      "path": "src/rtl/lcd_timing.sv",
+      "sha256": "091168f5a8d0fc56b04435ddad74b8e821748b0009da023cb92a5099aaadabf3"
+    },
+    {
+      "path": "src/rtl/sine256.mem",
+      "sha256": "3d5c6478f80f0f37264edc92cb78c0f00ea10b531c272afcc8016c888d55d992"
+    },
+    {
+      "path": "src/rtl/touch/i2c_dri.v",
+      "sha256": "ba6c03ef81c7ea261aede631635ce0f44b21427486b5bd11fa0e33a310d8692e"
+    },
+    {
+      "path": "src/rtl/touch/touch_cdc.sv",
+      "sha256": "12e98711ba59b4dfaf3b03f279eab9ddb7cd54116e8969b0edd3e5f619e1db00"
+    },
+    {
+      "path": "src/rtl/touch/touch_dri.v",
+      "sha256": "cd963c5e28aea9b2a1d33151c81a306e8776afda81078e5bbae17e7f761d448f"
+    },
+    {
+      "path": "src/rtl/touch/touch_top.v",
+      "sha256": "0dbef1e37f6b2bda26c34c8175b5ad5f1de7a08fe55cc7c79532978bf61e11b6"
+    },
+    {
+      "path": "sim/baremetal_faults.c",
+      "sha256": "f457fce6fbede6486775942cc66e63ec3a6fcb9bbfa9fcf83a8f03a124b8c555"
+    },
+    {
+      "path": "sim/baremetal_timebase.c",
+      "sha256": "1ac18d7362b59d43c4dcccf27e966930fb9a4f14895a8ae8905f8c215e0986e1"
+    },
+    {
+      "path": "sim/fixtures/npn_pulse_noisy_plateau.json",
+      "sha256": "80983982b5cd145f4633f52fe69d3bda1d54bb2b57f2465d8f802f3268dba3f0"
+    },
+    {
+      "path": "sim/fixtures/pnp_pulse_noisy_plateau.json",
+      "sha256": "bc7ac46fdd642d5e7065fc4d37c173195ee8cfd3e301a6aae950f9606cd7115f"
+    },
+    {
+      "path": "sim/fixtures/pulse_zero_noise.json",
+      "sha256": "9b34bf5bff7fe3a6cb043186eb450111ba54ac6ea75a6fec0035d42aa3321fc9"
+    },
+    {
+      "path": "sim/run_adc_depth.tcl",
+      "sha256": "8ca55619ed3e21944b9fc6f90c73b3f7bc927a83ff8e3702006806bc06cdc568"
+    },
+    {
+      "path": "sim/run_axi.tcl",
+      "sha256": "8856fcfe025533b913241f96580f4a6c8532dbd0d53a133fdbb39dc51d42c650"
+    },
+    {
+      "path": "sim/run_baremetal_c.ps1",
+      "sha256": "a849703c1d7df2b2be2f28a58e4312030419b92253f0f7d0d748d4a8e137641d"
+    },
+    {
+      "path": "sim/run_lcd.tcl",
+      "sha256": "843a86d286ee6061345cbbbd0e2f6d4dcec0d99cd1934ef665053cd48a451c22"
+    },
+    {
+      "path": "sim/run_lcd_ddr.tcl",
+      "sha256": "8d33e62f275efdffdb8792e317c5999e634d47a2cb8fcf1e414b38de389dfb4b"
+    },
+    {
+      "path": "sim/tb_adc_depth.sv",
+      "sha256": "29325f2a1d6ec8f31201a927877400bf4b984ddf461aa351f0a5fa7c5634f7d0"
+    },
+    {
+      "path": "sim/tb_adc_statistics.sv",
+      "sha256": "4c79a8dfe9a883bab6408bccae325419a4967f0d62b2a1da3bf44a96d07a6d6c"
+    },
+    {
+      "path": "sim/tb_adc_stride.sv",
+      "sha256": "74b32c85c4070b4d360b06d92180c7d1f5ef68cba6b333bd83753b884358f634"
+    },
+    {
+      "path": "sim/tb_adda.sv",
+      "sha256": "7e11d8f9542f4b7cfa2e366b475351f0ddeeeef94075d7d0637f08b7a85059f1"
+    },
+    {
+      "path": "sim/tb_dac_5mhz.sv",
+      "sha256": "52ddf3cbf48964db86c9409f52bc0ce07c827457bb2d8a1b3cd7c1477664b90a"
+    },
+    {
+      "path": "sim/tb_dac_axi.sv",
+      "sha256": "368acbbbb2be962aa4779b365d21215d0ed26c6b4ba3f05b9995e26c156bbe46"
+    },
+    {
+      "path": "sim/tb_lcd_ddr.sv",
+      "sha256": "e41b131ec83a76ed4e3c50cdc37ded37b9e96d34b252c8e26b9cc3d13ada9917"
+    },
+    {
+      "path": "sim/tb_lcd_graphics.sv",
+      "sha256": "d86cf95a568830c13c6b1ed649452af09aa0bb21f274cf7b214ea661a46d91f0"
+    },
+    {
+      "path": "sim/test_acquisition_upgrade.py",
+      "sha256": "bccdc17fdc3f71151e83fc57fd132201fdcc29c40fcbf335621e519cd712515b"
+    },
+    {
+      "path": "sim/test_baremetal.py",
+      "sha256": "136ccedbcf4b654d0be8b54506b1ad284db492274a1ee64807f2a9cc0caf0a44"
+    },
+    {
+      "path": "sim/test_bundle.py",
+      "sha256": "8a656d98eeb823a938c987370e917e5d5429e30a9d4052ab9905267c0e0f1fa9"
+    },
+    {
+      "path": "sim/test_capture_bulk.py",
+      "sha256": "b181b0b75e56c3f9c87efa6119b16011e31e1511c9f8f1391b5cfa0fb3882d9e"
+    },
+    {
+      "path": "sim/test_derived_analysis.py",
+      "sha256": "22d2e49ba97472e45fc7de8cc1d38335b1173bf9cd9543843c7b3bf6ec144e25"
+    },
+    {
+      "path": "sim/test_desktop.py",
+      "sha256": "536402c63680a23eda20c23fad15f2150287a06138762d04e39ca12c4de48d63"
+    },
+    {
+      "path": "sim/test_desktop_lcd.py",
+      "sha256": "3a2f61b611426ca92752f7cbc720a71720705205dc2c75adfaf3cd8f176d1081"
+    },
+    {
+      "path": "sim/test_desktop_output.py",
+      "sha256": "07314da5c5aa96c9c688b3ffcadf16e38f43ba977f614312773cf949536f1073"
+    },
+    {
+      "path": "sim/test_desktop_ui.py",
+      "sha256": "9de0b0e40ab632880f163d56a40eb5313e474cc7b2f8c75802af4bcdf8c0aa5b"
+    },
+    {
+      "path": "sim/test_driver.py",
+      "sha256": "f27761fe9df72f962a2dd296e895999a8078b942a0263613e4b72547b3fc9fd2"
+    },
+    {
+      "path": "sim/test_lcd.py",
+      "sha256": "e82cd77d77b067c81c8c9872922089c6e9f2073d45dc78a38264a234f0649360"
+    },
+    {
+      "path": "sim/test_lcd_framebuffer.py",
+      "sha256": "b7fb71bec044207abc859dd53453203dc60afc6c01a0aaad98faa3f5a53b25ad"
+    },
+    {
+      "path": "sim/test_lcd_native.py",
+      "sha256": "92aeb698665d14c63210ac1ca53c3df7b3a3a7877d92ef13dcaf085cc92ba873"
+    },
+    {
+      "path": "sim/test_lcd_scan_stream.py",
+      "sha256": "b81cb3fb1eba1fbae8c76b2be9248448c192821a4972bad273a9eb41e70a3bf8"
+    },
+    {
+      "path": "sim/test_meter_ve.py",
+      "sha256": "07522e466260fbc0dd683c43c76cf8759e34300ec8ccfed607a5c22d9135ed94"
+    },
+    {
+      "path": "sim/test_mio.py",
+      "sha256": "f27784b52202e581258819a34092b1141fd3db1a7b2bc0b7b6f4fd3b34a1d76d"
+    },
+    {
+      "path": "sim/test_node_settling.py",
+      "sha256": "b51142412058902a9605b059aa249b6bc4d22b8e17bab1bdda408820f470dbfb"
+    },
+    {
+      "path": "sim/test_npn_pulse_noise.py",
+      "sha256": "a09eb93dcc8cd27c95f6f222649144e7c2151f3cb0a0c13df3bbe59d68108ece"
+    },
+    {
+      "path": "sim/test_parameter_view.py",
+      "sha256": "4d9f73e360531ef06f209615a565b25e16bd7f8ddff393065d4c50e8e298c1ef"
+    },
+    {
+      "path": "sim/test_pdf_view.py",
+      "sha256": "4a82a8a2aea5ffdf1956e385be5d2f199b43f36da2e3813c7ee6dcae8aa5cea9"
+    },
+    {
+      "path": "sim/test_pnp_pulse_noise.py",
+      "sha256": "adc06ddbc696b1d4900025e59113cc733b27b43d3f2093b113c0964099b9e471"
+    },
+    {
+      "path": "sim/test_point_details.py",
+      "sha256": "fa9349ba70b1598e4339a9c0de30c164c31c395f757bd95458cb9a13eb8d3bf5"
+    },
+    {
+      "path": "sim/test_profiles.py",
+      "sha256": "80f211401ada454178a0cfe108f13b4dcc26d64505d8b4ea0872ec48ed029b7e"
+    },
+    {
+      "path": "sim/test_pulse.py",
+      "sha256": "90f71fd49183634627a6f593e6497aa30df05817c74be31fa3dfa517ace61cef"
+    },
+    {
+      "path": "sim/test_pulse_timing_ui.py",
+      "sha256": "bad825ca742b4b656078a50d41da255c54a825441faf59040aa00d13e4b9c02d"
+    },
+    {
+      "path": "sim/test_result_methods.py",
+      "sha256": "e4eb31fd51078f02018e87e789788cf79554d7cf9b2074a7d5e45f29f5f20948"
+    },
+    {
+      "path": "sim/test_runtime.py",
+      "sha256": "81c7ef32ae2dacd9f3cc7d77f44cdbb8de259851a6b41fed4ed0916130bc0d94"
+    },
+    {
+      "path": "sim/test_scan.py",
+      "sha256": "a9885ddd0ddd2fdd0e764c4e71c1284efb5c1cfdecc9689dff9e6d7b23cdfd80"
+    },
+    {
+      "path": "sim/test_scope_display.py",
+      "sha256": "d5b9c3407ef82328073ecbe62de93add68ed22ab98ce2702681b25ba1643a450"
+    },
+    {
+      "path": "sim/test_scope_fft.py",
+      "sha256": "a56309b2ce8801f4a79aced1030a32a33dd757fd1681ed3aa4fe3822d9ddb55c"
+    },
+    {
+      "path": "sim/test_scope_workbench.py",
+      "sha256": "81864e7ec0489c2c6b3dd22d9c544caf9c6e676940080bb54fb667f629599812"
+    },
+    {
+      "path": "sim/test_spi.py",
+      "sha256": "932eb6b595e4bba24814a29fb813433b1fdb787e25d3017e8a85d3eb84d089c7"
+    },
+    {
+      "path": "sim/test_sweep_segments.py",
+      "sha256": "6de6f2b0f2c65a284544ec5ec3197036fd42a1f25c9d554f2344acb4011eb53d"
+    },
+    {
+      "path": "sim/test_tx1.py",
+      "sha256": "022541a52a0314dcdf25814e3cc417e7ac34385c3cfa957923ce03f3084a2f1a"
+    },
+    {
+      "path": "sim/test_tx1_bus_decode.py",
+      "sha256": "1dac9f81956da01bc93aa3e099ceaec93f4183e4b92404a27911cec1a9969c7c"
+    },
+    {
+      "path": "sim/test_tx3_compatibility.py",
+      "sha256": "3dce96b7dae3de98d71927bdb3022894e52478fc8c0d37c811c9dd9d5dfb0a70"
+    },
+    {
+      "path": "sim/test_tx_ac_publication.py",
+      "sha256": "e1a481d1dd7567ef33a10e7c5b8b991737c7b8d7804b5f4d52a826598745ca68"
+    },
+    {
+      "path": "sim/test_waveform_metrics.py",
+      "sha256": "f5e8dba3a5e9db35815ef96316d6cb85b8eb0c0fbb8ab223b08547f7bca6d0e7"
+    },
+    {
+      "path": "sim/test_waveform_reference.py",
+      "sha256": "3580645ab30556d9c54c0bf3195d0aa11262562dc815e712440c0dbc2abb62ca"
+    },
+    {
+      "path": "sim/test_workbench_november.py",
+      "sha256": "c86d9b8d1df1496dc6ee9033ce4a3e63eb52bdce9f2c735891dd418ec748e7ea"
+    },
+    {
+      "path": "sim/test_workbench_tools.py",
+      "sha256": "c322055fef943f68e58d958520a66a8818d912db88c2e7784d7db235f23213f7"
+    }
+  ],
+  "build_inputs": [
+    {
+      "path": "build/create_overlay.tcl",
+      "sha256": "2bfddc1dc0bddbcc7c5a52567d2d8e8228f6c96f03c67656250eacf1ab388266"
+    },
+    {
+      "path": "board/ps_core_2v5.tcl",
+      "sha256": "b218c464574c2d6a6300de7097c3f978468b99c29ea8919d9fdbd329f6273b1c"
+    },
+    {
+      "path": "board/ps_ddr_nanya533.tcl",
+      "sha256": "b1e522d0bbee494bb1ba3789538e802c2fa467ef2d34ea6cdc5939083119c8ed"
+    },
+    {
+      "path": "board/ps_pynq_custom.tcl",
+      "sha256": "392412b0aeb7c31caab94d2d7bb98d775d18ac705b3ddfd4694cb98ac0ead09e"
+    }
+  ],
+  "source_revision": "255ea230bc1e4a81d78d8623e494b90bd955d773",
+  "source_repository": "https://github.com/hscsja03-afk/-BJT-"
+}
