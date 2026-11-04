@@ -1,9 +1,13 @@
 """Automated voltage comparisons using only the TX1 isolation C program."""
+import sys as _repo_sys
+from pathlib import Path as _RepoPath
+_repo_sys.path.insert(0, str(_RepoPath(__file__).resolve().parents[2]))
+
 import argparse,json,re,sys,time
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from tx2_scope_zero import serial
-from calibrate_tx23_scope import Scope
+from board.instruments.tx2_scope_zero import serial
+from board.calibration.tx.calibrate_tx23_scope import Scope
 
 ap=argparse.ArgumentParser();ap.add_argument('--report',type=Path,required=True);ap.add_argument('--commands',default='BPSZCB');a=ap.parse_args()
 r={'points':[],'exchanges':[],'completed':False};u=serial.Serial(port=None,baudrate=115200,timeout=.1,write_timeout=3)
