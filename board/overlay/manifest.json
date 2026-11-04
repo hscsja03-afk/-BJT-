@@ -1,0 +1,15 @@
+{
+  "bit": {
+    "path": "bjt.bit",
+    "sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001"
+  },
+  "hwh": {
+    "path": "bjt.hwh",
+    "sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e"
+  },
+  "peripheral": {
+    "instance": "adda_core_0",
+    "base": "0x43c00000",
+    "size": "0x10000"
+  }
+}

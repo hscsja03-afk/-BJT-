@@ -1,0 +1,8 @@
+// Deployed 2026-10-30 after full QSPI backup; readback and one cold boot passed.
+// See report/qspi_persistence_20261030.json before rebuilding or deploying.
+the_ROM_image:
+{
+  [bootloader] "D:/FPGA/AMD_2026/build/work/pynq_custom50/vitis/pynq_custom50/export/pynq_custom50/sw/boot/fsbl.elf"
+  [load=0x04000000, startup=0x04000000] "D:/FPGA/AMD_2026/build/work/pynq_jtag_boot/u-boot-verified.bin"
+  [load=0x00100000] "D:/FPGA/WSL/PYNQ-work/u-boot-system-custom.dtb"
+}
