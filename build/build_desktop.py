@@ -44,7 +44,7 @@ command = [sys.executable, '-m', 'PyInstaller', '--noconfirm', '--windowed', '--
            str(ROOT/'board/run_desktop.pyw')]
 subprocess.run(command, check=True)
 dest = distpath/'ZynqBjtDesktop'
-shutil.copyfile(ROOT/'board/desktop_workbench.md', dest/'README.md')
+shutil.copyfile(ROOT/'board/desktop_workbench.md', dest/'readme.md')
 shutil.copyfile(ROOT/'board/early_rin_datasheet.md', dest/'early_rin_datasheet.md')
 manifest = {str(p.relative_to(dest)): hashlib.sha256(p.read_bytes()).hexdigest()
             for p in dest.rglob('*') if p.is_file() and p.name != 'manifest.json'}
