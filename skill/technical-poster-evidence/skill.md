@@ -1,6 +1,6 @@
 ---
 name: technical-poster-evidence
-description: 将硬件、PYNQ架构、上位机和实测结果组织为单页技术海报。
+description: 组织系统架构、硬件照片、软件界面和实测图表，建立素材、数值与原始数据之间的对应关系。
 ---
 
 # 技术海报与证据图组织
