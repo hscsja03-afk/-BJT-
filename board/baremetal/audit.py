@@ -20,7 +20,7 @@ def audit():
     result={'ddr_initialized':False,'storage_written':False,'link_memory_bytes':0x30000,
             'ps_init_sha256':sha(INIT),'images':{},'inputs':{}}
     for relative in ('src/baremetal/main.c','src/baremetal/adda.c','src/baremetal/adda.h','src/baremetal/timebase.h',
-                     'board/ocm.ld','board/baremetal/build.ps1'):
+                     'board/config/ocm.ld','board/baremetal/build.ps1'):
         result['inputs'][relative]=sha(ROOT/relative)
     for mode in ('probe','adda'):
         p=OUT/f'{mode}.elf';data=p.read_bytes()
