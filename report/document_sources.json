@@ -1,11 +1,5 @@
 [
   {
-    "path": "report/design_report.docx",
-    "source": "report/参赛报告文献修订版/三极管参数测量系统设计报告.docx",
-    "bytes": 11924616,
-    "sha256": "ec283047e11875d7cdc444c516ea02da40d19398a828e88e9d638454c122593e"
-  },
-  {
     "path": "report/design_report.pdf",
     "source": "三极管参数测量系统设计报告.pdf",
     "bytes": 5868400,

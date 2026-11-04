@@ -4,7 +4,7 @@
   "source_distribution": "passed",
   "runtime_data_files": 26,
   "documents": {
-    "report/design_report.docx": "valid"
+    "report/design_report.pdf": "valid"
   },
   "credential_scan_matches": 0,
   "software_regression": {

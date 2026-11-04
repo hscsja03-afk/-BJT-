@@ -10,7 +10,7 @@
 | 实测数据 | 查看器件测点与运行记录 | report/measurement_index.json |
 | 校准与参考数据 | 电压电流换算及结果对照 | data/ |
 | 技能包 | 复用校验和排错方法 | skill/readme.md |
-| 设计报告 | 原理、架构、优化与实验结果 | [PDF](design_report.pdf)、[Word](design_report.docx) |
+| 设计报告 | 原理、架构、优化与实验结果 | [PDF](design_report.pdf) |
 | 工程说明 | 源码结构、接口和版本配置 | report/design_report.md |
 | 协作记录 | 关键问题、方案取舍与工程心得 | report/ai_collaboration.md |
 | 数据归档索引 | 定位批量实验资料 | report/archive_index.json |
