@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zynq-bjt"
+version = "0.2.0"
+description = "Zynq-7020 transistor characterization with PYNQ and desktop control"
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+notebook = ["ipywidgets>=7.6", "matplotlib>=3.3"]
+serial = ["pyserial>=3.5"]
+desktop = ["matplotlib>=3.3", "paramiko>=3.4,<6", "PyMuPDF==1.26.6"]
+
+[project.scripts]
+zynq-bjt-demo = "zynq_bjt.demo:main"
+zynq-bjt-baremetal = "zynq_bjt.baremetal:main"
+zynq-bjt-desktop = "zynq_bjt.desktop:main"
+
+[tool.setuptools.packages.find]
+where = ["src/python"]
