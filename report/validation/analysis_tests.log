@@ -16,6 +16,6 @@ test_real_scans_stay_locked_until_fixture_is_confirmed (test_characteristics.Cha
 test_workbench_exposes_all_four_measurement_tabs_and_runs_output_scan (test_characteristics.CharacteristicScanTests.test_workbench_exposes_all_four_measurement_tabs_and_runs_output_scan) ... skipped 'Notebook display dependencies are optional'
 
 ----------------------------------------------------------------------
-Ran 16 tests in 2.011s
+Ran 16 tests in 3.704s
 
 OK (skipped=2)

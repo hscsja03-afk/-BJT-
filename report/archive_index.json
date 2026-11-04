@@ -335,7 +335,7 @@
   },
   {
     "id": "measurement_results",
-    "files": 178,
+    "files": 172,
     "archive_parts": [
       "board/results/measurement_results.zip.001",
       "board/results/measurement_results.zip.002",
@@ -357,7 +357,7 @@
   },
   {
     "id": "windows_runtime",
-    "files": 1991,
+    "files": 1931,
     "archive_parts": [
       "board/desktop/windows_runtime.zip.001",
       "board/desktop/windows_runtime.zip.002",

@@ -26,7 +26,7 @@ RTL 主体位于 src/rtl/adda_core.v；ADC 捕获、统计与时钟分别在 adc
 
 物理通道为测试板 ADC2 对应 ADDA RX1，测试板 ADC1 对应 ADDA RX2。输入模式的 VB 衰减比例、输出模式的 VCC 比例及不同档位的电阻独立配置。当前配置以 data/bjt_parameter_basis.json、frontend.json 和每次 run.json 为准，各档位独立读取换算参数。PNP 输入的 VE 使用实测换算表，相关数据见 data/ve_feedback_calibration.json。
 
-每次运行保存配置、校准身份、测点 CSV、原始帧、结束状态及清理结果。历史交流曲线只作为带来源的参考显示，原始采集和分析独立保留。包内代表性数据按 measurement_index.json 定位；选取规则为每个档位、项目及方法中最近一次 complete 且 simulated=false 的记录。记录同时保存器件身份、标定条件和拟合结果。
+每次运行保存配置、校准身份、测点 CSV、原始帧、结束状态及清理结果。PNP 交流增益、输入电阻曲线及导出图片均使用实际采集的测点。包内代表性数据按 measurement_index.json 定位；选取规则为每个档位、项目及方法中最近一次 complete 且 simulated=false 的记录。记录同时保存器件身份、标定条件和拟合结果。
 
 ## 时序与资源
 

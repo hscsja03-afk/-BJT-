@@ -1,12 +1,9 @@
-test_extension_follows_acquired_frequency_and_never_changes_original_data (test_ac_display_trend.AcDisplayTrendTests.test_extension_follows_acquired_frequency_and_never_changes_original_data) ... ok
-test_history_is_revealed_by_frequency_not_future_reference_points (test_ac_display_trend.AcDisplayTrendTests.test_history_is_revealed_by_frequency_not_future_reference_points) ... ok
-test_title_fallback_does_not_relabel_the_original_record (test_ac_display_trend.AcDisplayTrendTests.test_title_fallback_does_not_relabel_the_original_record) ... ok
 test_bundled_pnp_values_keep_sign_and_distinct_limits (test_acquisition_upgrade.AcquisitionUpgradeTests.test_bundled_pnp_values_keep_sign_and_distinct_limits) ... ok
 test_manual_decimation_and_record_length (test_acquisition_upgrade.AcquisitionUpgradeTests.test_manual_decimation_and_record_length) ... ok
 test_new_pdf_extract_with_negative_limits_conditions_and_provenance (test_acquisition_upgrade.AcquisitionUpgradeTests.test_new_pdf_extract_with_negative_limits_conditions_and_provenance) ... ok
 test_noncoherent_sine_amplitude_and_unresolved_short_frame (test_acquisition_upgrade.AcquisitionUpgradeTests.test_noncoherent_sine_amplitude_and_unresolved_short_frame) ... ok
 test_noncoherent_square_harmonics_and_total_rms (test_acquisition_upgrade.AcquisitionUpgradeTests.test_noncoherent_square_harmonics_and_total_rms) ... ok
-test_result_group_and_remote_path_boundary (test_acquisition_upgrade.AcquisitionUpgradeTests.test_result_group_and_remote_path_boundary) ... FAIL
+test_result_group_and_remote_path_boundary (test_acquisition_upgrade.AcquisitionUpgradeTests.test_result_group_and_remote_path_boundary) ... ok
 test_capture_rejects_short_complete_payload (test_baremetal.BaremetalTests.test_capture_rejects_short_complete_payload) ... ok
 test_close_releases_port_even_when_stop_fails (test_baremetal.BaremetalTests.test_close_releases_port_even_when_stop_fails) ... ok
 test_corrupt_crc_order_and_sequence_stop_further_commands (test_baremetal.BaremetalTests.test_corrupt_crc_order_and_sequence_stop_further_commands) ... ok
@@ -17,9 +14,9 @@ test_partial_frame_times_out_without_retry (test_baremetal.BaremetalTests.test_p
 test_probe_cannot_be_used_as_adda (test_baremetal.BaremetalTests.test_probe_cannot_be_used_as_adda) ... ok
 test_pairs_addresses_and_corruption (test_bundle.Tests.test_pairs_addresses_and_corruption) ... ok
 test_bulk_equals_scalar_preserves_rx_order_overrange_and_snapshot (test_capture_bulk.BulkSnapshotTests.test_bulk_equals_scalar_preserves_rx_order_overrange_and_snapshot) ... ok
-test_historical_rin_is_available_for_every_rotation_record (test_derived_analysis.DerivedAnalysisTests.test_historical_rin_is_available_for_every_rotation_record) ... ok
 test_known_early_voltage_and_output_resistance (test_derived_analysis.DerivedAnalysisTests.test_known_early_voltage_and_output_resistance) ... ok
 test_nonphysical_and_flat_slopes_do_not_report_early (test_derived_analysis.DerivedAnalysisTests.test_nonphysical_and_flat_slopes_do_not_report_early) ... ok
+test_rin_plot_retains_acquired_points_and_refinement (test_derived_analysis.DerivedAnalysisTests.test_rin_plot_retains_acquired_points_and_refinement) ... ok
 test_rin_summary_retains_measured_values_and_excludes_invalid (test_derived_analysis.DerivedAnalysisTests.test_rin_summary_retains_measured_values_and_excludes_invalid) ... ok
 test_adc_clock_switch_preserves_gpio_and_changes_physical_and_record_rates (test_desktop.Tests.test_adc_clock_switch_preserves_gpio_and_changes_physical_and_record_rates) ... ok
 test_adc_switch_does_not_interrupt_enabled_tx (test_desktop.Tests.test_adc_switch_does_not_interrupt_enabled_tx) ... ok
@@ -88,19 +85,18 @@ test_output_beta_and_legacy_input_plans_match_displayed_bounds (test_desktop_ui.
 test_page_and_profile_switch_restore_rows_and_unsaved_parameters (test_desktop_ui.UiTests.test_page_and_profile_switch_restore_rows_and_unsaved_parameters) ... ok
 test_parameter_tabs_preserve_edits_and_reference_segments_drive_plan (test_desktop_ui.UiTests.test_parameter_tabs_preserve_edits_and_reference_segments_drive_plan) ... ok
 test_partial_range_typing_is_non_destructive_and_invalid_config_is_blocked (test_desktop_ui.UiTests.test_partial_range_typing_is_non_destructive_and_invalid_config_is_blocked) ... ok
+test_pnp_ac_plots_follow_acquired_gain_and_resistance (test_desktop_ui.UiTests.test_pnp_ac_plots_follow_acquired_gain_and_resistance) ... ok
 test_pnp_big_ib_conversion_is_50_ohm_and_npn_custom_values_stay_separate (test_desktop_ui.UiTests.test_pnp_big_ib_conversion_is_50_ohm_and_npn_custom_values_stay_separate) ... ok
 test_pnp_big_table_method_is_visible_and_linear_ratio_is_not_used (test_desktop_ui.UiTests.test_pnp_big_table_method_is_visible_and_linear_ratio_is_not_used) ... ok
-test_pnp_history_rotation_keeps_live_rows_and_profile_separate (test_desktop_ui.UiTests.test_pnp_history_rotation_keeps_live_rows_and_profile_separate) ... ok
 test_point_columns_add_remove_persist_without_changing_data (test_desktop_ui.UiTests.test_point_columns_add_remove_persist_without_changing_data) ... ok
 test_point_columns_plus_menu_only_lists_hidden_and_empty_view_can_recover (test_desktop_ui.UiTests.test_point_columns_plus_menu_only_lists_hidden_and_empty_view_can_recover) ... ok
-test_read_result_automatically_saves_main_beta_and_history_images (test_desktop_ui.UiTests.test_read_result_automatically_saves_main_beta_and_history_images) ... ok
+test_read_result_saves_acquired_curves_and_resistance (test_desktop_ui.UiTests.test_read_result_saves_acquired_curves_and_resistance) ... ok
 test_result_tools_fit_narrow_window_and_table_scrolls_horizontally (test_desktop_ui.UiTests.test_result_tools_fit_narrow_window_and_table_scrolls_horizontally) ... ok
 test_route_and_single_gpio_work_without_analog_initialization (test_desktop_ui.UiTests.test_route_and_single_gpio_work_without_analog_initialization) ... ok
 test_route_table_preserves_dac_outputs_and_sidebar_stop_resets_gpio (test_desktop_ui.UiTests.test_route_table_preserves_dac_outputs_and_sidebar_stop_resets_gpio) ... ok
 test_segment_boundary_updates_neighbor_and_uniform_removes_duplicates (test_desktop_ui.UiTests.test_segment_boundary_updates_neighbor_and_uniform_removes_duplicates) ... ok
 test_sidebar_cancel_active_scan_resets_manual_gpio (test_desktop_ui.UiTests.test_sidebar_cancel_active_scan_resets_manual_gpio) ... ok
 test_sidebar_cancel_pending_gpio_resets_without_initialization (test_desktop_ui.UiTests.test_sidebar_cancel_pending_gpio_resets_without_initialization) ... ok
-test_two_curve_views_keep_rin_historical_and_progressive (test_desktop_ui.UiTests.test_two_curve_views_keep_rin_historical_and_progressive) ... ok
 test_tx_enter_requires_prior_ack_and_valid_parameters (test_desktop_ui.UiTests.test_tx_enter_requires_prior_ack_and_valid_parameters) ... ok
 test_wheel_over_nested_entry_and_dynamic_controls (test_desktop_ui.UiTests.test_wheel_over_nested_entry_and_dynamic_controls) ... ok
 test_attenuation_and_drive_are_separate_paths (test_driver.Tests.test_attenuation_and_drive_are_separate_paths) ... ok
@@ -125,6 +121,7 @@ test_old_bitstream_no_writes (test_lcd.LcdTests.test_old_bitstream_no_writes) ..
 test_pages_and_wire_format (test_lcd.LcdTests.test_pages_and_wire_format) ... ok
 test_partial_frame_replacement_matches_target_and_rejects_invalid (test_lcd.LcdTests.test_partial_frame_replacement_matches_target_and_rejects_invalid) ... ok
 test_saved_input_is_profile_filtered_and_read_only (test_lcd.LcdTests.test_saved_input_is_profile_filtered_and_read_only) ... ok
+test_saved_pnp_ac_and_rin_use_the_recorded_samples (test_lcd.LcdTests.test_saved_pnp_ac_and_rin_use_the_recorded_samples) ... ok
 test_touch_stop_and_bounds (test_lcd.LcdTests.test_touch_stop_and_bounds) ... ok
 test_bad_payload_does_not_write_or_queue (test_lcd_framebuffer.FramebufferTests.test_bad_payload_does_not_write_or_queue) ... ok
 test_rgb565_render_and_bounded_decode (test_lcd_framebuffer.FramebufferTests.test_rgb565_render_and_bounded_decode) ... ok
@@ -192,18 +189,17 @@ test_reference_mode_is_explicit_and_never_marks_a_result_qualified (test_profile
 test_source_feedback_range_rejects_over_two_volts_before_io (test_profiles.Tests.test_source_feedback_range_rejects_over_two_volts_before_io) ... ok
 test_user_pin_order_and_current_ranges (test_profiles.Tests.test_user_pin_order_and_current_ranges) ... ok
 test_vcc_divider_converts_connector_voltage_before_current_calculation (test_profiles.Tests.test_vcc_divider_converts_connector_voltage_before_current_calculation) ... ok
-test_round_robin_device_filter_and_original_points (test_pulse_history.HistoryTests.test_round_robin_device_filter_and_original_points) ... ok
-test_adjustable_timing_is_validated_and_saved (test_pulse_history.PulseTests.test_adjustable_timing_is_validated_and_saved) ... ok
-test_edges_drift_low_and_stuck_high_are_rejected (test_pulse_history.PulseTests.test_edges_drift_low_and_stuck_high_are_rejected) ... ok
-test_faults_not_retried_as_low_plateaus (test_pulse_history.PulseTests.test_faults_not_retried_as_low_plateaus) ... ok
-test_incompatible_modes_rejected_before_output (test_pulse_history.PulseTests.test_incompatible_modes_rejected_before_output) ... ok
-test_output_and_beta_use_pulse_and_cleanup (test_pulse_history.PulseTests.test_output_and_beta_use_pulse_and_cleanup) ... ok
-test_pnp_power_pulse_uses_emitter_sense_and_separate_folders (test_pulse_history.PulseTests.test_pnp_power_pulse_uses_emitter_sense_and_separate_folders) ... ok
-test_quantized_pulse_levels_and_duty (test_pulse_history.PulseTests.test_quantized_pulse_levels_and_duty) ... ok
-test_recorded_zero_point_with_spikes_is_not_a_pulse_edge (test_pulse_history.PulseTests.test_recorded_zero_point_with_spikes_is_not_a_pulse_edge) ... ok
+test_adjustable_timing_is_validated_and_saved (test_pulse.PulseTests.test_adjustable_timing_is_validated_and_saved) ... ok
+test_edges_drift_low_and_stuck_high_are_rejected (test_pulse.PulseTests.test_edges_drift_low_and_stuck_high_are_rejected) ... ok
+test_faults_not_retried_as_low_plateaus (test_pulse.PulseTests.test_faults_not_retried_as_low_plateaus) ... ok
+test_incompatible_modes_rejected_before_output (test_pulse.PulseTests.test_incompatible_modes_rejected_before_output) ... ok
+test_output_and_beta_use_pulse_and_cleanup (test_pulse.PulseTests.test_output_and_beta_use_pulse_and_cleanup) ... ok
+test_pnp_power_pulse_uses_emitter_sense_and_separate_folders (test_pulse.PulseTests.test_pnp_power_pulse_uses_emitter_sense_and_separate_folders) ... ok
+test_quantized_pulse_levels_and_duty (test_pulse.PulseTests.test_quantized_pulse_levels_and_duty) ... ok
+test_recorded_zero_point_with_spikes_is_not_a_pulse_edge (test_pulse.PulseTests.test_recorded_zero_point_with_spikes_is_not_a_pulse_edge) ... ok
 test_timing_edits_survive_page_switch_defaults_and_summary (test_pulse_timing_ui.PulseTimingUiTests.test_timing_edits_survive_page_switch_defaults_and_summary) ... ok
 test_latest_method_filters_nested_and_old_records (test_result_methods.ResultMethodTests.test_latest_method_filters_nested_and_old_records) ... ok
-test_paths_separate_methods_and_accept_legacy (test_result_methods.ResultMethodTests.test_paths_separate_methods_and_accept_legacy) ... FAIL
+test_paths_separate_methods_and_accept_legacy (test_result_methods.ResultMethodTests.test_paths_separate_methods_and_accept_legacy) ... ok
 test_adc_unlock_rejects_frames_and_statistics (test_runtime.InitializationTests.test_adc_unlock_rejects_frames_and_statistics) ... ok
 test_bad_clock_disables_enabled_adc_path_and_mutes_outputs (test_runtime.InitializationTests.test_bad_clock_disables_enabled_adc_path_and_mutes_outputs) ... ok
 test_clock_check_follows_adc_and_data_path_enable (test_runtime.InitializationTests.test_clock_check_follows_adc_and_data_path_enable) ... ok
@@ -323,43 +319,22 @@ Traceback (most recent call last):
   File "C:\Users\lgw\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
     __import__(name)
     ~~~~~~~~~~^^^^^^
-  File "D:\FPGA\AMD_2026\output\zynq_bjt_final_20261103\sim\test_tx1_bus_decode.py", line 7, in <module>
+  File "D:\FPGA\AMD_2026\publish\bjt\sim\test_tx1_bus_decode.py", line 7, in <module>
     from capture_tx1_bus import decode_i2c
-  File "D:\FPGA\AMD_2026\output\zynq_bjt_final_20261103\board\capture_tx1_bus.py", line 14, in <module>
+  File "D:\FPGA\AMD_2026\publish\bjt\board\capture_tx1_bus.py", line 14, in <module>
     from calibrate_tx23_scope import Scope
-  File "D:\FPGA\AMD_2026\output\zynq_bjt_final_20261103\board\calibrate_tx23_scope.py", line 17, in <module>
+  File "D:\FPGA\AMD_2026\publish\bjt\board\calibrate_tx23_scope.py", line 17, in <module>
     from tx2_scope_zero import SerialAgent, ROOT
-  File "D:\FPGA\AMD_2026\output\zynq_bjt_final_20261103\board\tx2_scope_zero.py", line 21, in <module>
+  File "D:\FPGA\AMD_2026\publish\bjt\board\tx2_scope_zero.py", line 21, in <module>
     import serial
 ModuleNotFoundError: No module named 'serial'
 
 
-======================================================================
-FAIL: test_result_group_and_remote_path_boundary (test_acquisition_upgrade.AcquisitionUpgradeTests.test_result_group_and_remote_path_boundary)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "D:\FPGA\AMD_2026\output\zynq_bjt_final_20261103\sim\test_acquisition_upgrade.py", line 49, in test_result_group_and_remote_path_boundary
-    self.assertEqual(p.parent,Path(folder)/'PNP大功率'/'输出特性')
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: WindowsPath('C:/Users/lgw/AppData/Local/Temp/tmp0z99bupz/PNP大功率/输出特性/步进') != WindowsPath('C:/Users/lgw/AppData/Local/Temp/tmp0z99bupz/PNP大功率/输出特性')
+Ran 310 tests in 374.025s
 
-======================================================================
-FAIL: test_paths_separate_methods_and_accept_legacy (test_result_methods.ResultMethodTests.test_paths_separate_methods_and_accept_legacy)
+FAILED (errors=1)
 Consider using the pymupdf_layout package for a greatly improved page layout analysis.
 Published TX2/TX3 AC grids; DC calibration unchanged.
 Published TX2/TX3 AC grids; DC calibration unchanged.
 Published TX2/TX3 AC grids; DC calibration unchanged.
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "D:\FPGA\AMD_2026\output\zynq_bjt_final_20261103\sim\test_result_methods.py", line 21, in test_paths_separate_methods_and_accept_legacy
-    self.assertEqual(create_run(root,'pnp_big','output').parent.name,'步进')
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: '步进' != '输出特性'
-- 步进
-+ 输出特性
-
-
-----------------------------------------------------------------------
-Ran 314 tests in 284.296s
-
-FAILED (failures=2, errors=1)

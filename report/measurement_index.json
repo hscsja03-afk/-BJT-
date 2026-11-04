@@ -165,7 +165,7 @@
     "status": "complete",
     "simulated": false,
     "points": 68,
-    "sha256": "5fbbab1b8eb121941e582da5b7d08409bccacb35561dd5228a67bf22d4e9aa11",
+    "sha256": "fb2dacce7191117a404599abb3437d66317b4db25b520192d8ee1f7a0f7340bb",
     "note": "complete 表示扫描流程结束；标定资格、器件型号及分析有效性以原始记录为准。"
   },
   {
@@ -256,7 +256,7 @@
     "status": "complete",
     "simulated": false,
     "points": 68,
-    "sha256": "22e7de5f8322cb9eeb8e720af72668e54db5d299ab64b3c8b06017c49700862d",
+    "sha256": "53bd0b9872ae234c178c7270485cd36769750f2ac52d08335df8d1668d46d792",
     "note": "complete 表示扫描流程结束；标定资格、器件型号及分析有效性以原始记录为准。"
   },
   {

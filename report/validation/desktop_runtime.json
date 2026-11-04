@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-11-03T22:13:52",
+  "timestamp": "2026-11-04T14:00:34",
   "checks": [
     {
       "measurement": "input",
       "profile": "npn_small",
       "rows": 4,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\NPN小功率\\输入特性\\20261103_221352_71c37263",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\NPN小功率\\输入特性\\20261104_140035_9b772fc2",
       "simulated": true,
       "point_detail_fields": [
         "rx1_mean_code",
@@ -22,7 +22,7 @@
       "measurement": "output",
       "profile": "npn_small",
       "rows": 78,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\NPN小功率\\输出特性\\20261103_221353_5110d012",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\NPN小功率\\输出特性\\20261104_140036_9b641512",
       "simulated": true,
       "point_detail_fields": [
         "rx1_mean_code",
@@ -39,7 +39,7 @@
       "measurement": "beta",
       "profile": "npn_small",
       "rows": 45,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\NPN小功率\\线性精度\\20261103_221354_2c7ec615",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\NPN小功率\\线性精度\\20261104_140038_dafa0103",
       "simulated": true,
       "point_detail_fields": [
         "rx1_mean_code",
@@ -57,7 +57,7 @@
       "measurement": "ac",
       "profile": "npn_small",
       "rows": 66,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\NPN小功率\\交流特性\\20261103_221355_5cd79734",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\NPN小功率\\交流特性\\20261104_140040_944a09b9",
       "simulated": true,
       "point_detail_fields": [
         "rx1_rms_code",
@@ -75,7 +75,7 @@
       "measurement": "input",
       "profile": "npn_big",
       "rows": 4,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\NPN大功率\\输入特性\\20261103_221355_caba16a5",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\NPN大功率\\输入特性\\20261104_140041_d4c1fcac",
       "simulated": true,
       "point_detail_fields": [
         "rx1_mean_code",
@@ -92,7 +92,7 @@
       "measurement": "output",
       "profile": "npn_big",
       "rows": 78,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\NPN大功率\\输出特性\\步进\\20261103_221357_e19cc739",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\NPN大功率\\输出特性\\步进\\20261104_140042_c64c2e2a",
       "simulated": true,
       "point_detail_fields": [
         "rx1_mean_code",
@@ -109,7 +109,7 @@
       "measurement": "beta",
       "profile": "npn_big",
       "rows": 25,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\NPN大功率\\线性精度\\步进\\20261103_221357_525b75e2",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\NPN大功率\\线性精度\\步进\\20261104_140043_3577582e",
       "simulated": true,
       "point_detail_fields": [
         "rx1_mean_code",
@@ -127,7 +127,7 @@
       "measurement": "ac",
       "profile": "npn_big",
       "rows": 66,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\NPN大功率\\交流特性\\20261103_221357_24150dd4",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\NPN大功率\\交流特性\\20261104_140044_fddf0a6c",
       "simulated": true,
       "point_detail_fields": [
         "rx1_rms_code",
@@ -145,7 +145,7 @@
       "measurement": "input",
       "profile": "pnp_small",
       "rows": 4,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\PNP小功率\\输入特性\\20261103_221358_22ce8d40",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\PNP小功率\\输入特性\\20261104_140045_1d8d808d",
       "simulated": true,
       "point_detail_fields": [
         "rx1_mean_code",
@@ -162,7 +162,7 @@
       "measurement": "output",
       "profile": "pnp_small",
       "rows": 78,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\PNP小功率\\输出特性\\20261103_221359_dd4c3904",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\PNP小功率\\输出特性\\20261104_140046_c3149bc1",
       "simulated": true,
       "point_detail_fields": [
         "rx1_mean_code",
@@ -179,7 +179,7 @@
       "measurement": "beta",
       "profile": "pnp_small",
       "rows": 44,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\PNP小功率\\线性精度\\20261103_221400_4b452efc",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\PNP小功率\\线性精度\\20261104_140047_26cb63fa",
       "simulated": true,
       "point_detail_fields": [
         "rx1_mean_code",
@@ -197,7 +197,7 @@
       "measurement": "ac",
       "profile": "pnp_small",
       "rows": 66,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\PNP小功率\\交流特性\\20261103_221401_b8b1c7c1",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\PNP小功率\\交流特性\\20261104_140048_2d7687d1",
       "simulated": true,
       "point_detail_fields": [
         "rx1_rms_code",
@@ -215,7 +215,7 @@
       "measurement": "input",
       "profile": "pnp_big",
       "rows": 4,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\PNP大功率\\输入特性\\20261103_221401_797954e9",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\PNP大功率\\输入特性\\20261104_140049_43d1285d",
       "simulated": true,
       "point_detail_fields": [
         "rx1_mean_code",
@@ -232,7 +232,7 @@
       "measurement": "output",
       "profile": "pnp_big",
       "rows": 78,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\PNP大功率\\输出特性\\步进\\20261103_221402_ca8b21a3",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\PNP大功率\\输出特性\\步进\\20261104_140050_36eaec64",
       "simulated": true,
       "point_detail_fields": [
         "rx1_mean_code",
@@ -249,7 +249,7 @@
       "measurement": "beta",
       "profile": "pnp_big",
       "rows": 25,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\PNP大功率\\线性精度\\步进\\20261103_221403_b92ea6e6",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\PNP大功率\\线性精度\\步进\\20261104_140052_70bbcf21",
       "simulated": true,
       "point_detail_fields": [
         "rx1_mean_code",
@@ -267,7 +267,7 @@
       "measurement": "ac",
       "profile": "pnp_big",
       "rows": 66,
-      "directory": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\desktop_simulation_runs\\PNP大功率\\交流特性\\20261103_221403_4e45090f",
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\desktop_simulation_runs\\PNP大功率\\交流特性\\20261104_140052_bb54ed92",
       "simulated": true,
       "point_detail_fields": [
         "rx1_rms_code",
@@ -562,7 +562,7 @@
         "fault_count": 0
       }
     ],
-    "completed_at": 1793715232.3054314,
+    "completed_at": 1793772035.5979662,
     "sample_count": 50000,
     "sample_rates_hz": [
       50000000,
@@ -575,7 +575,7 @@
     "simulated": true,
     "statistics": {
       "sample_count": 50000,
-      "completed_at": 1793715232.3054314,
+      "completed_at": 1793772035.5979662,
       "simulated": true,
       "channels": [
         {
@@ -1091,15 +1091,10 @@
     "parameters": 18,
     "reviewed": 18,
     "watermark_removed": true,
-    "cache": "D:\\FPGA\\AMD_2026\\tmp\\final_app_verify\\extraction_verify\\39ea698c1449d4c9fcf719a0b7aec4d733e4973f81f900fea50f04c47de60b60.json",
+    "cache": "D:\\FPGA\\AMD_2026\\tmp\\pnp_github_artifacts\\extraction_verify\\39ea698c1449d4c9fcf719a0b7aec4d733e4973f81f900fea50f04c47de60b60.json",
     "isolated": true
   },
   "ai_client_imported_no_external_request": true,
-  "pnp_history": {
-    "records": 46,
-    "identified": 2,
-    "passed": true
-  },
   "pulse_scans": [
     {
       "measurement": "output",

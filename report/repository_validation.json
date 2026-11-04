@@ -2,15 +2,15 @@
   "date": "2026-11-04",
   "archive_groups_verified": 36,
   "source_distribution": "passed",
-  "runtime_data_files": 86,
+  "runtime_data_files": 26,
   "documents": {
     "report/design_report.docx": "valid"
   },
   "credential_scan_matches": 0,
   "software_regression": {
-    "unique_tests": 316,
-    "passed": 316,
-    "full_run_tests": 314,
-    "targeted_rerun_tests": 52
+    "unique_tests": 312,
+    "passed": 312,
+    "full_run_tests": 310,
+    "targeted_rerun_tests": 3
   }
 }

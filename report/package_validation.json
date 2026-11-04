@@ -1,32 +1,23 @@
 {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "timezone": "Asia/Shanghai",
   "package_checks_passed": true,
   "software": {
-    "unique_sim_tests_passed": 316,
-    "aggregation": "full suite plus targeted reruns",
+    "unique_sim_tests_passed": 312,
+    "aggregation": "full suite plus instrument-dependency rerun",
     "full_suite": {
-      "tests": 314,
-      "pass_count": 311,
-      "fail_count": 2,
+      "tests": 310,
+      "pass_count": 309,
+      "fail_count": 0,
       "error_count": 1,
       "log": "validation/python_tests.log"
     },
     "final_reruns": [
       {
-        "tests": 8,
-        "status": "passed",
-        "log": "validation/result_path_recheck.log"
-      },
-      {
         "tests": 3,
         "status": "passed",
         "log": "validation/tx1_bus_recheck.log"
       }
-    ],
-    "adjustments": [
-      "PNP output directory assertions updated for step/pulse groups",
-      "serial/VXI11 dependencies documented in build/instrument_requirements.txt"
     ],
     "analysis_tests": {
       "pass_count": 14,
@@ -43,13 +34,13 @@
     "passed": true,
     "board_agent_modules": 33,
     "python38_agent_syntax": true,
-    "compiled_modules_checked": 48,
-    "runtime_data_files": 86,
-    "wheel_modules": 51
+    "compiled_modules_checked": 47,
+    "runtime_data_files": 26,
+    "wheel_modules": 52
   },
   "desktop_runtime": "passed",
   "overlay_files_and_address": "passed",
-  "skill_structure_count": 8,
+  "skill_structure_count": 9,
   "physical_measurement_runs": 24,
   "validation_scope": "offline source, simulation, distribution and archive checks",
   "board_evidence": "Recorded experiments indexed by acquisition date and bitstream identity"

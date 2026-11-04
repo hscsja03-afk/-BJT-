@@ -4,6 +4,6 @@
 
 触摸模块 src/rtl/touch/ 保留正点原子原始文件头。RTL、约束和显示资源的原始成员及哈希保存在 source_records 数据归档中，使用 build/restore_archives.py 还原后查看 report/original_source_manifest.json。
 
-校准与参考曲线保留原始条件和数据身份。报告的来源及哈希见 document_sources.json。manifest.json 是本次仓库文件清单，archive_manifest.json 描述数据归档与运行库的文件清单。
+校准数据保留测量条件和数据身份。报告的来源及哈希见 document_sources.json。manifest.json 是本次仓库文件清单，archive_manifest.json 描述数据归档与运行库的文件清单。
 
 开发过程记录包含摘要及部分原文，保留原记录类型和时间。
