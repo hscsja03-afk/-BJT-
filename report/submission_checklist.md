@@ -11,8 +11,8 @@
 | 技能包 | 复用校验和排错方法 | skill/README.md |
 | 设计报告 | 原理、架构、优化与实验结果 | report/design_report.docx |
 | 工程说明 | 源码结构、接口和版本配置 | report/design_report.md |
-| 开发记录 | 问题分析、修正与验证过程 | report/ai_collaboration.jsonl |
+| 协作记录 | 关键问题、方案取舍与工程心得 | report/ai_collaboration.md |
 | 数据归档索引 | 定位批量实验资料 | report/archive_index.json |
 | 许可与来源 | 代码授权和第三方资源说明 | license.txt、report/source_provenance.md |
 
-运行 `python build/restore_archives.py` 还原归档。开发记录包含摘要及部分原文。
+运行 `python build/restore_archives.py` 还原归档。协作记录采用 Markdown，按四个工程案例组织。
