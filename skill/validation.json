@@ -1,22 +1,33 @@
 {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "timezone": "Asia/Shanghai",
-  "scope": "standalone Python scripts, Markdown links and skill structure",
+  "scope": "isolated skill directory, standard-library scripts, relative links and required sections",
   "skill_count": 9,
+  "python": "3.13.5",
   "tests": [
     {
       "skill": "pynq-overlay-audit",
-      "command": "python -m unittest discover -s skill/pynq-overlay-audit/scripts -p \"test_*.py\" -v",
+      "command": "python -m unittest discover -s pynq-overlay-audit/scripts -p test_*.py -v",
       "result": "passed",
-      "output": "test_pairs_addresses_and_corruption (test_check_bundle.Tests.test_pairs_addresses_and_corruption) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.050s\n\nOK\n"
+      "output": "test_pairs_addresses_and_corruption (test_check_bundle.Tests.test_pairs_addresses_and_corruption) ... ok\ntest_reuse_with_image_and_motor_peripherals_from_another_directory (test_check_bundle.Tests.test_reuse_with_image_and_motor_peripherals_from_another_directory) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.190s\n\nOK\n"
     },
     {
       "skill": "register-to-analog-debug",
-      "command": "python -m unittest discover -s skill/register-to-analog-debug/scripts -p \"test_*.py\" -v",
+      "command": "python -m unittest discover -s register-to-analog-debug/scripts -p test_*.py -v",
       "result": "passed",
-      "output": "test_portable_lookup_and_rejection (test_locate_epcb.PlacementTest.test_portable_lookup_and_rejection) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.044s\n\nOK\n"
+      "output": "test_portable_lookup_and_rejection (test_locate_epcb.PlacementTest.test_portable_lookup_and_rejection) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.121s\n\nOK\n"
     }
   ],
   "links": "passed",
+  "required_sections": "passed",
+  "standalone_copy": "passed",
+  "example_manifest": "passed",
+  "generic_pynq_cases": [
+    "image_filter_0 at 0x40000000, size 0x1000",
+    "motor_ctrl_1 at 0x43c10000, size 0x10000",
+    "different working directory",
+    "address mismatch rejection",
+    "hash mismatch rejection"
+  ],
   "measurement_case_cutoff": "2026-11-02T17:36:00+08:00"
 }

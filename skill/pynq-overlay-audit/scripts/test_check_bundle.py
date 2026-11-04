@@ -1,6 +1,7 @@
 import hashlib
 import importlib.util
 import json
+import os
 from pathlib import Path
 import tempfile
 import unittest
@@ -11,6 +12,42 @@ module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
 
 
 class Tests(unittest.TestCase):
+    def test_reuse_with_image_and_motor_peripherals_from_another_directory(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            work = root / 'unrelated_working_directory'
+            work.mkdir()
+            previous = Path.cwd()
+            try:
+                os.chdir(work)
+                for name, instance, base, size in (
+                    ('image_pipeline', 'image_filter_0', 0x40000000, 0x1000),
+                    ('motor_control', 'motor_ctrl_1', 0x43c10000, 0x10000),
+                ):
+                    with self.subTest(project=name):
+                        project = root / name
+                        project.mkdir()
+                        bit = b'synthetic integrity fixture: ' + name.encode()
+                        hwh = (f'<SYSTEM><MODULE INSTANCE="ps7">'
+                               f'<MEMRANGE INSTANCE="{instance}" BASEVALUE="{hex(base)}" '
+                               f'HIGHVALUE="{hex(base + size - 1)}"/></MODULE>'
+                               f'<MODULE INSTANCE="{instance}"/></SYSTEM>').encode()
+                        (project / 'design.bit').write_bytes(bit)
+                        (project / 'design.hwh').write_bytes(hwh)
+                        manifest = {
+                            'bit': {'path': 'design.bit', 'sha256': hashlib.sha256(bit).hexdigest()},
+                            'hwh': {'path': 'design.hwh', 'sha256': hashlib.sha256(hwh).hexdigest()},
+                            'peripheral': {'instance': instance, 'base': hex(base), 'size': hex(size)},
+                        }
+                        path = project / 'manifest.json'
+                        path.write_text(json.dumps(manifest), encoding='utf-8')
+                        result = module.verify(path)
+                        self.assertTrue(result['files_and_address_verified'])
+                        self.assertEqual(result['peripheral'], manifest['peripheral'])
+                        self.assertFalse(result['hardware_validated'])
+            finally:
+                os.chdir(previous)
+
     def test_pairs_addresses_and_corruption(self):
         with tempfile.TemporaryDirectory() as directory:
             d = Path(directory)
