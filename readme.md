@@ -65,7 +65,7 @@ $env:PYTHONPATH="$PWD/src/python"
 ## 材料入口
 
 - [硬件设计](board/hardware/readme.md)：ADDA 底板与 BJT 测试板的可编辑工程、原理图、PCB 和网表。
-- [设计报告](report/design_report.docx)：设计原理、实现与实验结果。
+- [设计报告 PDF](report/design_report.pdf)：设计原理、实现与实验结果；另附 [Word 版](report/design_report.docx)。
 - [提交材料索引](report/submission_checklist.md)：各项材料的位置。
 - [实测索引](report/measurement_index.json)：24 组器件测量记录。
 - [验证记录](report/package_validation.json)：软件、RTL 和程序一致性检查。
@@ -73,4 +73,4 @@ $env:PYTHONPATH="$PWD/src/python"
 
 原始数据按 [归档索引](report/archive_index.json) 查找。[大模型协作记录](report/ai_collaboration.md) 精选四个案例，说明问题分析、方案取舍、验证结果和工程心得。
 
-项目代码采用 [MIT 许可](license.txt)，第三方资源见 [来源说明](report/source_provenance.md)。
+本项目编写的代码和文档采用 [MIT 许可](license.txt)。第三方代码、硬件资源、数据手册、字体及运行库保留各自版权与许可，见 [来源说明](report/source_provenance.md)。
