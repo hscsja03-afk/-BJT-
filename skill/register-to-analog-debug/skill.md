@@ -1,6 +1,6 @@
 ---
 name: register-to-analog-debug
-description: 寄存器回读正常但输出异常；需要在实物照片上定位芯片或测点。
+description: 沿寄存器、总线、DAC 和模拟前端定位输出异常，并根据 PCB 坐标定位芯片与测点。
 ---
 
 # 寄存器到模拟输出定位
