@@ -1,6 +1,6 @@
 ---
 name: mixed-signal-calibration
-description: ADC/DAC 校准、预热漂移、量程或时钟切换。
+description: 组织 ADC/DAC 校准、独立验证、单位换算与漂移检查，记录量程、时钟和负载条件。
 ---
 
 # 混合信号校准与单位管理
