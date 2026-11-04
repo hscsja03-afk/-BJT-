@@ -2,7 +2,7 @@
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import json, os, statistics, sys, time
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/'src/python'))
 from zynq_bjt.desktop_transport import SshTransport
 from zynq_bjt.frontend import Calibration

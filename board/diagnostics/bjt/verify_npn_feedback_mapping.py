@@ -1,7 +1,7 @@
 """One bounded NPN input point through the updated engine; retain failure evidence."""
 from pathlib import Path
 import json, os, sys
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/'src/python'))
 from zynq_bjt.desktop_transport import SshTransport,agent_archive
 out=ROOT/'report/npn_mapping_fix_20261031/vb_div4'

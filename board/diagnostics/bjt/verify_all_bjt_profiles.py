@@ -5,14 +5,14 @@ import csv
 import json
 from pathlib import Path
 import sys
-sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src/python'))
+sys.path.insert(0,str(Path(__file__).resolve().parents[3]/'src/python'))
 from zynq_bjt.desktop_session import Session, MEASUREMENTS
 from zynq_bjt.profiles import defaults_for
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,required=True);a=ap.parse_args()
     a.out.mkdir(parents=True,exist_ok=True)
-    root=Path(__file__).resolve().parents[1]
+    root=Path(__file__).resolve().parents[3]
     result=dict(at=datetime.now().astimezone().isoformat(),checks=[],passed=False,simulated=True)
     expected={'npn_small':{'input':64,'output':4,'beta':4,'ac':2},
               'npn_big':{'input':65,'output':37,'beta':37,'ac':35},
