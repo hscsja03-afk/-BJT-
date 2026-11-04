@@ -31,3 +31,8 @@
 | [schematic_measurement_switch.png](bjt/schematic_measurement_switch.png) | 测量档位切换电路 |
 
 工程文件用于编辑电路和布线，PDF 与 PNG 用于浏览。文件大小与 SHA256 见 [校验清单](manifest.json)。
+
+## 板卡目录
+
+- [ADDA 底板](adda/readme.md)：原理图、PCB、器件配置与固件说明。
+- [BJT 测试板](bjt/readme.md)：模拟前端、电源与测量切换电路。
