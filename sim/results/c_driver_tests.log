@@ -1,0 +1,9 @@
+C_DRIVER_FAULT_PASS identity status=3 gpio=0 writes=0
+C_DRIVER_FAULT_PASS rate status=8 gpio=0 writes=0
+C_DRIVER_FAULT_PASS gpio status=6 gpio=1 writes=0
+C_DRIVER_FAULT_PASS dac status=5 gpio=1 writes=36
+C_DRIVER_FAULT_PASS clock_timeout status=8 gpio=1 writes=36
+C_DRIVER_FAULT_PASS adc_id status=3 gpio=1 writes=37
+C_DRIVER_FAULT_PASS adc_pattern status=5 gpio=1 writes=38
+C_DRIVER_FAULT_PASS adc_timeout status=2 gpio=1 writes=38
+C_TIMEBASE_PASS macro_precedence quarter_second one_second twenty_four_hours

@@ -1,0 +1,148 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 28-oct-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Nov  4 18:02:59 2026
+# Process ID         : 27988
+# Current directory  : D:/FPGA/AMD_2026/publish/bjt
+# Command line       : vivado.exe -mode batch -nojournal -log D:\FPGA\AMD_2026\publish\bjt\build\logs\sim_axi.log -source D:\FPGA\AMD_2026\publish\bjt\sim\rtl\run_axi.tcl
+# Log file           : D:/FPGA/AMD_2026/publish/bjt/build/logs/sim_axi.log
+# Journal file       : 
+# Running On         : LAPTOP-HIR37L2R
+# Platform           : Windows 11
+# Operating System   : 26300
+# Processor Detail   : Intel(R) Core(TM) Ultra 5 125H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 18
+# Host memory        : 33786 MB
+# Swap memory        : 6249 MB
+# Total Virtual      : 40036 MB
+# Available Virtual  : 9576 MB
+#-----------------------------------------------------------
+source {D:\FPGA\AMD_2026\publish\bjt\sim\rtl\run_axi.tcl}
+# set root [file normalize [file join [file dirname [info script]] .. ..]]
+# set out $root/build/work/axi_sim
+# file mkdir $out
+# cd $out
+# file copy -force $root/src/rtl/sine256.mem $out/sine256.mem
+# set bin $::env(XILINX_VIVADO)/bin
+# proc run {args} {
+#     if {[catch {exec {*}$args 2>@1} result]} {puts $result;error "Simulation command failed"}
+#     puts $result;return $result
+# }
+# set files {}
+# foreach name {adda_core.v adc_capture.v adc_clocking.v adc_statistics.sv cdc_sync.v dac_clocking.v dac_generator.v dac_awg.v gpio_control.sv} {
+#     set f [open $root/src/rtl/$name];set data [read $f];close $f
+#     set dst $out/$name
+#     set f [open $dst w]
+#     puts $f "`define ADDA_DAC_GUI\n`define ADDA_GPIO\n`define ADDA_TX1\n`define ADDA_ADC_DIVIDER 16\n`define ADDA_DAC_DIVIDER 4\n`define ADDA_DAC_PHASE 202.5\n$data";close $f
+#     lappend files $dst
+# }
+# set f [open $root/sim/rtl/tb_dac_axi.sv]
+# set data [read $f]
+# close $f
+# set f [open $out/tb_dac_axi.sv w]
+# puts $f "`define ADDA_DAC_DIVIDER 4\n$data"
+# close $f
+# lappend files $out/tb_dac_axi.sv
+# run $bin/xvlog.bat -sv {*}$files
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/AMD_2026/publish/bjt/build/work/axi_sim/adda_core.v" into library work
+INFO: [VRFC 10-311] analyzing module adda_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/AMD_2026/publish/bjt/build/work/axi_sim/adc_capture.v" into library work
+INFO: [VRFC 10-311] analyzing module adc_capture
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/AMD_2026/publish/bjt/build/work/axi_sim/adc_clocking.v" into library work
+INFO: [VRFC 10-311] analyzing module adc_clocking
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/AMD_2026/publish/bjt/build/work/axi_sim/adc_statistics.sv" into library work
+INFO: [VRFC 10-311] analyzing module adc_statistics
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/AMD_2026/publish/bjt/build/work/axi_sim/cdc_sync.v" into library work
+INFO: [VRFC 10-311] analyzing module cdc_sync
+INFO: [VRFC 10-311] analyzing module reset_sync
+INFO: [VRFC 10-311] analyzing module clock_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/AMD_2026/publish/bjt/build/work/axi_sim/dac_clocking.v" into library work
+INFO: [VRFC 10-311] analyzing module dac_clocking
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/AMD_2026/publish/bjt/build/work/axi_sim/dac_generator.v" into library work
+INFO: [VRFC 10-311] analyzing module dac_generator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/AMD_2026/publish/bjt/build/work/axi_sim/dac_awg.v" into library work
+INFO: [VRFC 10-311] analyzing module dac_awg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/AMD_2026/publish/bjt/build/work/axi_sim/gpio_control.sv" into library work
+INFO: [VRFC 10-311] analyzing module gpio_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/FPGA/AMD_2026/publish/bjt/build/work/axi_sim/tb_dac_axi.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_dac_axi
+# run $bin/xvlog.bat $::env(XILINX_VIVADO)/data/verilog/src/glbl.v
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Xilix/2026.1/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+# run $bin/xelab.bat tb_dac_axi glbl -s dac_axi_sim -debug typical -L unisims_ver
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/FPGA/Xilix/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_dac_axi glbl -s dac_axi_sim -debug typical -L unisims_ver 
+Multi-threading is on. Using 16 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'CLKFBOUTB' remains unconnected for this instance [D:/FPGA/AMD_2026/publish/bjt/build/work/axi_sim/adc_clocking.v:17]
+WARNING: [VRFC 10-3645] port 'CLKFBOUTB' remains unconnected for this instance [D:/FPGA/AMD_2026/publish/bjt/build/work/axi_sim/dac_clocking.v:23]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.gpio_control
+Compiling module work.cdc_sync(WIDTH=2)
+Compiling module work.dac_awg
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=16.0,...
+Compiling module unisims_ver.MMCME2_BASE(CLKFBOUT_MULT_F=16.0...
+Compiling module unisims_ver.BUFG
+Compiling module work.adc_clocking
+Compiling module work.reset_sync_default
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.0,C...
+Compiling module unisims_ver.MMCME2_BASE(CLKFBOUT_MULT_F=4.0,...
+Compiling module work.dac_clocking
+Compiling module work.reset_sync(FALLING=1)
+Compiling module unisims_ver.IOBUF
+Compiling module work.cdc_sync
+Compiling module work.cdc_sync(WIDTH=3)
+Compiling module work.cdc_sync(WIDTH=32)
+Compiling module work.clock_counter
+Compiling module work.adc_capture(ADDR_BITS=12)
+Compiling module work.adc_statistics
+Compiling module work.dac_generator
+Compiling module work.adda_core
+Compiling module work.tb_dac_axi
+Compiling module work.glbl
+Built simulation snapshot dac_axi_sim
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Nov  4 18:03:34 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/dac_axi_sim/xsim_script.tcl
+# xsim {dac_axi_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: TX1 open-drain release, target ACK, synchronized input, byte strobes and reset
+PASS GPIO AXI registers, masked writes, AW/W ordering, WSTRB/error rejection
+PASS AWG AXI bank isolation, independent commit, busy/partial/malformed guards, LCD registers
+Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance tb_dac_axi.dut.aca.mmcm.mmcm_adv_1 
+Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance tb_dac_axi.dut.acb.mmcm.mmcm_adv_1 
+PASS ADC MMCM 62.5 and 50 MHz acquisition and sequential samples
+Warning: [Unisim MMCME2_ADV-21] Input CLKIN1 is stopped at time            628379304. Reset is required when input clock returns. Instance tb_dac_axi.dut.dc.mmcm.mmcm_adv_1 
+PASS: AXI AW/W ordering, response backpressure, WSTRB, CDC missing startup clock, ADC 2048 samples, retrigger, DAC sine, clock monitor, MMCM lock/loss
+PASS DAC_GUI_AXI_SIMULATION
+$finish called at time : 629920 ns : File "D:/FPGA/AMD_2026/publish/bjt/build/work/axi_sim/tb_dac_axi.sv" Line 208
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 236.613 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Nov  4 18:03:47 2026...
+# set log [run $bin/xsim.bat dac_axi_sim -runall]
+# if {![string match {*PASS GPIO AXI registers*} $log] || ![string match {*PASS: AXI AW/W ordering*} $log] || [string match {*Fatal:*} $log]} {error "AXI regression failed"}
+# set f [open $out/result.txt w]
+# puts $f "GPIO_AXI_SIMULATION_PASS"
+# close $f
+# puts "GPIO_AXI_SIMULATION_PASS"
+GPIO_AXI_SIMULATION_PASS
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  4 18:03:47 2026...

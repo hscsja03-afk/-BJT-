@@ -1,0 +1,1136 @@
+{
+  "timestamp": "2026-11-04T13:20:38",
+  "checks": [
+    {
+      "measurement": "input",
+      "profile": "npn_small",
+      "rows": 4,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\NPN小功率\\输入特性\\20261104_132038_4d273a5e",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_mean_code",
+        "rx2_mean_code",
+        "rx1_port_v",
+        "rx2_port_v",
+        "vcc_predicted_v"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    },
+    {
+      "measurement": "output",
+      "profile": "npn_small",
+      "rows": 78,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\NPN小功率\\输出特性\\20261104_132040_25948c02",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_mean_code",
+        "rx2_mean_code",
+        "rx1_port_v",
+        "rx2_port_v",
+        "vcc_predicted_v"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    },
+    {
+      "measurement": "beta",
+      "profile": "npn_small",
+      "rows": 45,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\NPN小功率\\线性精度\\20261104_132040_0c3a978a",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_mean_code",
+        "rx2_mean_code",
+        "rx1_port_v",
+        "rx2_port_v",
+        "sample_uce_v",
+        "adc_basis"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    },
+    {
+      "measurement": "ac",
+      "profile": "npn_small",
+      "rows": 66,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\NPN小功率\\交流特性\\20261104_132040_705ac88e",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_rms_code",
+        "rx2_rms_code",
+        "rx1_port_ac_rms_v",
+        "rx2_port_ac_rms_v",
+        "input_node_v_peak",
+        "output_node_v_peak"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    },
+    {
+      "measurement": "input",
+      "profile": "npn_big",
+      "rows": 4,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\NPN大功率\\输入特性\\20261104_132041_8325b9e9",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_mean_code",
+        "rx2_mean_code",
+        "rx1_port_v",
+        "rx2_port_v",
+        "vcc_predicted_v"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    },
+    {
+      "measurement": "output",
+      "profile": "npn_big",
+      "rows": 78,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\NPN大功率\\输出特性\\步进\\20261104_132042_d07ba332",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_mean_code",
+        "rx2_mean_code",
+        "rx1_port_v",
+        "rx2_port_v",
+        "vcc_predicted_v"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    },
+    {
+      "measurement": "beta",
+      "profile": "npn_big",
+      "rows": 25,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\NPN大功率\\线性精度\\步进\\20261104_132042_c69c1fb1",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_mean_code",
+        "rx2_mean_code",
+        "rx1_port_v",
+        "rx2_port_v",
+        "sample_uce_v",
+        "adc_basis"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    },
+    {
+      "measurement": "ac",
+      "profile": "npn_big",
+      "rows": 66,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\NPN大功率\\交流特性\\20261104_132042_329870f5",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_rms_code",
+        "rx2_rms_code",
+        "rx1_port_ac_rms_v",
+        "rx2_port_ac_rms_v",
+        "input_node_v_peak",
+        "output_node_v_peak"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    },
+    {
+      "measurement": "input",
+      "profile": "pnp_small",
+      "rows": 4,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\PNP小功率\\输入特性\\20261104_132042_8559133c",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_mean_code",
+        "rx2_mean_code",
+        "rx1_port_v",
+        "rx2_port_v",
+        "vcc_predicted_v"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    },
+    {
+      "measurement": "output",
+      "profile": "pnp_small",
+      "rows": 78,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\PNP小功率\\输出特性\\20261104_132044_09bccbaf",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_mean_code",
+        "rx2_mean_code",
+        "rx1_port_v",
+        "rx2_port_v",
+        "vcc_predicted_v"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    },
+    {
+      "measurement": "beta",
+      "profile": "pnp_small",
+      "rows": 44,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\PNP小功率\\线性精度\\20261104_132044_f4c81e7e",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_mean_code",
+        "rx2_mean_code",
+        "rx1_port_v",
+        "rx2_port_v",
+        "sample_uce_v",
+        "adc_basis"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    },
+    {
+      "measurement": "ac",
+      "profile": "pnp_small",
+      "rows": 66,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\PNP小功率\\交流特性\\20261104_132044_49c43d7a",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_rms_code",
+        "rx2_rms_code",
+        "rx1_port_ac_rms_v",
+        "rx2_port_ac_rms_v",
+        "input_node_v_peak",
+        "output_node_v_peak"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    },
+    {
+      "measurement": "input",
+      "profile": "pnp_big",
+      "rows": 4,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\PNP大功率\\输入特性\\20261104_132045_61f7f82f",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_mean_code",
+        "rx2_mean_code",
+        "rx1_port_v",
+        "rx2_port_v",
+        "vcc_predicted_v"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    },
+    {
+      "measurement": "output",
+      "profile": "pnp_big",
+      "rows": 78,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\PNP大功率\\输出特性\\步进\\20261104_132046_b00ac964",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_mean_code",
+        "rx2_mean_code",
+        "rx1_port_v",
+        "rx2_port_v",
+        "vcc_predicted_v"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    },
+    {
+      "measurement": "beta",
+      "profile": "pnp_big",
+      "rows": 25,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\PNP大功率\\线性精度\\步进\\20261104_132046_d50624e1",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_mean_code",
+        "rx2_mean_code",
+        "rx1_port_v",
+        "rx2_port_v",
+        "sample_uce_v",
+        "adc_basis"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    },
+    {
+      "measurement": "ac",
+      "profile": "pnp_big",
+      "rows": 66,
+      "directory": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\desktop_simulation_runs\\PNP大功率\\交流特性\\20261104_132047_7645cce0",
+      "simulated": true,
+      "point_detail_fields": [
+        "rx1_rms_code",
+        "rx2_rms_code",
+        "rx1_port_ac_rms_v",
+        "rx2_port_ac_rms_v",
+        "input_node_v_peak",
+        "output_node_v_peak"
+      ],
+      "latest_result_restored": true,
+      "all_three_outputs_active_before_preparation": true,
+      "automatic_output_preparation_passed": true
+    }
+  ],
+  "passed": true,
+  "tx3_bitstream_compatibility": [
+    {
+      "calibration_bitstream_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "active_bitstream_sha256": "43d76549d292532722bedb485dc2c73d1234305ea276dddf141b2c64c377d96e",
+      "status": "compatible_bitstream_reference",
+      "analog_recalibrated": false,
+      "evidence": "report/tx3_lcd_compat_20261103/compatibility_evidence.json"
+    }
+  ],
+  "tx2_verified_subsets": [
+    {
+      "calibration_id": "tx2-measured-subset-20261103-78bf2c46",
+      "nodes": 55,
+      "simulated": true
+    },
+    {
+      "calibration_id": "tx2-subset-direct_grid-830115d7",
+      "nodes": 25,
+      "simulated": true
+    }
+  ],
+  "tx3_exact_override_nodes": 22,
+  "scope_fft": {
+    "passed": true,
+    "bins": 513,
+    "unit": "RMS",
+    "peak_hz": 3200
+  },
+  "adjustable_capture": {
+    "passed": true,
+    "points": 4096,
+    "stride": 64,
+    "simulated": true
+  },
+  "square_fft": {
+    "passed": true,
+    "peak_rms": 0.9003278123638753,
+    "ac_rms": 0.9999855755719322
+  },
+  "gpio_dac_independence": {
+    "gpio_only": {
+      "protocol": 1,
+      "simulated": true,
+      "initialized": false,
+      "hostname": "LAPTOP-HIR37L2R",
+      "python": "3.13.5",
+      "analog_calibration_qualified": false,
+      "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+      "gpio_active": true,
+      "identity": {
+        "kind": "synthetic_bjt_model"
+      },
+      "dac_rate_hz": 50000000,
+      "gpio": {
+        "output": 85,
+        "sense": 85,
+        "sequence": 0
+      },
+      "lcd_native": false,
+      "lcd_rgb565": false
+    },
+    "before": {
+      "protocol": 1,
+      "simulated": true,
+      "initialized": true,
+      "hostname": "LAPTOP-HIR37L2R",
+      "python": "3.13.5",
+      "analog_calibration_qualified": false,
+      "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+      "gpio_active": true,
+      "identity": {
+        "kind": "synthetic_bjt_model",
+        "analog_calibration_qualified": false
+      },
+      "gpio": {
+        "output": 0,
+        "sense": 0,
+        "sequence": 1
+      },
+      "outputs": [
+        {
+          "code": 100,
+          "enabled": true,
+          "code_basis": "simulation"
+        },
+        {
+          "code": 101,
+          "enabled": true,
+          "code_basis": "simulation"
+        },
+        {
+          "code": 102,
+          "enabled": true,
+          "code_basis": "simulation"
+        }
+      ],
+      "sample_rates_hz": [
+        50000000.0,
+        50000000.0
+      ],
+      "output_settings": {
+        "0": {
+          "channel": 0,
+          "mode": "dc_code",
+          "offset": 100,
+          "action": "start",
+          "wiring_confirmed": true
+        },
+        "1": {
+          "channel": 1,
+          "mode": "dc_code",
+          "offset": 101,
+          "action": "start",
+          "wiring_confirmed": true
+        },
+        "2": {
+          "channel": 2,
+          "mode": "dc_code",
+          "offset": 102,
+          "action": "start",
+          "wiring_confirmed": true
+        }
+      },
+      "adc_max_rate_hz": 125000000,
+      "lcd_native": false,
+      "lcd_rgb565": false
+    },
+    "after": {
+      "protocol": 1,
+      "simulated": true,
+      "initialized": true,
+      "hostname": "LAPTOP-HIR37L2R",
+      "python": "3.13.5",
+      "analog_calibration_qualified": false,
+      "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+      "gpio_active": true,
+      "identity": {
+        "kind": "synthetic_bjt_model",
+        "analog_calibration_qualified": false
+      },
+      "gpio": {
+        "output": 61,
+        "sense": 61,
+        "sequence": 1
+      },
+      "outputs": [
+        {
+          "code": 100,
+          "enabled": true,
+          "code_basis": "simulation"
+        },
+        {
+          "code": 101,
+          "enabled": true,
+          "code_basis": "simulation"
+        },
+        {
+          "code": 102,
+          "enabled": true,
+          "code_basis": "simulation"
+        }
+      ],
+      "sample_rates_hz": [
+        50000000.0,
+        50000000.0
+      ],
+      "output_settings": {
+        "0": {
+          "channel": 0,
+          "mode": "dc_code",
+          "offset": 100,
+          "action": "start",
+          "wiring_confirmed": true
+        },
+        "1": {
+          "channel": 1,
+          "mode": "dc_code",
+          "offset": 101,
+          "action": "start",
+          "wiring_confirmed": true
+        },
+        "2": {
+          "channel": 2,
+          "mode": "dc_code",
+          "offset": 102,
+          "action": "start",
+          "wiring_confirmed": true
+        }
+      },
+      "adc_max_rate_hz": 125000000,
+      "lcd_native": false,
+      "lcd_rgb565": false
+    },
+    "stopped": {
+      "protocol": 1,
+      "simulated": true,
+      "initialized": true,
+      "hostname": "LAPTOP-HIR37L2R",
+      "python": "3.13.5",
+      "analog_calibration_qualified": false,
+      "bitfile": "/home/xilinx/jupyter_notebooks/zynq_bjt/overlay/bjt.bit",
+      "gpio_active": true,
+      "identity": {
+        "kind": "synthetic_bjt_model",
+        "analog_calibration_qualified": false
+      },
+      "gpio": {
+        "output": 0,
+        "sense": 0,
+        "sequence": 1
+      },
+      "outputs": [
+        {
+          "code": 100,
+          "enabled": false,
+          "code_basis": "simulation"
+        },
+        {
+          "code": 101,
+          "enabled": false,
+          "code_basis": "simulation"
+        },
+        {
+          "code": 102,
+          "enabled": false,
+          "code_basis": "simulation"
+        }
+      ],
+      "sample_rates_hz": [
+        50000000.0,
+        50000000.0
+      ],
+      "output_settings": {
+        "0": {
+          "channel": 0,
+          "mode": "dc_code",
+          "offset": 100,
+          "action": "start",
+          "wiring_confirmed": true
+        },
+        "1": {
+          "channel": 1,
+          "mode": "dc_code",
+          "offset": 101,
+          "action": "start",
+          "wiring_confirmed": true
+        },
+        "2": {
+          "channel": 2,
+          "mode": "dc_code",
+          "offset": 102,
+          "action": "start",
+          "wiring_confirmed": true
+        }
+      },
+      "adc_max_rate_hz": 125000000,
+      "lcd_native": false,
+      "lcd_rgb565": false
+    }
+  },
+  "voltmeter": {
+    "channels": [
+      {
+        "dc_v": 0.3,
+        "true_rms_v": 0.3082207001484488,
+        "ac_rms_v": 0.07071067811865474,
+        "error": null,
+        "voltage_basis": "dc_profile_rms_conversion",
+        "fault_count": 0
+      },
+      {
+        "dc_v": 0.29999999999999993,
+        "true_rms_v": 0.30822070014844877,
+        "ac_rms_v": 0.07071067811865475,
+        "error": null,
+        "voltage_basis": "dc_profile_rms_conversion",
+        "fault_count": 0
+      }
+    ],
+    "completed_at": 1793769638.958242,
+    "sample_count": 50000,
+    "sample_rates_hz": [
+      50000000,
+      50000000
+    ],
+    "window_ms": [
+      1.0,
+      1.0
+    ],
+    "simulated": true,
+    "statistics": {
+      "sample_count": 50000,
+      "completed_at": 1793769638.958242,
+      "simulated": true,
+      "channels": [
+        {
+          "mean_code": 27608.654733505293,
+          "rms_code": 1169.6415204475188,
+          "fault_count": 0
+        },
+        {
+          "mean_code": 37831.591359088336,
+          "rms_code": 1166.0539588505262,
+          "fault_count": 0
+        }
+      ]
+    }
+  },
+  "tx_controls": [
+    {
+      "channel": 0,
+      "wave": "dc",
+      "unit": "voltage",
+      "request_mode": "dc_voltage",
+      "preview_min": 0.0,
+      "preview_max": 0.0,
+      "simulated": true
+    },
+    {
+      "channel": 0,
+      "wave": "dc",
+      "unit": "code",
+      "request_mode": "dc_code",
+      "preview_min": 0,
+      "preview_max": 0,
+      "simulated": true
+    },
+    {
+      "channel": 1,
+      "wave": "dc",
+      "unit": "voltage",
+      "request_mode": "dc_voltage",
+      "preview_min": 0.0,
+      "preview_max": 0.0,
+      "simulated": true
+    },
+    {
+      "channel": 1,
+      "wave": "dc",
+      "unit": "code",
+      "request_mode": "dc_code",
+      "preview_min": 32699,
+      "preview_max": 32699,
+      "simulated": true
+    },
+    {
+      "channel": 1,
+      "wave": "sine",
+      "unit": "voltage",
+      "request_mode": "custom_code",
+      "preview_min": 0.8,
+      "preview_max": 1.0,
+      "simulated": true
+    },
+    {
+      "channel": 1,
+      "wave": "sine",
+      "unit": "code",
+      "request_mode": "sine_code",
+      "preview_min": 16676,
+      "preview_max": 18676,
+      "simulated": true
+    },
+    {
+      "channel": 1,
+      "wave": "square",
+      "unit": "voltage",
+      "request_mode": "custom_code",
+      "preview_min": 0.8,
+      "preview_max": 1.0,
+      "simulated": true
+    },
+    {
+      "channel": 1,
+      "wave": "square",
+      "unit": "code",
+      "request_mode": "square_code",
+      "preview_min": 16676,
+      "preview_max": 18676,
+      "simulated": true
+    },
+    {
+      "channel": 1,
+      "wave": "triangle",
+      "unit": "voltage",
+      "request_mode": "custom_code",
+      "preview_min": 0.8,
+      "preview_max": 1.0,
+      "simulated": true
+    },
+    {
+      "channel": 1,
+      "wave": "triangle",
+      "unit": "code",
+      "request_mode": "triangle_code",
+      "preview_min": 16676,
+      "preview_max": 18676,
+      "simulated": true
+    },
+    {
+      "channel": 2,
+      "wave": "dc",
+      "unit": "voltage",
+      "request_mode": "dc_code",
+      "preview_min": 0.0,
+      "preview_max": 0.0,
+      "simulated": true
+    },
+    {
+      "channel": 2,
+      "wave": "dc",
+      "unit": "code",
+      "request_mode": "dc_code",
+      "preview_min": 28167,
+      "preview_max": 28167,
+      "simulated": true
+    },
+    {
+      "channel": 2,
+      "wave": "sine",
+      "unit": "voltage",
+      "request_mode": "sine_code",
+      "preview_min": -0.035,
+      "preview_max": 0.035,
+      "simulated": true
+    },
+    {
+      "channel": 2,
+      "wave": "sine",
+      "unit": "code",
+      "request_mode": "sine_code",
+      "preview_min": 27167,
+      "preview_max": 29167,
+      "simulated": true
+    },
+    {
+      "channel": 2,
+      "wave": "square",
+      "unit": "voltage",
+      "request_mode": "square_code",
+      "preview_min": -0.025,
+      "preview_max": 0.025,
+      "simulated": true
+    },
+    {
+      "channel": 2,
+      "wave": "square",
+      "unit": "code",
+      "request_mode": "square_code",
+      "preview_min": 27167,
+      "preview_max": 29167,
+      "simulated": true
+    },
+    {
+      "channel": 2,
+      "wave": "triangle",
+      "unit": "voltage",
+      "request_mode": "triangle_code",
+      "preview_min": -0.025,
+      "preview_max": 0.025,
+      "simulated": true
+    },
+    {
+      "channel": 2,
+      "wave": "triangle",
+      "unit": "code",
+      "request_mode": "triangle_code",
+      "preview_min": 27167,
+      "preview_max": 29167,
+      "simulated": true
+    }
+  ],
+  "tx3_extended_amplitude": [
+    {
+      "peak_v": 0.03,
+      "frequency_hz": 100000,
+      "simulated": true
+    },
+    {
+      "peak_v": 0.05,
+      "frequency_hz": 100000,
+      "simulated": true
+    },
+    {
+      "peak_v": 0.1,
+      "frequency_hz": 100000,
+      "simulated": true
+    },
+    {
+      "peak_v": 0.5,
+      "frequency_hz": 100000,
+      "simulated": true
+    },
+    {
+      "peak_v": 1.0,
+      "frequency_hz": 100000,
+      "simulated": true
+    },
+    {
+      "peak_v": 0.03,
+      "frequency_hz": 3000000,
+      "simulated": true
+    },
+    {
+      "peak_v": 0.05,
+      "frequency_hz": 3000000,
+      "simulated": true
+    },
+    {
+      "peak_v": 0.1,
+      "frequency_hz": 3000000,
+      "simulated": true
+    },
+    {
+      "peak_v": 0.5,
+      "frequency_hz": 3000000,
+      "simulated": true
+    },
+    {
+      "peak_v": 1.0,
+      "frequency_hz": 3000000,
+      "simulated": true
+    }
+  ],
+  "pnp_big_half_volt_ib": {
+    "control_v": 0.5,
+    "resistance_ohm": 50,
+    "ib_a": 0.00999755859375
+  },
+  "polarity_detection": [
+    {
+      "profile": "npn_small",
+      "device": "npn",
+      "classification": {
+        "polarity": "npn",
+        "dominance_ratio": 50.499999999999986,
+        "evidence": {
+          "npn": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.010108795825242718,
+            "threshold_a": 0.0001,
+            "response_gain": 100.98933585413214,
+            "eligible": true,
+            "monotonic": true
+          },
+          "pnp": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.0002001741747572816,
+            "threshold_a": 0.0001,
+            "response_gain": 1.9997888287946963,
+            "eligible": false,
+            "monotonic": true
+          }
+        },
+        "reason": "两种接法的增量响应达到区分阈值"
+      }
+    },
+    {
+      "profile": "npn_small",
+      "device": "pnp",
+      "classification": {
+        "polarity": "pnp",
+        "dominance_ratio": 101.98923026852951,
+        "evidence": {
+          "npn": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.00010008708737864118,
+            "threshold_a": 0.0001,
+            "response_gain": 0.9998944143973519,
+            "eligible": false,
+            "monotonic": true
+          },
+          "pnp": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.010208882912621361,
+            "threshold_a": 0.0001,
+            "response_gain": 101.98923026852951,
+            "eligible": true,
+            "monotonic": true
+          }
+        },
+        "reason": "两种接法的增量响应达到区分阈值"
+      }
+    },
+    {
+      "profile": "npn_small",
+      "device": "open",
+      "classification": {
+        "polarity": "unknown",
+        "dominance_ratio": 0.9998944143973519,
+        "evidence": {
+          "npn": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.0,
+            "threshold_a": 0.0001,
+            "response_gain": 0.0,
+            "eligible": false,
+            "monotonic": true
+          },
+          "pnp": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.00010008708737864118,
+            "threshold_a": 0.0001,
+            "response_gain": 0.9998944143973519,
+            "eligible": false,
+            "monotonic": true
+          }
+        },
+        "reason": "响应过弱、漏电过大或两种接法差异不足；请检查接线并人工确认"
+      }
+    },
+    {
+      "profile": "npn_small",
+      "device": "ambiguous",
+      "classification": {
+        "polarity": "unknown",
+        "dominance_ratio": 1.0099009900990101,
+        "evidence": {
+          "npn": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.010108795825242718,
+            "threshold_a": 0.0001,
+            "response_gain": 100.98933585413214,
+            "eligible": true,
+            "monotonic": true
+          },
+          "pnp": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.010208882912621361,
+            "threshold_a": 0.0001,
+            "response_gain": 101.98923026852951,
+            "eligible": true,
+            "monotonic": true
+          }
+        },
+        "reason": "响应过弱、漏电过大或两种接法差异不足；请检查接线并人工确认"
+      }
+    },
+    {
+      "profile": "npn_big",
+      "device": "npn",
+      "classification": {
+        "polarity": "npn",
+        "dominance_ratio": 50.499999999999986,
+        "evidence": {
+          "npn": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.010108795825242718,
+            "threshold_a": 0.0001,
+            "response_gain": 100.98933585413214,
+            "eligible": true,
+            "monotonic": true
+          },
+          "pnp": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.0002001741747572816,
+            "threshold_a": 0.0001,
+            "response_gain": 1.9997888287946963,
+            "eligible": false,
+            "monotonic": true
+          }
+        },
+        "reason": "两种接法的增量响应达到区分阈值"
+      }
+    },
+    {
+      "profile": "npn_big",
+      "device": "pnp",
+      "classification": {
+        "polarity": "pnp",
+        "dominance_ratio": 101.98923026852951,
+        "evidence": {
+          "npn": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.00010008708737864118,
+            "threshold_a": 0.0001,
+            "response_gain": 0.9998944143973519,
+            "eligible": false,
+            "monotonic": true
+          },
+          "pnp": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.010208882912621361,
+            "threshold_a": 0.0001,
+            "response_gain": 101.98923026852951,
+            "eligible": true,
+            "monotonic": true
+          }
+        },
+        "reason": "两种接法的增量响应达到区分阈值"
+      }
+    },
+    {
+      "profile": "npn_big",
+      "device": "open",
+      "classification": {
+        "polarity": "unknown",
+        "dominance_ratio": 0.9998944143973519,
+        "evidence": {
+          "npn": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.0,
+            "threshold_a": 0.0001,
+            "response_gain": 0.0,
+            "eligible": false,
+            "monotonic": true
+          },
+          "pnp": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.00010008708737864118,
+            "threshold_a": 0.0001,
+            "response_gain": 0.9998944143973519,
+            "eligible": false,
+            "monotonic": true
+          }
+        },
+        "reason": "响应过弱、漏电过大或两种接法差异不足；请检查接线并人工确认"
+      }
+    },
+    {
+      "profile": "npn_big",
+      "device": "ambiguous",
+      "classification": {
+        "polarity": "unknown",
+        "dominance_ratio": 1.0099009900990101,
+        "evidence": {
+          "npn": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.010108795825242718,
+            "threshold_a": 0.0001,
+            "response_gain": 100.98933585413214,
+            "eligible": true,
+            "monotonic": true
+          },
+          "pnp": {
+            "baseline_a": 8.024471245852521e-08,
+            "delta_a": 0.010208882912621361,
+            "threshold_a": 0.0001,
+            "response_gain": 101.98923026852951,
+            "eligible": true,
+            "monotonic": true
+          }
+        },
+        "reason": "响应过弱、漏电过大或两种接法差异不足；请检查接线并人工确认"
+      }
+    }
+  ],
+  "pdf_rendering": true,
+  "continuous_pdf": {
+    "pages": 3,
+    "centered": true,
+    "passed": true
+  },
+  "original_project_datasheets": [
+    {
+      "manufacturer": "长晶科技",
+      "model": "2N5401",
+      "pages": 5,
+      "source_archive": "IP-SDK_3.0 (2).zip"
+    },
+    {
+      "manufacturer": "长晶科技",
+      "model": "2N5551",
+      "pages": 5,
+      "source_archive": "IP-SDK_3.0 (2).zip"
+    },
+    {
+      "manufacturer": "长晶科技",
+      "model": "TIP41C",
+      "pages": 4,
+      "source_archive": "IP-SDK_3.0 (2).zip"
+    },
+    {
+      "manufacturer": "长晶科技",
+      "model": "TIP42C",
+      "pages": 4,
+      "source_archive": "IP-SDK_3.0 (2).zip"
+    },
+    {
+      "manufacturer": "onsemi",
+      "model": "2N5401",
+      "pages": 6,
+      "source_archive": "IP-SDK_3.0 (2).zip"
+    },
+    {
+      "manufacturer": "onsemi",
+      "model": "2N5551",
+      "pages": 6,
+      "source_archive": "IP-SDK_3.0 (2).zip"
+    },
+    {
+      "manufacturer": "onsemi",
+      "model": "TIP41C",
+      "pages": 5,
+      "source_archive": "IP-SDK_3.0 (2).zip"
+    },
+    {
+      "manufacturer": "onsemi",
+      "model": "TIP42C",
+      "pages": 6,
+      "source_archive": "IP-SDK_3.0 (2).zip"
+    }
+  ],
+  "datasheet_extraction": {
+    "passed": true,
+    "parameters": 18,
+    "reviewed": 18,
+    "watermark_removed": true,
+    "cache": "D:\\FPGA\\AMD_2026\\tmp\\current_only_verify\\extraction_verify\\39ea698c1449d4c9fcf719a0b7aec4d733e4973f81f900fea50f04c47de60b60.json",
+    "isolated": true
+  },
+  "ai_client_imported_no_external_request": true,
+  "pulse_scans": [
+    {
+      "measurement": "output",
+      "profile": "npn_big",
+      "simulated": true,
+      "points": 3,
+      "method": "pulse",
+      "cleanup_errors": []
+    },
+    {
+      "measurement": "output",
+      "profile": "pnp_big",
+      "simulated": true,
+      "points": 3,
+      "method": "pulse",
+      "cleanup_errors": []
+    },
+    {
+      "measurement": "beta",
+      "profile": "npn_big",
+      "simulated": true,
+      "points": 5,
+      "method": "pulse",
+      "cleanup_errors": []
+    },
+    {
+      "measurement": "beta",
+      "profile": "pnp_big",
+      "simulated": true,
+      "points": 5,
+      "method": "pulse",
+      "cleanup_errors": []
+    }
+  ],
+  "simulation_cleanup": {
+    "closed": true,
+    "cleanup_confirmed": true
+  }
+}
