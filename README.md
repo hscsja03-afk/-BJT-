@@ -64,6 +64,6 @@ $env:PYTHONPATH="$PWD/src/python"
 - [验证记录](report/package_validation.json)：软件、RTL 和程序一致性检查。
 - [技能包](skill/README.md)：9 项可复用方法。
 
-原始数据按 [归档索引](report/archive_index.json) 查找。开发过程记录位于 `report/ai_collaboration.jsonl`，包含摘要及部分原文。
+原始数据按 [归档索引](report/archive_index.json) 查找。[大模型协作记录](report/ai_collaboration.md) 精选四个案例，说明问题分析、方案取舍、验证结果和工程心得。
 
 项目代码采用 [MIT 许可](license.txt)，第三方资源见 [来源说明](report/source_provenance.md)。
