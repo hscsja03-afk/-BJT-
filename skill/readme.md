@@ -63,4 +63,4 @@ python -m unittest discover -s register-to-analog-debug/scripts -p "test_*.py" -
 
 ## 开源协议
 
-本项目编写的技能文档、模板和脚本采用 [MIT 许可](license.txt)，允许使用、修改和再分发，分发时保留版权与许可声明。
+本项目编写的技能文档、模板和脚本采用 [MIT 许可](license.txt)，允许使用、修改和再分发，分发时保留版权与许可声明。第三方代码、硬件资源、数据手册、字体及依赖保留各自版权与许可。
