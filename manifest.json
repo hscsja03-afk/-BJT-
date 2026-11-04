@@ -2164,28 +2164,28 @@
     },
     {
       "path": "skill/datasheet-parameters/skill.md",
-      "bytes": 1351,
-      "sha256": "ef22cb0a95eb58be0186c84b0255fb2f33abb0e84d924b3ac3c4dfaa5594266c"
+      "bytes": 1746,
+      "sha256": "eadd2086ec4eee5ca88c62b977f1461bbe8de59f3fa084f18b2a61253c526845"
     },
     {
       "path": "skill/desktop-agent-release/skill.md",
-      "bytes": 1536,
-      "sha256": "346428de1b5f082be3fd498257347d32cc42c085059a4d44c29dbabe4b2eac3b"
+      "bytes": 1958,
+      "sha256": "a438301afdf5e1f864cdc7612292cfdeacdb94a2cec826ae3c86e657500b2e2b"
     },
     {
       "path": "skill/fpga-source-timing-closure/skill.md",
-      "bytes": 1386,
-      "sha256": "b841c971c2bcf149d595ea9f6f7e3ceef1046840b32b9dd97b13242daa10023a"
+      "bytes": 1749,
+      "sha256": "6c81589a134cdcea184f09403569304bd27cdf8293ed24692976a56b1f6289be"
     },
     {
       "path": "skill/measurement-sweep-integrity/skill.md",
-      "bytes": 1444,
-      "sha256": "6cf4656720bd4e6dd5bf474f1a735765f9636dc2e971564cce24caeee19dd1f7"
+      "bytes": 1859,
+      "sha256": "1733cd415db6b85df37a54038f23444dbfc6cdeb909f42ed3a0d69297bf3ab01"
     },
     {
       "path": "skill/mixed-signal-calibration/skill.md",
-      "bytes": 1409,
-      "sha256": "85ba9d009c55b6bcb84641618d3cdbc84c1f698ccade02f0f3127a29f4d70bba"
+      "bytes": 1817,
+      "sha256": "aa949e872c030190a11568a2d737d71cfc50916312e22c3cbbea49c9b35dd57f"
     },
     {
       "path": "skill/pynq-overlay-audit/scripts/check_bundle.py",
@@ -2199,13 +2199,13 @@
     },
     {
       "path": "skill/pynq-overlay-audit/skill.md",
-      "bytes": 1821,
-      "sha256": "ce9a142b080c56b833b38f4e8f3d59dcf4323316ff364b138e41611f6d92d160"
+      "bytes": 2177,
+      "sha256": "3d9bc657c8faab6b5b1f82e25456b54c24ab662c76538dda346b603ff7e4bff4"
     },
     {
       "path": "skill/readme.md",
-      "bytes": 7336,
-      "sha256": "12648dc3a350053bf9354454326b90a358d8142b59c2a217d90524af7c0543ca"
+      "bytes": 9631,
+      "sha256": "7d164af19390f160e82198903c2cc64ddb79155907aa0dc533fc0f686d60f47d"
     },
     {
       "path": "skill/register-to-analog-debug/scripts/locate_epcb.py",
@@ -2219,13 +2219,13 @@
     },
     {
       "path": "skill/register-to-analog-debug/skill.md",
-      "bytes": 2006,
-      "sha256": "e02c4f2908398d2880d02b501bfe961146bfdce0ace7f9d3877b014ddd0ee760"
+      "bytes": 2390,
+      "sha256": "52923b3d499afff0ccfd9eae82230b52048598bbf6b3c8e7b2fa0a886e556a92"
     },
     {
       "path": "skill/technical-poster-evidence/skill.md",
-      "bytes": 1648,
-      "sha256": "e9d85407a24a6d1bd3826fdf0f08b34664af9c347c2ab016a1b4616df4d654c7"
+      "bytes": 2055,
+      "sha256": "db9de13a2151ede93f51f869cff0e90468201bf3c05cb4a1e33912f30aee733f"
     },
     {
       "path": "skill/templates/experiment_record.md",
@@ -2244,8 +2244,8 @@
     },
     {
       "path": "skill/zynq-boot-ddr-diagnosis/skill.md",
-      "bytes": 1424,
-      "sha256": "f22d9b0125e79acaf937917d49ed861a9ed4375f8b487234113db3f02e24117f"
+      "bytes": 1825,
+      "sha256": "d6c57436b9abc8130d7b7adaf06b78336c03c592de2c6db45d648b4a53da81fc"
     },
     {
       "path": "src/assets/font.mem",
