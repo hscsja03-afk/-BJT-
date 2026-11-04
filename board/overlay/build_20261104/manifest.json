@@ -1,0 +1,15 @@
+{
+  "peripheral": {
+    "instance": "adda_core_0",
+    "size": "0x10000",
+    "base": "0x43c00000"
+  },
+  "hwh": {
+    "path": "bjt.hwh",
+    "sha256": "69175133e4996b99b5eaf599b4ef90398c16715c0ef91575486088c199104ad8"
+  },
+  "bit": {
+    "path": "bjt.bit",
+    "sha256": "102d7445edd24724b080899e34809a780e64e5203b3365f14852e9f8ce32d888"
+  }
+}
