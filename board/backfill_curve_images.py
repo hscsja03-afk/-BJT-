@@ -23,8 +23,6 @@ try:
             app.last_result=None;app.rows=[];app.measurement=name;app._parameter_profile=profile
             app.profile.set(LABELS[profile]);app.sync_measurement_columns();app.reset_measurement_plot()
             app.last_result=dict(state=state,run_id=path.parent.name,local_directory=str(path.parent))
-            app.ac_history.mode.set('历史轮换' if state.get('display_reference') else '本次采集')
-            app.ac_history.restore(app.last_result)
             app.read_result(path.parent)
             images=list(path.parent.glob('curve*.png'))
             if not images:raise RuntimeError('No autosaved main image')
