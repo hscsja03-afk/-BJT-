@@ -25,7 +25,7 @@
 
 **心得。** 模型给出的可能原因，需要转成能区分原因的实验。这个案例中，稳定的错误位置比错误总数更有定位价值；每轮比较保留相同探针和错误掩码，后续判断才有连续的依据。
 
-依据：[DDR 对照记录](hardware_evidence.json)。提炼方法：[Zynq 启动与 DDR 分层定位](../skill/zynq-boot-ddr-diagnosis/SKILL.md)。
+依据：[DDR 对照记录](hardware_evidence.json)。提炼方法：[Zynq 启动与 DDR 分层定位](../skill/zynq-boot-ddr-diagnosis/skill.md)。
 
 ## 2. TX1：把寄存器状态和模拟输出分开验证
 
@@ -37,7 +37,7 @@
 
 **验证与心得。** 修正后完成 14 项示波器检查，独立冷启动后再完成 14 项检查，两组均通过。这个问题说明，驱动既要描述寄存器的目标值，也要描述设备到达目标值的过程。把调用顺序写成可重复的状态转换，比在上层增加重复写入或等待更容易定位问题。
 
-依据：[问题定位](tx1_root_cause_20261030.json)、[示波器检查](tx1_pynq_scope_acceptance_20261030.json)、[冷启动复验](tx1_pynq_scope_coldboot_20261030.json)、[驱动实现](../src/python/zynq_bjt/tx1.py)。提炼方法：[寄存器到模拟输出定位](../skill/register-to-analog-debug/SKILL.md)。
+依据：[问题定位](tx1_root_cause_20261030.json)、[示波器检查](tx1_pynq_scope_acceptance_20261030.json)、[冷启动复验](tx1_pynq_scope_coldboot_20261030.json)、[驱动实现](../src/python/zynq_bjt/tx1.py)。提炼方法：[寄存器到模拟输出定位](../skill/register-to-analog-debug/skill.md)。
 
 ## 3. 采样时钟：按时序和测量用途选择工作档位
 
@@ -54,7 +54,7 @@
 
 **验证与心得。** 双通道信号检查记录的最大 FFT 频率误差约为 0.01646%；发布程序读出的高采样档分别为 62.5056 MHz、62.5057 MHz。采样率从 50 MHz 提高到 62.5 MHz，增幅为 25%。整次扫描还包含偏置稳定、传输和计算时间，应另用同点数、同条件的扫描耗时评价。时序报告解决“能否可靠采样”，实验条件决定“采样结果如何用于测量”，两部分都需要随版本保存。
 
-依据：[125/250 MHz 时序](../build/work/target125_250/timing_summary.rpt)、[62.5/125 MHz 时序](../build/work/adc625_mmcm_20261102/timing_summary.rpt)、[时钟实现](../src/rtl/adc_clocking.v)、[升频实验归档](../data/evidence/evidence_adc_rate_raise_20261102.zip)中的 `release_summary.json` 与 `hardware_dual/result.json`。提炼方法：[FPGA 源码重建与时序核对](../skill/fpga-source-timing-closure/SKILL.md)。
+依据：[125/250 MHz 时序](../build/work/target125_250/timing_summary.rpt)、[62.5/125 MHz 时序](../build/work/adc625_mmcm_20261102/timing_summary.rpt)、[时钟实现](../src/rtl/adc_clocking.v)、[升频实验归档](../data/evidence/evidence_adc_rate_raise_20261102.zip)中的 `release_summary.json` 与 `hardware_dual/result.json`。提炼方法：[FPGA 源码重建与时序核对](../skill/fpga-source-timing-closure/skill.md)。
 
 ## 4. TX2/TX3：从单路标定走到同时工作验证
 
@@ -72,7 +72,7 @@
 
 **心得。** 校准算法可以由模型辅助编写，但校准结论要由控制变量和独立检查点支撑。把标定点、插值检查点和同时工作测试分开，既能看到拟合效果，也能看出系统状态改变后新增的误差。上述数值对应这次 50 MSPS 实验，用于说明方案取舍；各运行版本的换算参数由配套校准表确定。
 
-依据：[TX2/TX3 校准归档](../data/evidence/evidence_tx23_calibration_20261030.zip)中的 `summary.json`、`tx2/result.json` 和 `tx3_final/result.json`。提炼方法：[混合信号校准与单位管理](../skill/mixed-signal-calibration/SKILL.md)。
+依据：[TX2/TX3 校准归档](../data/evidence/evidence_tx23_calibration_20261030.zip)中的 `summary.json`、`tx2/result.json` 和 `tx3_final/result.json`。提炼方法：[混合信号校准与单位管理](../skill/mixed-signal-calibration/skill.md)。
 
 ## 协作方法的总结
 

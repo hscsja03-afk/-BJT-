@@ -8,8 +8,8 @@
     "skill",
     "report"
   ],
-  "direct_files": 515,
+  "direct_files": 536,
   "archive_groups": 36,
   "original_package_files": 5885,
-  "format": "lowercase ASCII paths; README.md and SKILL.md retain standard names"
+  "format": "lowercase ASCII repository paths"
 }
