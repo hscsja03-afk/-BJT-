@@ -10,7 +10,7 @@
   "software_regression": {
     "unique_tests": 312,
     "passed": 312,
-    "full_run_tests": 310,
-    "targeted_rerun_tests": 3
-  }
+    "full_run_tests": 312
+  },
+  "directory_links": "passed"
 }

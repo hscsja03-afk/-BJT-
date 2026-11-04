@@ -4,25 +4,18 @@
   "package_checks_passed": true,
   "software": {
     "unique_sim_tests_passed": 312,
-    "aggregation": "full suite plus instrument-dependency rerun",
     "full_suite": {
-      "tests": 310,
-      "pass_count": 309,
+      "tests": 312,
+      "pass_count": 312,
       "fail_count": 0,
-      "error_count": 1,
-      "log": "validation/python_tests.log"
+      "error_count": 0,
+      "log": "sim/results/software_tests.log"
     },
-    "final_reruns": [
-      {
-        "tests": 3,
-        "status": "passed",
-        "log": "validation/tx1_bus_recheck.log"
-      }
-    ],
     "analysis_tests": {
+      "tests": 16,
       "pass_count": 14,
       "optional_notebook_tests": 2,
-      "log": "validation/analysis_tests.log"
+      "log": "sim/results/software_tests.log"
     }
   },
   "rtl": {
@@ -36,12 +29,21 @@
     "python38_agent_syntax": true,
     "compiled_modules_checked": 47,
     "runtime_data_files": 26,
-    "wheel_modules": 52
+    "wheel_modules": 50
   },
   "desktop_runtime": "passed",
   "overlay_files_and_address": "passed",
   "skill_structure_count": 9,
   "physical_measurement_runs": 24,
   "validation_scope": "offline source, simulation, distribution and archive checks",
-  "board_evidence": "Recorded experiments indexed by acquisition date and bitstream identity"
+  "board_evidence": "Recorded experiments indexed by acquisition date and bitstream identity",
+  "measurement_tables": {
+    "transistor_runs": 24,
+    "adc_comparisons": 76,
+    "dac_comparisons": 77,
+    "summary": "report/measurements/summary.json",
+    "values_match_capture_records": true
+  },
+  "directory_links": "passed",
+  "script_syntax": "passed"
 }
