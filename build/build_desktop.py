@@ -21,6 +21,10 @@ stage = ROOT/'build/work/desktop_package'
 stage.mkdir(parents=True, exist_ok=True)
 (stage/'agent.pyz').write_bytes(agent_archive(ROOT/'src/python/zynq_bjt'))
 runtime_data = stage/'runtime_data'
+if runtime_data.exists():
+    if not runtime_data.resolve().is_relative_to((ROOT/'build/work').resolve()):
+        raise ValueError('Runtime staging directory must stay within build/work')
+    shutil.rmtree(runtime_data)
 runtime_manifest = json.loads((ROOT/'data/runtime_manifest.json').read_text(encoding='utf-8'))
 for item in runtime_manifest['files']:
     source = ROOT/'data'/item['path']
