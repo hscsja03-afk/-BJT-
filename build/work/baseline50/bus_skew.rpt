@@ -1,0 +1,332 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Oct 28 12:56:52 2026
+| Host         : LAPTOP-HIR37L2R running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -file D:/FPGA/AMD_2026/build/work/baseline50/bus_skew.rpt
+| Design       : adda_dac_gui_top
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+Table of Contents
+-----------------
+1. Bus Skew Report Summary
+2. Bus Skew Report Per Constraint
+
+1. Bus Skew Report Summary
+--------------------------
+
+Id  Position  From                            To                              Corner  Requirement(ns)  Actual(ns)  Slack(ns)
+--  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
+1   30        [get_cells -hier -filter {IS_SEQUENTIAL == 1 && NAME =~ *ca/gray_reg*}]
+                                              [get_cells -hier -filter {IS_SEQUENTIAL == 1 && NAME =~ *ca/crossing/meta_reg*}]
+                                                                              Slow             20.000       1.112     18.888
+2   31        [get_cells -hier -filter {IS_SEQUENTIAL == 1 && NAME =~ *cb/gray_reg*}]
+                                              [get_cells -hier -filter {IS_SEQUENTIAL == 1 && NAME =~ *cb/crossing/meta_reg*}]
+                                                                              Slow             20.000       0.998     19.002
+3   32        [get_cells -hier -filter {IS_SEQUENTIAL == 1 && NAME =~ *cd/gray_reg*}]
+                                              [get_cells -hier -filter {IS_SEQUENTIAL == 1 && NAME =~ *cd/crossing/meta_reg*}]
+                                                                              Slow             20.000       1.124     18.876
+
+
+2. Bus Skew Report Per Constraint
+---------------------------------
+
+Id: 1
+set_bus_skew -from [get_cells -hier -filter {IS_SEQUENTIAL == 1 && NAME =~ *ca/gray_reg*}] -to [get_cells -hier -filter {IS_SEQUENTIAL == 1 && NAME =~ *ca/crossing/meta_reg*}] 20.000
+Requirement: 20.000ns
+Endpoints: 32
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+adc_clk_a             clk_fpga_0            system_i/adda_core_0/inst/ca/crossing/meta_reg[30]/D
+                                                                            system_i/adda_core_0/inst/ca/crossing/meta_reg[3]/D
+                                                                                                            Slow         1.112     18.888
+
+
+Slack (MET) :             18.888ns  (requirement - actual skew)
+  Endpoint Source:        system_i/adda_core_0/inst/ca/gray_reg[30]/C
+                            (rising edge-triggered cell FDCE clocked by adc_clk_a)
+  Endpoint Destination:   system_i/adda_core_0/inst/ca/crossing/meta_reg[30]/D
+                            (rising edge-triggered cell FDCE clocked by clk_fpga_0)
+  Reference Source:       system_i/adda_core_0/inst/ca/gray_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by adc_clk_a)
+  Reference Destination:  system_i/adda_core_0/inst/ca/crossing/meta_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by clk_fpga_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            20.000ns
+  Endpoint Relative Delay:    4.308ns
+  Reference Relative Delay:   2.681ns
+  Relative CRPR:              0.515ns
+  Actual Bus Skew:            1.112ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock adc_clk_a rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U10                                               0.000     0.000 r  adc_dco_a
+                         net (fo=0)                   0.000     0.000    adc_dco_a
+    U10                  IBUF (Prop_ibuf_I_O)         1.438     1.438 r  adc_dco_a_IBUF_inst/O
+                         net (fo=1, routed)           2.228     3.666    adc_dco_a_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.085     3.751 r  adc_dco_a_IBUF_BUFG_inst/O
+                         net (fo=82, routed)          1.562     5.313    system_i/adda_core_0/inst/ca/adc_dco_a
+    SLICE_X39Y107        FDCE                                         r  system_i/adda_core_0/inst/ca/gray_reg[30]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y107        FDCE (Prop_fdce_C_Q)         0.348     5.661 r  system_i/adda_core_0/inst/ca/gray_reg[30]/Q
+                         net (fo=1, routed)           0.809     6.470    system_i/adda_core_0/inst/ca/crossing/meta_reg[31]_0[30]
+    SLICE_X33Y107        FDCE                                         r  system_i/adda_core_0/inst/ca/crossing/meta_reg[30]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.905     0.905    system_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     0.982 r  system_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2637, routed)        1.391     2.373    system_i/adda_core_0/inst/ca/crossing/bus_clk
+    SLICE_X33Y107        FDCE                                         r  system_i/adda_core_0/inst/ca/crossing/meta_reg[30]/C
+                         clock pessimism              0.000     2.373    <hidden>
+    SLICE_X33Y107        FDCE (Setup_fdce_C_D)       -0.211     2.162    system_i/adda_core_0/inst/ca/crossing/meta_reg[30]
+  -------------------------------------------------------------------
+                         data arrival                           6.470    <hidden>
+                         clock arrival                          2.162    <hidden>
+  -------------------------------------------------------------------
+                         relative delay                         4.308    <hidden>
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock adc_clk_a rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U10                                               0.000     0.000 r  adc_dco_a
+                         net (fo=0)                   0.000     0.000    adc_dco_a
+    U10                  IBUF (Prop_ibuf_I_O)         1.372     1.372 r  adc_dco_a_IBUF_inst/O
+                         net (fo=1, routed)           1.908     3.280    adc_dco_a_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.077     3.357 r  adc_dco_a_IBUF_BUFG_inst/O
+                         net (fo=82, routed)          1.237     4.594    system_i/adda_core_0/inst/ca/adc_dco_a
+    SLICE_X41Y99         FDCE                                         r  system_i/adda_core_0/inst/ca/gray_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y99         FDCE (Prop_fdce_C_Q)         0.304     4.898 r  system_i/adda_core_0/inst/ca/gray_reg[3]/Q
+                         net (fo=1, routed)           0.390     5.288    system_i/adda_core_0/inst/ca/crossing/meta_reg[31]_0[3]
+    SLICE_X47Y99         FDCE                                         r  system_i/adda_core_0/inst/ca/crossing/meta_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.994     0.994    system_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  system_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2637, routed)        1.390     2.469    system_i/adda_core_0/inst/ca/crossing/bus_clk
+    SLICE_X47Y99         FDCE                                         r  system_i/adda_core_0/inst/ca/crossing/meta_reg[3]/C
+                         clock pessimism              0.000     2.469    <hidden>
+    SLICE_X47Y99         FDCE (Hold_fdce_C_D)         0.138     2.607    system_i/adda_core_0/inst/ca/crossing/meta_reg[3]
+  -------------------------------------------------------------------
+                         data arrival                           5.288    <hidden>
+                         clock arrival                          2.607    <hidden>
+  -------------------------------------------------------------------
+                         relative delay                         2.681    <hidden>
+
+
+
+Id: 2
+set_bus_skew -from [get_cells -hier -filter {IS_SEQUENTIAL == 1 && NAME =~ *cb/gray_reg*}] -to [get_cells -hier -filter {IS_SEQUENTIAL == 1 && NAME =~ *cb/crossing/meta_reg*}] 20.000
+Requirement: 20.000ns
+Endpoints: 32
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+adc_clk_b             clk_fpga_0            system_i/adda_core_0/inst/cb/crossing/meta_reg[4]/D
+                                                                            system_i/adda_core_0/inst/cb/crossing/meta_reg[31]/D
+                                                                                                            Slow         0.998     19.002
+
+
+Slack (MET) :             19.002ns  (requirement - actual skew)
+  Endpoint Source:        system_i/adda_core_0/inst/cb/gray_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by adc_clk_b)
+  Endpoint Destination:   system_i/adda_core_0/inst/cb/crossing/meta_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by clk_fpga_0)
+  Reference Source:       system_i/adda_core_0/inst/cb/gray_reg[31]/C
+                            (rising edge-triggered cell FDCE clocked by adc_clk_b)
+  Reference Destination:  system_i/adda_core_0/inst/cb/crossing/meta_reg[31]/D
+                            (rising edge-triggered cell FDCE clocked by clk_fpga_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            20.000ns
+  Endpoint Relative Delay:    3.897ns
+  Reference Relative Delay:   2.433ns
+  Relative CRPR:              0.466ns
+  Actual Bus Skew:            0.998ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock adc_clk_b rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U14                                               0.000     0.000 r  adc_dco_b
+                         net (fo=0)                   0.000     0.000    adc_dco_b
+    U14                  IBUF (Prop_ibuf_I_O)         1.521     1.521 r  adc_dco_b_IBUF_inst/O
+                         net (fo=1, routed)           1.873     3.394    adc_dco_b_IBUF
+    BUFGCTRL_X0Y18       BUFG (Prop_bufg_I_O)         0.085     3.479 r  adc_dco_b_IBUF_BUFG_inst/O
+                         net (fo=82, routed)          1.557     5.036    system_i/adda_core_0/inst/cb/adc_dco_b
+    SLICE_X48Y100        FDCE                                         r  system_i/adda_core_0/inst/cb/gray_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y100        FDCE (Prop_fdce_C_Q)         0.348     5.384 r  system_i/adda_core_0/inst/cb/gray_reg[4]/Q
+                         net (fo=1, routed)           0.521     5.905    system_i/adda_core_0/inst/cb/crossing/meta_reg[31]_0[4]
+    SLICE_X49Y99         FDCE                                         r  system_i/adda_core_0/inst/cb/crossing/meta_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.905     0.905    system_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     0.982 r  system_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2637, routed)        1.234     2.217    system_i/adda_core_0/inst/cb/crossing/bus_clk
+    SLICE_X49Y99         FDCE                                         r  system_i/adda_core_0/inst/cb/crossing/meta_reg[4]/C
+                         clock pessimism              0.000     2.217    <hidden>
+    SLICE_X49Y99         FDCE (Setup_fdce_C_D)       -0.209     2.008    system_i/adda_core_0/inst/cb/crossing/meta_reg[4]
+  -------------------------------------------------------------------
+                         data arrival                           5.905    <hidden>
+                         clock arrival                          2.008    <hidden>
+  -------------------------------------------------------------------
+                         relative delay                         3.897    <hidden>
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock adc_clk_b rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U14                                               0.000     0.000 r  adc_dco_b
+                         net (fo=0)                   0.000     0.000    adc_dco_b
+    U14                  IBUF (Prop_ibuf_I_O)         1.454     1.454 r  adc_dco_b_IBUF_inst/O
+                         net (fo=1, routed)           1.701     3.155    adc_dco_b_IBUF
+    BUFGCTRL_X0Y18       BUFG (Prop_bufg_I_O)         0.077     3.232 r  adc_dco_b_IBUF_BUFG_inst/O
+                         net (fo=82, routed)          1.388     4.620    system_i/adda_core_0/inst/cb/adc_dco_b
+    SLICE_X45Y108        FDCE                                         r  system_i/adda_core_0/inst/cb/gray_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X45Y108        FDCE (Prop_fdce_C_Q)         0.304     4.924 r  system_i/adda_core_0/inst/cb/gray_reg[31]/Q
+                         net (fo=1, routed)           0.339     5.263    system_i/adda_core_0/inst/cb/crossing/meta_reg[31]_0[31]
+    SLICE_X34Y108        FDCE                                         r  system_i/adda_core_0/inst/cb/crossing/meta_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.994     0.994    system_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  system_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2637, routed)        1.560     2.639    system_i/adda_core_0/inst/cb/crossing/bus_clk
+    SLICE_X34Y108        FDCE                                         r  system_i/adda_core_0/inst/cb/crossing/meta_reg[31]/C
+                         clock pessimism              0.000     2.639    <hidden>
+    SLICE_X34Y108        FDCE (Hold_fdce_C_D)         0.191     2.830    system_i/adda_core_0/inst/cb/crossing/meta_reg[31]
+  -------------------------------------------------------------------
+                         data arrival                           5.263    <hidden>
+                         clock arrival                          2.830    <hidden>
+  -------------------------------------------------------------------
+                         relative delay                         2.433    <hidden>
+
+
+
+Id: 3
+set_bus_skew -from [get_cells -hier -filter {IS_SEQUENTIAL == 1 && NAME =~ *cd/gray_reg*}] -to [get_cells -hier -filter {IS_SEQUENTIAL == 1 && NAME =~ *cd/crossing/meta_reg*}] 20.000
+Requirement: 20.000ns
+Endpoints: 32
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clock_raw             clk_fpga_0            system_i/adda_core_0/inst/cd/crossing/meta_reg[5]/D
+                                                                            system_i/adda_core_0/inst/cd/crossing/meta_reg[28]/D
+                                                                                                            Slow         1.124     18.876
+
+
+Slack (MET) :             18.876ns  (requirement - actual skew)
+  Endpoint Source:        system_i/adda_core_0/inst/cd/gray_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clock_raw)
+  Endpoint Destination:   system_i/adda_core_0/inst/cd/crossing/meta_reg[5]/D
+                            (rising edge-triggered cell FDCE clocked by clk_fpga_0)
+  Reference Source:       system_i/adda_core_0/inst/cd/gray_reg[28]/C
+                            (rising edge-triggered cell FDCE clocked by clock_raw)
+  Reference Destination:  system_i/adda_core_0/inst/cd/crossing/meta_reg[28]/D
+                            (rising edge-triggered cell FDCE clocked by clk_fpga_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            20.000ns
+  Endpoint Relative Delay:   -1.470ns
+  Reference Relative Delay:  -3.026ns
+  Relative CRPR:              0.431ns
+  Actual Bus Skew:            1.124ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock_raw rise edge)
+                                                      0.000     0.000 r  <hidden>
+    L16                                               0.000     0.000 r  dac_dco
+                         net (fo=0)                   0.000     0.000    dac_dco
+    L16                  IBUF (Prop_ibuf_I_O)         1.495     1.495 r  dac_dco_IBUF_inst/O
+                         net (fo=1, routed)           1.110     2.605    system_i/adda_core_0/inst/dc/dac_dco
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.567    -3.962 r  system_i/adda_core_0/inst/dc/mmcm/CLKOUT0
+                         net (fo=1, routed)           1.884    -2.078    system_i/adda_core_0/inst/dc/clock_raw
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.085    -1.993 r  system_i/adda_core_0/inst/dc/output_buf/O
+                         net (fo=534, routed)         1.390    -0.603    system_i/adda_core_0/inst/cd/CLK
+    SLICE_X45Y95         FDCE                                         r  system_i/adda_core_0/inst/cd/gray_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X45Y95         FDCE (Prop_fdce_C_Q)         0.348    -0.255 r  system_i/adda_core_0/inst/cd/gray_reg[5]/Q
+                         net (fo=1, routed)           0.791     0.536    system_i/adda_core_0/inst/cd/crossing/meta_reg[31]_0[5]
+    SLICE_X49Y95         FDCE                                         r  system_i/adda_core_0/inst/cd/crossing/meta_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.905     0.905    system_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     0.982 r  system_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2637, routed)        1.234     2.217    system_i/adda_core_0/inst/cd/crossing/bus_clk
+    SLICE_X49Y95         FDCE                                         r  system_i/adda_core_0/inst/cd/crossing/meta_reg[5]/C
+                         clock pessimism              0.000     2.217    <hidden>
+    SLICE_X49Y95         FDCE (Setup_fdce_C_D)       -0.211     2.006    system_i/adda_core_0/inst/cd/crossing/meta_reg[5]
+  -------------------------------------------------------------------
+                         data arrival                           0.536    <hidden>
+                         clock arrival                          2.006    <hidden>
+  -------------------------------------------------------------------
+                         relative delay                        -1.470    <hidden>
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock_raw rise edge)
+                                                      0.000     0.000 r  <hidden>
+    L16                                               0.000     0.000 r  dac_dco
+                         net (fo=0)                   0.000     0.000    dac_dco
+    L16                  IBUF (Prop_ibuf_I_O)         1.428     1.428 r  dac_dco_IBUF_inst/O
+                         net (fo=1, routed)           1.004     2.432    system_i/adda_core_0/inst/dc/dac_dco
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.527    -4.096 r  system_i/adda_core_0/inst/dc/mmcm/CLKOUT0
+                         net (fo=1, routed)           1.714    -2.381    system_i/adda_core_0/inst/dc/clock_raw
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.077    -2.304 r  system_i/adda_core_0/inst/dc/output_buf/O
+                         net (fo=534, routed)         1.389    -0.915    system_i/adda_core_0/inst/cd/CLK
+    SLICE_X45Y100        FDCE                                         r  system_i/adda_core_0/inst/cd/gray_reg[28]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X45Y100        FDCE (Prop_fdce_C_Q)         0.304    -0.611 r  system_i/adda_core_0/inst/cd/gray_reg[28]/Q
+                         net (fo=1, routed)           0.417    -0.195    system_i/adda_core_0/inst/cd/crossing/meta_reg[31]_0[28]
+    SLICE_X36Y101        FDCE                                         r  system_i/adda_core_0/inst/cd/crossing/meta_reg[28]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.994     0.994    system_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  system_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2637, routed)        1.561     2.640    system_i/adda_core_0/inst/cd/crossing/bus_clk
+    SLICE_X36Y101        FDCE                                         r  system_i/adda_core_0/inst/cd/crossing/meta_reg[28]/C
+                         clock pessimism              0.000     2.640    <hidden>
+    SLICE_X36Y101        FDCE (Hold_fdce_C_D)         0.191     2.831    system_i/adda_core_0/inst/cd/crossing/meta_reg[28]
+  -------------------------------------------------------------------
+                         data arrival                          -0.195    <hidden>
+                         clock arrival                          2.831    <hidden>
+  -------------------------------------------------------------------
+                         relative delay                        -3.026    <hidden>
+
+
+

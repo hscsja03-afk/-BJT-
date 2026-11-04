@@ -1,0 +1,98 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Oct 28 13:04:09 2026
+| Host         : LAPTOP-HIR37L2R running 64-bit major release  (build 9200)
+| Command      : report_cdc -details -file D:/FPGA/AMD_2026/build/work/target125_250/cdc.rpt
+| Design       : adda_dac_gui_top
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+ID     Severity  Count  Description
+-----  --------  -----  -------------------------------------------------------
+CDC-3  Info         18  1-bit synchronized with ASYNC_REG property
+CDC-6  Warning       9  Multi-bit synchronized with ASYNC_REG property
+CDC-9  Info          2  Asynchronous reset synchronized with ASYNC_REG property
+
+Source Clock: clk_fpga_0
+Destination Clock: adc_clk_a
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                              Depth  Exception            Source (From)                                                  Destination (To)
+---  -----  --------  -------------------------------------------------------  -----  -------------------  -------------------------------------------------------------  -------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property                   2  Asynch Clock Groups  system_i/adda_core_0/inst/cap_request_reg/C                    system_i/adda_core_0/inst/capture_a/request_cdc/meta_reg[0]/D
+  2  CDC-9  Info      Asynchronous reset synchronized with ASYNC_REG property      2  Asynch Clock Groups  system_i/rst_ps7_50M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C  system_i/adda_core_0/inst/ra/rising_release.pipe_reg[0]/CLR
+
+Source Clock: clk_fpga_0
+Destination Clock: adc_clk_b
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                              Depth  Exception            Source (From)                                                  Destination (To)
+---  -----  --------  -------------------------------------------------------  -----  -------------------  -------------------------------------------------------------  -------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property                   2  Asynch Clock Groups  system_i/adda_core_0/inst/cap_request_reg/C                    system_i/adda_core_0/inst/capture_b/request_cdc/meta_reg[0]/D
+  2  CDC-9  Info      Asynchronous reset synchronized with ASYNC_REG property      2  Asynch Clock Groups  system_i/rst_ps7_50M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C  system_i/adda_core_0/inst/rb/rising_release.pipe_reg[0]/CLR
+
+Source Clock: adc_clk_a
+Destination Clock: clk_fpga_0
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                     Depth  Exception            Source (From)                                   Destination (To)
+---  -----  --------  ----------------------------------------------  -----  -------------------  ----------------------------------------------  ------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  system_i/adda_core_0/inst/capture_a/done_reg/C  system_i/adda_core_0/inst/ac/meta_reg[0]/D
+  2  CDC-6  Warning   Multi-bit synchronized with ASYNC_REG property      2  Asynch Clock Groups  system_i/adda_core_0/inst/ca/gray_reg[31:0]/C   system_i/adda_core_0/inst/ca/crossing/meta_reg[31:0]/D
+
+Source Clock: adc_clk_b
+Destination Clock: clk_fpga_0
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                     Depth  Exception            Source (From)                                   Destination (To)
+---  -----  --------  ----------------------------------------------  -----  -------------------  ----------------------------------------------  ------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  system_i/adda_core_0/inst/capture_b/done_reg/C  system_i/adda_core_0/inst/ac/meta_reg[1]/D
+  2  CDC-6  Warning   Multi-bit synchronized with ASYNC_REG property      2  Asynch Clock Groups  system_i/adda_core_0/inst/cb/gray_reg[31:0]/C   system_i/adda_core_0/inst/cb/crossing/meta_reg[31:0]/D
+
+Source Clock: clock_raw
+Destination Clock: clk_fpga_0
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                     Depth  Exception            Source (From)                                         Destination (To)
+---  -----  --------  ----------------------------------------------  -----  -------------------  ----------------------------------------------------  ------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  system_i/adda_core_0/inst/generator/ack_reg/C         system_i/adda_core_0/inst/ac/meta_reg[2]/D
+  2  CDC-6  Warning   Multi-bit synchronized with ASYNC_REG property      2  Asynch Clock Groups  system_i/adda_core_0/inst/awg/acknowledge_reg[1:0]/C  system_i/adda_core_0/inst/awg_ac/meta_reg[1:0]/D
+  3  CDC-6  Warning   Multi-bit synchronized with ASYNC_REG property      2  Asynch Clock Groups  system_i/adda_core_0/inst/cd/gray_reg[31:0]/C         system_i/adda_core_0/inst/cd/crossing/meta_reg[31:0]/D
+
+Source Clock: input port clock
+Destination Clock: clk_fpga_0
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)  Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  -------------  --------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  clkgen_ld      system_i/adda_core_0/inst/cs/meta_reg[0]/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  clkgen_status  system_i/adda_core_0/inst/cs/meta_reg[1]/D
+  3  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  clkgen_refmon  system_i/adda_core_0/inst/cs/meta_reg[2]/D
+  4  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  tx1_scl        system_i/adda_core_0/inst/tx1_inputs/meta_reg[0]/D
+  5  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  tx1_sda        system_i/adda_core_0/inst/tx1_inputs/meta_reg[1]/D
+  6  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  ext_gpio[0]    u_lcd/sense_meta_reg[0]/D
+  7  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  ext_gpio[1]    u_lcd/sense_meta_reg[1]/D
+  8  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  ext_gpio[2]    u_lcd/sense_meta_reg[2]/D
+  9  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  ext_gpio[3]    u_lcd/sense_meta_reg[3]/D
+ 10  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  ext_gpio[4]    u_lcd/sense_meta_reg[4]/D
+ 11  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  ext_gpio[5]    u_lcd/sense_meta_reg[5]/D
+ 12  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  ext_gpio[6]    u_lcd/sense_meta_reg[6]/D
+
+Source Clock: clk_fpga_0
+Destination Clock: clock_raw
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                     Depth  Exception            Source (From)                                      Destination (To)
+---  -----  --------  ----------------------------------------------  -----  -------------------  -------------------------------------------------  --------------------------------------------------
+  1  CDC-6  Warning   Multi-bit synchronized with ASYNC_REG property      2  Asynch Clock Groups  system_i/adda_core_0/inst/awg_phase_a_reg[31:0]/C  system_i/adda_core_0/inst/awg/pa_meta_reg[31:0]/D
+  2  CDC-6  Warning   Multi-bit synchronized with ASYNC_REG property      2  Asynch Clock Groups  system_i/adda_core_0/inst/awg_phase_b_reg[31:0]/C  system_i/adda_core_0/inst/awg/pb_meta_reg[31:0]/D
+  3  CDC-6  Warning   Multi-bit synchronized with ASYNC_REG property      2  Asynch Clock Groups  system_i/adda_core_0/inst/awg_request_reg[1:0]/C   system_i/adda_core_0/inst/awg/req_meta_reg[1:0]/D
+  4  CDC-6  Warning   Multi-bit synchronized with ASYNC_REG property      2  Asynch Clock Groups  system_i/adda_core_0/inst/awg_step_a_reg[31:0]/C   system_i/adda_core_0/inst/awg/sa_meta_reg[31:0]/D
+  5  CDC-6  Warning   Multi-bit synchronized with ASYNC_REG property      2  Asynch Clock Groups  system_i/adda_core_0/inst/awg_step_b_reg[31:0]/C   system_i/adda_core_0/inst/awg/sb_meta_reg[31:0]/D
+  6  CDC-3  Info      1-bit synchronized with ASYNC_REG property          4  Asynch Clock Groups  system_i/adda_core_0/inst/dac_request_reg/C        system_i/adda_core_0/inst/generator/req_meta_reg/D
+

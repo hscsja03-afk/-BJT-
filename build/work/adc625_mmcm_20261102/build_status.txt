@@ -1,0 +1,5 @@
+vivado=2026.1
+profile=pynq_adc50_dac125
+sta=passed
+ps_preset_supplied=1
+hardware_tested=0
