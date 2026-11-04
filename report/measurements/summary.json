@@ -1,0 +1,91 @@
+{
+  "transistor_runs": 24,
+  "adc": {
+    "RX1": {
+      "validation_points": 19,
+      "maximum_error_v": 0.00033789812174467304,
+      "limit_v": 0.005,
+      "reference": "DG1032Z DC setpoint, High-Z",
+      "sample_rate_hz": 50000000
+    },
+    "RX2": {
+      "validation_points": 19,
+      "maximum_error_v": 0.0003935684703472164,
+      "limit_v": 0.005,
+      "reference": "DG1032Z DC setpoint, High-Z",
+      "sample_rate_hz": 50000000
+    }
+  },
+  "dac": {
+    "comparisons": 77,
+    "amplitude_passed": 77,
+    "offset_passed": 63,
+    "recorded_passed": 68,
+    "maximum_absolute_amplitude_error_v": 0.0030015190972234596,
+    "scope": "RIGOL TECHNOLOGIES,DS1104Z,DS1ZA173719283,00.04.03.SP1",
+    "captured_at": "2026-11-03T20:27:18.400025+08:00",
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50004584.82202274,
+        50004519.32609404,
+        125011448.34781261
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  }
+}
