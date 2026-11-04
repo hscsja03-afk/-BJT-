@@ -1,6 +1,6 @@
 ---
 name: pynq-overlay-audit
-description: 换题目、换板卡或换 Vivado 构建时核对 bit/HWH、模块实例和地址。
+description: 用参数化清单核对 bit/HWH 哈希、模块实例和 AXI 地址，适用于不同 PYNQ 项目与板卡。
 ---
 
 # 通用 PYNQ Overlay 校验
