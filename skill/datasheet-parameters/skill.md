@@ -1,6 +1,6 @@
 ---
 name: datasheet-parameters
-description: 晶体管或其他电子器件 PDF 参数表整理。
+description: 从电子器件手册提取带页码、单位和测试条件的参数表，输出 JSON 与 CSV。
 ---
 
 # 数据手册参数与页码追溯
