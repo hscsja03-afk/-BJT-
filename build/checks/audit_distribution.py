@@ -5,7 +5,7 @@ from pathlib import Path
 import zipfile
 from PyInstaller.archive.readers import CArchiveReader
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 
 def main():
@@ -36,7 +36,7 @@ def main():
             assert path.read_bytes() == (ROOT / 'data' / path.relative_to(runtime_data)).read_bytes(), path.name
             data_count += 1
     wheel_count = 0
-    with zipfile.ZipFile(ROOT / 'board/zynq_bjt-0.2.0-py3-none-any.whl') as archive:
+    with zipfile.ZipFile(ROOT / 'board/software/zynq_bjt-0.2.0-py3-none-any.whl') as archive:
         for name in archive.namelist():
             if name.startswith('zynq_bjt/') and name.endswith('.py'):
                 assert archive.read(name) == (source / name).read_bytes(), name

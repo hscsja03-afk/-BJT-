@@ -1,7 +1,7 @@
 """Restore the selected distribution/data archives and verify their contents."""
 import argparse,hashlib,json,shutil,tempfile,zipfile
 from pathlib import Path,PurePosixPath
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 def digest(p):
     h=hashlib.sha256()
     with p.open('rb') as f:
