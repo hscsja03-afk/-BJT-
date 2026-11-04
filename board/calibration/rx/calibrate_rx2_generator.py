@@ -5,6 +5,10 @@ shunts make the historical 50-ohm display setting inappropriate; R153 is AFTER
 the buffer. No absolute-voltage or AC calibration claim. All raw frames are
 retained and the generator/three board outputs are closed on exit.
 """
+import sys as _repo_sys
+from pathlib import Path as _RepoPath
+_repo_sys.path.insert(0, str(_RepoPath(__file__).resolve().parents[3]))
+
 import argparse
 from datetime import datetime
 import hashlib
@@ -14,11 +18,11 @@ import os
 from pathlib import Path
 import statistics
 import time
-from tx2_scope_zero import SerialAgent, ROOT
-from read_scope import vxi11
+from board.instruments.tx2_scope_zero import SerialAgent, ROOT
+from board.instruments.read_scope import vxi11
 
 
-from calibrate_rx1_generator import Generator
+from board.calibration.rx.calibrate_rx1_generator import Generator
 
 
 def main():

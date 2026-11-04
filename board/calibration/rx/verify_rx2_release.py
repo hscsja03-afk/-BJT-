@@ -1,4 +1,8 @@
 """Read RX2 using the released agent/table against three nominal DG1032Z points."""
+import sys as _repo_sys
+from pathlib import Path as _RepoPath
+_repo_sys.path.insert(0, str(_RepoPath(__file__).resolve().parents[3]))
+
 from datetime import datetime
 from pathlib import Path
 import hashlib
@@ -7,8 +11,8 @@ import os
 import statistics
 import sys
 import time
-from calibrate_rx1_generator import Generator
-from tx2_scope_zero import SerialAgent, ROOT
+from board.calibration.rx.calibrate_rx1_generator import Generator
+from board.instruments.tx2_scope_zero import SerialAgent, ROOT
 sys.path.insert(0, str(ROOT/'src/python'))
 from zynq_bjt.frontend import Calibration
 from zynq_bjt.scope_display import reference_channels
