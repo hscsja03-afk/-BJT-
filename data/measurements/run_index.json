@@ -1,0 +1,1728 @@
+[
+  {
+    "profile": "npn_big",
+    "measurement": "ac",
+    "method": "step",
+    "run_id": "20261102_140302_bc2e6c94",
+    "started_at": 1793628182.24396,
+    "points": 37,
+    "simulated": false,
+    "record": "board/results/npn_big/ac/step/20261102_140302_bc2e6c94/run.json",
+    "record_sha256": "7d02ce4cc9bc66e6a2ccb02dc60c4f4037ced829aa8a836b772af30ba39bc85f",
+    "data_files": [
+      {
+        "path": "board/results/npn_big/ac/step/20261102_140302_bc2e6c94/points.csv",
+        "rows": 37,
+        "sha256": "0832d5f1e2e1666289c7fe20df6579b7d55cda6008a1c47574aa9c577b15bfd1"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005016.63323502,
+        50004670.54019864,
+        125011381.96155404
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "npn_big",
+    "measurement": "beta",
+    "method": "pulse",
+    "run_id": "20261102_140150_f318b924",
+    "started_at": 1793628110.2043014,
+    "points": 31,
+    "simulated": false,
+    "record": "board/results/npn_big/beta/pulse/20261102_140150_f318b924/run.json",
+    "record_sha256": "7d2c7bf34bcb48ba95fcb36746643b4780ec6c395c2e711e1a9e7dd1069ed12b",
+    "data_files": [
+      {
+        "path": "board/results/npn_big/beta/pulse/20261102_140150_f318b924/beta_points.csv",
+        "rows": 16,
+        "sha256": "43e67f6769f9519d16feaf1129367e4ea18082baf9488b2b0e45360526faea8e"
+      },
+      {
+        "path": "board/results/npn_big/beta/pulse/20261102_140150_f318b924/beta_trace.csv",
+        "rows": 31,
+        "sha256": "6263ea2a32e8dfdc060fa7eb63b05a5336f27c9c7d36c8be8d0eda48f4658a8e"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005016.63323502,
+        50004670.54019864,
+        125011381.96155404
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "npn_big",
+    "measurement": "beta",
+    "method": "step",
+    "run_id": "20261101_155716_ec36b4cd",
+    "started_at": 1793548636.7984238,
+    "points": 38,
+    "simulated": false,
+    "record": "board/results/npn_big/beta/step/20261101_155716_ec36b4cd/run.json",
+    "record_sha256": "1bacd3a4e60ec8f84b577c6a5bcc2b0a8d3aa123ac8989304d8fafa9e6d53359",
+    "data_files": [
+      {
+        "path": "board/results/npn_big/beta/step/20261101_155716_ec36b4cd/beta_points.csv",
+        "rows": 15,
+        "sha256": "be97369f969b1534bdfa0f8dc4261b557f9e011eef827e51af56cb5661ca8b47"
+      },
+      {
+        "path": "board/results/npn_big/beta/step/20261101_155716_ec36b4cd/beta_trace.csv",
+        "rows": 38,
+        "sha256": "cb41130702f1ae30736134f3a1d370cf172e920549bbed1ca4f4b70f931973e7"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50004635.10060899,
+        50004593.258470975,
+        125011319.16442423
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "npn_big",
+    "measurement": "input",
+    "method": "step",
+    "run_id": "20261101_155118_74bc493c",
+    "started_at": 1793548278.7462692,
+    "points": 72,
+    "simulated": false,
+    "record": "board/results/npn_big/input/step/20261101_155118_74bc493c/run.json",
+    "record_sha256": "5133886ca2dfc6e183d6905dd9700e13ef57881a8b4d2427ef36577e995de5b2",
+    "data_files": [
+      {
+        "path": "board/results/npn_big/input/step/20261101_155118_74bc493c/points.csv",
+        "rows": 72,
+        "sha256": "39c093d5d9053d2ee9667809276b30556f5c90f0f6f60ebdad927002b6dfb962"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50004635.10060899,
+        50004593.258470975,
+        125011319.16442423
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "npn_big",
+    "measurement": "output",
+    "method": "pulse",
+    "run_id": "20261102_135955_16fd3e94",
+    "started_at": 1793627995.5256858,
+    "points": 75,
+    "simulated": false,
+    "record": "board/results/npn_big/output/pulse/20261102_135955_16fd3e94/run.json",
+    "record_sha256": "6e5dae031d99b856c30af33d99fd0dd080a3bc8ac24ecd3dc26d36b99a940d95",
+    "data_files": [
+      {
+        "path": "board/results/npn_big/output/pulse/20261102_135955_16fd3e94/output_points.csv",
+        "rows": 75,
+        "sha256": "c55b5f913822f13514815e3480677cf483c97a7bbb2e508868cddc4b16a2d00b"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005016.63323502,
+        50004670.54019864,
+        125011381.96155404
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "npn_big",
+    "measurement": "output",
+    "method": "step",
+    "run_id": "20261102_113235_c1fd076c",
+    "started_at": 1793619155.34344,
+    "points": 90,
+    "simulated": false,
+    "record": "board/results/npn_big/output/step/20261102_113235_c1fd076c/run.json",
+    "record_sha256": "e18db67e2680952f193d13d2b66fa2eead3a74ffa131f2cd22a182d18f9be28a",
+    "data_files": [
+      {
+        "path": "board/results/npn_big/output/step/20261102_113235_c1fd076c/output_points.csv",
+        "rows": 90,
+        "sha256": "bb0eb53154e2fec4ad1bb045b6b47f6647daa810a984aa2915c7338e75978565"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005296.76138822,
+        50004632.84957179,
+        125011568.37143596
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "npn_big",
+    "measurement": "polarity",
+    "method": "step",
+    "run_id": "20261102_104329_173323a9",
+    "started_at": 1793616209.376165,
+    "points": 8,
+    "simulated": false,
+    "record": "board/results/npn_big/polarity/step/20261102_104329_173323a9/run.json",
+    "record_sha256": "6c799ef69da843efabd91fe4b13340ad8ad0516912012bbc150bd66b224f5792",
+    "data_files": [
+      {
+        "path": "board/results/npn_big/polarity/step/20261102_104329_173323a9/points.csv",
+        "rows": 8,
+        "sha256": "0881ccb121905381eb7f8ba20e2edc1e1a2cb2866bc354b4cf9aa7d60eacd18f"
+      }
+    ],
+    "board_identity": {}
+  },
+  {
+    "profile": "npn_small",
+    "measurement": "ac",
+    "method": "step",
+    "run_id": "20261102_135555_73bbf30a",
+    "started_at": 1793627755.7860885,
+    "points": 41,
+    "simulated": false,
+    "record": "board/results/npn_small/ac/step/20261102_135555_73bbf30a/run.json",
+    "record_sha256": "e9e1058c841970db1510ae77e9d9cba33ee081c8701dba8c6daa3a119cc1bcd8",
+    "data_files": [
+      {
+        "path": "board/results/npn_small/ac/step/20261102_135555_73bbf30a/points.csv",
+        "rows": 41,
+        "sha256": "5da93a6f237f1a217f617ba14d27015fec6fcac20081031594055a5df0e47202"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005016.63323502,
+        50004670.54019864,
+        125011381.96155404
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "npn_small",
+    "measurement": "beta",
+    "method": "step",
+    "run_id": "20261102_135337_6a6ad844",
+    "started_at": 1793627617.6862223,
+    "points": 42,
+    "simulated": false,
+    "record": "board/results/npn_small/beta/step/20261102_135337_6a6ad844/run.json",
+    "record_sha256": "d1603e2a38de432d77564bdac8dfd05ac5310caa0972291f0ee1ea1d2ba922da",
+    "data_files": [
+      {
+        "path": "board/results/npn_small/beta/step/20261102_135337_6a6ad844/beta_points.csv",
+        "rows": 21,
+        "sha256": "8132155cfdd62097cda642ed3593e07103ee7beb0fca969ae75f21b2a34ef760"
+      },
+      {
+        "path": "board/results/npn_small/beta/step/20261102_135337_6a6ad844/beta_trace.csv",
+        "rows": 42,
+        "sha256": "69ca849e0cea825b764087d13f869b1bb9e9d9eb8eec60e8c2bab608a499cad9"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005016.63323502,
+        50004670.54019864,
+        125011381.96155404
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "npn_small",
+    "measurement": "input",
+    "method": "step",
+    "run_id": "20261102_133446_230ba107",
+    "started_at": 1793626487.0759604,
+    "points": 81,
+    "simulated": false,
+    "record": "board/results/npn_small/input/step/20261102_133446_230ba107/run.json",
+    "record_sha256": "383c2328606bc612ca11fd15074fd070982469d132951b243e8f665aa2bbbca8",
+    "data_files": [
+      {
+        "path": "board/results/npn_small/input/step/20261102_133446_230ba107/points.csv",
+        "rows": 81,
+        "sha256": "4aaf9601cb5f27e1ddb4d2486c96775ef77d8ea6c2f151d751f21dd382ce48c7"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005582.945831075,
+        50004611.63541481,
+        125011274.2972546
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "npn_small",
+    "measurement": "output",
+    "method": "step",
+    "run_id": "20261102_133530_a4ba00da",
+    "started_at": 1793626530.1706436,
+    "points": 104,
+    "simulated": false,
+    "record": "board/results/npn_small/output/step/20261102_133530_a4ba00da/run.json",
+    "record_sha256": "a6b9a53c77a01e92d5e698b01d08b3d3d111905670bf7e65434aef455d000692",
+    "data_files": [
+      {
+        "path": "board/results/npn_small/output/step/20261102_133530_a4ba00da/output_points.csv",
+        "rows": 104,
+        "sha256": "5b9af5821a2095f60f8f8ee5063da90b3d7f5e9a31000f5d1bf7d2a4d3b9eeb0"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005582.945831075,
+        50004611.63541481,
+        125011274.2972546
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "npn_small",
+    "measurement": "polarity",
+    "method": "step",
+    "run_id": "20261102_133429_a3b41531",
+    "started_at": 1793626469.3214247,
+    "points": 8,
+    "simulated": false,
+    "record": "board/results/npn_small/polarity/step/20261102_133429_a3b41531/run.json",
+    "record_sha256": "822a5aece44abf6253a5bb0584fda15182781f45532bae25d4d92859b5b74b9f",
+    "data_files": [
+      {
+        "path": "board/results/npn_small/polarity/step/20261102_133429_a3b41531/points.csv",
+        "rows": 8,
+        "sha256": "f352a8f153d1cdff9917407f17c83922587e8e7f5190de02f04dcb5efedeff25"
+      }
+    ],
+    "board_identity": {}
+  },
+  {
+    "profile": "pnp_big",
+    "measurement": "ac",
+    "method": "step",
+    "run_id": "20261102_140512_309591fd",
+    "started_at": 1793628312.2086742,
+    "points": 68,
+    "simulated": false,
+    "record": "board/results/pnp_big/ac/step/20261102_140512_309591fd/run.json",
+    "record_sha256": "fb2dacce7191117a404599abb3437d66317b4db25b520192d8ee1f7a0f7340bb",
+    "data_files": [
+      {
+        "path": "board/results/pnp_big/ac/step/20261102_140512_309591fd/points.csv",
+        "rows": 68,
+        "sha256": "6a862267cffae5138f5190250d27cb603d1d0259d46afea5f6e79dca6a0de686"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005016.63323502,
+        50004670.54019864,
+        125011381.96155404
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "pnp_big",
+    "measurement": "beta",
+    "method": "pulse",
+    "run_id": "20261102_103841_c628a180",
+    "started_at": 1793615921.642687,
+    "points": 32,
+    "simulated": false,
+    "record": "board/results/pnp_big/beta/pulse/20261102_103841_c628a180/run.json",
+    "record_sha256": "874d7b561872b4d8a103a29cc7dd20554e32a8e327eebee8bc99796d7b963bb3",
+    "data_files": [
+      {
+        "path": "board/results/pnp_big/beta/pulse/20261102_103841_c628a180/beta_points.csv",
+        "rows": 16,
+        "sha256": "e70e5358fb39484112572ca66abcb5a8a052e1ddb175cfcba71ef5ae6f93110d"
+      },
+      {
+        "path": "board/results/pnp_big/beta/pulse/20261102_103841_c628a180/beta_trace.csv",
+        "rows": 32,
+        "sha256": "1df2cec45ec9c60e3a29901487022aaac3e1ada91b78f04f7a5eaf16df39940d"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "43d76549d292532722bedb485dc2c73d1234305ea276dddf141b2c64c377d96e",
+      "hwh_sha256": "98a1a99e46c1b6a5ae0bf0bd361c58f55127793a63c8ba9ecab40ccfdc5741d5",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005607.10904418,
+        50004578.99409808,
+        125011280.24230435
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "pnp_big",
+    "measurement": "beta",
+    "method": "step",
+    "run_id": "20261102_140448_37bfa7a2",
+    "started_at": 1793628288.9492748,
+    "points": 28,
+    "simulated": false,
+    "record": "board/results/pnp_big/beta/step/20261102_140448_37bfa7a2/run.json",
+    "record_sha256": "b2bc7df87dfdb1a7ea63cf8f150a43ea229495d3159751b9f66345ce0b5d5c78",
+    "data_files": [
+      {
+        "path": "board/results/pnp_big/beta/step/20261102_140448_37bfa7a2/beta_points.csv",
+        "rows": 16,
+        "sha256": "ec62f7dab39d6dd6c77837c9a7951d9fdb5b0e03a57a9b6a5ffc2d479378330e"
+      },
+      {
+        "path": "board/results/pnp_big/beta/step/20261102_140448_37bfa7a2/beta_trace.csv",
+        "rows": 28,
+        "sha256": "bd2feb418dcd4f4c6f697c79f71c0de9ac26f58a2e9bb3ff00e20e68ca196534"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005016.63323502,
+        50004670.54019864,
+        125011381.96155404
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "pnp_big",
+    "measurement": "input",
+    "method": "step",
+    "run_id": "20261102_140343_ef5cd4c1",
+    "started_at": 1793628223.8568351,
+    "points": 40,
+    "simulated": false,
+    "record": "board/results/pnp_big/input/step/20261102_140343_ef5cd4c1/run.json",
+    "record_sha256": "664996a3012648d6cb87334158c333f677af275531808b4b23eb5fefc1583cb4",
+    "data_files": [
+      {
+        "path": "board/results/pnp_big/input/step/20261102_140343_ef5cd4c1/points.csv",
+        "rows": 40,
+        "sha256": "730e809b6fa39195752f705226f6fb2df5965282f6af41f480b17b429ad76b0b"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005016.63323502,
+        50004670.54019864,
+        125011381.96155404
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "pnp_big",
+    "measurement": "output",
+    "method": "pulse",
+    "run_id": "20261102_113420_44504f4d",
+    "started_at": 1793619260.290275,
+    "points": 84,
+    "simulated": false,
+    "record": "board/results/pnp_big/output/pulse/20261102_113420_44504f4d/run.json",
+    "record_sha256": "65fc1b55604d2b6ff36b9931a3ab9a4729db09f2087d5c5e8ca3077bcc69d585",
+    "data_files": [
+      {
+        "path": "board/results/pnp_big/output/pulse/20261102_113420_44504f4d/output_points.csv",
+        "rows": 84,
+        "sha256": "3b2683b0323f30987a8a6edef2664f625d81106ce1f1f81cf771ee37bb9f13fc"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005311.548490144,
+        50004626.18449153,
+        125011582.16773209
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "pnp_big",
+    "measurement": "output",
+    "method": "step",
+    "run_id": "20261102_140417_5783325d",
+    "started_at": 1793628257.4867558,
+    "points": 84,
+    "simulated": false,
+    "record": "board/results/pnp_big/output/step/20261102_140417_5783325d/run.json",
+    "record_sha256": "c08992d954c27f8f45d463eabca9126a0c624c125b23ae95fd6a1fc072a00ded",
+    "data_files": [
+      {
+        "path": "board/results/pnp_big/output/step/20261102_140417_5783325d/output_points.csv",
+        "rows": 84,
+        "sha256": "f13d647a53b6890790d6b8204a3a8abd812869ecfd90cad7c86cfd7a0ea26dd8"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005016.63323502,
+        50004670.54019864,
+        125011381.96155404
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "pnp_big",
+    "measurement": "polarity",
+    "method": "step",
+    "run_id": "20261102_104152_c376c1fa",
+    "started_at": 1793616112.5594099,
+    "points": 8,
+    "simulated": false,
+    "record": "board/results/pnp_big/polarity/step/20261102_104152_c376c1fa/run.json",
+    "record_sha256": "315f5c35d617958a412b65297cde4257724c85f8b59ac464fbc1f2ea9f819e26",
+    "data_files": [
+      {
+        "path": "board/results/pnp_big/polarity/step/20261102_104152_c376c1fa/points.csv",
+        "rows": 8,
+        "sha256": "28f6e9fb1fd2d953b1113a2d49ccd1ad850e8e282d8c536179e86882845cdafb"
+      }
+    ],
+    "board_identity": {}
+  },
+  {
+    "profile": "pnp_small",
+    "measurement": "ac",
+    "method": "step",
+    "run_id": "20261102_135852_6d50ddf0",
+    "started_at": 1793627932.195531,
+    "points": 68,
+    "simulated": false,
+    "record": "board/results/pnp_small/ac/step/20261102_135852_6d50ddf0/run.json",
+    "record_sha256": "53bd0b9872ae234c178c7270485cd36769750f2ac52d08335df8d1668d46d792",
+    "data_files": [
+      {
+        "path": "board/results/pnp_small/ac/step/20261102_135852_6d50ddf0/points.csv",
+        "rows": 68,
+        "sha256": "cdb01a3b2acfa2492e22ceb2e018459f0a39c829214da883cb3dfdf51336d56b"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005016.63323502,
+        50004670.54019864,
+        125011381.96155404
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "pnp_small",
+    "measurement": "beta",
+    "method": "step",
+    "run_id": "20261102_135826_3025fc16",
+    "started_at": 1793627906.6051037,
+    "points": 40,
+    "simulated": false,
+    "record": "board/results/pnp_small/beta/step/20261102_135826_3025fc16/run.json",
+    "record_sha256": "ba7953f66b20b4ca650bb8a415ce360b6c88c176f825fba9417fd4a45a6c60eb",
+    "data_files": [
+      {
+        "path": "board/results/pnp_small/beta/step/20261102_135826_3025fc16/beta_points.csv",
+        "rows": 20,
+        "sha256": "2bacbb05848b75e52a0f9605a22cb7f517299c016e2da4586dfb1cc786f34175"
+      },
+      {
+        "path": "board/results/pnp_small/beta/step/20261102_135826_3025fc16/beta_trace.csv",
+        "rows": 40,
+        "sha256": "ef3e8d31c79d142e9360f6f1fbc977bcb77b70794471e6f380250903b4a079c9"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005016.63323502,
+        50004670.54019864,
+        125011381.96155404
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "pnp_small",
+    "measurement": "input",
+    "method": "step",
+    "run_id": "20261102_135706_482c8774",
+    "started_at": 1793627826.999028,
+    "points": 40,
+    "simulated": false,
+    "record": "board/results/pnp_small/input/step/20261102_135706_482c8774/run.json",
+    "record_sha256": "dc1de121ede701aaafb1c51aa875daab231224d4a24cfac4cc119a1ffbf97d30",
+    "data_files": [
+      {
+        "path": "board/results/pnp_small/input/step/20261102_135706_482c8774/points.csv",
+        "rows": 40,
+        "sha256": "db8eab7235795f5c78b84e37804d00241986388dafbf091c113179a394182bef"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005016.63323502,
+        50004670.54019864,
+        125011381.96155404
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "pnp_small",
+    "measurement": "output",
+    "method": "step",
+    "run_id": "20261102_135737_8bf66e0b",
+    "started_at": 1793627857.5880904,
+    "points": 152,
+    "simulated": false,
+    "record": "board/results/pnp_small/output/step/20261102_135737_8bf66e0b/run.json",
+    "record_sha256": "8af24f49dc2f30d396515840b51e5b3a3fc623b263c84d8a1e9f2061dbff6173",
+    "data_files": [
+      {
+        "path": "board/results/pnp_small/output/step/20261102_135737_8bf66e0b/output_points.csv",
+        "rows": 152,
+        "sha256": "c0b3039bca7bc8078c1ec9846e07d89506c64659eac09c265b3d603b68c48c98"
+      }
+    ],
+    "board_identity": {
+      "bit_sha256": "d844e70d6bb3a813ab08eedd0cf181cbffe8774fe22cac0b4dadf0089bd54001",
+      "hwh_sha256": "b10da298f56fa7deef91c430a694c56f1898a79a38a4a8209d0c37b44cbfbd6e",
+      "adc_divider": 20,
+      "dac_divider": 8,
+      "measured_clock_hz": [
+        50005016.63323502,
+        50004670.54019864,
+        125011381.96155404
+      ],
+      "digital_self_test": "passed",
+      "digital_test_results": [
+        {
+          "test_mode": 1,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 1,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 2,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 3,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 0,
+          "errors": 0,
+          "samples": 4096
+        },
+        {
+          "test_mode": 4,
+          "channel": 1,
+          "errors": 0,
+          "samples": 4096
+        }
+      ],
+      "analog_calibration_qualified": false
+    }
+  },
+  {
+    "profile": "pnp_small",
+    "measurement": "polarity",
+    "method": "step",
+    "run_id": "20261102_135650_29afc9c1",
+    "started_at": 1793627810.356216,
+    "points": 8,
+    "simulated": false,
+    "record": "board/results/pnp_small/polarity/step/20261102_135650_29afc9c1/run.json",
+    "record_sha256": "31518098bfd4b5a2ad3211650e0c9e44882bf912c597638e081c3e1820a9123a",
+    "data_files": [
+      {
+        "path": "board/results/pnp_small/polarity/step/20261102_135650_29afc9c1/points.csv",
+        "rows": 8,
+        "sha256": "724b6c11d73e9ddc21dc369817d0f7242ea1be8bbe53bd4de89962c0d9586095"
+      }
+    ],
+    "board_identity": {}
+  }
+]
