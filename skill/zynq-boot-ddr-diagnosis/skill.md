@@ -1,6 +1,6 @@
 ---
 name: zynq-boot-ddr-diagnosis
-description: FSBL 停滞、DDR 初始化失败、JTAG 可运行而自主启动异常。
+description: 使用启动探针、JTAG 和按字节统计定位 FSBL、DDR 训练及自主启动问题。
 ---
 
 # Zynq 启动与 DDR 分层定位
