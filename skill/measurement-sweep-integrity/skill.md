@@ -1,6 +1,6 @@
 ---
 name: measurement-sweep-integrity
-description: 输入/输出/电流增益/交流扫描、分段步进、反馈搜索及提速。
+description: 检查扫描状态、采样点、数据保存及输出关闭，并用固定条件比较扫描性能。
 ---
 
 # 测量扫描与性能对照
