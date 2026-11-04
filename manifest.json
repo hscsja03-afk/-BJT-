@@ -1584,8 +1584,8 @@
     },
     {
       "path": "license.txt",
-      "bytes": 1306,
-      "sha256": "58fa79c797e44fd72ccd03c56db6ef81533b350e9b3dbd3fc08c9bdd4086ea42"
+      "bytes": 1090,
+      "sha256": "a9396b2a24d37227c3fb9e86207e2eef361effb3c3a0cdc5df1ebec3a6b9bf93"
     },
     {
       "path": "pyproject.toml",
@@ -1594,8 +1594,8 @@
     },
     {
       "path": "readme.md",
-      "bytes": 3717,
-      "sha256": "c18cedcbd30ebc088cce44d4a39d19c8fef96bad2c61a88a0da059feff1bd5a4"
+      "bytes": 3945,
+      "sha256": "69db381ace0a62efa986830a577ddac491851e09896856e255bf604705f49cc5"
     },
     {
       "path": "report/ai_collaboration.md",
@@ -1653,6 +1653,11 @@
       "sha256": "2584a523d0e5cf247f620bb339869f4a694dbe96404f5364f56972b9affb4ce4"
     },
     {
+      "path": "report/design_report.pdf",
+      "bytes": 5868400,
+      "sha256": "5cd00af6818d085e5b9a3a1e345efb7d6317d2cb130e6645b434fbd6192e1bd2"
+    },
+    {
       "path": "report/desktop_initialize_fixed_v2_20261030.json",
       "bytes": 4383,
       "sha256": "b73656965bc4172ce9f2cb3eb440e45441cc4c189c0ce1e648c052b1dacd752b"
@@ -1674,8 +1679,8 @@
     },
     {
       "path": "report/document_sources.json",
-      "bytes": 254,
-      "sha256": "a397c968f3ea65b2127df13fcb40bb1316837994eff00f4c601b62c57ee9bd92"
+      "bytes": 481,
+      "sha256": "97fb357ed400e6fa94b224ef0d1d4a63aa4670014431f14074daa0f4158e391e"
     },
     {
       "path": "report/factory_sd_evidence.json",
@@ -1730,7 +1735,7 @@
     {
       "path": "report/repository_layout.json",
       "bytes": 257,
-      "sha256": "2988ccfeecb92f65295a28108c9a245bf91de4b6ff41708bd687601344122020"
+      "sha256": "e35d250fcbfcc59d73a772fc72f0560510114d857a271d0890d8323d23494a6a"
     },
     {
       "path": "report/repository_validation.json",
@@ -1754,8 +1759,8 @@
     },
     {
       "path": "report/submission_checklist.md",
-      "bytes": 1234,
-      "sha256": "249c563625a7a23b743c3d9338e680f3ad360fd24f0b8edfc2345ff7f6a20267"
+      "bytes": 1281,
+      "sha256": "a424b09034414756bbf52d20e79acde9ff2c183ea5aa86973c4cdd3de1f224d5"
     },
     {
       "path": "report/tx1_fix_coldboot_verification_20261030.json",
@@ -2179,8 +2184,8 @@
     },
     {
       "path": "skill/license.txt",
-      "bytes": 1306,
-      "sha256": "58fa79c797e44fd72ccd03c56db6ef81533b350e9b3dbd3fc08c9bdd4086ea42"
+      "bytes": 1090,
+      "sha256": "a9396b2a24d37227c3fb9e86207e2eef361effb3c3a0cdc5df1ebec3a6b9bf93"
     },
     {
       "path": "skill/measurement-sweep-integrity/skill.md",
@@ -2209,8 +2214,8 @@
     },
     {
       "path": "skill/readme.md",
-      "bytes": 11091,
-      "sha256": "1cdd57606a269f93b991e6558bea1eb4a90ee303b05c51fbd40d74a4fa97ee5e"
+      "bytes": 11250,
+      "sha256": "fd48b12cbe57a71317128253a66015fa172274ff25262dbcd73bf180e9953d93"
     },
     {
       "path": "skill/register-to-analog-debug/scripts/locate_epcb.py",
