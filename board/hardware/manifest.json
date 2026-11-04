@@ -1,0 +1,99 @@
+{
+  "files": [
+    {
+      "path": "adda/hardware_project.epro",
+      "bytes": 1803275,
+      "sha256": "0ac8cdb0b1d26516813821ef38b270a0d1ffcd557a221fd397d5273eea49cdbf"
+    },
+    {
+      "path": "adda/schematic.pdf",
+      "bytes": 1996676,
+      "sha256": "b637c6b1a51f0b2a53e97fcfc32d749e6db4bbcb2d6a495f5c57278c6bfd331f"
+    },
+    {
+      "path": "adda/netlist.tel",
+      "bytes": 23254,
+      "sha256": "646dbd44ae7cd0f12471f3c0049a60bac746ed0058a21cf07d16d98da0f6269e"
+    },
+    {
+      "path": "adda/pcb_3d.png",
+      "bytes": 1355058,
+      "sha256": "356da39caaa3eecd33058ec1eed8f8a71d405466af785f3f6abafd6249220327"
+    },
+    {
+      "path": "adda/design_notes.xlsx",
+      "bytes": 63594,
+      "sha256": "59a35ce58ea8c58e9b33d9be177c6ecc24648cdbfbe021c37b3b078d110bb22f"
+    },
+    {
+      "path": "adda/ad9747_firmware_guide.md",
+      "bytes": 9499,
+      "sha256": "8d16b46121087733ecdc0f374ba87203e12fa1fbf5732ec14c7d6763c8ef60b0"
+    },
+    {
+      "path": "adda/ad9516_config_01.png",
+      "bytes": 67345,
+      "sha256": "2187cc968e6433233d39b5dfa3e1029b8ef8d8980779c849727d70e96c8201f1"
+    },
+    {
+      "path": "adda/ad9516_config_02.png",
+      "bytes": 67742,
+      "sha256": "13c23b043f899e3f78b7f024ec2beeeacf71590f28e5c378f204ac3702ee7215"
+    },
+    {
+      "path": "bjt/pcb_3d.png",
+      "bytes": 213656,
+      "sha256": "3a3aa70b9e38d8609c7e57c0e6c62f2e760802d8bfa26d43e96fd794eb738de3"
+    },
+    {
+      "path": "bjt/netlist.tel",
+      "bytes": 8624,
+      "sha256": "841a96be205fa5f440c4aea83ab345a02b26f540c9dcf3b862069643e265826c"
+    },
+    {
+      "path": "bjt/schematic_polarity_switch.png",
+      "bytes": 137860,
+      "sha256": "e51e178338432482ba87125c8500fa28c5a38eb2aa53e44fcc2f7604a2f56bf5"
+    },
+    {
+      "path": "bjt/pcb_layout.png",
+      "bytes": 582354,
+      "sha256": "a7dbc82aeab4ab1e01f8b4a28444cb54ef7a4741cc28f0882a4b3030e718b135"
+    },
+    {
+      "path": "bjt/hardware_project.epro2",
+      "bytes": 4588121,
+      "sha256": "1c376fc20981524351d9ad84c95a9b1710cd402addc8776fb4d2ce52c427b5ad"
+    },
+    {
+      "path": "bjt/schematic_ac.png",
+      "bytes": 121218,
+      "sha256": "183de7f9e23688757346b20540e5033333d3de17daf831bdd0bc3984d7c791f2"
+    },
+    {
+      "path": "bjt/schematic_power_amplifier.png",
+      "bytes": 315824,
+      "sha256": "e44d0619948488292bd47d993e58541ecac618282be915ed8dad8bc4997f6999"
+    },
+    {
+      "path": "bjt/schematic_base_current_source.png",
+      "bytes": 238895,
+      "sha256": "05c9dfbab7c46da3da3c29c11001af1dad750d6ce5723c2be77655063f0a51de"
+    },
+    {
+      "path": "bjt/schematic_interface.png",
+      "bytes": 73545,
+      "sha256": "03db554bb92f2e8fdff671475663201c9e933fc21947c11d47022326d501176b"
+    },
+    {
+      "path": "bjt/schematic_dual_supply.png",
+      "bytes": 174073,
+      "sha256": "d034ecc3460c0d4b8b7829413221b26e3f03eb4fb048242235c7e018b036f117"
+    },
+    {
+      "path": "bjt/schematic_measurement_switch.png",
+      "bytes": 112096,
+      "sha256": "c4f4f7684f1ae866eec6461ad7d9d7fac18a425e6b14fc7f6fa3af050080cfb9"
+    }
+  ]
+}

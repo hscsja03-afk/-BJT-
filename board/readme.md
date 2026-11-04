@@ -2,6 +2,8 @@
 
 硬件为 Zynq-7020（xc7z020clg400-2）核心板、自制 ADDA 底板和 BJT 测试板。板端使用 PYNQ 2.7 / Python 3.8，PS 配置对应本板的 DDR、eMMC、以太网和 MIO。
 
+两套板卡的原理图、PCB、网表和可编辑工程见 [硬件设计资料](hardware/readme.md)。
+
 ## 安装与启动
 
 1. 退出占用板卡的上位机会话，关闭输出，备份现有 bit/HWH。
