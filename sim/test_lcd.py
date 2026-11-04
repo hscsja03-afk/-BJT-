@@ -92,6 +92,21 @@ class LcdTests(unittest.TestCase):
             self.assertTrue(result['source'].endswith('pnp_big'))
             self.assertEqual(before,{str(p):p.read_bytes() for p in directory.rglob('*') if p.is_file()})
 
+    def test_saved_pnp_ac_and_rin_use_the_recorded_samples(self):
+        with tempfile.TemporaryDirectory() as temp:
+            directory=Path(temp)
+            run=directory/'pnp_ac';run.mkdir()
+            state=dict(profile='pnp_small',measurement='ac',status='complete',simulated=False,
+                       display_reference=dict(id='unavailable-record'))
+            (run/'run.json').write_text(json.dumps(state),encoding='utf-8')
+            (run/'ac_points.csv').write_text('actual_freq_hz,gain,input_resistance_ohm\n10000,23,500\n40000,47,750\n',encoding='utf-8')
+            before={str(p):p.read_bytes() for p in run.iterdir()}
+            for mode,expected in [('交流',[(10,23),(40,47)]),('Rin',[(10,500),(40,750)])]:
+                result=load_latest(directory,directory,'pnp_small',mode)
+                self.assertEqual(result['curves'][0][0],expected)
+                self.assertEqual(result['label'],'实测 · 已完成 · 2 点')
+            self.assertEqual(before,{str(p):p.read_bytes() for p in run.iterdir()})
+
     def test_missing_early_fit_is_not_fabricated(self):
         result=make_plot([dict(curve='0',uce_v='1',ic_a='.001',ib_estimated_a='.00001')],dict(simulated=False),'Early')
         self.assertEqual(result['curves'],[])

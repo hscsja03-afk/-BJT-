@@ -37,7 +37,7 @@ class StorageTests(unittest.TestCase):
 
 
 class UiTests(unittest.TestCase):
-    def test_read_result_automatically_saves_main_beta_and_history_images(self):
+    def test_read_result_saves_acquired_curves_and_resistance(self):
         import csv,json
         app=self.app
         cases=[('input',[dict(curve=0,ube_v=.9,ib_estimated_a=12e-6,uce_target_v=.5)],['curve.png']),
@@ -62,13 +62,15 @@ class UiTests(unittest.TestCase):
                 metadata=json.loads((directory/image).with_suffix('.source.json').read_text(encoding='utf8'))
                 self.assertEqual(metadata['status'],'cancelled')
             if name=='ac':
-                history=list(directory.glob('curve_history_*.png'));self.assertEqual(len(history),1)
-                self.assertEqual(app.ac_history.mode.get(),'历史轮换')
-                meta=json.loads(history[0].with_suffix('.source.json').read_text(encoding='utf8'))
-                self.assertEqual(meta['display_reference']['id'],app.ac_history.record['id'])
+                self.assertEqual(sorted(p.name for p in directory.glob('*.png')),['curve.png'])
                 rin_meta=json.loads((directory/'derived_analysis/input_resistance.source.json').read_text(encoding='utf8'))
-                self.assertEqual(rin_meta['source'],'historical_record')
-                self.assertEqual(rin_meta['display_reference']['id'],app.ac_history.record['id'])
+                self.assertEqual(rin_meta['source'],'current_run')
+                self.assertEqual(rin_meta['source_file'],path.name)
+                import hashlib
+                self.assertEqual(rin_meta['source_sha256'],hashlib.sha256(before).hexdigest())
+                self.assertEqual(list(app._curve_lines['sweep'].get_ydata()),[23])
+                rin=next(line for line in app.derived_plots.tabs['ac'][2].lines if line.get_label()=='扫描点')
+                self.assertEqual(list(rin.get_ydata()),[500])
 
     def test_adc_clock_controls_follow_board_limit_and_clear_old_frames(self):
         from types import SimpleNamespace
@@ -87,65 +89,30 @@ class UiTests(unittest.TestCase):
         self.assertFalse(scope.raw);self.assertEqual(scope.adc_clock_mhz.get(),'50')
         app.transport=None
 
-    def test_pnp_history_rotation_keeps_live_rows_and_profile_separate(self):
-        app=self.app;app.profile.set('PNP 小功率');app.change_profile();app.show_page('ac')
-        app.tools.manufacturer.set('长晶科技');app.tools.model.set('2N5401')
-        rows=[dict(actual_freq_hz=10000,gain=23,mode='sweep',simulated=True)]
-        app.rows=rows;app.plot_rows(rows)
-        a=app.ac_history.record['id'];self.assertNotIn('历史曲线',app.ax.get_title())
-        self.assertEqual(len(app.figure.axes),1)
-        self.assertIn('长晶科技 2N5401',app.ax.get_title())
-        self.assertEqual(app.rows,rows)
-        self.assertEqual(len(app.ax.lines[0].get_xdata()),1)
-        app.plot_rows([])
-        self.assertEqual(len(app.ax.lines),0)
-        points=next(s['points'] for s in app.ac_history.record['series'] if s['label'].startswith('sweep'))
-        app.plot_rows(rows+[dict(rows[0],actual_freq_hz=points[1][0])])
-        self.assertEqual(len(app.ax.lines[0].get_xdata()),2)
-        app.plot_rows(rows)
-        app.ac_history.next();self.assertNotEqual(app.ac_history.record['id'],a)
-        app.ac_history.mode.set('本次采集');app.ac_history.changed()
-        self.assertNotIn('历史曲线',app.ax.get_title());self.assertEqual(list(app.ax.lines[0].get_ydata()),[23])
-        app.ac_history.mode.set('历史池轮换');app.ac_history.changed()
-        self.assertIn('长晶科技 2N5401',app.ax.get_title())
-        app.profile.set('PNP 大功率');app.change_profile();app.plot_rows([])
-        self.assertEqual(app.ac_history.record['profile'],'pnp_big')
-        self.assertEqual(app.rows,[])
+    def test_pnp_ac_plots_follow_acquired_gain_and_resistance(self):
+        app=self.app
+        for label,key in [('PNP 小功率','pnp_small'),('PNP 大功率','pnp_big')]:
+            app.profile.set(label);app.change_profile();app.show_page('ac')
+            app.last_result=dict(state=dict(measurement='ac',profile=key,simulated=True,status='running',config={}))
+            points=[dict(actual_freq_hz=10000,gain=23,input_resistance_ohm=500,mode='sweep'),
+                    dict(actual_freq_hz=40000,gain=47,input_resistance_ohm=750,mode='sweep')]
+            for count in (1,2):
+                app.rows=points[:count];app.plot_rows(app.rows)
+                line=app._curve_lines['sweep']
+                self.assertEqual(list(line.get_xdata()),[p['actual_freq_hz'] for p in points[:count]])
+                self.assertEqual(list(line.get_ydata()),[p['gain'] for p in points[:count]])
+                ax=app.derived_plots.tabs['ac'][2]
+                rin=next(line for line in ax.lines if line.get_label()=='扫描点')
+                self.assertEqual(list(rin.get_ydata()),[p['input_resistance_ohm'] for p in points[:count]])
+                app.lcd.model.page='BJT'
+                for mode,field in [('交流','gain'),('Rin','input_resistance_ohm')]:
+                    app.lcd.model.mode=mode;app.lcd._bjt_current()
+                    self.assertEqual(app.lcd.model.saved_plot['curves'][0][0],
+                        [(p['actual_freq_hz']/1000,p[field]) for p in points[:count]])
+            app.rows=[];app.plot_rows([])
+            self.assertEqual(len(app.ax.lines),0)
+            self.assertEqual(len(app.derived_plots.tabs['ac'][2].lines),0)
 
-    def test_two_curve_views_keep_rin_historical_and_progressive(self):
-        app=self.app;app.profile.set('PNP 小功率');app.change_profile();app.show_page('ac')
-        panel=app.ac_history
-        self.assertEqual(tuple(panel.combo.cget('values')),('曲线一','曲线二'))
-        selected=panel.record
-        args={'device':app.tools.device()};panel.begin(args)
-        self.assertEqual(args['display_reference']['id'],selected['id'])
-        rows=[dict(actual_freq_hz=10000,gain=999999,input_resistance_ohm=999999,mode='sweep')]*5
-        app.rows=rows;app.plot_rows(rows)
-        self.assertEqual(panel.record['id'],selected['id'])
-        self.assertEqual(panel.curve_choice.get(),'曲线一')
-        ax=app.derived_plots.tabs['ac'][2]
-        self.assertTrue(ax.lines)
-        self.assertFalse(any(999999 in line.get_ydata() for line in ax.lines))
-        self.assertEqual(ax.get_title(),'')
-        labels=ax.get_legend_handles_labels()[1]
-        self.assertFalse(any(any(word in label.lower() for word in ('历史','legacy','stored')) for label in labels))
-        self.assertEqual(app.rows,rows)
-        panel.combo.current(1);panel.choose_curve()
-        self.assertEqual(panel.mode.get(),'本次采集')
-        self.assertTrue(any(999999 in line.get_ydata() for line in app.ax.lines))
-        self.assertIsNone(panel.displayed_reference())
-        panel.combo.current(0);panel.choose_curve()
-        self.assertEqual(panel.record['id'],selected['id'])
-        self.assertFalse(any(999999 in line.get_ydata() for line in app.ax.lines))
-        self.assertFalse(any(999999 in line.get_ydata() for line in ax.lines))
-        main=next(s['points'] for s in selected['series'] if s['label'].startswith('sweep'))
-        app.rows=[dict(rows[0],actual_freq_hz=main[-1][0])]
-        app.plot_rows(app.rows)
-        primary=next(line for line in ax.lines if line.get_label()=='输入电阻')
-        self.assertEqual(len(primary.get_xdata()),1)
-        app.rows=app.rows*2;app.plot_rows(app.rows)
-        primary=next(line for line in ax.lines if line.get_label()=='输入电阻')
-        self.assertEqual(len(primary.get_xdata()),2)
 
     def test_npn_big_pulse_selector_and_request_match(self):
         app=self.app;app.profile.set('NPN 大功率');app.change_profile();app.show_page('output')

@@ -6,7 +6,7 @@ import tempfile
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
-spec = importlib.util.spec_from_file_location("check_bundle", ROOT / "skill/pynq-overlay-audit/scripts/check_bundle.py")
+spec = importlib.util.spec_from_file_location("check_bundle", ROOT / "build/check_overlay.py")
 module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
 
 

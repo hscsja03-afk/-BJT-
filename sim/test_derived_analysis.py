@@ -27,21 +27,20 @@ class DerivedAnalysisTests(unittest.TestCase):
             fit=fit_early_voltage(rows)
             self.assertTrue(fit is None or not fit['fit_reliable'])
 
-    def test_historical_rin_is_available_for_every_rotation_record(self):
-        records=json.loads((ROOT/'data/pnp_ac_history/index.json').read_text(encoding='utf8'))['records']
-        self.assertEqual(len(records),46)
-        for record in records:
-            self.assertTrue(record['rin_series'],record['id'])
-            for series in record['rin_series']:
-                self.assertTrue(all(len(p)==2 and all(math.isfinite(v) for v in p) for p in series['points']))
-        r=records[0];ax=Figure().add_subplot(111)
-        result=draw_rin(ax,[dict(actual_freq_hz=10000,input_resistance_ohm=999999)],{},r)
-        self.assertEqual(result['record_id'],r['id']);self.assertTrue(result['display_only'])
-        self.assertFalse(any(999999 in line.get_ydata() for line in ax.lines))
-        plotted=next(r for r in records if r['id']=='pnp_small_20260813_200907')
-        draw_rin(ax,[],{},plotted)
-        self.assertGreater(ax.get_xlim()[0],5)
-        self.assertEqual(ax.get_xlabel(),'频率 / kHz')
+    def test_rin_plot_retains_acquired_points_and_refinement(self):
+        rows=[dict(actual_freq_hz=f,input_resistance_ohm=r,mode=mode)
+              for f,r,mode in [(10000,400,'sweep'),(100000,600,'sweep'),(50000,550,'refine'),(200000,-1,'sweep')]]
+        ax=Figure().add_subplot(111)
+        result=draw_rin(ax,rows,dict(input_test_resistor_ohm=100))
+        sweep=next(line for line in ax.lines if line.get_label()=='扫描点')
+        refine=next(line for line in ax.lines if line.get_label()=='截止附近补测')
+        self.assertEqual(list(sweep.get_xdata()),[10000,100000])
+        self.assertEqual(list(sweep.get_ydata()),[400,600])
+        self.assertEqual(list(refine.get_xdata()),[50000])
+        self.assertEqual(list(refine.get_ydata()),[550])
+        self.assertEqual(result['point_count'],3)
+        self.assertEqual(result['test_resistor_ohm'],100)
+        self.assertEqual(ax.get_xlabel(),'频率 / Hz')
 
     def test_rin_summary_retains_measured_values_and_excludes_invalid(self):
         rows=[dict(actual_freq_hz=f,input_resistance_ohm=r) for f,r in ((10000,400),(100000,600),(1e6,1000),(2e6,-1),(3e6,float('nan'))) ]
