@@ -1730,7 +1730,7 @@
     {
       "path": "report/repository_layout.json",
       "bytes": 257,
-      "sha256": "e5c4761f57a6be057b4e356686f03d32e8ec0a6f61b82619e8042e2431952acd"
+      "sha256": "2988ccfeecb92f65295a28108c9a245bf91de4b6ff41708bd687601344122020"
     },
     {
       "path": "report/repository_validation.json",
@@ -2178,6 +2178,11 @@
       "sha256": "6c81589a134cdcea184f09403569304bd27cdf8293ed24692976a56b1f6289be"
     },
     {
+      "path": "skill/license.txt",
+      "bytes": 1306,
+      "sha256": "58fa79c797e44fd72ccd03c56db6ef81533b350e9b3dbd3fc08c9bdd4086ea42"
+    },
+    {
       "path": "skill/measurement-sweep-integrity/skill.md",
       "bytes": 1859,
       "sha256": "1733cd415db6b85df37a54038f23444dbfc6cdeb909f42ed3a0d69297bf3ab01"
@@ -2194,8 +2199,8 @@
     },
     {
       "path": "skill/pynq-overlay-audit/scripts/test_check_bundle.py",
-      "bytes": 1795,
-      "sha256": "9814543136c239941de58e2e81fbce2509bf9e182c65c3f778eeece458dabbbf"
+      "bytes": 3893,
+      "sha256": "7a8bae7e51ce8c4903f33cde73aa5a8f287f0a0217407797bb790dcdabe94953"
     },
     {
       "path": "skill/pynq-overlay-audit/skill.md",
@@ -2204,8 +2209,8 @@
     },
     {
       "path": "skill/readme.md",
-      "bytes": 9631,
-      "sha256": "7d164af19390f160e82198903c2cc64ddb79155907aa0dc533fc0f686d60f47d"
+      "bytes": 11091,
+      "sha256": "1cdd57606a269f93b991e6558bea1eb4a90ee303b05c51fbd40d74a4fa97ee5e"
     },
     {
       "path": "skill/register-to-analog-debug/scripts/locate_epcb.py",
@@ -2239,8 +2244,8 @@
     },
     {
       "path": "skill/validation.json",
-      "bytes": 1081,
-      "sha256": "f55e2f5e944bf49a5f369253633d0ac08785ee6c9b4ef4b2f9a68b0edeb45dc6"
+      "bytes": 1635,
+      "sha256": "d372fd90c6e1a20284c0fda4ccd74d00ea1dea9c544c029de27654bc4f1376d8"
     },
     {
       "path": "skill/zynq-boot-ddr-diagnosis/skill.md",
