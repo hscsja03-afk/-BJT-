@@ -185,12 +185,6 @@ class DesktopLcd:
         state=(app.last_result or {}).get('state',dict(simulated=bool(app.transport and app.transport.simulated),
             status='running' if scanning else '当前测点',config=dict(profile=profile.key)))
         plot=make_plot(app.rows,state,m.mode)
-        if m.mode in ('交流','Rin') and app.ac_history.record and app.ac_history.eligible() and app.ac_history.mode.get()!='本次采集':
-            ref=app.ac_history.visible_record(app.rows)
-            series=ref.get('series' if m.mode=='交流' else 'rin_series',[])
-            selected=[s for s in series if s['label'].startswith('sweep' if m.mode=='交流' else 'input resistance')]
-            plot['curves']=[([(float(x)/1000,float(y)) for x,y in s['points']],c) for s,c in zip(selected,(6,7,9,14))]
-            plot['label']='历史参考 · '+ref['id']
         fit_limits(plot);m.saved_plot=plot;m.has_data=True
         m.note=('扫描中 · {} 个测点 · 停止请用上位机'.format(len(app.rows)) if scanning else '上位机当前曲线')
 

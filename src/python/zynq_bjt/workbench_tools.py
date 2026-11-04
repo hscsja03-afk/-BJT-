@@ -239,8 +239,6 @@ class WorkbenchTools:
             pane=ImagePane(box);pane.pack(fill='both',expand=True);self.compare_images.append(pane)
     def add_compare(self,index):
         try:
-            if self.app.ac_history.displayed_reference():
-                raise ValueError('当前图是历史曲线；请切到“本次采集”后加入实测结果对比')
             if self.app.busy or not self.app.last_result or not self.app.rows:raise ValueError('请先完成测量，或载入历史曲线与数据')
             buffer=io.BytesIO();self.app.figure.savefig(buffer,format='png',dpi=100,bbox_inches='tight');buffer.seek(0)
             self.comparisons[index]=dict(state=deepcopy(self.app.last_result['state']),rows=deepcopy(self.app.rows))

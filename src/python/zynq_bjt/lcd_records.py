@@ -1,6 +1,5 @@
-"""LCD只读浏览已保存记录；不启动扫描，不改变历史轮换游标。"""
+"""LCD 浏览已保存的测量记录。"""
 import csv
-import hashlib
 import json
 import math
 import statistics
@@ -27,25 +26,6 @@ def load_latest(results, data, profile, mode):
         with raw.open(encoding='utf-8-sig',newline='') as stream:rows=list(csv.DictReader(stream))
         if not rows:continue
         result=make_plot(rows,state,mode)
-        if measurement=='ac' and profile.startswith('pnp'):
-            reference_path=path.parent/'display_reference.json'
-            reference=state.get('display_reference')
-            if reference_path.exists():
-                reference=json.loads(reference_path.read_text(encoding='utf-8-sig')).get('reference')
-            if reference:
-                index=json.loads((Path(data)/'pnp_ac_history/index.json').read_text(encoding='utf-8'))
-                record=next((r for r in index['records'] if r['id']==reference['id'] and r['profile']==profile),None)
-                if record is None:raise ValueError('历史记录未找到')
-                source=Path(data)/'pnp_ac_history'/record['id']/'curves.csv'
-                if hashlib.sha256(source.read_bytes()).hexdigest()!=record['source_sha256']:
-                    raise ValueError('历史记录校验失败')
-                from .ac_history import progressive_record
-                record=progressive_record(record,rows,state.get('status')=='complete')
-                series=record.get('rin_series' if mode=='Rin' else 'series',[])
-                selected=[s for s in series if s['label'].startswith('sweep' if mode=='交流' else 'input resistance')]
-                result['curves']=[([(float(x)/1000,float(y)) for x,y in s['points']],COLORS[i%6]) for i,s in enumerate(selected)]
-                result['label']='历史参考 · '+record['id']
-                if not any(points for points,_ in result['curves']):result['label']='该记录暂无可显示的历史点'
         if profile.startswith('pnp'):
             result['xlabel']=result['xlabel'].replace('UBE','UEB').replace('UCE','UEC')
         result['source']=str(path.parent)

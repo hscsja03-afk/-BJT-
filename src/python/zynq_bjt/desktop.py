@@ -227,7 +227,6 @@ class App:
         self._build()
         from .workbench_tools import WorkbenchTools
         self.tools = WorkbenchTools(self)
-        self.ac_history.bind_device()
         self.lcd = DesktopLcd(self)
         root.protocol('WM_DELETE_WINDOW', self.close)
         root.after(60, self.pump)
@@ -684,8 +683,6 @@ class App:
         processing=ttk.Combobox(self.beta_selector_bar,textvariable=self.beta_processing,values=['参考处理','全部原始点'],state='readonly',width=13)
         processing.pack(side='left');processing.bind('<<ComboboxSelected>>',self.change_beta_view)
         self.figure, self.ax, self.canvas = self._plot(chart)
-        from .ac_history import AcHistoryPanel
-        self.ac_history=AcHistoryPanel(self,chart)
         self.reset_measurement_plot()
         table = tk.Frame(self.measure_tabs, bg=BG); self.measure_tabs.add(table, text='测点数据')
         column_bar=tk.Frame(table,bg=BG);column_bar.pack(fill='x',padx=6,pady=3)
@@ -1144,7 +1141,6 @@ class App:
         if self.busy or not self.transport:raise RuntimeError('仪器忙或已断开')
         args=dict(args)
         self.active_device=dict(args.get('device',{}))
-        self.ac_history.begin(args)
         self.last_result=None
         self.rows=[];self.table.delete(*self.table.get_children());self.reset_measurement_plot()
         if hasattr(self,'lcd'):self.lcd.begin_scan(args)
@@ -1260,7 +1256,6 @@ class App:
             self.meter.receive(value)
         elif op == 'scan':
             self.last_result = value
-            self.ac_history.finish(value)
             self.result_by_measurement[(self._parameter_profile,self.measurement)] = value
             state = value['state']
             self.log('测量状态：{}，{} 点。'.format(state['status'], state['points']))
@@ -1407,7 +1402,6 @@ class App:
             self.input_plot_axes()
             self.ax.set_title('Input characteristic / '+self.selected_profile().key.upper())
         self.ax.grid(alpha=.2); self.canvas.draw_idle()
-        if hasattr(self,'ac_history'):self.ac_history.refresh()
 
     def change_beta_view(self, event=None):
         if self.measurement!='beta': return
@@ -1471,11 +1465,10 @@ class App:
         if self._plot_job is not None:
             self.root.after_cancel(self._plot_job)
             self._plot_job = None
-        if hasattr(self,'ac_history') and self.ac_history.draw(rows):
-            if hasattr(self,'derived_plots'):self.derived_plots.refresh(rows)
-            self._last_plot_time=time.monotonic();return
         if hasattr(self,'derived_plots'):self.derived_plots.refresh(rows)
-        if not rows: return
+        if not rows:
+            self.reset_measurement_plot()
+            return
         self._last_plot_time = time.monotonic()
         name = self.measurement
         profile=Profile(self.last_result['state'].get('profile','npn_small')) if self.last_result else self.selected_profile()
@@ -1673,7 +1666,6 @@ class App:
         key=(self._parameter_profile,self.measurement)
         view=self.measurement_views.get(key,{})
         self.last_result=view.get('result') or self.result_by_measurement.get(key)
-        self.ac_history.restore(self.last_result)
         self.rows=list(view.get('rows',[]))
         self.table.delete(*self.table.get_children());self.reset_measurement_plot()
         if self.last_result:self.set_summary(self.last_result['state'])
@@ -1699,7 +1691,6 @@ class App:
                     self.restore_measurement_view();self.notice.set('已恢复本次会话的曲线与测点。');return
                 self.notice.set('当前器件档位、测量项目和扫描方式尚无已保存的测点。');return
             self.last_result=result;self.result_by_measurement[key]=result
-            self.ac_history.restore(result)
             self.rows=[];self.table.delete(*self.table.get_children());self.reset_measurement_plot()
             self.set_summary(result['state']);self.read_result(Path(result['local_directory']))
             self.cache_measurement_view()
@@ -1740,8 +1731,6 @@ class App:
         if state.get('profile'):lines.append('器件：'+PROFILE_LABELS[state['profile']])
         if state.get('method')=='pulse':
             cfg=state.get('config',{});lines.append('集电极脉冲：{:g} Hz / {:g}%；高电平稳定帧换算'.format(cfg.get('pulse_frequency_hz',10),cfg.get('pulse_duty_percent',20)))
-        if state.get('display_reference'):
-            lines.append('历史显示参考：'+state['display_reference'].get('id','')+'；以下分析与测点属于本次采集。')
         if state.get('measurement')=='ac' and state.get('profile','').startswith('pnp'):
             lines+=['β≈(RB/RE)×VE/(Vin−VB)，按 IC≈IE。',
                     'Vin 为缓冲后 RB 前幅值；Vin/VB 同相近似。']
@@ -1789,8 +1778,6 @@ class App:
             selected=self.measure_tabs.select()
             derived=next((v[1] for v in self.derived_plots.tabs.values() if str(v[0])==selected),None)
             (derived or self.figure).savefig(path, dpi=180)
-            ref=self.ac_history.displayed_reference()
-            if ref:Path(path+'.source.json').write_text(json.dumps(ref,ensure_ascii=False,indent=2),encoding='utf-8')
             self.log('曲线已保存：'+path)
 
     def retrieve(self):

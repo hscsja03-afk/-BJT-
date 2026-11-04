@@ -1,4 +1,4 @@
-"""Original-project PDF catalog and manufacturer spelling aliases."""
+"""Bundled PDF catalog and manufacturer spelling aliases."""
 import json
 import re
 from pathlib import Path

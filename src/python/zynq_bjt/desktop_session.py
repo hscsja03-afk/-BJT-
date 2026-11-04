@@ -436,9 +436,6 @@ class Session:
             report_status()
         self.last_result = directory
         state['device'] = {k: str(request.get('device', {}).get(k, ''))[:200] for k in ('manufacturer', 'model')}
-        if name=='ac' and profile_key.startswith('pnp') and request.get('display_reference'):
-            state['display_reference'] = {k:str(v)[:1000] for k,v in request['display_reference'].items()
-                if k in ('id','profile','manufacturer','model','source_archive','source_member','source_sha256','source_kind')}
         (directory/'run.json').write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding='utf-8')
         return dict(directory=str(directory), relative_directory=directory.relative_to(self.results).as_posix(), run_id=directory.name, state=state,
                     files=[p.name for p in directory.iterdir() if p.is_file()])

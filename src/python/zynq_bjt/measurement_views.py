@@ -1,4 +1,4 @@
-"""Derived plots retain measured points, fit ranges and historical provenance."""
+"""Derived plots retain measured points and fit ranges."""
 import csv
 import hashlib
 import json
@@ -11,7 +11,7 @@ from .analysis import input_resistance_summary
 from .characteristics import _early_summary
 from .profiles import Profile
 
-VERSION=2
+VERSION=3
 
 
 def draw_early(ax,rows,profile):
@@ -43,29 +43,22 @@ def draw_early(ax,rows,profile):
     return summary
 
 
-def draw_rin(ax,rows,config,record=None):
+def draw_rin(ax,rows,config):
     ax.clear()
-    if record is not None:
-        series=record.get('rin_series',[])
-        from .ac_history import draw_reference_series
-        draw_reference_series(ax,series,resistance=True)
-        summary=dict(display_only=True,record_id=record['id'],source_sha256=record['source_sha256'],basis=record.get('rin_basis'))
-    else:
-        points=[]
-        for row in rows:
-            try:f=float(row['actual_freq_hz']);r=float(row['input_resistance_ohm'])
-            except (KeyError,ValueError,TypeError):continue
-            if math.isfinite(f+r) and f>0 and r>0:points.append((f,r,row.get('mode')))
-        for mode,label,style in (('coarse','扫描点','.-'),('refine','截止附近补测','D')):
-            selected=sorted((f,r) for f,r,m in points if (m=='refine')==(mode=='refine'))
-            if selected:ax.plot(*zip(*selected),style,ms=4,lw=1,label=label)
-        summary=input_resistance_summary(rows,config.get('passband_stop_hz',150000))
-        rtest=config.get('input_test_resistor_ohm')
-        summary['test_resistor_ohm']=rtest
-        median=summary['passband_median_ohm']
-        if median is not None:ax.axhline(median,ls=':',color='#ba6545',label='通带中位数 {:.3g} Ω'.format(median))
+    points=[]
+    for row in rows:
+        try:f=float(row['actual_freq_hz']);r=float(row['input_resistance_ohm'])
+        except (KeyError,ValueError,TypeError):continue
+        if math.isfinite(f+r) and f>0 and r>0:points.append((f,r,row.get('mode')))
+    for mode,label,style in (('coarse','扫描点','.-'),('refine','截止附近补测','D')):
+        selected=sorted((f,r) for f,r,m in points if (m=='refine')==(mode=='refine'))
+        if selected:ax.plot(*zip(*selected),style,ms=4,lw=1,label=label)
+    summary=input_resistance_summary(rows,config.get('passband_stop_hz',150000))
+    summary['test_resistor_ohm']=config.get('input_test_resistor_ohm')
+    median=summary['passband_median_ohm']
+    if median is not None:ax.axhline(median,ls=':',color='#ba6545',label='通带中位数 {:.3g} Ω'.format(median))
     ax.set_title('')
-    ax.set_xscale('log');ax.set(xlabel='频率 / kHz' if record is not None else '频率 / Hz',ylabel='Rin / Ω');ax.grid(alpha=.2)
+    ax.set_xscale('log');ax.set(xlabel='频率 / Hz',ylabel='Rin / Ω');ax.grid(alpha=.2)
     if ax.lines or ax.collections:ax.legend(fontsize=8,loc='best')
     return summary
 
@@ -114,8 +107,7 @@ class DerivedPlots:
             if kind==name:app.measure_tabs.add(frame)
             else:app.measure_tabs.hide(frame)
         if name not in self.tabs:return
-        history=app.ac_history.rin_reference() if name=='ac' else None
-        key=(name,id(app.last_result),len(rows),app.selected_profile().key,history['id'] if history else None)
+        key=(name,id(app.last_result),len(rows),app.selected_profile().key)
         if key==self.key:return
         self.key=key
         _,figure,ax,canvas=self.tabs[name]
@@ -124,7 +116,7 @@ class DerivedPlots:
             draw_early(ax,rows,app.selected_profile())
         else:
             cfg=app.last_result['state'].get('config',{}) if app.last_result else app.config_values['ac']
-            draw_rin(ax,rows,cfg,app.ac_history.visible_record(rows) if history else None)
+            draw_rin(ax,rows,cfg)
         if name=='output' and app.last_result and app.last_result['state'].get('simulated'):ax.set_title('模拟 · '+ax.get_title(),fontsize=10)
         canvas.draw_idle()
 
@@ -136,12 +128,7 @@ class DerivedPlots:
         self.tabs['ac'][1].savefig(out/'input_resistance.png',dpi=160)
         raw=Path(directory)/'ac_points.csv'
         if not raw.exists():raw=Path(directory)/'points.csv'
-        metadata=dict(display_reference=None,source='current_run',source_file=raw.name,
+        metadata=dict(source='current_run',source_file=raw.name,
                       source_sha256=hashlib.sha256(raw.read_bytes()).hexdigest() if raw.exists() else None,
                       simulated=(app.last_result or {}).get('state',{}).get('simulated'))
-        record=app.ac_history.rin_reference()
-        if record:
-            metadata=dict(source='historical_record',display_reference={k:record[k] for k in ('id','profile','manufacturer','model','source_archive','source_member','source_sha256','source_kind')},
-                          source_file='curves.csv',source_sha256=record['source_sha256'],progressive=True,
-                          acquisition_source_file=raw.name,acquisition_source_sha256=metadata['source_sha256'])
         (out/'input_resistance.source.json').write_text(json.dumps(metadata,ensure_ascii=False,indent=2),encoding='utf8')

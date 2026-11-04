@@ -219,13 +219,6 @@ def verify(assets, report, host=None):
             for key in ('registers', 'control', 'dac_mode', 'identity'): assert before[key] == after[key]
             evidence['board'] = {'before': before, 'after': after, 'analog_outputs_enabled': False}
             evidence['board_cleanup'] = transport.close()
-        from .ac_history import HistoryLibrary
-        history=HistoryLibrary(assets/'data',report.parent/'history_verify_cursor.json')
-        assert len(history.records)==46
-        import hashlib
-        for record in history.records:
-            assert hashlib.sha256((history.data/record['id']/'curves.csv').read_bytes()).hexdigest()==record['source_sha256']
-        evidence['pnp_history']=dict(records=len(history.records),identified=sum(r['identity_confirmed'] for r in history.records),passed=True)
         evidence['pulse_scans']=[]
         for name,cfg in [('output',dict(base_control_v=(.02,),tx2_control_stop_v=.2,tx2_control_step_v=.1)),
                          ('beta',dict(tx1_start_v=.02,tx1_stop_v=.04,tx1_step_v=.01,drop_initial_points=0,moving_average_window=1))]:

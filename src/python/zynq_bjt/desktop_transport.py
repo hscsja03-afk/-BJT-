@@ -21,7 +21,7 @@ def agent_archive(source):
         # Exclude GUI/SSH dependencies from the board process.
         for p in sorted(Path(source).glob('*.py')):
             if p.name in ('curve_export.py','desktop_lcd.py','lcd_records.py'):continue
-            if p.name not in ('desktop.py', 'desktop_output.py', 'desktop_transport.py', 'desktop_verify.py', 'scope_view.py', 'meter_view.py', 'parameter_view.py', 'sidebar_art.py', 'workbench_tools.py', 'ai_client.py', 'ac_history.py', 'pdf_view.py', 'datasheet_grid.py', 'metric_strip.py', 'measurement_views.py'):
+            if p.name not in ('desktop.py', 'desktop_output.py', 'desktop_transport.py', 'desktop_verify.py', 'scope_view.py', 'meter_view.py', 'parameter_view.py', 'sidebar_art.py', 'workbench_tools.py', 'ai_client.py', 'pdf_view.py', 'datasheet_grid.py', 'metric_strip.py', 'measurement_views.py'):
                 info = zipfile.ZipInfo('zynq_bjt/' + p.name, (2026, 1, 1, 0, 0, 0))
                 info.compress_type = zipfile.ZIP_DEFLATED
                 archive.writestr(info, p.read_bytes())
