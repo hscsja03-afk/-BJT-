@@ -1594,8 +1594,8 @@
     },
     {
       "path": "readme.md",
-      "bytes": 3945,
-      "sha256": "69db381ace0a62efa986830a577ddac491851e09896856e255bf604705f49cc5"
+      "bytes": 3898,
+      "sha256": "40df28bf4f55dd72736c02922664b06e057c0733123575d082772131aaeeed54"
     },
     {
       "path": "report/ai_collaboration.md",
@@ -1643,11 +1643,6 @@
       "sha256": "3dbdfdb30201d026f37183b5b87861d5547540d83364edea81c1f34b07d026f5"
     },
     {
-      "path": "report/design_report.docx",
-      "bytes": 11924616,
-      "sha256": "ec283047e11875d7cdc444c516ea02da40d19398a828e88e9d638454c122593e"
-    },
-    {
       "path": "report/design_report.md",
       "bytes": 6348,
       "sha256": "2584a523d0e5cf247f620bb339869f4a694dbe96404f5364f56972b9affb4ce4"
@@ -1679,8 +1674,8 @@
     },
     {
       "path": "report/document_sources.json",
-      "bytes": 481,
-      "sha256": "97fb357ed400e6fa94b224ef0d1d4a63aa4670014431f14074daa0f4158e391e"
+      "bytes": 224,
+      "sha256": "2b4883595bc0cb49df28901150e66d868af7e672a53444d84a9ca1c27a2fc434"
     },
     {
       "path": "report/factory_sd_evidence.json",
@@ -1735,12 +1730,12 @@
     {
       "path": "report/repository_layout.json",
       "bytes": 257,
-      "sha256": "e35d250fcbfcc59d73a772fc72f0560510114d857a271d0890d8323d23494a6a"
+      "sha256": "2988ccfeecb92f65295a28108c9a245bf91de4b6ff41708bd687601344122020"
     },
     {
       "path": "report/repository_validation.json",
-      "bytes": 367,
-      "sha256": "94c9b203e47b2242d0c0c5621f9fdec9c018bf192613af31cfebc47b461571a3"
+      "bytes": 366,
+      "sha256": "a6f14f513dfa63e4f591f4123717446e96b23161c76f9fd14c88fac7e458ee97"
     },
     {
       "path": "report/skill_review_tests_20261101.log",
@@ -1759,8 +1754,8 @@
     },
     {
       "path": "report/submission_checklist.md",
-      "bytes": 1281,
-      "sha256": "a424b09034414756bbf52d20e79acde9ff2c183ea5aa86973c4cdd3de1f224d5"
+      "bytes": 1252,
+      "sha256": "4d6e9d042d8468273a38abb1293eab00356e3d663cfa24899ef669012f4db3df"
     },
     {
       "path": "report/tx1_fix_coldboot_verification_20261030.json",
