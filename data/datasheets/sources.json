@@ -1,0 +1,66 @@
+[
+  {
+    "manufacturer": "长晶科技",
+    "model": "2N5401",
+    "file": "original_project/changjing_2N5401.pdf",
+    "source_archive": "IP-SDK_3.0 (2).zip",
+    "source_member": "IP-SDK_3.0/IP-SDK/Python/RainDrop_Transistor_Scanner_Bundle_logo/datasheets/changjing_2N5401.pdf",
+    "sha256": "39ea698c1449d4c9fcf719a0b7aec4d733e4973f81f900fea50f04c47de60b60"
+  },
+  {
+    "manufacturer": "长晶科技",
+    "model": "2N5551",
+    "file": "original_project/changjing_2N5551.pdf",
+    "source_archive": "IP-SDK_3.0 (2).zip",
+    "source_member": "IP-SDK_3.0/IP-SDK/Python/RainDrop_Transistor_Scanner_Bundle_logo/datasheets/changjing_2N5551.pdf",
+    "sha256": "9528036a0b3f0d400b4eac85f356293c2711bc5998810ec82b10717dc215a33f"
+  },
+  {
+    "manufacturer": "长晶科技",
+    "model": "TIP41C",
+    "file": "original_project/changjing_TIP41C.pdf",
+    "source_archive": "IP-SDK_3.0 (2).zip",
+    "source_member": "IP-SDK_3.0/IP-SDK/Python/RainDrop_Transistor_Scanner_Bundle_logo/datasheets/changjing_TIP41C.pdf",
+    "sha256": "e4e12b397ae6680c68b388646e8a3acca61e8ef3a7e6d8c98aae46e72509fdcc"
+  },
+  {
+    "manufacturer": "长晶科技",
+    "model": "TIP42C",
+    "file": "original_project/changjing_TIP42C.pdf",
+    "source_archive": "IP-SDK_3.0 (2).zip",
+    "source_member": "IP-SDK_3.0/IP-SDK/Python/RainDrop_Transistor_Scanner_Bundle_logo/datasheets/changjing_TIP42C.pdf",
+    "sha256": "4d7507fc76953d587ea0867a8fe4c977d81fb838a2fb4a1b669f1cb0164bc6f4"
+  },
+  {
+    "manufacturer": "onsemi",
+    "model": "2N5401",
+    "file": "original_project/onsemi_2N5401.pdf",
+    "source_archive": "IP-SDK_3.0 (2).zip",
+    "source_member": "IP-SDK_3.0/IP-SDK/Python/RainDrop_Transistor_Scanner_Bundle_logo/datasheets/onsemi_2N5401.pdf",
+    "sha256": "d4cc06456e031fae7e2aa42640911e9d3505059c1071404b6f0522d88b9b20b5"
+  },
+  {
+    "manufacturer": "onsemi",
+    "model": "2N5551",
+    "file": "original_project/onsemi_2N5550_2N5551.pdf",
+    "source_archive": "IP-SDK_3.0 (2).zip",
+    "source_member": "IP-SDK_3.0/IP-SDK/Python/RainDrop_Transistor_Scanner_Bundle_logo/datasheets/onsemi_2N5550_2N5551.pdf",
+    "sha256": "808f26e0eb5ea19782bc54ac752aef082ec99a2d144498c8b789518a1b3b0e18"
+  },
+  {
+    "manufacturer": "onsemi",
+    "model": "TIP41C",
+    "file": "original_project/onsemi_TIP41A_TIP41B_TIP41C.pdf",
+    "source_archive": "IP-SDK_3.0 (2).zip",
+    "source_member": "IP-SDK_3.0/IP-SDK/Python/RainDrop_Transistor_Scanner_Bundle_logo/datasheets/onsemi_TIP41A_TIP41B_TIP41C.pdf",
+    "sha256": "1cedc2e9a744bc3b2fed9b8f48c49b00e2ef268d042035fc691d70cca9b705f6"
+  },
+  {
+    "manufacturer": "onsemi",
+    "model": "TIP42C",
+    "file": "original_project/onsemi_TIP42_TIP42C.pdf",
+    "source_archive": "IP-SDK_3.0 (2).zip",
+    "source_member": "IP-SDK_3.0/IP-SDK/Python/RainDrop_Transistor_Scanner_Bundle_logo/datasheets/onsemi_TIP42_TIP42C.pdf",
+    "sha256": "6d5fcabecb6013a5b4675a3fe72ac51785747b4a3128b027dc29a1e9739cb9cf"
+  }
+]

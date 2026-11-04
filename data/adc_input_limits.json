@@ -1,0 +1,7 @@
+{
+  "conversion_min_v": -2.0,
+  "conversion_max_v": 2.0,
+  "basis": "user_requested_software_limits_20261101",
+  "outside_calibrated_range": "linear_extrapolation",
+  "hardware_range_changed": false
+}

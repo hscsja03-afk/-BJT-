@@ -1,0 +1,138 @@
+{
+  "calibration_id": "pnp_small_input_ve_scope_ch2_20261101",
+  "profiles": [
+    "pnp_small",
+    "pnp_big"
+  ],
+  "measurement": "input",
+  "channel": 1,
+  "conversion": "piecewise_linear",
+  "outside_table": "linear_endpoint_extrapolation",
+  "validation_status": "scope_relative_midpoints_checked",
+  "scope_idn": "RIGOL TECHNOLOGIES,DS1104Z,DS1ZA173719283,00.04.03.SP1",
+  "scope_channel": 2,
+  "probe_attenuation": 1,
+  "bandwidth_limit": "20M",
+  "scope_scale_v_per_div": 0.5,
+  "adc_sample_rate_hz": 50000000,
+  "fixed_tx1_v": 0.0,
+  "absolute_accuracy_qualified": false,
+  "adc_channel_calibration_sha256": "b13bc1514e09a96f3ebf802816e69d60204dc5c9d130f00a8f965858d3c6cb10",
+  "points": [
+    {
+      "adc_v": 0.0019047710444030762,
+      "ve_v": 0.020418045,
+      "tx2_v": 0,
+      "repeats": 2
+    },
+    {
+      "adc_v": 0.06304435179228719,
+      "ve_v": 0.30385952,
+      "tx2_v": 0.05,
+      "repeats": 1
+    },
+    {
+      "adc_v": 0.12577376505937704,
+      "ve_v": 0.60916721,
+      "tx2_v": 0.1,
+      "repeats": 2
+    },
+    {
+      "adc_v": 0.18731098653121947,
+      "ve_v": 0.9001605399999999,
+      "tx2_v": 0.15,
+      "repeats": 1
+    },
+    {
+      "adc_v": 0.24835436483330284,
+      "ve_v": 1.184328,
+      "tx2_v": 0.2,
+      "repeats": 1
+    },
+    {
+      "adc_v": 0.37069667429749553,
+      "ve_v": 1.7621103,
+      "tx2_v": 0.3,
+      "repeats": 2
+    },
+    {
+      "adc_v": 0.49260444914808144,
+      "ve_v": 2.3397322,
+      "tx2_v": 0.4,
+      "repeats": 1
+    },
+    {
+      "adc_v": 0.6146501368718771,
+      "ve_v": 2.9193644,
+      "tx2_v": 0.5,
+      "repeats": 2
+    },
+    {
+      "adc_v": 0.7365621064530945,
+      "ve_v": 3.4824545999999996,
+      "tx2_v": 0.6,
+      "repeats": 1
+    },
+    {
+      "adc_v": 0.8587863219125671,
+      "ve_v": 4.0771269,
+      "tx2_v": 0.7,
+      "repeats": 2
+    },
+    {
+      "adc_v": 0.9805181253456725,
+      "ve_v": 4.6448024,
+      "tx2_v": 0.8,
+      "repeats": 1
+    },
+    {
+      "adc_v": 1.1023180610741883,
+      "ve_v": 5.2252006,
+      "tx2_v": 0.9,
+      "repeats": 2
+    },
+    {
+      "adc_v": 1.2244034556246441,
+      "ve_v": 5.8008362,
+      "tx2_v": 1,
+      "repeats": 1
+    },
+    {
+      "adc_v": 1.3461442900660505,
+      "ve_v": 6.37805,
+      "tx2_v": 1.1,
+      "repeats": 2
+    },
+    {
+      "adc_v": 1.4678053357958678,
+      "ve_v": 6.9510366,
+      "tx2_v": 1.2,
+      "repeats": 1
+    },
+    {
+      "adc_v": 1.589310515205373,
+      "ve_v": 7.5278092,
+      "tx2_v": 1.3,
+      "repeats": 2
+    },
+    {
+      "adc_v": 1.7109785291230164,
+      "ve_v": 8.1018522,
+      "tx2_v": 1.4,
+      "repeats": 1
+    }
+  ],
+  "validation": {
+    "points": 10,
+    "maximum_error_v": 0.012489745452325285,
+    "rms_error_v": 0.005563883807518936
+  },
+  "source_files": {
+    "report\\ve_scope_meter_20261101\\scope_pass1\\result.json": "b9223150611c35abc4f263277df59d68026ccb32d151c2f89a3333eaf11b24fd",
+    "report\\ve_scope_meter_20261101\\scope_validation\\result.json": "e978b3edc88bc665e97ac51854ef20df8029620f136e6a582d55c8ecf48c842d"
+  },
+  "profile_application_basis": {
+    "pnp_small": "original_scope_measurement",
+    "pnp_big": "shared_PNP_input_feedback_with_pin87_0_user_confirmed_20261101; original measured points unchanged"
+  }
+}

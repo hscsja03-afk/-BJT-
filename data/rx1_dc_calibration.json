@@ -1,0 +1,366 @@
+{
+  "calibration_id": "rx1_generator_nominal_20261030_232904",
+  "channel": "RX1 / ADC B",
+  "sample_rate_hz": 50000000,
+  "mode": "DC bipolar",
+  "valid_min_v": -1.75,
+  "valid_max_v": 1.75,
+  "zero_code_q16": 2134574592,
+  "slope_nv_per_code": -60455,
+  "zero_code": 32571.0234375,
+  "volts_per_code": -6.0455e-05,
+  "validation_status": "generator_nominal_validated",
+  "reference_basis": "DG1032Z nominal DC offset, High-Z display, no external voltage measurement",
+  "generator_idn": "Rigol Technologies,DG1032Z,DG1ZA173802542,00.01.08",
+  "generator_load_display": "High-Z",
+  "absolute_voltage_accuracy_verified": false,
+  "scope_relative": false,
+  "negative_calibrated": true,
+  "ac_response_calibrated": false,
+  "hardware_revision": "custom_rx_shunts_removed_series50_20261028",
+  "board_identity": {
+    "bit_sha256": "7c38abf4caec30d28f239a0eac8ed336e917c78d89245af82ff43e214ba2e8af",
+    "hwh_sha256": "ce553040ea915752e440d0eab0406b1e947076f19586ef5c4ea957d3596db600",
+    "adc_divider": 20,
+    "dac_divider": 20,
+    "measured_clock_hz": [
+      49957657.309468634,
+      49955305.18693868,
+      49954428.12430039
+    ],
+    "digital_self_test": "passed",
+    "analog_calibration_qualified": false
+  },
+  "independent_validation": {
+    "status": "pass",
+    "points": 19,
+    "max_abs_error_v": 0.00033789812174467304,
+    "limit_v_vs_generator_nominal": 0.005
+  },
+  "fit_points": 19,
+  "checks": [
+    {
+      "label": "zero_initial",
+      "role": "fit",
+      "reference_v_nominal": 0,
+      "mean_code": 32570.354166666668,
+      "voltage_v_nominal": 4.046076822909336e-05,
+      "error_v": 4.046076822909336e-05
+    },
+    {
+      "label": "p0p05",
+      "role": "fit",
+      "reference_v_nominal": 0.05,
+      "mean_code": 31743.636067708332,
+      "voltage_v_nominal": 0.050019703440755285,
+      "error_v": 1.9703440755282353e-05
+    },
+    {
+      "label": "m0p05",
+      "role": "fit",
+      "reference_v_nominal": -0.05,
+      "mean_code": 33399.975260416664,
+      "voltage_v_nominal": -0.05011428245442694,
+      "error_v": -0.00011428245442693385
+    },
+    {
+      "label": "p0p1",
+      "role": "fit",
+      "reference_v_nominal": 0.1,
+      "mean_code": 30914.977213541668,
+      "voltage_v_nominal": 0.10011627446940097,
+      "error_v": 0.00011627446940096209
+    },
+    {
+      "label": "m0p1",
+      "role": "fit",
+      "reference_v_nominal": -0.1,
+      "mean_code": 34226.611653645836,
+      "voltage_v_nominal": -0.1000885856070965,
+      "error_v": -8.858560709650021e-05
+    },
+    {
+      "label": "p0p25",
+      "role": "fit",
+      "reference_v_nominal": 0.25,
+      "mean_code": 28432.469075520832,
+      "voltage_v_nominal": 0.2501963039534506,
+      "error_v": 0.00019630395345060503
+    },
+    {
+      "label": "m0p25",
+      "role": "fit",
+      "reference_v_nominal": -0.25,
+      "mean_code": 36708.93359375,
+      "voltage_v_nominal": -0.2501573584960938,
+      "error_v": -0.0001573584960937735
+    },
+    {
+      "label": "p0p5",
+      "role": "fit",
+      "reference_v_nominal": 0.5,
+      "mean_code": 24294.1630859375,
+      "voltage_v_nominal": 0.500377592553711,
+      "error_v": 0.00037759255371094813
+    },
+    {
+      "label": "m0p5",
+      "role": "fit",
+      "reference_v_nominal": -0.5,
+      "mean_code": 40846.970052083336,
+      "voltage_v_nominal": -0.5003223525846355,
+      "error_v": -0.0003223525846355324
+    },
+    {
+      "label": "p0p75",
+      "role": "fit",
+      "reference_v_nominal": 0.75,
+      "mean_code": 20164.7724609375,
+      "voltage_v_nominal": 0.750019902788086,
+      "error_v": 1.990278808594592e-05
+    },
+    {
+      "label": "m0p75",
+      "role": "fit",
+      "reference_v_nominal": -0.75,
+      "mean_code": 44984.986002604164,
+      "voltage_v_nominal": -0.7504861068733722,
+      "error_v": -0.00048610687337224956
+    },
+    {
+      "label": "p1",
+      "role": "fit",
+      "reference_v_nominal": 1,
+      "mean_code": 16026.9736328125,
+      "voltage_v_nominal": 1.0001705309423827,
+      "error_v": 0.00017053094238272948
+    },
+    {
+      "label": "m1",
+      "role": "fit",
+      "reference_v_nominal": -1,
+      "mean_code": 49117.220703125,
+      "voltage_v_nominal": -1.0003003556933594,
+      "error_v": -0.0003003556933593998
+    },
+    {
+      "label": "p1p25",
+      "role": "fit",
+      "reference_v_nominal": 1.25,
+      "mean_code": 11891.267578125,
+      "voltage_v_nominal": 1.2501946404785156,
+      "error_v": 0.0001946404785155842
+    },
+    {
+      "label": "m1p25",
+      "role": "fit",
+      "reference_v_nominal": -1.25,
+      "mean_code": 53247.4599609375,
+      "voltage_v_nominal": -1.249993970024414,
+      "error_v": 6.029975585963854e-06
+    },
+    {
+      "label": "p1p5",
+      "role": "fit",
+      "reference_v_nominal": 1.5,
+      "mean_code": 7758.4892578125,
+      "voltage_v_nominal": 1.5000417538330078,
+      "error_v": 4.1753833007751595e-05
+    },
+    {
+      "label": "m1p5",
+      "role": "fit",
+      "reference_v_nominal": -1.5,
+      "mean_code": 57380.561197916664,
+      "voltage_v_nominal": -1.4998606053059895,
+      "error_v": 0.0001393946940104751
+    },
+    {
+      "label": "p1p75",
+      "role": "fit",
+      "reference_v_nominal": 1.75,
+      "mean_code": 3628.662109375,
+      "voltage_v_nominal": 1.749710454091797,
+      "error_v": -0.00028954590820307047
+    },
+    {
+      "label": "m1p75",
+      "role": "fit",
+      "reference_v_nominal": -1.75,
+      "mean_code": 61510.962239583336,
+      "voltage_v_nominal": -1.749564000279948,
+      "error_v": 0.00043599972005203824
+    },
+    {
+      "label": "vp1p625",
+      "role": "validation",
+      "reference_v_nominal": 1.625,
+      "mean_code": 5696.105143229167,
+      "voltage_v_nominal": 1.6247231854801432,
+      "error_v": -0.00027681451985683836
+    },
+    {
+      "label": "vp1p375",
+      "role": "validation",
+      "reference_v_nominal": 1.375,
+      "mean_code": 9827.992838541666,
+      "voltage_v_nominal": 1.374929914860026,
+      "error_v": -7.008513997397436e-05
+    },
+    {
+      "label": "vp1p125",
+      "role": "validation",
+      "reference_v_nominal": 1.125,
+      "mean_code": 13960.181315104166,
+      "voltage_v_nominal": 1.1251184605094402,
+      "error_v": 0.00011846050944019915
+    },
+    {
+      "label": "vp0p875",
+      "role": "validation",
+      "reference_v_nominal": 0.875,
+      "mean_code": 18096.728841145832,
+      "voltage_v_nominal": 0.8750434798225912,
+      "error_v": 4.347982259123029e-05
+    },
+    {
+      "label": "vp0p625",
+      "role": "validation",
+      "reference_v_nominal": 0.625,
+      "mean_code": 22229.882161458332,
+      "voltage_v_nominal": 0.625173695843099,
+      "error_v": 0.00017369584309900876
+    },
+    {
+      "label": "vp0p375",
+      "role": "validation",
+      "reference_v_nominal": 0.375,
+      "mean_code": 26362.473307291668,
+      "voltage_v_nominal": 0.3753378981217447,
+      "error_v": 0.00033789812174467304
+    },
+    {
+      "label": "vp0p175",
+      "role": "validation",
+      "reference_v_nominal": 0.175,
+      "mean_code": 29673.30859375,
+      "voltage_v_nominal": 0.17518135087890624,
+      "error_v": 0.00018135087890625012
+    },
+    {
+      "label": "vp0p075",
+      "role": "validation",
+      "reference_v_nominal": 0.075,
+      "mean_code": 31330.34765625,
+      "voltage_v_nominal": 0.07500505435546875,
+      "error_v": 5.054355468755989e-06
+    },
+    {
+      "label": "vp0p025",
+      "role": "validation",
+      "reference_v_nominal": 0.025,
+      "mean_code": 32156.452799479168,
+      "voltage_v_nominal": 0.025062867921549405,
+      "error_v": 6.286792154940393e-05
+    },
+    {
+      "label": "vm1p625",
+      "role": "validation",
+      "reference_v_nominal": -1.625,
+      "mean_code": 59445.776041666664,
+      "voltage_v_nominal": -1.6247131686848957,
+      "error_v": 0.0002868313151043189
+    },
+    {
+      "label": "vm1p375",
+      "role": "validation",
+      "reference_v_nominal": -1.375,
+      "mean_code": 55313.121744791664,
+      "voltage_v_nominal": -1.3748735531673175,
+      "error_v": 0.0001264468326824808
+    },
+    {
+      "label": "vm1p125",
+      "role": "validation",
+      "reference_v_nominal": -1.125,
+      "mean_code": 51179.764322916664,
+      "voltage_v_nominal": -1.1249914302278645,
+      "error_v": 8.569772135480491e-06
+    },
+    {
+      "label": "vm0p875",
+      "role": "validation",
+      "reference_v_nominal": -0.875,
+      "mean_code": 47049.803385416664,
+      "voltage_v_nominal": -0.8753146417513019,
+      "error_v": -0.00031464175130191396
+    },
+    {
+      "label": "vm0p625",
+      "role": "validation",
+      "reference_v_nominal": -0.625,
+      "mean_code": 42913.178385416664,
+      "voltage_v_nominal": -0.6252349773763018,
+      "error_v": -0.00023497737630184812
+    },
+    {
+      "label": "vm0p375",
+      "role": "validation",
+      "reference_v_nominal": -0.375,
+      "mean_code": 38776.098958333336,
+      "voltage_v_nominal": -0.3751278406119793,
+      "error_v": -0.00012784061197929075
+    },
+    {
+      "label": "vm0p175",
+      "role": "validation",
+      "reference_v_nominal": -0.175,
+      "mean_code": 35465.904947916664,
+      "voltage_v_nominal": -0.17501006171223946,
+      "error_v": -1.0061712239467502e-05
+    },
+    {
+      "label": "vm0p075",
+      "role": "validation",
+      "reference_v_nominal": -0.075,
+      "mean_code": 33811.233723958336,
+      "voltage_v_nominal": -0.0749769128678387,
+      "error_v": 2.308713216130076e-05
+    },
+    {
+      "label": "vm0p025",
+      "role": "validation",
+      "reference_v_nominal": -0.025,
+      "mean_code": 32983.834309895836,
+      "voltage_v_nominal": -0.024956481290690252,
+      "error_v": 4.351870930974916e-05
+    },
+    {
+      "label": "zero_final",
+      "role": "validation",
+      "reference_v_nominal": 0,
+      "mean_code": 32570.079752604168,
+      "voltage_v_nominal": 5.705047037753086e-05,
+      "error_v": 5.705047037753086e-05
+    }
+  ],
+  "rejected_points": [
+    {
+      "label": "p2",
+      "volts": 2,
+      "reason": "overrange_or_near_rail"
+    },
+    {
+      "label": "m2",
+      "volts": -2,
+      "reason": "overrange_or_near_rail"
+    }
+  ],
+  "limitations": [
+    "Generator setpoints are the reference; no independent absolute voltage measurement.",
+    "Valid only for the recorded modified hardware and 50 MSPS DC capture.",
+    "This does not calibrate RX2, external transistor circuitry, current sources or AC response."
+  ],
+  "collection": "report\\rx1_generator_nominal_20261030\\collection.json",
+  "collection_sha256": "71cb730f05cbfe77b89d01cbe35bca861b3e95ebe55d384d30fd70ed22eddc58"
+}

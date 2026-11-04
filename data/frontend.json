@@ -1,0 +1,7 @@
+{
+  "rx1_per_vc": 0.206,
+  "collector_amplifier_gain": 6.0,
+  "base_equivalent_resistance_ohm": 200000.0,
+  "max_uce_v": 5.0,
+  "transfer_basis": "legacy_user_confirmed_nominal_not_new_calibration"
+}

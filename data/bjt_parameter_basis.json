@@ -1,0 +1,2158 @@
+{
+  "updated": "2026-11-02",
+  "status": "reference_parameters_not_complete_accuracy_calibration",
+  "user_authorized_reference_fallback": true,
+  "profiles": {
+    "npn_small": {
+      "input": {
+        "profile": "npn_small",
+        "route": {
+          "mask": 127,
+          "value": 64,
+          "pin_values": {
+            "87": 0,
+            "79": 0,
+            "81": 0,
+            "83": 0,
+            "85": 0,
+            "77": 0,
+            "48": 1
+          },
+          "current_range_a": [
+            1e-07,
+            1e-05
+          ],
+          "base_resistance_ohm": 200000.0,
+          "collector_resistor_ohm": 100.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": "user_confirmed_20261101_all_input_low",
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "user_confirmed"
+        },
+        "confirmed": {
+          "input_base_current_tx": 1,
+          "input_bias_amplifier_tx": 2,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VC",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VB/4",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 100.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 0,
+              "79": 0,
+              "81": 0,
+              "83": 0,
+              "85": 1,
+              "77": 0,
+              "48": 0
+            },
+            "basis": "output-current range selected by power class; provisional for AC"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      },
+      "output": {
+        "profile": "npn_small",
+        "route": {
+          "mask": 127,
+          "value": 4,
+          "pin_values": {
+            "87": 0,
+            "79": 0,
+            "81": 0,
+            "83": 1,
+            "85": 0,
+            "77": 0,
+            "48": 0
+          },
+          "current_range_a": [
+            1e-05,
+            0.001
+          ],
+          "base_resistance_ohm": 2000.0,
+          "collector_resistor_ohm": 100.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": null,
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "user_confirmed"
+        },
+        "confirmed": {
+          "input_base_current_tx": 1,
+          "input_bias_amplifier_tx": 2,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VC",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VCC",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 100.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 0,
+              "79": 0,
+              "81": 0,
+              "83": 0,
+              "85": 1,
+              "77": 0,
+              "48": 0
+            },
+            "basis": "output-current range selected by power class; provisional for AC"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      },
+      "beta": {
+        "profile": "npn_small",
+        "route": {
+          "mask": 127,
+          "value": 4,
+          "pin_values": {
+            "87": 0,
+            "79": 0,
+            "81": 0,
+            "83": 1,
+            "85": 0,
+            "77": 0,
+            "48": 0
+          },
+          "current_range_a": [
+            1e-05,
+            0.001
+          ],
+          "base_resistance_ohm": 2000.0,
+          "collector_resistor_ohm": 100.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": null,
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "user_confirmed"
+        },
+        "confirmed": {
+          "input_base_current_tx": 1,
+          "input_bias_amplifier_tx": 2,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VC",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VCC",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 100.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 0,
+              "79": 0,
+              "81": 0,
+              "83": 0,
+              "85": 1,
+              "77": 0,
+              "48": 0
+            },
+            "basis": "output-current range selected by power class; provisional for AC"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      },
+      "ac": {
+        "profile": "npn_small",
+        "route": {
+          "mask": 127,
+          "value": 2,
+          "pin_values": {
+            "87": 0,
+            "79": 0,
+            "81": 0,
+            "83": 0,
+            "85": 1,
+            "77": 0,
+            "48": 0
+          },
+          "current_range_a": [
+            1e-05,
+            0.001
+          ],
+          "base_resistance_ohm": 2000.0,
+          "collector_resistor_ohm": 100.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": null,
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "output-current range selected by power class; provisional for AC"
+        },
+        "confirmed": {
+          "input_base_current_tx": 1,
+          "input_bias_amplifier_tx": 2,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VC",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VB*9.78",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 100.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 0,
+              "79": 0,
+              "81": 0,
+              "83": 0,
+              "85": 1,
+              "77": 0,
+              "48": 0
+            },
+            "basis": "output-current range selected by power class; provisional for AC"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      }
+    },
+    "npn_big": {
+      "input": {
+        "profile": "npn_big",
+        "route": {
+          "mask": 127,
+          "value": 64,
+          "pin_values": {
+            "87": 0,
+            "79": 0,
+            "81": 0,
+            "83": 0,
+            "85": 0,
+            "77": 0,
+            "48": 1
+          },
+          "current_range_a": [
+            1e-07,
+            1e-05
+          ],
+          "base_resistance_ohm": 200000.0,
+          "collector_resistor_ohm": 1.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": "user_confirmed_20261101_all_input_low",
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "user_confirmed"
+        },
+        "confirmed": {
+          "input_base_current_tx": 1,
+          "input_bias_amplifier_tx": 2,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VC",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VB/4",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 1.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 0,
+              "79": 0,
+              "81": 0,
+              "83": 0,
+              "85": 1,
+              "77": 0,
+              "48": 0
+            },
+            "basis": "user_confirmed_20261101_NPN_big_AC_10uA_to_1mA_pin87_low"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      },
+      "output": {
+        "profile": "npn_big",
+        "route": {
+          "mask": 127,
+          "value": 37,
+          "pin_values": {
+            "87": 1,
+            "79": 0,
+            "81": 0,
+            "83": 1,
+            "85": 0,
+            "77": 1,
+            "48": 0
+          },
+          "current_range_a": [
+            0.0004,
+            0.04
+          ],
+          "base_resistance_ohm": 50.0,
+          "collector_resistor_ohm": 1.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": null,
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "user_confirmed"
+        },
+        "confirmed": {
+          "input_base_current_tx": 1,
+          "input_bias_amplifier_tx": 2,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VC",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VCC",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 1.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 0,
+              "79": 0,
+              "81": 0,
+              "83": 0,
+              "85": 1,
+              "77": 0,
+              "48": 0
+            },
+            "basis": "user_confirmed_20261101_NPN_big_AC_10uA_to_1mA_pin87_low"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      },
+      "beta": {
+        "profile": "npn_big",
+        "route": {
+          "mask": 127,
+          "value": 37,
+          "pin_values": {
+            "87": 1,
+            "79": 0,
+            "81": 0,
+            "83": 1,
+            "85": 0,
+            "77": 1,
+            "48": 0
+          },
+          "current_range_a": [
+            0.0004,
+            0.04
+          ],
+          "base_resistance_ohm": 50.0,
+          "collector_resistor_ohm": 1.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": null,
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "user_confirmed"
+        },
+        "confirmed": {
+          "input_base_current_tx": 1,
+          "input_bias_amplifier_tx": 2,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VC",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VCC",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 1.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 0,
+              "79": 0,
+              "81": 0,
+              "83": 0,
+              "85": 1,
+              "77": 0,
+              "48": 0
+            },
+            "basis": "user_confirmed_20261101_NPN_big_AC_10uA_to_1mA_pin87_low"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      },
+      "ac": {
+        "profile": "npn_big",
+        "route": {
+          "mask": 127,
+          "value": 2,
+          "pin_values": {
+            "87": 0,
+            "79": 0,
+            "81": 0,
+            "83": 0,
+            "85": 1,
+            "77": 0,
+            "48": 0
+          },
+          "current_range_a": [
+            1e-05,
+            0.001
+          ],
+          "base_resistance_ohm": 2000.0,
+          "collector_resistor_ohm": 1.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": null,
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "user_confirmed_20261101_NPN_big_AC_10uA_to_1mA_pin87_low"
+        },
+        "confirmed": {
+          "input_base_current_tx": 1,
+          "input_bias_amplifier_tx": 2,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VC",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VB*9.78",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 1.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 0,
+              "79": 0,
+              "81": 0,
+              "83": 0,
+              "85": 1,
+              "77": 0,
+              "48": 0
+            },
+            "basis": "user_confirmed_20261101_NPN_big_AC_10uA_to_1mA_pin87_low"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      }
+    },
+    "pnp_small": {
+      "input": {
+        "profile": "pnp_small",
+        "route": {
+          "mask": 127,
+          "value": 88,
+          "pin_values": {
+            "87": 0,
+            "79": 1,
+            "81": 1,
+            "83": 0,
+            "85": 0,
+            "77": 0,
+            "48": 1
+          },
+          "current_range_a": [
+            1e-07,
+            1e-05
+          ],
+          "base_resistance_ohm": 200000.0,
+          "collector_resistor_ohm": 100.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": "user_confirmed_20261101_all_input_low",
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "user_confirmed"
+        },
+        "confirmed": {
+          "input_base_current_tx": 2,
+          "input_bias_amplifier_tx": 1,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VE",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VB/4",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 100.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 0,
+              "79": 1,
+              "81": 1,
+              "83": 0,
+              "85": 1,
+              "77": 0,
+              "48": 0
+            },
+            "basis": "output-current range selected by power class; provisional for AC"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      },
+      "output": {
+        "profile": "pnp_small",
+        "route": {
+          "mask": 127,
+          "value": 28,
+          "pin_values": {
+            "87": 0,
+            "79": 1,
+            "81": 1,
+            "83": 1,
+            "85": 0,
+            "77": 0,
+            "48": 0
+          },
+          "current_range_a": [
+            1e-05,
+            0.001
+          ],
+          "base_resistance_ohm": 2000.0,
+          "collector_resistor_ohm": 100.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": null,
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "user_confirmed"
+        },
+        "confirmed": {
+          "input_base_current_tx": 2,
+          "input_bias_amplifier_tx": 1,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VE",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VCC",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 100.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 0,
+              "79": 1,
+              "81": 1,
+              "83": 0,
+              "85": 1,
+              "77": 0,
+              "48": 0
+            },
+            "basis": "output-current range selected by power class; provisional for AC"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      },
+      "beta": {
+        "profile": "pnp_small",
+        "route": {
+          "mask": 127,
+          "value": 28,
+          "pin_values": {
+            "87": 0,
+            "79": 1,
+            "81": 1,
+            "83": 1,
+            "85": 0,
+            "77": 0,
+            "48": 0
+          },
+          "current_range_a": [
+            1e-05,
+            0.001
+          ],
+          "base_resistance_ohm": 2000.0,
+          "collector_resistor_ohm": 100.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": null,
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "user_confirmed"
+        },
+        "confirmed": {
+          "input_base_current_tx": 2,
+          "input_bias_amplifier_tx": 1,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VE",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VCC",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 100.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 0,
+              "79": 1,
+              "81": 1,
+              "83": 0,
+              "85": 1,
+              "77": 0,
+              "48": 0
+            },
+            "basis": "output-current range selected by power class; provisional for AC"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      },
+      "ac": {
+        "profile": "pnp_small",
+        "route": {
+          "mask": 127,
+          "value": 26,
+          "pin_values": {
+            "87": 0,
+            "79": 1,
+            "81": 1,
+            "83": 0,
+            "85": 1,
+            "77": 0,
+            "48": 0
+          },
+          "current_range_a": [
+            1e-05,
+            0.001
+          ],
+          "base_resistance_ohm": 2000.0,
+          "collector_resistor_ohm": 100.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": null,
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "output-current range selected by power class; provisional for AC"
+        },
+        "confirmed": {
+          "input_base_current_tx": 2,
+          "input_bias_amplifier_tx": 1,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VE",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VB*9.78",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 100.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 0,
+              "79": 1,
+              "81": 1,
+              "83": 0,
+              "85": 1,
+              "77": 0,
+              "48": 0
+            },
+            "basis": "output-current range selected by power class; provisional for AC"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      }
+    },
+    "pnp_big": {
+      "input": {
+        "profile": "pnp_big",
+        "route": {
+          "mask": 127,
+          "value": 88,
+          "pin_values": {
+            "87": 0,
+            "79": 1,
+            "81": 1,
+            "83": 0,
+            "85": 0,
+            "77": 0,
+            "48": 1
+          },
+          "current_range_a": [
+            1e-07,
+            1e-05
+          ],
+          "base_resistance_ohm": 200000.0,
+          "collector_resistor_ohm": 1.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": "user_confirmed_20261101_all_input_low",
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "user_confirmed"
+        },
+        "confirmed": {
+          "input_base_current_tx": 2,
+          "input_bias_amplifier_tx": 1,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VE",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VB/4",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 1.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 1,
+              "79": 1,
+              "81": 1,
+              "83": 0,
+              "85": 1,
+              "77": 1,
+              "48": 0
+            },
+            "basis": "output-current range selected by power class; provisional for AC"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      },
+      "output": {
+        "profile": "pnp_big",
+        "route": {
+          "mask": 127,
+          "value": 61,
+          "pin_values": {
+            "87": 1,
+            "79": 1,
+            "81": 1,
+            "83": 1,
+            "85": 0,
+            "77": 1,
+            "48": 0
+          },
+          "current_range_a": [
+            0.0004,
+            0.04
+          ],
+          "base_resistance_ohm": 50.0,
+          "collector_resistor_ohm": 1.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": null,
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "user_confirmed"
+        },
+        "confirmed": {
+          "input_base_current_tx": 2,
+          "input_bias_amplifier_tx": 1,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VE",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VCC",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 1.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 1,
+              "79": 1,
+              "81": 1,
+              "83": 0,
+              "85": 1,
+              "77": 1,
+              "48": 0
+            },
+            "basis": "output-current range selected by power class; provisional for AC"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      },
+      "beta": {
+        "profile": "pnp_big",
+        "route": {
+          "mask": 127,
+          "value": 61,
+          "pin_values": {
+            "87": 1,
+            "79": 1,
+            "81": 1,
+            "83": 1,
+            "85": 0,
+            "77": 1,
+            "48": 0
+          },
+          "current_range_a": [
+            0.0004,
+            0.04
+          ],
+          "base_resistance_ohm": 50.0,
+          "collector_resistor_ohm": 1.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": null,
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "user_confirmed"
+        },
+        "confirmed": {
+          "input_base_current_tx": 2,
+          "input_bias_amplifier_tx": 1,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VE",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VCC",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 1.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 1,
+              "79": 1,
+              "81": 1,
+              "83": 0,
+              "85": 1,
+              "77": 1,
+              "48": 0
+            },
+            "basis": "output-current range selected by power class; provisional for AC"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      },
+      "ac": {
+        "profile": "pnp_big",
+        "route": {
+          "mask": 127,
+          "value": 59,
+          "pin_values": {
+            "87": 1,
+            "79": 1,
+            "81": 1,
+            "83": 0,
+            "85": 1,
+            "77": 1,
+            "48": 0
+          },
+          "current_range_a": [
+            0.0004,
+            0.04
+          ],
+          "base_resistance_ohm": 50.0,
+          "collector_resistor_ohm": 1.0,
+          "pair_order": {
+            "current": [
+              77,
+              48
+            ],
+            "polarity": [
+              79,
+              81
+            ],
+            "type": [
+              83,
+              85
+            ]
+          },
+          "input_pin87_basis": null,
+          "basis": "user_confirmed_20261030",
+          "ac_range_basis": "output-current range selected by power class; provisional for AC"
+        },
+        "confirmed": {
+          "input_base_current_tx": 2,
+          "input_bias_amplifier_tx": 1,
+          "input_tx_roles_basis": "user_confirmed_20261101",
+          "rx2_node": "VE",
+          "collector_adc_per_v": 0.206,
+          "rx1_node": "VB*9.78",
+          "ac_adc_amplitude_multiplier": 1.0,
+          "ac_half_amplitude_basis": "user_retracted_x2_20261031",
+          "ac_input_adc_per_v": 9.78,
+          "ac_vb_scale_basis": "user_confirmed_20261031",
+          "base_adc_per_v": 0.25,
+          "source_adc_per_v": 0.206,
+          "vcc_scale_basis": "user_confirmed_20261031",
+          "fixture_adc1": "RX2",
+          "fixture_adc2": "RX1",
+          "mapping_basis": "user_corrected_20261031",
+          "tx1_control_range_v": [
+            0.02,
+            2.0
+          ],
+          "collector_resistor_ohm": 1.0
+        },
+        "provisional": {
+          "pnp_input_voltage": {
+            "value": "UEB = measured VE - measured VB; VCC controls TX1 through amplifier gain",
+            "basis": "user restored ADC1/RX2 VE readout on 20261101"
+          },
+          "tx2_power_amplifier_gain": {
+            "value": 6.0,
+            "basis": "both reference sources; not remeasured"
+          },
+          "pnp_ac_current": {
+            "value": "beta ~= (RB/RE)*VE_peak/(Vin_peak-VB_peak); IC ~= IE = VE_peak/RE",
+            "basis": "user circuit: Vin before RB, VB at base, VE at emitter; VCC AC ground; Vin/VB in-phase amplitude approximation; all conversion gains unchanged"
+          },
+          "pnp_output_topology": {
+            "value": "C=GND; ADC1=VE; ADC2=VCC; UEC=VE; IC ~= IE = (VCC-VE)/R",
+            "basis": "user_confirmed_20261031; user requested IE ~= IC"
+          },
+          "ac_input_sample_gain": {
+            "value": 1.0,
+            "basis": "AC VB*9.78 is represented by input_adc_per_v=9.78; extra gain stays 1 to avoid applying it twice"
+          },
+          "ac_input_resistor_ohm": {
+            "value": 50.0,
+            "basis": "IP-SDK small-signal method; shared provisional constant for four profiles"
+          },
+          "ac_source_buffer_gain": {
+            "value": 0.84,
+            "basis": "User measured TX3 50 mVpp -> buffer output 42 mVpp on 2026-10-31; assumed constant versus frequency/amplitude pending verification"
+          },
+          "ac_phase": {
+            "value": "source and base assumed in phase",
+            "basis": "legacy magnitude subtraction; no phase measurement"
+          },
+          "ac_range": {
+            "value": {
+              "87": 1,
+              "79": 1,
+              "81": 1,
+              "83": 0,
+              "85": 1,
+              "77": 1,
+              "48": 0
+            },
+            "basis": "output-current range selected by power class; provisional for AC"
+          }
+        },
+        "absolute_measurement_accuracy_verified": false
+      }
+    }
+  },
+  "defaults": {
+    "npn_small": {
+      "input": {
+        "profile": "npn_small",
+        "collector_channel": 1,
+        "base_channel": 0,
+        "base_adc_per_v": 0.25,
+        "tx1_start_v": 0.02,
+        "tx1_stop_v": 2.0,
+        "tx1_step_v": 0.1,
+        "tx1_fine_stop_v": 0.4,
+        "tx1_fine_step_v": 0.05,
+        "tx1_segments_v": "",
+        "uce_values_v": [
+          0.5
+        ],
+        "settle_s": 0.02,
+        "curve_settle_s": 0.15,
+        "frames_per_point": 2,
+        "discard_frames": 1,
+        "frame_gap_s": 0.01,
+        "adaptive_settle_v": 0.02,
+        "max_node_drift_v": 0.05,
+        "uce_tolerance_v": 0.03,
+        "relay_active_level": 1
+      },
+      "output": {
+        "profile": "npn_small",
+        "base_control_v": [
+          0.05,
+          0.15,
+          0.25
+        ],
+        "tx2_control_start_v": 0.0,
+        "tx2_control_stop_v": 0.25,
+        "tx2_control_step_v": 0.01,
+        "tx2_segments_v": "",
+        "base_resistance_ohm": 2000.0,
+        "collector_resistor_ohm": 100.0,
+        "collector_channel": 1,
+        "source_channel": 0,
+        "collector_adc_per_v": 0.206,
+        "source_adc_per_v": 0.206,
+        "settle_s": 0.1,
+        "frames_per_point": 3
+      },
+      "beta": {
+        "profile": "npn_small",
+        "tx1_start_v": 0.02,
+        "tx1_stop_v": 0.5,
+        "tx1_step_v": 0.01,
+        "tx1_segments_v": "",
+        "target_uce_v": 5.0,
+        "target_window_v": 0.12,
+        "max_target_error_v": 0.03,
+        "tx2_first_start_v": 0.95,
+        "tx2_start_increment_v": 0.0,
+        "tx2_step_v": 0.01,
+        "tx2_min_v": 0.0,
+        "tx2_stop_v": 1.25,
+        "base_resistance_ohm": 2000.0,
+        "collector_resistor_ohm": 100.0,
+        "collector_channel": 1,
+        "source_channel": 0,
+        "collector_adc_per_v": 0.206,
+        "source_adc_per_v": 0.206,
+        "drop_initial_points": 2,
+        "moving_average_window": 2,
+        "settle_s": 0.05,
+        "frames_per_point": 3
+      },
+      "ac": {
+        "profile": "npn_small",
+        "tx1_bias_v": 0.2,
+        "tx2_vcc_control_v": 1.5,
+        "tx3_input_vpp": 0.05,
+        "source_buffer_gain": 0.84,
+        "adc_amplitude_multiplier": 1.0,
+        "input_channel": 0,
+        "output_channel": 1,
+        "input_adc_per_v": 9.78,
+        "output_adc_per_v": 0.206,
+        "input_sample_gain": 1.0,
+        "input_test_resistor_ohm": 100.0,
+        "collector_resistor_ohm": 100.0,
+        "sample_count": 50000,
+        "repeat_count": 3,
+        "settle_s": 0.1,
+        "passband_stop_hz": 150000.0,
+        "target_ratio": 0.707,
+        "final_tolerance_hz": 10000.0,
+        "max_bisection_iterations": 16,
+        "frequency_segments_hz": "10000:150000:10000;200000:5000000:100000"
+      }
+    },
+    "npn_big": {
+      "input": {
+        "profile": "npn_big",
+        "collector_channel": 1,
+        "base_channel": 0,
+        "base_adc_per_v": 0.25,
+        "tx1_start_v": 0.02,
+        "tx1_stop_v": 2.0,
+        "tx1_step_v": 0.1,
+        "tx1_fine_stop_v": 0.4,
+        "tx1_fine_step_v": 0.05,
+        "tx1_segments_v": "",
+        "uce_values_v": [
+          0.5
+        ],
+        "settle_s": 0.02,
+        "curve_settle_s": 0.15,
+        "frames_per_point": 2,
+        "discard_frames": 1,
+        "frame_gap_s": 0.01,
+        "adaptive_settle_v": 0.02,
+        "max_node_drift_v": 0.05,
+        "uce_tolerance_v": 0.03,
+        "relay_active_level": 1
+      },
+      "output": {
+        "profile": "npn_big",
+        "base_control_v": [
+          0.05,
+          0.15,
+          0.25
+        ],
+        "tx2_control_start_v": 0.0,
+        "tx2_control_stop_v": 0.25,
+        "tx2_control_step_v": 0.01,
+        "tx2_segments_v": "",
+        "base_resistance_ohm": 50.0,
+        "collector_resistor_ohm": 1.0,
+        "collector_channel": 1,
+        "source_channel": 0,
+        "collector_adc_per_v": 0.206,
+        "source_adc_per_v": 0.206,
+        "settle_s": 0.1,
+        "frames_per_point": 3
+      },
+      "beta": {
+        "profile": "npn_big",
+        "tx1_start_v": 0.02,
+        "tx1_stop_v": 0.08,
+        "tx1_step_v": 0.0025,
+        "tx1_segments_v": "",
+        "target_uce_v": 1.2,
+        "target_window_v": 0.12,
+        "max_target_error_v": 0.03,
+        "tx2_first_start_v": 0.24,
+        "tx2_start_increment_v": 0.0,
+        "tx2_step_v": 0.01,
+        "tx2_min_v": 0.0,
+        "tx2_stop_v": 0.28,
+        "base_resistance_ohm": 50.0,
+        "collector_resistor_ohm": 1.0,
+        "collector_channel": 1,
+        "source_channel": 0,
+        "collector_adc_per_v": 0.206,
+        "source_adc_per_v": 0.206,
+        "drop_initial_points": 2,
+        "moving_average_window": 2,
+        "settle_s": 0.05,
+        "frames_per_point": 3
+      },
+      "ac": {
+        "profile": "npn_big",
+        "tx1_bias_v": 0.2,
+        "tx2_vcc_control_v": 1.5,
+        "tx3_input_vpp": 0.05,
+        "source_buffer_gain": 0.84,
+        "adc_amplitude_multiplier": 1.0,
+        "input_channel": 0,
+        "output_channel": 1,
+        "input_adc_per_v": 9.78,
+        "output_adc_per_v": 0.206,
+        "input_sample_gain": 1.0,
+        "input_test_resistor_ohm": 100.0,
+        "collector_resistor_ohm": 1.0,
+        "sample_count": 50000,
+        "repeat_count": 3,
+        "settle_s": 0.1,
+        "passband_stop_hz": 150000.0,
+        "target_ratio": 0.707,
+        "final_tolerance_hz": 10000.0,
+        "max_bisection_iterations": 16,
+        "frequency_segments_hz": "10000:150000:10000;200000:5000000:100000"
+      }
+    },
+    "pnp_small": {
+      "input": {
+        "profile": "pnp_small",
+        "collector_channel": 1,
+        "base_channel": 0,
+        "base_adc_per_v": 0.25,
+        "tx1_start_v": 0.02,
+        "tx1_stop_v": 2.0,
+        "tx1_step_v": 0.1,
+        "tx1_fine_stop_v": 0.4,
+        "tx1_fine_step_v": 0.05,
+        "tx1_segments_v": "",
+        "uce_values_v": [
+          1.0,
+          2.0
+        ],
+        "settle_s": 0.02,
+        "curve_settle_s": 0.15,
+        "frames_per_point": 2,
+        "discard_frames": 1,
+        "frame_gap_s": 0.01,
+        "adaptive_settle_v": 0.02,
+        "max_node_drift_v": 0.05,
+        "uce_tolerance_v": 0.03,
+        "relay_active_level": 1
+      },
+      "output": {
+        "profile": "pnp_small",
+        "base_control_v": [
+          0.05,
+          0.15,
+          0.25
+        ],
+        "tx2_control_start_v": 0.0,
+        "tx2_control_stop_v": 0.25,
+        "tx2_control_step_v": 0.01,
+        "tx2_segments_v": "",
+        "base_resistance_ohm": 2000.0,
+        "collector_resistor_ohm": 100.0,
+        "collector_channel": 1,
+        "source_channel": 0,
+        "collector_adc_per_v": 0.206,
+        "source_adc_per_v": 0.206,
+        "settle_s": 0.1,
+        "frames_per_point": 3
+      },
+      "beta": {
+        "profile": "pnp_small",
+        "tx1_start_v": 0.02,
+        "tx1_stop_v": 0.5,
+        "tx1_step_v": 0.01,
+        "tx1_segments_v": "",
+        "target_uce_v": 5.0,
+        "target_window_v": 0.12,
+        "max_target_error_v": 0.03,
+        "tx2_first_start_v": 0.95,
+        "tx2_start_increment_v": 0.0,
+        "tx2_step_v": 0.01,
+        "tx2_min_v": 0.0,
+        "tx2_stop_v": 1.25,
+        "base_resistance_ohm": 2000.0,
+        "collector_resistor_ohm": 100.0,
+        "collector_channel": 1,
+        "source_channel": 0,
+        "collector_adc_per_v": 0.206,
+        "source_adc_per_v": 0.206,
+        "drop_initial_points": 2,
+        "moving_average_window": 2,
+        "settle_s": 0.05,
+        "frames_per_point": 3
+      },
+      "ac": {
+        "profile": "pnp_small",
+        "tx1_bias_v": 0.2,
+        "tx2_vcc_control_v": 1.5,
+        "tx3_input_vpp": 0.05,
+        "source_buffer_gain": 0.84,
+        "adc_amplitude_multiplier": 1.0,
+        "input_channel": 0,
+        "output_channel": 1,
+        "input_adc_per_v": 9.78,
+        "output_adc_per_v": 0.206,
+        "input_sample_gain": 1.0,
+        "input_test_resistor_ohm": 100.0,
+        "collector_resistor_ohm": 100.0,
+        "sample_count": 50000,
+        "repeat_count": 3,
+        "settle_s": 0.1,
+        "passband_stop_hz": 150000.0,
+        "target_ratio": 0.707,
+        "final_tolerance_hz": 10000.0,
+        "max_bisection_iterations": 16,
+        "frequency_segments_hz": "10000:150000:10000;200000:5000000:100000"
+      }
+    },
+    "pnp_big": {
+      "input": {
+        "profile": "pnp_big",
+        "collector_channel": 1,
+        "base_channel": 0,
+        "base_adc_per_v": 0.25,
+        "tx1_start_v": 0.02,
+        "tx1_stop_v": 2.0,
+        "tx1_step_v": 0.1,
+        "tx1_fine_stop_v": 0.4,
+        "tx1_fine_step_v": 0.05,
+        "tx1_segments_v": "",
+        "uce_values_v": [
+          1.0,
+          2.0
+        ],
+        "settle_s": 0.02,
+        "curve_settle_s": 0.15,
+        "frames_per_point": 2,
+        "discard_frames": 1,
+        "frame_gap_s": 0.01,
+        "adaptive_settle_v": 0.02,
+        "max_node_drift_v": 0.05,
+        "uce_tolerance_v": 0.03,
+        "relay_active_level": 1
+      },
+      "output": {
+        "profile": "pnp_big",
+        "base_control_v": [
+          0.05,
+          0.15,
+          0.25
+        ],
+        "tx2_control_start_v": 0.0,
+        "tx2_control_stop_v": 0.25,
+        "tx2_control_step_v": 0.01,
+        "tx2_segments_v": "",
+        "base_resistance_ohm": 50.0,
+        "collector_resistor_ohm": 1.0,
+        "collector_channel": 1,
+        "source_channel": 0,
+        "collector_adc_per_v": 0.206,
+        "source_adc_per_v": 0.206,
+        "settle_s": 0.1,
+        "frames_per_point": 3
+      },
+      "beta": {
+        "profile": "pnp_big",
+        "tx1_start_v": 0.02,
+        "tx1_stop_v": 0.08,
+        "tx1_step_v": 0.0025,
+        "tx1_segments_v": "",
+        "target_uce_v": 1.2,
+        "target_window_v": 0.12,
+        "max_target_error_v": 0.03,
+        "tx2_first_start_v": 0.24,
+        "tx2_start_increment_v": 0.0,
+        "tx2_step_v": 0.01,
+        "tx2_min_v": 0.0,
+        "tx2_stop_v": 0.28,
+        "base_resistance_ohm": 50.0,
+        "collector_resistor_ohm": 1.0,
+        "collector_channel": 1,
+        "source_channel": 0,
+        "collector_adc_per_v": 0.206,
+        "source_adc_per_v": 0.206,
+        "drop_initial_points": 2,
+        "moving_average_window": 2,
+        "settle_s": 0.05,
+        "frames_per_point": 3
+      },
+      "ac": {
+        "profile": "pnp_big",
+        "tx1_bias_v": 0.2,
+        "tx2_vcc_control_v": 1.5,
+        "tx3_input_vpp": 0.05,
+        "source_buffer_gain": 0.84,
+        "adc_amplitude_multiplier": 1.0,
+        "input_channel": 0,
+        "output_channel": 1,
+        "input_adc_per_v": 9.78,
+        "output_adc_per_v": 0.206,
+        "input_sample_gain": 1.0,
+        "input_test_resistor_ohm": 100.0,
+        "collector_resistor_ohm": 1.0,
+        "sample_count": 50000,
+        "repeat_count": 3,
+        "settle_s": 0.1,
+        "passband_stop_hz": 150000.0,
+        "target_ratio": 0.707,
+        "final_tolerance_hz": 10000.0,
+        "max_bisection_iterations": 16,
+        "frequency_segments_hz": "10000:150000:10000;200000:5000000:100000"
+      }
+    }
+  },
+  "rx1": "DG1032Z nominal DC High-Z setpoints, 50 MSPS, +/-1.75 V; absolute and AC accuracy unverified",
+  "not_completed": [
+    "BJT fixture physical measurements",
+    "AC phase and transfer calibration",
+    "device-specific thermal/current limits",
+    "pulse timing"
+  ],
+  "rx2": "DG1032Z nominal DC High-Z setpoints, 50 MSPS, +/-1.75 V; absolute and AC accuracy unverified",
+  "defaults_range_note": "Small beta TX1 .02..0.5 V /.01 V (49 planned points), UCE5 V, TX2<=1.25 V. Big beta .02..08 /.0025 V, UCE1.2 V, TX2<=.28 V. Optional segmented voltage sweeps override legacy linear/fine controls. Current and analog transfer coefficients still reference-based.",
+  "fixture_mapping_note": "User confirmed 2026-10-31: fixture ADC1=RX2 carries VC*0.206; fixture ADC2=RX1 carries VB/4 in input, VB*10 in AC, VCC*0.206 in output/beta. VCC=RX1 voltage/0.206. Physical connector calibration unchanged.",
+  "input_bias_control": "NPN: bounded feedback adjustment, at most 7 corrections per point, <=50 mV TX2 change each; original UCE tolerance unchanged. Default UCE=0.5 V. PNP retains emitter-bias estimate.",
+  "input_pacing_note": "2026-10-31 fast view: TX1 .02..2 V, fine .05 V steps through .4 V then .1 V steps (25 points); .02 s point settling, .15 s curve settling. Adaptive conservative timing retained for changing nodes: at least .05 s settle, 3 retained frames, .05 s gap. Stable nodes use 2 frames and .01 s gap; one discarded frame. Node drift limit .05 V, UCE tolerance .03 V. All actual points and timings retained.",
+  "ac_vb_scale_note": "2026-10-31 user corrected AC voltage amplifier gain from10 to9.78: VB=RX1/9.78. Extra input_sample_gain remains1. Historical files unchanged.",
+  "ac_buffer_note": "2026-10-31 user measurement: TX3 50 mVpp -> buffer output 42 mVpp. Use source_buffer_gain=.84 for input-current calculation, without changing DAC setpoint; constant gain over sweep is provisional.",
+  "ac_half_amplitude_note": "User retracted x2 on 2026-10-31: adc_amplitude_multiplier=1; VB=RX1/10; VC=RX2/.206; effective source remains TX3*.84.",
+  "beta_uce_tolerance_note": "Small-power beta default UCE=5 V per text.4.1.10_NST.py. TX2 start .95 V, cap1.25 V; predicted RX1 VCC feedback <=1.545 V at provisional gain6, within calibrated +/-1.75 V; actual feedback checked. Nearest-point tolerance .03 V retained. Big-power envelope remains the previously verified configuration pending thermal validation.",
+  "ac_sweep_note": "Segmented sweep 10..150 kHz by10 kHz;200..3000 kHz by100 kHz. Editable segment endpoints/steps; first-gain+20 display upper limit, lower30 expands only if data outside. Fit beta0, .707 beta0, f_beta and extrapolated fT labelled.",
+  "beta5_measured_headroom": "5 V requested scan .02..1 V yielded27/50 valid base levels atTX1<=.54 V; VCC maximum7.887 V atTX2=1.25 V. Larger base drive could not maintain5 V and was excluded. Default .02..0.5 V /.01 V covers49 points inside demonstrated headroom. Big-power defaults unchanged.",
+  "ac_input_test_resistor_note": "User confirmed 2026-11-02: physical series test resistor is 100 ohm. New defaults use 100 ohm; stored historical measurements retain their recorded parameters."
+}

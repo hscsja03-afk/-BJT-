@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "revision": "custom_rx_shunts_removed_series50_20261028",
+  "date": "2026-10-28",
+  "basis": "user_reported_modifications_checked_against_reference_netlist_not_photographically_verified",
+  "user_quote": "把124、129、130、91、93、94的电阻取掉了。然后把95和153号电阻换成50欧。留空",
+  "removed_open": [
+    "R91",
+    "R93",
+    "R94",
+    "R124",
+    "R129",
+    "R130"
+  ],
+  "replaced_ohm": {
+    "R95": 50.0,
+    "R153": 50.0
+  },
+  "reference_netlist": "reference/hardware/baseboard.tel",
+  "rx1": {
+    "connector": "RF1",
+    "adc": "B",
+    "buffer": "U22",
+    "differential_driver": "U30",
+    "input_shunts_removed": [
+      "R91",
+      "R93",
+      "R94"
+    ],
+    "buffer_output_series_resistor": "R95"
+  },
+  "rx2": {
+    "connector": "RF2",
+    "adc": "A",
+    "buffer": "U44",
+    "differential_driver": "U45",
+    "input_shunts_removed": [
+      "R124",
+      "R129",
+      "R130"
+    ],
+    "buffer_output_series_resistor": "R153"
+  },
+  "remaining_values_assumed_from_schematic_ohm": {
+    "R92": 120.0,
+    "R109": 120.0,
+    "R125": 120.0,
+    "R164": 120.0,
+    "R89": 0.0,
+    "R122": 0.0,
+    "R96": 62.0,
+    "R154": 62.0,
+    "R97": 191.0,
+    "R98": 191.0,
+    "R155": 191.0,
+    "R156": 191.0,
+    "R99": 27.7,
+    "R157": 27.7,
+    "R100": 200.0,
+    "R101": 200.0,
+    "R158": 200.0,
+    "R159": 200.0
+  },
+  "input_impedance_measured": false,
+  "analog_calibration_qualified": false,
+  "historical_rx_calibration_applicability": "not_qualified_for_this_revision",
+  "external_frontend_scaling": "data/frontend.json describes external transistor circuitry; it is separate from connector-to-ADC gain and has not been replaced by a theoretical board gain.",
+  "limits": [
+    "With RX unconnected, no intended linear DC return remains at the first amplifier input in the reported circuit; protection leakage is not a defined bias path.",
+    "R95/R153 are after the input buffer. Their50-ohm values are neither RX input terminations nor input bias return resistors.",
+    "Reported changes do not establish remaining component values, supply voltages, frequency response or actual linear input range.",
+    "Do not use historical voltage-per-code profiles or theoretical gain as measured calibration."
+  ],
+  "modification_timing_confirmation": {
+    "date": "2026-10-30",
+    "source": "user_reply",
+    "user_quote": "校准之后才改",
+    "relative_to": "legacy ADC/DAC calibration on 2026-10-26 and 2026-10-27",
+    "rx_modifications_occurred_after_calibration": true
+  }
+}

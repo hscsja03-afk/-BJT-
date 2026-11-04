@@ -1,0 +1,295 @@
+{
+  "source_sha256": "39ea698c1449d4c9fcf719a0b7aec4d733e4973f81f900fea50f04c47de60b60",
+  "reviewed_at": "2026-11-02",
+  "evidence": "Original PDF pages 1 and 2 rendered and visually inspected; original numerical min/max/rating columns unchanged",
+  "rows": [
+    {
+      "page": 1,
+      "table": 3,
+      "row": 2,
+      "expected_limits": {
+        "min": "",
+        "typ": "",
+        "max": "",
+        "value": "-160"
+      },
+      "fields": {
+        "symbol": "VCBO",
+        "conditions": "Ta=25 °C，除非另有说明",
+        "unit": "V"
+      }
+    },
+    {
+      "page": 1,
+      "table": 3,
+      "row": 3,
+      "expected_limits": {
+        "min": "",
+        "typ": "",
+        "max": "",
+        "value": "-150"
+      },
+      "fields": {
+        "symbol": "VCEO",
+        "conditions": "Ta=25 °C，除非另有说明",
+        "unit": "V"
+      }
+    },
+    {
+      "page": 1,
+      "table": 3,
+      "row": 4,
+      "expected_limits": {
+        "min": "",
+        "typ": "",
+        "max": "",
+        "value": "-5"
+      },
+      "fields": {
+        "symbol": "VEBO",
+        "conditions": "Ta=25 °C，除非另有说明",
+        "unit": "V"
+      }
+    },
+    {
+      "page": 1,
+      "table": 3,
+      "row": 5,
+      "expected_limits": {
+        "min": "",
+        "typ": "",
+        "max": "",
+        "value": "-0.6"
+      },
+      "fields": {
+        "symbol": "IC",
+        "conditions": "Ta=25 °C，除非另有说明",
+        "unit": "A"
+      }
+    },
+    {
+      "page": 1,
+      "table": 3,
+      "row": 6,
+      "expected_limits": {
+        "min": "",
+        "typ": "",
+        "max": "",
+        "value": "625"
+      },
+      "fields": {
+        "symbol": "PC",
+        "conditions": "Ta=25 °C，除非另有说明",
+        "unit": "mW"
+      }
+    },
+    {
+      "page": 1,
+      "table": 3,
+      "row": 7,
+      "expected_limits": {
+        "min": "",
+        "typ": "",
+        "max": "",
+        "value": "200"
+      },
+      "fields": {
+        "symbol": "R ΚJA",
+        "conditions": "Ta=25 °C，除非另有说明",
+        "unit": "°C/W"
+      }
+    },
+    {
+      "page": 1,
+      "table": 3,
+      "row": 8,
+      "expected_limits": {
+        "min": "",
+        "typ": "",
+        "max": "",
+        "value": "-55~+150"
+      },
+      "fields": {
+        "symbol": "TJ, Tstg",
+        "conditions": "Ta=25 °C，除非另有说明",
+        "unit": "°C"
+      }
+    },
+    {
+      "page": 2,
+      "table": 1,
+      "row": 2,
+      "expected_limits": {
+        "min": "-160",
+        "typ": "",
+        "max": "",
+        "value": ""
+      },
+      "fields": {
+        "symbol": "V(BR)CBO",
+        "conditions": "IC=-0.1 mA, IE=0",
+        "unit": "V"
+      }
+    },
+    {
+      "page": 2,
+      "table": 1,
+      "row": 3,
+      "expected_limits": {
+        "min": "-150",
+        "typ": "",
+        "max": "",
+        "value": ""
+      },
+      "fields": {
+        "symbol": "V(BR)CEO",
+        "conditions": "IC=-1 mA, IB=0",
+        "unit": "V"
+      }
+    },
+    {
+      "page": 2,
+      "table": 1,
+      "row": 4,
+      "expected_limits": {
+        "min": "-5",
+        "typ": "",
+        "max": "",
+        "value": ""
+      },
+      "fields": {
+        "symbol": "V(BR)EBO",
+        "conditions": "IE=-0.01 mA, IC=0",
+        "unit": "V"
+      }
+    },
+    {
+      "page": 2,
+      "table": 1,
+      "row": 5,
+      "expected_limits": {
+        "min": "",
+        "typ": "",
+        "max": "-50",
+        "value": ""
+      },
+      "fields": {
+        "symbol": "ICBO",
+        "conditions": "VCB=-120 V, IE=0",
+        "unit": "nA"
+      }
+    },
+    {
+      "page": 2,
+      "table": 1,
+      "row": 6,
+      "expected_limits": {
+        "min": "",
+        "typ": "",
+        "max": "-50",
+        "value": ""
+      },
+      "fields": {
+        "symbol": "IEBO",
+        "conditions": "VEB=-3 V, IC=0",
+        "unit": "nA"
+      }
+    },
+    {
+      "page": 2,
+      "table": 1,
+      "row": 7,
+      "expected_limits": {
+        "min": "80",
+        "typ": "",
+        "max": "",
+        "value": ""
+      },
+      "fields": {
+        "symbol": "hFE(1)",
+        "conditions": "VCE=-5 V, IC=-1 mA",
+        "unit": ""
+      }
+    },
+    {
+      "page": 2,
+      "table": 1,
+      "row": 8,
+      "expected_limits": {
+        "min": "100",
+        "typ": "",
+        "max": "300",
+        "value": ""
+      },
+      "fields": {
+        "symbol": "hFE(2)",
+        "conditions": "VCE=-5 V, IC=-10 mA",
+        "unit": ""
+      }
+    },
+    {
+      "page": 2,
+      "table": 1,
+      "row": 9,
+      "expected_limits": {
+        "min": "50",
+        "typ": "",
+        "max": "",
+        "value": ""
+      },
+      "fields": {
+        "symbol": "hFE(3)",
+        "conditions": "VCE=-5 V, IC=-50 mA",
+        "unit": ""
+      }
+    },
+    {
+      "page": 2,
+      "table": 1,
+      "row": 10,
+      "expected_limits": {
+        "min": "",
+        "typ": "",
+        "max": "-0.5",
+        "value": ""
+      },
+      "fields": {
+        "symbol": "VCE(sat)",
+        "conditions": "IC=-50 mA, IB=-5 mA",
+        "unit": "V"
+      }
+    },
+    {
+      "page": 2,
+      "table": 1,
+      "row": 11,
+      "expected_limits": {
+        "min": "",
+        "typ": "",
+        "max": "-1",
+        "value": ""
+      },
+      "fields": {
+        "symbol": "VBE(sat)",
+        "conditions": "IC=-50 mA, IB=-5 mA",
+        "unit": "V"
+      }
+    },
+    {
+      "page": 2,
+      "table": 1,
+      "row": 12,
+      "expected_limits": {
+        "min": "100",
+        "typ": "",
+        "max": "300",
+        "value": ""
+      },
+      "fields": {
+        "symbol": "fT",
+        "conditions": "VCE=-5 V, IC=-10 mA, f=30 MHz",
+        "unit": "MHz"
+      }
+    }
+  ]
+}
